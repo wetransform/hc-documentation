@@ -27,4 +27,15 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Style Search Plugin */
+  --aa-primary-color-rgb: 99, 158, 225 !important; 
+  --aa-muted-color-rgb: 138,138,139 !important;
+
 }
+
+[data-theme='light'] {
+  /* Style Search Plugin */
+  --aa-primary-color-rgb: 99, 158, 225 !important; 
+}
+

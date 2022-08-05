@@ -49,18 +49,11 @@ Das Shapefile-Namensraum-Präfix muss zu jeder Shapefile-Eigenschaft hinzugefüg
           <ogc:PropertyName>ns:name/text()</ogc:PropertyName>
       </se:Label>
 
-<div className="alert alert-warning important-info">
-  <table>
-    <tr>
-        <td style="width:3em">
-          <div className="important-info-icon">
-            <span className="glyphicon glyphicon-exclamation-sign" style="font-size:2em"></span>
-          </div>
-        </td>
-        <td>Sie müssen '/text()' hinter der referenzierten Eigenschaft in TextSymbolizer Label-Tags hinzufügen um den Text in Darstellungsdiensten anzuzeigen.</td>
-    </tr>
-  </table>
-</div>
+:::caution
+
+Sie müssen '/text()' hinter der referenzierten Eigenschaft in TextSymbolizer Label-Tags hinzufügen um den Text in Darstellungsdiensten anzuzeigen.
+
+:::
 
 ### **Hinzufügen von Namen für Layer sowie Titeln für Layer und Regeln zu einer Styled Layer Descriptor-Datei** ###
 

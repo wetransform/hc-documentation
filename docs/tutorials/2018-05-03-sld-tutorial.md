@@ -49,18 +49,11 @@ The shapefile namespace prefix must be added to any shapefile property that is r
           <ogc:PropertyName>ns:name/text()</ogc:PropertyName>
       </se:Label>
 
-<div className="alert alert-warning important-info">
-  <table>
-    <tr>
-        <td style="width:3em">
-          <div className="important-info-icon">
-            <span className="glyphicon glyphicon-exclamation-sign" style="font-size:2em"></span>
-          </div>
-        </td>
-        <td>You must add '/text()' after the referenced property in TextSymbolizer Label tags to display text in view services.</td>
-    </tr>
-  </table>
-</div>
+:::caution
+
+You must add '/text()' after the referenced property in TextSymbolizer Label tags to display text in view services.
+
+:::
 
 ### **Adding layer names, layer titles and rule titles to a Styled Layer Descriptor file**
 
