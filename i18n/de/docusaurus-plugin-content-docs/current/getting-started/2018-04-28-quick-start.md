@@ -1,9 +1,9 @@
 ---
 title: "Erste Schritte mit hale»connect"
 categories:
-- "help-page-category-start"
-- "help-page-subcategory-start"
-layout: help-detail
+    - "help-page-category-start"
+    - "help-page-subcategory-start"
+layout: "help-detail"
 language: de
 
 ---
@@ -31,7 +31,7 @@ Ressourcen auf hale»connect werden von drei verschiedenen Nutzerrollen verwalte
 
 Benutzende von hale»connect können ihre Schemata, Themen, Datensätze und Transformationsprojekte auf hale»connect verwalten. Die folgende Graphik stellt einen grundlegenden Arbeitsablauf dar. Es ist wichtig zu verstehen, dass ein Schema und ein Thema benötigt werden, um einen Datensatz anzulegen. Wenn sie in der Rolle des Datenmanagers agieren, muss ihr Themenmanager diese für sie konfigurieren.
 
-<img src="/images/help/de/publish_dataset.png" alt="" title="Einen Datensatz veröffentlichen" class="img-responsive img-inline-help"/>
+<img src={ require('@site/static/images/help/de/publish_dataset.png').default } alt="" title="Einen Datensatz veröffentlichen" className="img-responsive img-inline-help"/>
 
 **Einen Datensatz veröffentlichen**
 
@@ -60,8 +60,7 @@ Mehr Informationen zu Datensätzen finden sie in den folgenden Abschnitten der D
 
 Die Veröffentlichung einer online-Transformation erfordert ein Quell-Thema, einen Quell-Datensatz, ein Ziel-Thema und ein Transformationsprojekt. Der Ziel-Datensatz wird automatisch durch die online-Transformation erstellt. Sie müssen in der Rolle &laquo;Themenmanager&raquo; angemeldet sein, um den unten dargestellten Arbeitsablauf ausführen zu können.
 
-<img src="/images/help/de/online_transformation.png" alt="" title="Eine online-Transformation veröffentlichen" class="img-responsive img-inline-help"/>
-
+<img src={ require('@site/static/images/help/de/online_transformation.png').default } alt="" title="Eine online-Transformation veröffentlichen" className="img-responsive img-inline-help"/>
 
 Folgen sie diesen Schritten um eine online-Transformation auf hale»connect durchzuführen:  
 
@@ -76,4 +75,4 @@ Folgen sie diesen Schritten um eine online-Transformation auf hale»connect durc
     Darstellungs- und Download-Dienste für ihre transformierten Daten veröffentlichen
 *	Sie können die Ergebnisse im &laquo;Darstellungs-Dienste&raquo;- und im &laquo;Download-Dienste&raquo;-Bereich ihres Datensatzes einsehen.
 
-  Für Unterstützung bei fortgeschrittenen Themen wie Online-Transformation, beachten sie auch unsere Angebote Sie zu unterstützen unter [support](https://www.wetransform.to/services/support/).
+Für Unterstützung bei fortgeschrittenen Themen wie Online-Transformation, beachten sie auch unsere Angebote Sie zu unterstützen unter [support](https://www.wetransform.to/services/support/).
