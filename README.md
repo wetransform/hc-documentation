@@ -2,24 +2,58 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Requirements
+# Migrating Remaining Documents
+In order to migrate a document from the old documentation website, the following transformations are required:
+- Include similar documents within the same folder. Create the same file structure for other languages. (e.g. German)
+- Insert the [closing tag](#use-assets--images) for `img` elements. Use this `(<img("[^"]*"|[^\/">])*)>` regex to retrieve them, and `$1/>` to apply the fix.
+- Transform `img` `src` attribute to use [dynamic imports](#use-assets--images). Use `src=("(?:[^"\/]*\/)*([^"]+)")` to retrieve those instances and `src={require($1).default}` to apply the fix.
+- Replace inline styles with [JSX compliant styles](#use-inline-styles).
+
+# Writing Markdown Documents
+Before writing Markdown documents, in addition to conforming to the Markdown rules (e.g. indentation), please consider the following points as it's required to write only valid documents.
+
+### Write a Document & Support Internationalization
+When writing a document, include the english version in the `docs/` folder. And include its equivalent valid document written in a different language (e.g. German) in `i18n/<locale>/docusaurus-plugin-content-docs/current/` where locale is the language code, e.g. `de`.
+
+In order to group similar documents under the same dropdown in the website sidebar, simply include them in the same folder. Futher limitless nested structure can be created to make a dropdown containing more dropdowns in it for instance.
+
+### Use Assets & Images
+In order to include an image in the document, use the `<img/>` tag, and make sure:
+- The image tag is properly closed, e.g. `<img src="example.png" />` is valid. But `<img src="example.png" >` is not. (notice the closing tag `/>`)
+- Reference the images using this format: `<img src={require("image-path").default} />`, where `image-path` is relative to the `static` folder.
+  
+  In this the following example, we're going to reference a logo image located in `static/images/brand/`: 
+  ```md
+  <img src={require("images/brand/logo.png").default} />
+  ```
+  Referencing assets like this guarantees valid file paths when using a different locale base endpoint (e.g. `/de`), since each locale has its own application.
+
+### Use Inline Styles
+Using styles in documents has to be consistent with JSX syntax, thus `<span style="font-size: 8px;">` is not valid. Instead use `<span style={{fontSize: "8px"}}>`.
+Usually for a valid JSX inline styling, remove the dash and camel-case the property, e.g. background-color becomes backgroundColor. (Read on JSX inline styling [here](https://www.w3schools.com/react/react_css.asp))
+
+<hr/>
+
+# Technical Setup
+
+## Requirements
 - nodejs
 - npm
 
-### Testing Project Features
+## Testing Project Features
 
 The following list specifies needed steps to test a certain feature and assumes that installation step is complete.
 - View documentation: simply start the local [dev](#local-development) or [build](#serve-the-build) server
 - i18n: either [start dev server in a given locale](#local-development) or [serve the build](#serve-the-build)
 - Doc. Search: since local-search plugin works only for static files, this feature can be tested only after the build. Thus, [build the project](#build) then [serve the build](#serve-the-build).
 
-### Installation
+## Installation
 
 ```
 $ npm i
 ```
 
-### Local Development
+## Local Development
 Start the project in the default locale (English, in this case)
 ```
 $ npm start
@@ -33,7 +67,7 @@ $ npm start -- --locale de # for German locale
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+## Build
 
 ```
 $ npm run build
@@ -41,7 +75,7 @@ $ npm run build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Serve the build
+## Serve the build
 Note: Build step is required for this to work.
 
 ```
@@ -49,7 +83,7 @@ $ npm run serve
 ```
 This command starts a local server to serve the `build` folder and opens up a browser window.
 
-### Deployment
+## Deployment
 
 Using SSH:
 
