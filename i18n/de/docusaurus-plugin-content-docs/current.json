@@ -8,7 +8,7 @@
     "description": "The label for category FAQ in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.FAQ.link.generated-index.description": {
-    "message": "Frequently Asked Questions",
+    "message": "Häufig gestellte Fragen",
     "description": "The generated-index page description for category FAQ in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Getting Started": {
@@ -16,11 +16,39 @@
     "description": "The label for category Getting Started in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Getting Started.link.generated-index.description": {
-    "message": "Quick Start Guide",
+    "message": "Schnellstartanleitung",
     "description": "The generated-index page description for category Getting Started in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.all": {
-    "message": "all",
+    "message": "alle",
     "description": "The label for category all in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorials & Training": {
+    "message": "Tutorials & Schulungen",
+    "description": "The label for category Tutorials & Training in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Key Concepts: Resources": {
+    "message": "Schlüsselkonzepte: Ressourcen",
+    "description": "The label for category Key Concepts: Resources in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Set up Hale»Connect": {
+    "message": "Hale»Connect einrichten",
+    "description": "The label for category Set up Hale»Connect in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a schema": {
+    "message": "Erstellen Sie ein Schema",
+    "description": "The label for category Create a schema in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a transformation project": {
+    "message": "Erstellen Sie ein Transformationsprojekt",
+    "description": "The label for category Create a transformation project in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a theme": {
+    "message": "Erstellen Sie ein Thema",
+    "description": "The label for category Create a theme in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Edit metadata configuration": {
+    "message": "Metadatenkonfiguration bearbeiten",
+    "description": "The label for category Edit metadata configuration in sidebar tutorialSidebar"
   }
 }

@@ -249,5 +249,25 @@
   "theme.docs.sidebar.expandButtonAriaLabel": {
     "message": "Seitenleiste ausklappen",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "cmfcmf/d-s-l.searchBar.placeholder": {
+    "message": "Suchen...",
+    "description": "Placeholder shown in the searchbar"
+  },
+  "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
+    "message": "Leeren",
+    "description": "Title of the button to clear the current search input"
+  },
+  "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
+    "message": "Abbrechen",
+    "description": "Text of the button to close the detached search window"
+  },
+  "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
+    "message": "Suchen",
+    "description": "Title of the button to submit a new search"
+  },
+  "cmfcmf/d-s-l.searchBar.noResults": {
+    "message": "Keine Suchergebnissse gefunden.",
+    "description": "message shown if no results are found"
   }
 }
