@@ -36,18 +36,18 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       }),
     ],
@@ -60,7 +60,8 @@ const config = {
         title: 'Documentation',
         logo: {
           alt: 'hale»connect Logo',
-          src: 'images/hale-connect-monochrome.png',
+          src: 'images/hale-connect-black.png',
+          srcDark: 'images/hale-connect-monochrome.png',
         },
         items: [
           // {
@@ -129,6 +130,7 @@ const config = {
 
     plugins: [
       require.resolve("@cmfcmf/docusaurus-search-local"),
+      'docusaurus-plugin-sass'
       // {
       //   // add options here for above plugin
       //   // if options are added, above plugin import needs to be wrapped with options in array

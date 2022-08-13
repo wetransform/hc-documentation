@@ -1,0 +1,111 @@
+$wetf-text: #04294F;
+$wetf-dark-blue: #405773;
+$wetf-organge: #FFB400;
+$wetf-skin: #F0CBA6;
+$wetf-mid-blue: #7EC8E9;
+$wetf-light-blue: #CCEAF7;
+$wetf-logo-blue: #639EE1;
+$wetf-red: #BC5746;
+$wetf-green: #99AB51;
+$wetf-stroke: #2604294F;
+
+$wetf-dark-blue-rgb: 64, 87, 115;
+$wetf-white: #fff;
+
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/manrope/manrope.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/manrope/manrope.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/manrope/manrope.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/manrope/manrope.woff') format('woff'), /* Modern Browsers */
+         url('fonts/manrope/manrope.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/manrope/manrope.svg#Manrope') format('svg'); /* Legacy iOS */
+  }
+
+:root {
+    /* Base color scheme */ 
+    --ifm-color-primary: #{$wetf-organge};
+    --ifm-color-secondary: #ebedf0;
+    --ifm-color-success: #{$wetf-green};
+    --ifm-color-info: #{$wetf-mid-blue};
+    --ifm-color-warning: #{$wetf-organge};
+    --ifm-color-danger: #{$wetf-red};
+    --ifm-color-primary-dark: #{$wetf-dark-blue};
+    --ifm-color-primary-light: #{$wetf-mid-blue};
+    --ifm-color-primary-lighter: #{$wetf-light-blue};    
+    /* Hero and footer */ 
+    --ifm-menu-color: #{$wetf-text};
+    --ifm-hero-background-color: #{$wetf-dark-blue};
+    --ifm-footer-background-color: #{$wetf-dark-blue};
+    /* Font */
+    --ifm-font-family-base: 'Manrope';
+    --ifm-code-font-size: 95%;
+    --ifm-link-hover-color: #{$wetf-organge};
+  }
+  
+  [data-theme='dark'] {
+    /* Base color scheme */
+    --ifm-color-primary: #{$wetf-organge};
+    --ifm-color-primary-dark: #{$wetf-dark-blue};
+    --ifm-color-primary-light: #{$wetf-mid-blue};
+    --ifm-color-primary-lighter: #{$wetf-light-blue};
+    /* Style Search Plugin */
+    --aa-primary-color-rgb: #{$wetf-white} !important;
+    --aa-muted-color-rgb: #{$wetf-white} !important;  
+    /* Menu and navigation */
+    --ifm-navbar-link-color: #{$wetf-white};
+    --ifm-dropdown-link-color: #{$wetf-white};
+    --ifm-menu-color: #{$wetf-white};
+    /* Text */ 
+    --ifm-font-color-base: #{$wetf-white};
+    --ifm-toc-link-color: #{$wetf-white};
+    --ifm-font-color-base-inverse: #{$wetf-white};
+  }
+  
+  [data-theme='light'] {
+    /* Style Search Plugin */
+    --aa-primary-color-rgb: #{$wetf-dark-blue-rgb} !important;
+    /* Menu and navigation */
+    --ifm-navbar-link-color: #{$wetf-text};
+    --ifm-dropdown-link-color: #{$wetf-text};
+    /* Text */
+    --ifm-font-color-base: #{$wetf-text};
+    --ifm-toc-link-color: #{$wetf-dark-blue};
+  }
+  
+.aa-Form:focus-within {
+    box-shadow: none!important;
+}
+
+.aa-DetachedSearchButton:focus {
+    box-shadow: none!important;
+}
+
+.aa-DetachedCancelButton {
+  color: var(--ifm-font-color-base);  
+  background: $wetf-organge!important;  
+  border-radius: 15px!important;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: var(--ifm-color-primary-dark);
+  --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--ifm-color-primary-dark);
+}
+
+.button.button--secondary {
+  background: $wetf-organge!important;
+  color: $wetf-text;
+  border-radius: 15px!important;
+  border: none;
+  transition: .25s;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 20px 30px 20px 30px;
+}
