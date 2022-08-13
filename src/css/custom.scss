@@ -109,3 +109,23 @@ $wetf-white: #fff;
   font-size: 1rem;
   padding: 20px 30px 20px 30px;
 }
+
+.faq-section-light {
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    a {
+      color: var(--ifm-font-color-base);
+      text-decoration: var(--ifm-link-decoration);
+      transition: color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+
+      &:hover{
+        color: var(--ifm-link-hover-color);
+        text-decoration: var(--ifm-link-decoration);
+      }
+      code {
+        font-size: 1rem;
+      }
+    }
+  }
+}
