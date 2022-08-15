@@ -8,7 +8,7 @@ language: en
 
 ---
 
-Hale»connect is a cloud-based platform that enables users to publish datasets, OGC webservices, and metadata.  Using hale»connect, users can also access transformation projects created in hale»studio to automate online data transformations. Hale»connect gives users the ability to create, access, transform, collaborate on and share resources within their organization or with the public. For more information about annual subscriptions to hale»connect, please visit our [product page](https://www.wetransform.to/products/haleconnect/) section of the documentation.
+hale»connect is a cloud-based platform that enables users to publish datasets, OGC webservices, and metadata.  Using hale»connect, users can also access transformation projects created in hale»studio to automate online data transformations. hale»connect gives users the ability to create, access, transform, collaborate on and share resources within their organization or with the public. For more information about annual subscriptions to hale»connect, please visit our [product page](https://www.wetransform.to/products/haleconnect/) section of the documentation.
 
 This quick start guide walks users through account registration and provides a brief overview of the different types of resources that are managed on hale»connect, as well as an introduction to some of the most common data publishing workflows. For more information, please visit our [documentation pages](https://www.wetransform.to/help/en/).
 
@@ -29,7 +29,7 @@ You will receive a registration email with a link to activate your new, hale»co
 
 Resources are managed by three different user roles on hale»connect. Data managers, Theme managers and Superusers. Data managers can upload and maintain data sets, theme managers can configure themes, schemas and transformation projects, and superusers have the added ability to create and manage organizations. You can view your user role on your account profile page. If you have registered on hale»connect through the website, you are granted the Theme manager role by default.
 
-Hale»connect users can manage their schemas, themes, data sets and transformation projects on hale»connect. The image below displays a basic workflow. It is important to understand that a schema and a theme are required to create a data set. If you are a Data manager, your Theme manager will have to configure these for you.
+hale»connect users can manage their schemas, themes, data sets and transformation projects on hale»connect. The image below displays a basic workflow. It is important to understand that a schema and a theme are required to create a data set. If you are a Data manager, your Theme manager will have to configure these for you.
 <img src={require('@site/static/images/help/en/publish_dataset.png').default} alt="" title="Publishing a data set" className="img-responsive img-inline-help"/>
 
 **Publishing a data set**

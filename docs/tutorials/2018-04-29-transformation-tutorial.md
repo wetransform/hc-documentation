@@ -8,7 +8,7 @@ language: en
 
 ---
 
-The hale»connect platform can be configured to enable users to publish, transform and validate datasets, metadata and services within minutes. Automated workflows only need to be configured once by a Theme manager or Superuser, and can be re-used multiple times by any user in an organisation. For users with data that is frequently updated, automated transformation workflows make updating and republishing view and download services easy. Hale»connect can quickly and automatically rerun transformations and republish services and metadata to reflect changes in source data.
+The hale»connect platform can be configured to enable users to publish, transform and validate datasets, metadata and services within minutes. Automated workflows only need to be configured once by a Theme manager or Superuser, and can be re-used multiple times by any user in an organisation. For users with data that is frequently updated, automated transformation workflows make updating and republishing view and download services easy. hale»connect can quickly and automatically rerun transformations and republish services and metadata to reflect changes in source data.
 
 This tutorial reviews the steps required to configure the automation of an online transformation workflow. Publishing an online transformation requires the configuration of multiple resources and it must be performed by a user with Theme manager or Superuser permissions. Before we begin, let's review a list of the resources we need:
 
@@ -36,7 +36,7 @@ The transformation project maps UK Ordnance Survey Open Rivers data to the INSPI
 
 **Step 1: Create a transformation project**
 
-The easiest way to create a transformation project on hale»connect is to export it directly from hale»studio. Hale»studio offers users the option to export a transformation as a hale»connect project using an export wizard. The wizard requires users to provide hale»connect log-in information, which it uses to upload the transformation project to the logged in user's online account.
+The easiest way to create a transformation project on hale»connect is to export it directly from hale»studio. hale»studio offers users the option to export a transformation as a hale»connect project using an export wizard. The wizard requires users to provide hale»connect log-in information, which it uses to upload the transformation project to the logged in user's online account.
 <a className="image-news text-center col-xs-12 mt mb"><img src={require("/images/help/en/Tutorial_Export_wizard.png").default} alt="" title="Exporting a transformation project to hale»connect" className="img-responsive center-block"/>
 </a>
 
@@ -63,14 +63,14 @@ When you are finished, click &laquo;Continue&raquo;
 
 **Step 2: Create a source schema**
 
-The next step in the online transformation project workflow is to create a source schema, or schemas, for your source data. Your source data is the data that you want to transform to another format, such as INSPIRE GML. Hale»connect provides several options for creating a schema. You can visit the following documentation pages to learn more about schema creation:
+The next step in the online transformation project workflow is to create a source schema, or schemas, for your source data. Your source data is the data that you want to transform to another format, such as INSPIRE GML. hale»connect provides several options for creating a schema. You can visit the following documentation pages to learn more about schema creation:
 
   * [Create a schema based on a schema preset](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-preset/)
   * [Create a schema by uploading a schema file](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-file/)
   * [Create a schema using a web address](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-external/)
   * [Create a new schema based on an existing schema](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-existing/)
 
-In this tutorial, we will work with the option to create a schema by uploading a schema file. Your source data is in shapefile format, and the option to create a schema by uploading a schema file enables us to simply upload a shapefile. Hale»connect automatically reads the shapefile and generates a schema for you.
+In this tutorial, we will work with the option to create a schema by uploading a schema file. Your source data is in shapefile format, and the option to create a schema by uploading a schema file enables us to simply upload a shapefile. hale»connect automatically reads the shapefile and generates a schema for you.
 
 To create a new schema based on a shapefile, follow this workflow logged in as a Theme Manager or Superuser:
 
@@ -88,7 +88,7 @@ To create a new schema based on a shapefile, follow this workflow logged in as a
 
 **Step 3: Create a target schema**
 
-The next step is to create a schema for the target data. The purpose of the workflow is to create INSPIRE compliant GML, so you have to create the schema that will be used by the target dataset generated by the online transformation. The transformation project you are working with transforms UK OpenRivers data to INSPIRE HydroNode and WatercouseLink features. These INSPIRE feature types are found in the INSPIRE Hydro Network 4.0 schema, so you will create this schema on hale»connect. Hale»connect contains a large number of schema presets, including all of the INSPIRE schemas.
+The next step is to create a schema for the target data. The purpose of the workflow is to create INSPIRE compliant GML, so you have to create the schema that will be used by the target dataset generated by the online transformation. The transformation project you are working with transforms UK OpenRivers data to INSPIRE HydroNode and WatercouseLink features. These INSPIRE feature types are found in the INSPIRE Hydro Network 4.0 schema, so you will create this schema on hale»connect. hale»connect contains a large number of schema presets, including all of the INSPIRE schemas.
 
 To create a new schema using a schema preset, follow this workflow logged in as a Theme Manager or Superuser:
 
@@ -196,7 +196,7 @@ In the final step, we will create a source dataset and execute the online transf
 
 *	In the final step, you can review the steps of the publishing and transformation process configured for the theme. You will see five toggle switches to publish download and view services for your source dataset, to transform the new dataset, and to publish services for the transformed dataset. Activate all of the toggle switches and click &laquo;Create&raquo;
 
-Hale»connect will run the online transformation workflow and automatically direct you to your newly published source dataset. It is important to understand that your source data has also been transformed to INSPIRE GML, and published at the same time. To view your transformed dataset:
+hale»connect will run the online transformation workflow and automatically direct you to your newly published source dataset. It is important to understand that your source data has also been transformed to INSPIRE GML, and published at the same time. To view your transformed dataset:
 
 * Click the section named Transformed Data
 * Click the transformation project listed in the panel

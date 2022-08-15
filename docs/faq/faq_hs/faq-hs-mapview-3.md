@@ -20,7 +20,7 @@ There are several ways of mapping geometries correctly in hale»studio, dependin
 
 **Source data contains geometry in xml structure**
 - The geometry is loaded directly from the xml file.
-- Hale»studio tries to generate a JTS geometry from it.
+- hale»studio tries to generate a JTS geometry from it.
 
 **Complex geometry attribute in the source data (an icon with three dots is displayed beside the attribute)** 
 - There will be no geometry value at this level. 

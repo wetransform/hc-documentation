@@ -8,7 +8,7 @@ language: de
 
 ---
 
-Die hale»connect Plattform kann so konfiguriert werden, dass es Nutzenden ermöglicht wird Datensätze, Metadaten und Dienste innerhalb weniger Minuten zu veröffentlichen, zu transformieren und zu validieren. Automatisierte Abläufe müssen dafür nur einmalig von jemandem mit der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; konfiguriert werden und können dann von allen Nutzenden einer Organisation immer wieder verwendet werden. Für Nutzende, deren Daten häufig aktualisiert werden, erleichtern automatisierte Transformations-Abläufe das Aktualisieren und Wiederveröffentlichen von Darstellungs- und Download-Diensten. Hale»connect kann im Falle von Änderungen in den Quell-Daten die Transformationen schnell und automatisch erneut durchführen und die Dienste und zugehörigen Metadaten veröffentlichen.
+Die hale»connect Plattform kann so konfiguriert werden, dass es Nutzenden ermöglicht wird Datensätze, Metadaten und Dienste innerhalb weniger Minuten zu veröffentlichen, zu transformieren und zu validieren. Automatisierte Abläufe müssen dafür nur einmalig von jemandem mit der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; konfiguriert werden und können dann von allen Nutzenden einer Organisation immer wieder verwendet werden. Für Nutzende, deren Daten häufig aktualisiert werden, erleichtern automatisierte Transformations-Abläufe das Aktualisieren und Wiederveröffentlichen von Darstellungs- und Download-Diensten. hale»connect kann im Falle von Änderungen in den Quell-Daten die Transformationen schnell und automatisch erneut durchführen und die Dienste und zugehörigen Metadaten veröffentlichen.
 
 Dieses Tutorial beschäftigt sich mit den Schritten, die für die Konfiguration eines Online-Transformations-Ablaufs notwendig sind. Die Veröffentlichung einer Online-Transformation erfordert die Konfiguration verschiedener Ressourcen und muss von einem Nutzenden mit der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; vorgenommen werden. Hier eine Liste der Ressourcen, die benötigt werden:
 
@@ -36,7 +36,7 @@ Das Transformationsprojekt enthält eine Abbildung von öffentlich verfügbaren 
 
 **Schritt 1: Ein Transformationsprojekt anlegen**
 
-Der einfachste Weg ein Transformationsprojekt auf hale»connect anzulegen, ist ein direkter Export des Projekts aus hale»studio. Hale»studio bietet die Möglichkeit ein Transformationsprojekt unter Nutzung eines Export-Assistenten als hale»connect project zu exportieren. Der Assistent fordert sie auf, ihre hale»connect-Login-Informationen einzugeben, die genutzt werden, um das Transformationsprojekt im entsprechenden Online-Konto anzulegen.
+Der einfachste Weg ein Transformationsprojekt auf hale»connect anzulegen, ist ein direkter Export des Projekts aus hale»studio. hale»studio bietet die Möglichkeit ein Transformationsprojekt unter Nutzung eines Export-Assistenten als hale»connect project zu exportieren. Der Assistent fordert sie auf, ihre hale»connect-Login-Informationen einzugeben, die genutzt werden, um das Transformationsprojekt im entsprechenden Online-Konto anzulegen.
 
 <a className="image-news text-center col-xs-12 mt mb">
 <img src={require('/images/help/de/Tutorial_Export_wizard.png').default} alt="" title="Ein Transformationsprojekt nach hale»connect exportieren" className="img-responsive center-block"/>
@@ -65,14 +65,14 @@ Wenn sie fertig sind, klicken sie auf &laquo;Weiter&raquo;.
 
 **Schritt 2: Ein Quell-Schema anlegen**
 
-Der nächste Schritt für die Erstellung eines Online-Transformationsprojekts ist das Anlegen eines oder mehrerer Quell-Schemas für ihre Quell-Daten. Ihre Quell-Daten sind die Daten, die sie in ein anderes Format, wie beispielsweise INSPIRE-GML, überführen möchten. Hale»connect stellt verschiedene Möglichkeiten bereit, ein Schema anzulegen. Mehr Informationen zum Anlegen von Schemas finden sie auf den folgenden Seiten der Dokumentation:
+Der nächste Schritt für die Erstellung eines Online-Transformationsprojekts ist das Anlegen eines oder mehrerer Quell-Schemas für ihre Quell-Daten. Ihre Quell-Daten sind die Daten, die sie in ein anderes Format, wie beispielsweise INSPIRE-GML, überführen möchten. hale»connect stellt verschiedene Möglichkeiten bereit, ein Schema anzulegen. Mehr Informationen zum Anlegen von Schemas finden sie auf den folgenden Seiten der Dokumentation:
 
   * [Ein neues Schema über die Auswahl eines Presets erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-preset/)
   * [Ein neues Schema über das Hochladen von Schemadateien erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-file/)
   * [Ein neues Schema über Angabe einer Web-Adresse eines Schemas erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-external/)
   * [Ein neues Schema auf Basis eines bestehenden Schemas erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-existing/)
 
-In diesem Tutorial werden wir die Option nutzen, ein neues Schema über das Hochladen einer Schema-Datei zu erstellen. Ihre Quell-Daten sind in Shape-Format und hale»connect ermöglicht das Erstellen eines Schemas aus einer vorliegenden Shape-Datei. Hale»connect liest diese Shape-Datei automatisch und generiert ihr Schema.
+In diesem Tutorial werden wir die Option nutzen, ein neues Schema über das Hochladen einer Schema-Datei zu erstellen. Ihre Quell-Daten sind in Shape-Format und hale»connect ermöglicht das Erstellen eines Schemas aus einer vorliegenden Shape-Datei. hale»connect liest diese Shape-Datei automatisch und generiert ihr Schema.
 
 Um auf Basis einer Shape-Datei ein neues Schema anzulegen, folgen sie in der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; folgendem Ablauf:
 
@@ -90,7 +90,7 @@ Um auf Basis einer Shape-Datei ein neues Schema anzulegen, folgen sie in der Rol
 
 **Schritt 3: Ein Ziel-Schema anlegen**
 
-Der nächste Schritt ist das Anlegen eines Schemas für die Ziel-Daten. Das Ziel der hier beschriebenen Arbeitsschritte ist es, INSPIRE-interoperable GML-Daten zu erzeugen, also müssen sie das Schema anlegen, das vom Ziel-Datensatz genutzt wird, der durch die Online-Transformation erzeugt wird. Das Transformationsprojekt, mit dem sie arbeiten, transformiert britische OpenRivers-Daten in INSPIRE HydroNode- und INSPIRE WatercourseLink-Objekte. Diese INSPIRE-Objektarten entstammen dem INSPIRE Hydro Network 4.0-Schema, sodass sie dieses auf hale»connect anlegen müssen. Hale»connect enthält eine große Zahl von Schema-Presets, darunter alle INSPIRE-Schemas.
+Der nächste Schritt ist das Anlegen eines Schemas für die Ziel-Daten. Das Ziel der hier beschriebenen Arbeitsschritte ist es, INSPIRE-interoperable GML-Daten zu erzeugen, also müssen sie das Schema anlegen, das vom Ziel-Datensatz genutzt wird, der durch die Online-Transformation erzeugt wird. Das Transformationsprojekt, mit dem sie arbeiten, transformiert britische OpenRivers-Daten in INSPIRE HydroNode- und INSPIRE WatercourseLink-Objekte. Diese INSPIRE-Objektarten entstammen dem INSPIRE Hydro Network 4.0-Schema, sodass sie dieses auf hale»connect anlegen müssen. hale»connect enthält eine große Zahl von Schema-Presets, darunter alle INSPIRE-Schemas.
 
 Um ein neues Schema unter Nutzung eines Presets anzulegen, folgen sie in der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; diesem Ablauf:
 
@@ -194,7 +194,7 @@ Im letzten Schritt wird ein Quell-Datensatz angelegt und der Online-Transformati
 * Der Schritt «Projektvariablen eingeben» wird angezeigt, wenn ihr Thema eine Transformationskonfiguration hat und sie ihrem Transformationsprojekt in hale»studio Projektvariablen hinzugefügt haben. hale»connect bietet Benutzenden die Möglichkeit, die Projektvariablen des Transformationsprojekts in diesem optionalen Schritt zu bearbeiten.  
 * In einem letzten Schritt können sie die Schritte des Veröffentlichungs- und Transformations-Ablaufes überprüfen, die sie für das Thema konfiguriert haben. Ihnen werden fünf Schalter angezeigt, mit denen sie Darstellungs- und Download-Dienste für ihren Quell-Datensatz anlegen können, den Datensatz transformieren können sowie Darstellungs- und Download-Dienste für ihren transformierten Datensatz anlegen können. Aktivieren sie alle Schalter und klicken sie auf &laquo;Weiter&raquo;.
 
-Hale»connect führt nun den Online-Transformations-Ablauf durch und sie automatisch zu ihrem frisch veröffentlichten Quell-Datensatz weiterleiten. Es ist wichtig zu verstehen, dass ihre Quell-Daten auch in INSPIRE-GML transformiert und auch diese Daten veröffentlicht wurden. Um ihren transformierten Datensatz anzeigen zu lassen, folgen sie bitte diesen Schritten:
+hale»connect führt nun den Online-Transformations-Ablauf durch und sie automatisch zu ihrem frisch veröffentlichten Quell-Datensatz weiterleiten. Es ist wichtig zu verstehen, dass ihre Quell-Daten auch in INSPIRE-GML transformiert und auch diese Daten veröffentlicht wurden. Um ihren transformierten Datensatz anzeigen zu lassen, folgen sie bitte diesen Schritten:
 
 * Klicken sie auf den Bereich namens &laquo;Abgeleitete Daten&raquo;.
 * Klicken sie auf das aufgelistete Transformationsprojekt.

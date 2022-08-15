@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Hale»Connect',
+  title: 'hale»connect',
   tagline: 'One of the world\'s leading platforms for Geodata Transformations',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -59,7 +59,7 @@ const config = {
       navbar: {
         title: 'Documentation',
         logo: {
-          alt: 'Hale»Connect Logo',
+          alt: 'hale»connect Logo',
           src: 'images/hale-connect-monochrome.png',
         },
         items: [
@@ -87,7 +87,7 @@ const config = {
             title: 'Documentation',
             items: [
               {
-                label: 'Getting Started with Hale»Connect',
+                label: 'Getting Started with hale»connect',
                 to: '/docs/',
               },
               {
@@ -119,7 +119,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Hale»Connect, WeTransform GmbH. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} hale»connect, WeTransform GmbH. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

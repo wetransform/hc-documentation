@@ -12,7 +12,7 @@ language: de
 Der XML-Schematyp <i>anyType</i> erlaubt es, dass der Inhalt des Elements alles sein kann. 
 Dies ist ein Problem für hale»studio, da es nicht weiß, welche Art von Wert oder Struktur dort erwartet wird.
 Wir haben dies für solche Fälle konfigurierbar gemacht.
-Das Anpassen eines Hale-Projekts für die Verwendung von <i>anyType</i> ist jedoch ein manueller Prozess, es gibt keine Unterstützung in der Benutzeroberfläche.
+Das Anpassen eines hale»studio-Projekts für die Verwendung von <i>anyType</i> ist jedoch ein manueller Prozess, es gibt keine Unterstützung in der Benutzeroberfläche.
 
 Sie müssen in der hale Projektdatei das Setting <i>customTypeContent</i> zu den Settings des XML Schema Reader hinzuzufügen (XML-Format, zum Bearbeiten als .halex speichern).
 Im Folgenden ein Beispiel für die Konfiguration des Schema Reader:
