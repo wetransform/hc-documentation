@@ -85,37 +85,73 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Documentation',
+            title: 'Products & Services',
             items: [
               {
-                label: 'Getting Started with hale»connect',
-                to: '/docs/',
+                label: 'hale»studio',
+                to: 'https://wetransform.to/halestudio/',
               },
               {
-                label: 'FAQ',
-                to: '/docs/',
+                label: 'hale»connect',
+                to: 'https://wetransform.to/haleconnect/',
+              },
+              {
+                label: 'Professional Support',
+                to: 'https://wetransform.to/inspire-experts/',
+              },
+              {
+                label: 'Research Data Management',
+                to: 'https://wetransform.to/research-data-management/',
+              },
+              {
+                label: 'Workshops and Training Sessions',
+                to: 'https://wetransform.to/workshops-training/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Resources',
             items: [
               {
-                label: 'Github',
-                href: 'https://github.com/wetransform',
+                label: 'Getting Started with Hale»Connect',
+                to: '/docs/intro',
+              },
+              {
+                label: 'FAQ',
+                to: '/docs/faq/2018-05-06-faq-hs',
               },
               {
                 label: 'Forum',
                 href: 'https://discuss.wetransform.to/#/forum',
               },
+              {
+                label: 'Github',
+                href: 'https://github.com/wetransform',
+              },
             ],
           },
           {
-            title: 'More',
+            title: 'About Us',
             items: [
               {
-                label: 'Website',
-                to: 'https://www.wetransform.to/haleconnect',
+                label: 'Company & Team',
+                to: 'https://wetransform.to/about-us/',
+              },
+              {
+                label: 'Contact Us',
+                to: 'https://wetransform.to/contact-us/',
+              },
+              {
+                label: 'Careers',
+                to: 'https://wetransform.to/careers/',
+              },
+              {
+                label: 'Partners',
+                to: 'https://wetransform.to/partners/',
+              },
+              {
+                label: 'Newsletter',
+                to: 'https://wetransform.to/news-and-events/',
               },
             ],
           },
