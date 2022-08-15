@@ -119,7 +119,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} hale»connect, WeTransform GmbH. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} hale»connect, wetransform GmbH. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

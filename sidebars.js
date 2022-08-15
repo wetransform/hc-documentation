@@ -94,7 +94,7 @@ const sidebars = {
     // },
     // {
     //   type: 'link',
-    //   label: '@WeTransform Website', // The link label
+    //   label: '@wetransform Website', // The link label
     //   href: 'https://www.wetransform.to', // The external URL
     // },
   ],
