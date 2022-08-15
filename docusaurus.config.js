@@ -156,7 +156,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} hale»connect, wetransform GmbH. Built with Docusaurus.`,
+        copyright: `© wetransform GmbH ${new Date().getFullYear()}`,
       },
       prism: {
         theme: lightCodeTheme,
