@@ -95,6 +95,14 @@ $wetf-white: #fff;
 .hero--primary {
   --ifm-hero-background-color: var(--ifm-color-primary-dark);
   --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
+  background-image: url(https://wetransform.to/wp-content/uploads/2022/04/cta-bg-hpme.svg);
+  background-size: cover;
+}
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  padding: 6.2rem 0 2rem;
 }
 
 .footer--dark {
@@ -104,6 +112,15 @@ $wetf-white: #fff;
 .footer__link-item {
   color: var(--ifm-footer-link-color);
   opacity: .7;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 2.6rem;
+}
+
+.footer__bottom {
+  opacity: .7;
+  font-size: 0.8rem;
 }
 
 .button.button--secondary {
@@ -135,4 +152,34 @@ $wetf-white: #fff;
       }
     }
   }
+}
+
+/* Custom wetf styling classes */
+.wetf-copyright-link {
+  text-decoration: underline;
+  color: var(--ifm-color-secondary);
+}
+
+.wetf-footer-bg-right {
+  right: 0;
+}
+.wetf-footer-bg-left {
+  left: 0;
+}
+.wetf-footer-bg {
+  position: absolute;
+  top: 0;
+}
+
+.wetf-footer-logo {
+  width: 3rem;
+  margin-bottom: 0;
+  display: inline-block;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .lazy {
+    transition: opacity .23s ease;
+ }
 }
