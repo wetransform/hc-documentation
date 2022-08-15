@@ -31,9 +31,9 @@
     "message": "Schlüsselkonzepte: Ressourcen",
     "description": "The label for category Key Concepts: Resources in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Set up Hale»Connect": {
-    "message": "Hale»Connect einrichten",
-    "description": "The label for category Set up Hale»Connect in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Set up hale»connect": {
+    "message": "hale»connect einrichten",
+    "description": "The label for category Set up hale»connect in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Create a schema": {
     "message": "Erstellen Sie ein Schema",

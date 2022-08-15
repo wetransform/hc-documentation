@@ -60,7 +60,7 @@ Der nächste Schritt im Metadaten-Konfigurations-Ablauf ist, ein Schema und ein 
   * [Ein neues Schema über Angabe einer Web-Adresse eines Schemas erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-external/)
   * [Ein neues Schema auf Basis eines bestehenden Schemas erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-existing/)
 
-In diesem Tutorial werden wir die Option nutzen, ein neues Schema über das Hochladen einer Schema-Datei zu erstellen. Ihre Quell-Daten sind in Shape-Format und hale»connect ermöglicht das Erstellen eines Schemas aus einer vorliegenden Shape-Datei. Hale»connect liest diese Shape-Datei automatisch und generiert ihr Schema.
+In diesem Tutorial werden wir die Option nutzen, ein neues Schema über das Hochladen einer Schema-Datei zu erstellen. Ihre Quell-Daten sind in Shape-Format und hale»connect ermöglicht das Erstellen eines Schemas aus einer vorliegenden Shape-Datei. hale»connect liest diese Shape-Datei automatisch und generiert ihr Schema.
 
 Um auf Basis einer Shape-Datei ein neues Schema anzulegen, folgen sie in der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; folgendem Ablauf:
 

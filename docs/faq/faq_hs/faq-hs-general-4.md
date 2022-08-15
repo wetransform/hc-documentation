@@ -11,7 +11,7 @@ language: en
 
 The maximum amount of memory in use can be configured in the file <code>HALE.ini</code>. 
 
-Hale»studio uses Java, which needs to reserve a maximum amount of memory to be used. 
+hale»studio uses Java, which needs to reserve a maximum amount of memory to be used. 
 Depending on the complexity of a transformation or the size of a data set, hale»studio 
 may have problems with insufficient memory, surfacing in an <code>OutOfMemoryError</code>.
 

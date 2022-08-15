@@ -8,7 +8,7 @@ language: en
 
 ---
 
-A *schema* describes the structure of a data set through the definition of types and their properties. Schemas can be imported from multiple types of data sources, such as databases, XML schema files, or even a Shapefile. They can also be created directly in hale connect using the built-in modelling tools. Hale»connect also contains a large number of schema presets, including all of the INSPIRE schemas. 
+A *schema* describes the structure of a data set through the definition of types and their properties. Schemas can be imported from multiple types of data sources, such as databases, XML schema files, or even a Shapefile. They can also be created directly in hale connect using the built-in modelling tools. hale»connect also contains a large number of schema presets, including all of the INSPIRE schemas. 
 
 To create a new schema using a schema preset, follow this workflow logged in as a Theme Manager or Superuser:
 

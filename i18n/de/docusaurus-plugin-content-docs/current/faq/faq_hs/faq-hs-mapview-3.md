@@ -21,7 +21,7 @@ ein Geometrie-Objekt (gekennzeichnet mit dem Geometrie-Symbol) gibt, wird empfoh
 
 **Quelldaten enthalten Geometrien in xml-Struktur**
 - Die Geometrie wird aus der xml-Datei geladen wie dort repräsentiert.
-- Hale»studio versucht, eine JTS-Geometrie aus den Angaben abzuleiten.
+- hale»studio versucht, eine JTS-Geometrie aus den Angaben abzuleiten.
 
 **Komplexes Geometrie-Attribut im Quell-Schema (repräsentiert durch ein Symbol mit drei Punkten)**
 - Es gibt keinen Geometrie-Wert auf dieser Ebene.

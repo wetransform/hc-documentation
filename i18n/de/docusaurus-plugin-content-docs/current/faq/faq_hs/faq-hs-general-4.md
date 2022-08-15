@@ -11,7 +11,7 @@ language: de
 
 Der maximal zu verwendende Arbeitsspeicher kann in der Datei <code>HALE.ini</code> konfiguriert werden.
 
-Hale»studio nutzt Java, wobei eine maximal zu verwendende Menge Speicher reserviert werden muss. 
+hale»studio nutzt Java, wobei eine maximal zu verwendende Menge Speicher reserviert werden muss. 
 Abhängig von der Komplexität einer Transformation und der Größe des Datensatzes kann hale»studio Probleme 
 mit ungenügendem Speicher haben, die zu einem <code>OutOfMemoryError</code> führen können.
 
