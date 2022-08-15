@@ -40,10 +40,12 @@ $wetf-white: #fff;
     --ifm-menu-color: #{$wetf-text};
     --ifm-hero-background-color: #{$wetf-dark-blue};
     --ifm-footer-background-color: #{$wetf-dark-blue};
+    --ifm-footer-link-color: #{$wetf-stroke};
     /* Font */
     --ifm-font-family-base: 'Manrope';
     --ifm-code-font-size: 95%;
     --ifm-link-hover-color: #{$wetf-organge};
+    --ifm-link-hover-decoration: none;
   }
   
   [data-theme='dark'] {
@@ -97,6 +99,11 @@ $wetf-white: #fff;
 
 .footer--dark {
   --ifm-footer-background-color: var(--ifm-color-primary-dark);
+}
+
+.footer__link-item {
+  color: var(--ifm-footer-link-color);
+  opacity: .7;
 }
 
 .button.button--secondary {
