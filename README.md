@@ -7,7 +7,8 @@ In order to migrate a document from the old documentation website, the following
 - Include similar documents within the same folder. Create the same file structure for other languages. (e.g. German)
 - Insert the [closing tag](#use-assets--images) for `img` elements. Use this `(<img("[^"]*"|[^\/">])*)>` regex to retrieve them, and `$1/>` to apply the fix.
 - Transform `img` `src` attribute to use [dynamic imports](#use-assets--images). Use `src=("(?:[^"\/]*\/)*([^"]+)")` to retrieve those instances and `src={require($1).default}` to apply the fix.
-- Replace inline styles with [JSX compliant styles](#use-inline-styles).
+- Replace inline styles with [JSX compliant styles](#use-inline-styles). Use `style="(([\w.-]+:\s*[^\s;]\s;?\s*)*)"` to retrieve inline styles.
+- Replace custom HTML components with Docusaurus built-in ones. See [this section](#use-docusaurus-built-in-components).
 
 # Writing Markdown Documents
 Before writing Markdown documents, in addition to conforming to the Markdown rules (e.g. indentation), please consider the following points as it's required to write only valid documents.
@@ -31,6 +32,15 @@ In order to include an image in the document, use the `<img/>` tag, and make sur
 ### Use Inline Styles
 Using styles in documents has to be consistent with JSX syntax, thus `<span style="font-size: 8px;">` is not valid. Instead use `<span style={{fontSize: "8px"}}>`.
 Usually for a valid JSX inline styling, remove the dash and camel-case the property, e.g. background-color becomes backgroundColor. (Read on JSX inline styling [here](https://www.w3schools.com/react/react_css.asp))
+
+### Use Docusaurus Built-in Components
+Docusaurus provides multiple components that can be used, such as warning/danger cards, etc. They are easy to use, and are compatible with the theme. See the full list [here](https://docusaurus.io/docs/markdown-features)
+
+### Add Navigation for New Content
+When new documents are added, they won't appear in the sidebar until they are added to the sidebar.js file. See [the official documentation](https://docusaurus.io/docs/sidebar/items) for more details on this.
+
+### Generate Translations
+When new content is added, whether in `docs` folder or elsewhere, run `npm run docusaurus write-translations -- --locale [locale]` to generate translation entries from the new content. Fill those generated entries with the correct translations for that given locale.
 
 <hr/>
 
