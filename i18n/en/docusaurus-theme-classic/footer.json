@@ -1,0 +1,74 @@
+{
+  "link.title.Products & Services": {
+    "message": "Products & Services",
+    "description": "The title of the footer links column with title=Products & Services in the footer"
+  },
+  "link.title.Resources": {
+    "message": "Resources",
+    "description": "The title of the footer links column with title=Resources in the footer"
+  },
+  "link.title.About Us": {
+    "message": "About Us",
+    "description": "The title of the footer links column with title=About Us in the footer"
+  },
+  "link.item.label.hale»studio": {
+    "message": "hale»studio",
+    "description": "The label of footer link with label=hale»studio linking to https://wetransform.to/halestudio/"
+  },
+  "link.item.label.hale»connect": {
+    "message": "hale»connect",
+    "description": "The label of footer link with label=hale»connect linking to https://wetransform.to/haleconnect/"
+  },
+  "link.item.label.Professional Support": {
+    "message": "Professional Support",
+    "description": "The label of footer link with label=Professional Support linking to https://wetransform.to/inspire-experts/"
+  },
+  "link.item.label.Research Data Management": {
+    "message": "Research Data Management",
+    "description": "The label of footer link with label=Research Data Management linking to https://wetransform.to/research-data-management/"
+  },
+  "link.item.label.Workshops and Training Sessions": {
+    "message": "Workshops and Training Sessions",
+    "description": "The label of footer link with label=Workshops and Training Sessions linking to https://wetransform.to/workshops-training/"
+  },
+  "link.item.label.Getting Started with Hale»Connect": {
+    "message": "Getting Started with Hale»Connect",
+    "description": "The label of footer link with label=Getting Started with Hale»Connect linking to /docs/intro"
+  },
+  "link.item.label.FAQ": {
+    "message": "FAQ",
+    "description": "The label of footer link with label=FAQ linking to /docs/faq/2018-05-06-faq-hs"
+  },
+  "link.item.label.Forum": {
+    "message": "Forum",
+    "description": "The label of footer link with label=Forum linking to https://discuss.wetransform.to/#/forum"
+  },
+  "link.item.label.Github": {
+    "message": "Github",
+    "description": "The label of footer link with label=Github linking to https://github.com/wetransform"
+  },
+  "link.item.label.Company & Team": {
+    "message": "Company & Team",
+    "description": "The label of footer link with label=Company & Team linking to https://wetransform.to/about-us/"
+  },
+  "link.item.label.Contact Us": {
+    "message": "Contact Us",
+    "description": "The label of footer link with label=Contact Us linking to https://wetransform.to/contact-us/"
+  },
+  "link.item.label.Careers": {
+    "message": "Careers",
+    "description": "The label of footer link with label=Careers linking to https://wetransform.to/careers/"
+  },
+  "link.item.label.Partners": {
+    "message": "Partners",
+    "description": "The label of footer link with label=Partners linking to https://wetransform.to/partners/"
+  },
+  "link.item.label.Newsletter": {
+    "message": "Newsletter",
+    "description": "The label of footer link with label=Newsletter linking to https://wetransform.to/news-and-events/"
+  },
+  "copyright": {
+    "message": "© wetransform GmbH 2022",
+    "description": "The footer copyright"
+  }
+}

@@ -113,7 +113,7 @@ const config = {
             title: 'Resources',
             items: [
               {
-                label: 'Getting Started with Hale»Connect',
+                label: 'Getting Started with hale»connect',
                 to: '/docs/intro',
               },
               {

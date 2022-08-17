@@ -50,5 +50,117 @@
   "sidebar.tutorialSidebar.category.Edit metadata configuration": {
     "message": "Metadatenkonfiguration bearbeiten",
     "description": "The label for category Edit metadata configuration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configure services": {
+    "message": "Dienste konfigurieren",
+    "description": "The label for category Configure services in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configure transformation projects and automated workflows": {
+    "message": "Transformationsprojekt konfigurieren und Abläufe automatisieren",
+    "description": "The label for category Configure transformation projects and automated workflows in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create and manage data sets": {
+    "message": "Workflow Datensatz erstellen",
+    "description": "The label for category Create and manage data sets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a new data set": {
+    "message": "Neuen Datensatz erstellen",
+    "description": "The label for category Create a new data set in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Edit Metadata": {
+    "message": "Metadaten bearbeiten",
+    "description": "The label for category Edit Metadata in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a new data set series": {
+    "message": "Neue Datensatz-Reihe erstellen",
+    "description": "The label for category Create a new data set series in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Publish services": {
+    "message": "Dienste publizieren",
+    "description": "The label for category Publish services in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Using the Feature Explorer Tool": {
+    "message": "Verwenden des Feature-Explorer-Werkzeugs",
+    "description": "The label for category Using the Feature Explorer Tool in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Define a profile of a schema": {
+    "message": "Ein Profil eines Schemas definieren",
+    "description": "The label for category Define a profile of a schema in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a profile": {
+    "message": "Profil erstellen",
+    "description": "The label for category Create a profile in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Copy a profile": {
+    "message": "Profil kopieren",
+    "description": "The label for category Copy a profile in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Download a profile as a test suite or an example XML document": {
+    "message": "Profil als Test Suite oder XML-Beispiel-Dokument herunterladen",
+    "description": "The label for category Download a profile as a test suite or an example XML document in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Define type and property level constraints": {
+    "message": "Einschränkungen für Objektarten oder Eigenschaften definieren",
+    "description": "The label for category Define type and property level constraints in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Define profile consistency conditions": {
+    "message": "Konsistenz-Bedingungen für ein Profil definieren",
+    "description": "The label for category Define profile consistency conditions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Delete a profile": {
+    "message": "Profil löschen",
+    "description": "The label for category Delete a profile in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Users, Roles, and Organisations": {
+    "message": "Ablauf Benutzende und Organisationen verwalten",
+    "description": "The label for category Users, Roles, and Organisations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Introduction to users": {
+    "message": "Allgemeines zu Benutzenden",
+    "description": "The label for category Introduction to users in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Registration": {
+    "message": "Registrierung",
+    "description": "The label for category Registration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Edit users": {
+    "message": "Profile von Benutzenden bearbeiten",
+    "description": "The label for category Edit users in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Manage organisations": {
+    "message": "Organisationen anlegen",
+    "description": "The label for category Manage organisations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Harvesting Metadata": {
+    "message": "Metadaten-Harvesting",
+    "description": "The label for category Harvesting Metadata in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.References": {
+    "message": "Funktionsreferenz",
+    "description": "The label for category References in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Browser Compatibility": {
+    "message": "Browser-Kompatibilität",
+    "description": "The label for category Browser Compatibility in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Data": {
+    "message": "Daten",
+    "description": "The label for category Data in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Themes": {
+    "message": "Themen",
+    "description": "The label for category Themes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Schemas": {
+    "message": "Schemas",
+    "description": "The label for category Schemas in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Transformation projects": {
+    "message": "Transformationsprojekt",
+    "description": "The label for category Transformation projects in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Settings": {
+    "message": "Einstellungen",
+    "description": "The label for category Settings in sidebar tutorialSidebar"
   }
 }
