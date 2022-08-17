@@ -183,3 +183,20 @@ $wetf-white: #fff;
     transition: opacity .23s ease;
  }
 }
+
+// TODO: style tables according to theme
+table {
+  font-family: arial, sans-serif !important;
+  border-collapse: collapse !important;
+  width: 100% !important;
+}
+
+td, th {
+  border: 1px solid #dddddd !important;
+  text-align: left !important;
+  padding: 4px !important;
+}
+
+tr:nth-child(even) {
+  // background-color: #dddddd !important;
+}

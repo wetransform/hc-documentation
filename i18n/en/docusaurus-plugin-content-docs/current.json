@@ -1,0 +1,154 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorials & Training": {
+    "message": "Tutorials & Training",
+    "description": "The label for category Tutorials & Training in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Key Concepts: Resources": {
+    "message": "Key Concepts: Resources",
+    "description": "The label for category Key Concepts: Resources in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Set up hale»connect": {
+    "message": "Set up hale»connect",
+    "description": "The label for category Set up hale»connect in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a schema": {
+    "message": "Create a schema",
+    "description": "The label for category Create a schema in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a transformation project": {
+    "message": "Create a transformation project",
+    "description": "The label for category Create a transformation project in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a theme": {
+    "message": "Create a theme",
+    "description": "The label for category Create a theme in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Edit metadata configuration": {
+    "message": "Edit metadata configuration",
+    "description": "The label for category Edit metadata configuration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configure services": {
+    "message": "Configure services",
+    "description": "The label for category Configure services in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configure transformation projects and automated workflows": {
+    "message": "Configure transformation projects and automated workflows",
+    "description": "The label for category Configure transformation projects and automated workflows in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create and manage data sets": {
+    "message": "Create and manage data sets",
+    "description": "The label for category Create and manage data sets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a new data set": {
+    "message": "Create a new data set",
+    "description": "The label for category Create a new data set in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Edit Metadata": {
+    "message": "Edit Metadata",
+    "description": "The label for category Edit Metadata in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a new data set series": {
+    "message": "Create a new data set series",
+    "description": "The label for category Create a new data set series in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Publish services": {
+    "message": "Publish services",
+    "description": "The label for category Publish services in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Using the Feature Explorer Tool": {
+    "message": "Using the Feature Explorer Tool",
+    "description": "The label for category Using the Feature Explorer Tool in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Define a profile of a schema": {
+    "message": "Define a profile of a schema",
+    "description": "The label for category Define a profile of a schema in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a profile": {
+    "message": "Create a profile",
+    "description": "The label for category Create a profile in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Copy a profile": {
+    "message": "Copy a profile",
+    "description": "The label for category Copy a profile in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Download a profile as a test suite or an example XML document": {
+    "message": "Download a profile as a test suite or an example XML document",
+    "description": "The label for category Download a profile as a test suite or an example XML document in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Define type and property level constraints": {
+    "message": "Define type and property level constraints",
+    "description": "The label for category Define type and property level constraints in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Define profile consistency conditions": {
+    "message": "Define profile consistency conditions",
+    "description": "The label for category Define profile consistency conditions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Delete a profile": {
+    "message": "Delete a profile",
+    "description": "The label for category Delete a profile in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Users, Roles, and Organisations": {
+    "message": "Users, Roles, and Organisations",
+    "description": "The label for category Users, Roles, and Organisations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Introduction to users": {
+    "message": "Introduction to users",
+    "description": "The label for category Introduction to users in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Registration": {
+    "message": "Registration",
+    "description": "The label for category Registration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Edit users": {
+    "message": "Edit users",
+    "description": "The label for category Edit users in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Manage organisations": {
+    "message": "Manage organisations",
+    "description": "The label for category Manage organisations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Harvesting Metadata": {
+    "message": "Harvesting Metadata",
+    "description": "The label for category Harvesting Metadata in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.References": {
+    "message": "References",
+    "description": "The label for category References in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Browser Compatibility": {
+    "message": "Browser Compatibility",
+    "description": "The label for category Browser Compatibility in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Data": {
+    "message": "Data",
+    "description": "The label for category Data in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Themes": {
+    "message": "Themes",
+    "description": "The label for category Themes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Schemas": {
+    "message": "Schemas",
+    "description": "The label for category Schemas in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Transformation projects": {
+    "message": "Transformation projects",
+    "description": "The label for category Transformation projects in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Settings": {
+    "message": "Settings",
+    "description": "The label for category Settings in sidebar tutorialSidebar"
+  }
+}

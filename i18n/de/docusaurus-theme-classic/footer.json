@@ -17,7 +17,7 @@
   },
   "link.item.label.FAQ": {
     "message": "FAQ",
-    "description": "The label of footer link with label=FAQ linking to /docs/"
+    "description": "The label of footer link with label=FAQ linking to /docs/faq/2018-05-06-faq-hs"
   },
   "link.item.label.Stack Overflow": {
     "message": "Stack Overflow",
@@ -58,5 +58,57 @@
   "link.item.label.Website": {
     "message": "Webseite",
     "description": "The label of footer link with label=Website linking to https://www.wetransform.to/haleconnect"
+  },
+  "link.title.Products & Services": {
+    "message": "Produkte und Dienstleistungen",
+    "description": "The title of the footer links column with title=Products & Services in the footer"
+  },
+  "link.title.Resources": {
+    "message": "Ressourcen",
+    "description": "The title of the footer links column with title=Resources in the footer"
+  },
+  "link.title.About Us": {
+    "message": "Über uns",
+    "description": "The title of the footer links column with title=About Us in the footer"
+  },
+  "link.item.label.hale»studio": {
+    "message": "hale»studio",
+    "description": "The label of footer link with label=hale»studio linking to https://wetransform.to/halestudio/"
+  },
+  "link.item.label.hale»connect": {
+    "message": "hale»connect",
+    "description": "The label of footer link with label=hale»connect linking to https://wetransform.to/haleconnect/"
+  },
+  "link.item.label.Professional Support": {
+    "message": "Professionelle Unterstützung",
+    "description": "The label of footer link with label=Professional Support linking to https://wetransform.to/inspire-experts/"
+  },
+  "link.item.label.Research Data Management": {
+    "message": "Forschungsdatenmanagement",
+    "description": "The label of footer link with label=Research Data Management linking to https://wetransform.to/research-data-management/"
+  },
+  "link.item.label.Workshops and Training Sessions": {
+    "message": "Workshops und Schulungen",
+    "description": "The label of footer link with label=Workshops and Training Sessions linking to https://wetransform.to/workshops-training/"
+  },
+  "link.item.label.Company & Team": {
+    "message": "Unternehmen & Team",
+    "description": "The label of footer link with label=Company & Team linking to https://wetransform.to/about-us/"
+  },
+  "link.item.label.Contact Us": {
+    "message": "Kontaktiere uns",
+    "description": "The label of footer link with label=Contact Us linking to https://wetransform.to/contact-us/"
+  },
+  "link.item.label.Careers": {
+    "message": "Karriere",
+    "description": "The label of footer link with label=Careers linking to https://wetransform.to/careers/"
+  },
+  "link.item.label.Partners": {
+    "message": "Partner",
+    "description": "The label of footer link with label=Partners linking to https://wetransform.to/partners/"
+  },
+  "link.item.label.Newsletter": {
+    "message": "Newsletter",
+    "description": "The label of footer link with label=Newsletter linking to https://wetransform.to/news-and-events/"
   }
 }
