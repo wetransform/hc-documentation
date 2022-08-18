@@ -77,7 +77,7 @@ Once the theme is configured, any user belonging to your organisation or a sub-o
 
 
     **Dataset series using batch upload:**
-      * Toggle the switch to use batch upload. There is only one way to upload files using batch upload. Creating a dataset series using batch upload requires the upload of a zip that directly contains the datasets as zips.<img src={require("/images/help/en/batch_upload.png").default} alt="batch upload" title="Dataset series using batch upload" class="img-responsive img-inline-help"/>
+      * Toggle the switch to use batch upload. There is only one way to upload files using batch upload. Creating a dataset series using batch upload requires the upload of a zip that directly contains the datasets as zips.<img src={require("/images/help/en/batch_upload.png").default} alt="batch upload" title="Dataset series using batch upload" className="img-responsive img-inline-help"/>
 
       * The dataset name and metadata steps are not available for dataset series creation using batch upload. We recommend configuring a [dataset name pattern autofill rule](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-thememetadata/2015/02/10/theme-edit-metadata/) in your theme to automatically name datasets belonging to a series. You can edit the metadata on a per dataset basis after series creation.
 

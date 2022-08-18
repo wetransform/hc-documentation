@@ -25,6 +25,6 @@ When you delete a user, the user account is <em>permanently deactivated</em>. Th
 
 :::danger
 
-As an Administrator or organisation superuser, you can delete your own profile! You should only do so if you are entirely sure that is what you want. When the only administrator account is deleted, the system will recreate one with a default password on restart. To restart the system and to receive the default password, please contact <a class="alert-link" href="mailto:support@wetransform.to">support</a>.
+As an Administrator or organisation superuser, you can delete your own profile! You should only do so if you are entirely sure that is what you want. When the only administrator account is deleted, the system will recreate one with a default password on restart. To restart the system and to receive the default password, please contact <a className="alert-link" href="mailto:support@wetransform.to">support</a>.
 
 :::

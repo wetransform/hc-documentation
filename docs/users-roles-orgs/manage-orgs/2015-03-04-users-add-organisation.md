@@ -14,7 +14,7 @@ To create a new organisation, follow these steps while logged in as an administr
 * 	Go to settings (gear symbol)
 * 	Go to &laquo;Organisations&raquo;
 * 	Pick &laquo;Create New Organisation&raquo; at the bottom of the organisation list
-* 	Enter an organisation name (we recommend a short memorable one)<img src={require("/images/help/en/create_organisation.png").default} alt="" title="Adding a new organisation" class="img-responsive img-inline-help"/>
+* 	Enter an organisation name (we recommend a short memorable one)<img src={require("/images/help/en/create_organisation.png").default} alt="" title="Adding a new organisation" className="img-responsive img-inline-help"/>
 * 	Provide the &laquo;name of the legal entity&raquo;
 * 	Optionally, provide a description and contact information
 *   Provide a URL to a WMS basemap. As organisation superuser or administrator, you can configure the default basemap for the map view in the view services section of your datasets. When members of your organisation view published services on the platform, the data is displayed using your configured WMS as the basemap. Users have the added ability to upload their own WMS basemap via the map view interface.   

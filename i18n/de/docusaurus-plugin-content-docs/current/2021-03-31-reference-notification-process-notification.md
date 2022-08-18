@@ -10,7 +10,7 @@ language: de
 
 Prozessnachrichten erlauben Nutzenden einen Überblick über alle vergangenen und aktuellen Prozesse in hale»connect zu erhalten.
 
-<img src={require("/images/help/process-notification-icons.png").default} alt="" title="Prozessnachrichten-Symbole" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/process-notification-icons.png").default} alt="" title="Prozessnachrichten-Symbole" className="img-responsive img-inline-help"/>
 
 Der Status wird mittels eines Symbols und einer kurzen Nachricht angezeigt. Die Symbole haben dabei folgende Bedeutung:
 

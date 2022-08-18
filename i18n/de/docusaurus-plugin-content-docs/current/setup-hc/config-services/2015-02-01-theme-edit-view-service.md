@@ -14,7 +14,7 @@ Um diese anzupassen, gehen sie in der Rolle &laquo;Themenmanager&raquo; oder &la
 1.	Gehen sie auf &laquo;Themen&raquo;.
 2.	Wählen sie das Thema aus, das sie bearbeiten wollen.
 3.	Gehen sie auf &laquo;Darstellungsdienste&raquo;.
-4.	Wählen sie die Dienstart aus. (zur Zeit nur WMS 1.3.0 und WMTS 1.0.0 verfügbar)<img src={require("/images/help/de/configure_view_services1.png").default} alt="" title="Darstellungs-Dienste konfigurieren" class="img-responsive img-inline-help"/>
+4.	Wählen sie die Dienstart aus. (zur Zeit nur WMS 1.3.0 und WMTS 1.0.0 verfügbar)<img src={require("/images/help/de/configure_view_services1.png").default} alt="" title="Darstellungs-Dienste konfigurieren" className="img-responsive img-inline-help"/>
 5.	Wählen sie mindestens ein räumliches Bezugssystem aus, das unterstützt werden soll. Sie können durch klicken auf den &laquo;+&raquo;-Knopf weitere räumliche Bezugssysteme hinzufügen.
 6.	Aktivieren oder deaktivieren sie GetFeatureInfo. Das Aktivieren von GetFeatureInfo ermöglicht die Abfrage von Objekten im WMS.
 7.	Laden sie einen Styled Layer Descriptor hoch, um die kartographische Konfiguration des Darstellungsdiensts vorzunehmen.

@@ -16,7 +16,7 @@ To associate a transformation project with a theme, follow these steps as a logg
 1.	Pick the theme you'd like to change the configuration for
 1.	Go to &laquo;Transformation&raquo;
 1.  Click on &laquo;Add new transformation configuration&raquo;
-1.	Click on  &laquo;Select Project&raquo;<img src={require("/images/help/en/configure_transformation_project.png").default} alt="" title="Linking and configuring transformation projects" class="img-responsive img-inline-help"/>
+1.	Click on  &laquo;Select Project&raquo;<img src={require("/images/help/en/configure_transformation_project.png").default} alt="" title="Linking and configuring transformation projects" className="img-responsive img-inline-help"/>
 1.	Choose the applicable transformation project from the list by clicking on the » button
 1.	Next, click &laquo;Select Target Theme&raquo; to choose a theme that the datasets produced by the transformation should be associated with.
 1.  Choose the applicable theme from the list by clicking on the » button

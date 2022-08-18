@@ -13,7 +13,7 @@ Um eine neue Organisation anzulegen, melden sie sich in der Rolle &laquo;Adminis
 * 	Gehen sie auf &laquo;Einstellungen&raquo; (Zahnradsymbol).
 * 	Gehen sie auf &laquo;Organisationen&raquo;.
 * 	Wählen sie die Funktion &laquo;Neue Organisation anlegen&raquo; am unteren Bildschirmrand aus.
-* 	Wählen sie den Organisationsnamen aus (wir empfehlen einen kurzen Namen).<img src={require("/images/help/de/create_new_organisation.png").default} alt="" title="Organisation anlegen" class="img-responsive img-inline-help"/>
+* 	Wählen sie den Organisationsnamen aus (wir empfehlen einen kurzen Namen).<img src={require("/images/help/de/create_new_organisation.png").default} alt="" title="Organisation anlegen" className="img-responsive img-inline-help"/>
 * 	Tragen sie den &laquo;Namen der juristischen Person&raquo; ein (hier sollte der eingetragene Namen ihrer Organisation samt Rechtsform, falls zutreffend, eingetragen werden).
 * 	Tragen sie optional weitere Informationen und Kontaktdaten ein.
 *   Geben sie eine URL zu einem WMS für eine Hintergrundkarte an. Wenn sie in der Organisation die Rolle &laquo;Administrator&raquo; oder &laquo;Superanwender&raquo; innehaben, können sie so die Standard-Hintergrundkarte konfigurieren, die für die Darstellung in der Kartenansicht im &laquo;Darstellungs-Dienste&raquo;-Bereich ihrer Datensätze verwendet wird. Wenn Mitglieder ihrer Organisation Darstellungs-Dienste auf der Plattform veröffentlichen, werden die Daten mit dem angegebenen WMS als Hintergrundkarte dargestellt. Nutzende haben außerdem die Möglichkeit, über die Benutzeroberfläche der Kartenansicht einen eigenen WMS als Hintergrundkarte anzugeben.

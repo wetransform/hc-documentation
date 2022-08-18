@@ -18,7 +18,7 @@ To edit metadata, follow these steps:
 1. Go to &laquo;Data&raquo; on the main toolbar
 1. Pick the data set from the resource list for which you'd like to edit metadata
 1. Go to &laquo;Metadata&raquo;
-1. Enter required and optional metadata for your dataset or services. Open one of the metadata categories by clicking on the title or the chevron.<img src={require("/images/help/en/dataset_edit_metadata.png").default} alt="" title="Editing data set metadata" class="img-responsive img-inline-help"/>
+1. Enter required and optional metadata for your dataset or services. Open one of the metadata categories by clicking on the title or the chevron.<img src={require("/images/help/en/dataset_edit_metadata.png").default} alt="" title="Editing data set metadata" className="img-responsive img-inline-help"/>
 1. Provide a value for any field marked with a red symbol. You can also edit existing values.
     * Red symbols turn green once required metadata has been entered, and the number of missing required metadata elements is updated in the category header.
 1. Close the category again and proceed with the next category

@@ -16,6 +16,6 @@ If there are no feature types displayed, the creation did not work as expected.
 
 In order to generate the expected configuration, you can use the '+ Add new type' button and add all feature types from the schema you created.
 
-<img src={require("/images/help/de/FAQ-hc-9.png").default} title="Objektarten hinzufügen" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/de/FAQ-hc-9.png").default} title="Objektarten hinzufügen" className="img-responsive img-inline-help"/>
 
 In order to avoid that behavior: It is recommended to create big schemas including theme creation using Google Chrome.

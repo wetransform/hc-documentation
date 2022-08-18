@@ -72,7 +72,7 @@ To create a new data set, follow this workflow as a logged in data manager or th
       * Username
       * Password
     <br/>
-    <img src={require("/images/help/en/upload_from_database.png").default} alt="" title="Uploading files from a database" class="img-responsive img-inline-help"/>
+    <img src={require("/images/help/en/upload_from_database.png").default} alt="" title="Uploading files from a database" className="img-responsive img-inline-help"/>
 
 5.	Give your data set a name. This name should enable you to quickly und clearly identify the data set in the system. If the linked theme's metadata configuration is set up to use the name in publishing, the name is also used for data set metadata.
 6.	Provide metadata for your data set. Metadata entry is determined by the theme associated with your dataset.
@@ -82,16 +82,16 @@ To create a new data set, follow this workflow as a logged in data manager or th
       * Required input fields are marked by red symbols. Optional input fields are marked by orange symbols.
       * Metadata categories display a green check mark once you have provided all required metadata.
       * Click «Fill automatically» if you accidentally remove or overwrite pre-populated values and you would like to retrieve the original values.
-      * Click &laquo;Continue&raquo; to save the metadata.<img src={require("/images/help/en/create-dataset-metadata.png").default} alt="" title="The metadata editor" class="img-responsive img-inline-help"/>
+      * Click &laquo;Continue&raquo; to save the metadata.<img src={require("/images/help/en/create-dataset-metadata.png").default} alt="" title="The metadata editor" className="img-responsive img-inline-help"/>
 
       <br/>
     If the theme uses Republish existing metadata:
 
-      * Upload your existing metadata file.<img src={require("/images/help/en/create-dataset-metadata_2.png").default} alt="" title="The metadata editor" class="img-responsive img-inline-help"/>
+      * Upload your existing metadata file.<img src={require("/images/help/en/create-dataset-metadata_2.png").default} alt="" title="The metadata editor" className="img-responsive img-inline-help"/>
 
     If the theme uses Link to existing metadata:
 
-      * Provide a link to your metadata file.<img src={require("/images/help/en/create-dataset-metadata_3.png").default} alt="" title="The metadata editor" class="img-responsive img-inline-help"/>
+      * Provide a link to your metadata file.<img src={require("/images/help/en/create-dataset-metadata_3.png").default} alt="" title="The metadata editor" className="img-responsive img-inline-help"/>
        <br/>
 
 7. The «Set project variables» step will appear if your theme has a transformation configuration and you have added project variables to your transformation project in hale»studio. hale»connect provides users the option to edit the transformation project variable in this optional step.

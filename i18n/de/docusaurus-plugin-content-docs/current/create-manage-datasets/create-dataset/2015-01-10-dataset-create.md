@@ -78,7 +78,7 @@ Um einen Datensatz anzulegen, melden Sie sich in der Rolle &laquo;Datenmanager&r
     * Benutzername
     * Passwort
     <br/>
-    <img src={require("/images/help/de/upload_from_database.png").default} alt="" title="Daten aus einer Datenbank hochladen" class="img-responsive img-inline-help"/>
+    <img src={require("/images/help/de/upload_from_database.png").default} alt="" title="Daten aus einer Datenbank hochladen" className="img-responsive img-inline-help"/>
 
 
 5.	Bestimmen Sie einen Namen für den Datensatz. Dieser Name soll es Ihnen ermöglichen, den Datensatz im System schnell und eindeutig zu identifizieren. Der Name wird aber nur bei entsprechender Metadatenkonfiguration veröffentlicht.
@@ -89,16 +89,16 @@ Um einen Datensatz anzulegen, melden Sie sich in der Rolle &laquo;Datenmanager&r
 	* Erforderliche Metadaten sind durch rote Symbole vor den Eingabefeldern markiert. Optionale Metadaten sind durch orange Symbole vor den Eingabefeldern markiert.
 	* Metadaten-Kategorien erhalten einen grünen Haken, wenn sie alle erforderlichen Metadaten-Felder in diesen befüllt haben.
   * Klicken Sie auf «Automatisch befüllen», wenn Sie versehentlich vorausgefüllte Werte löschen oder überschreiben und Sie möchten, dass die ursprünglich konfigurierten Werte wieder abgerufen werden.
-	* Klicken Sie &laquo;Weiter&raquo; um die Metadaten zu speichern. <img src={require("/images/help/de/create-dataset-metadata.png").default} alt="" title="Metadaten-Editor" class="img-responsive img-inline-help"/>
+	* Klicken Sie &laquo;Weiter&raquo; um die Metadaten zu speichern. <img src={require("/images/help/de/create-dataset-metadata.png").default} alt="" title="Metadaten-Editor" className="img-responsive img-inline-help"/>
 
 	<br/>
 	Wenn das zugehörige Thema &laquo;Existierende Metadaten neu publizieren&raquo; vorsieht:
 
-	* Laden Sie Ihre bestehende Metadaten-Datei hoch. <img src={require("/images/help/de/create-dataset-metadata_2.png").default} alt="" title="Metadaten-Editor" class="img-responsive img-inline-help"/>
+	* Laden Sie Ihre bestehende Metadaten-Datei hoch. <img src={require("/images/help/de/create-dataset-metadata_2.png").default} alt="" title="Metadaten-Editor" className="img-responsive img-inline-help"/>
 
 	Wenn das zugehörige Thema &laquo;Existierende Metadaten verlinken&raquo; vorsieht:
 
-	* Geben Sie einen Link zu Ihrer Metadaten-Datei an. <img src={require("/images/help/de/create-dataset-metadata_3.png").default} alt="" title="Metadaten-Editor" class="img-responsive img-inline-help"/>
+	* Geben Sie einen Link zu Ihrer Metadaten-Datei an. <img src={require("/images/help/de/create-dataset-metadata_3.png").default} alt="" title="Metadaten-Editor" className="img-responsive img-inline-help"/>
        <br/>
 7. Der Schritt «Projektvariablen eingeben» wird angezeigt, wenn Ihr Thema eine Transformationskonfiguration hat und Sie Ihrem Transformationsprojekt in hale»studio Projektvariablen hinzugefügt haben. hale»connect bietet Benutzenden die Möglichkeit, die Projektvariablen des Transformationsprojekts in diesem optionalen Schritt zu bearbeiten.	Speichern Sie die Metadaten und bestätigen Sie die Anlage des Datensatzes, indem Sie auf &laquo;Anlegen&raquo; klicken. Falls im Thema konfiguriert, können Sie nun mit Hilfe der Ausführungsregeln außerdem die Publikation von Diensten für die verwendeten Daten, die transformierten Daten sowie die Ausführung des Transformationsprojekts auslösen. Wenn der Datensatz noch nicht für die Veröffentlichung bereit ist, sollte die Publikation der Dienste deaktiviert werden.
 
