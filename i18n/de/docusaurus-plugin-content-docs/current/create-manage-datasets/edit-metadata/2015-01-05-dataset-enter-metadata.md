@@ -17,7 +17,7 @@ Zur Eingabe von Metadaten gehen sie wie folgt vor:
 1. Gehen sie auf &laquo;Daten&raquo;.
 1. Wählen sie den Datensatz aus, für den sie die Metadaten bearbeiten möchten.
 1. Gehen sie auf &laquo;Metadaten&raquo;.
-1. Geben Sie verpflichtende und optionale Metadaten für ihren Datensatz bzw. ihren Dienst ein. Öffnen sie eine der Metadaten-Kategorien, indem sie auf deren Namen oder das Pfeilsymbol klicken. <img src={require("/images/help/de/dataset_edit_metadata.png").default} alt="" title="Datensatz-Metadaten bearbeiten" class="img-responsive img-inline-help"/>
+1. Geben Sie verpflichtende und optionale Metadaten für ihren Datensatz bzw. ihren Dienst ein. Öffnen sie eine der Metadaten-Kategorien, indem sie auf deren Namen oder das Pfeilsymbol klicken. <img src={require("/images/help/de/dataset_edit_metadata.png").default} alt="" title="Datensatz-Metadaten bearbeiten" className="img-responsive img-inline-help"/>
 1. Geben sie mindestens für jedes Feld, das mit einem roten Symbol markiert ist, einen Wert an. Alternativ können sie bestehende Werte verändern.
     * Die Anzeige neben dem Feld wechselt bei einer gültigen Eingabe auf grün, außerdem wird die rot hinterlegte Anzahl der noch auszufüllenden Felder aktualisiert.
 1. Schlie&szlig;en sie die Kategorie und bearbeiten sie die nächste Kategorie.

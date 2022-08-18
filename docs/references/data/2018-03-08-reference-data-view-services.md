@@ -11,9 +11,9 @@ sidebar_position: 3
 
 The View services section displays the operational status of your published view services. You can activate and deactivate your services using the toggle button in the top left corner. After activation, manually start the publishing process with the &laquo;Publish Services&raquo; button in the top right corner.
 
-The View service panel provides a list of published view services. You can directly access the capabilities documents for WMS 1.1.1 and 1.3.0. To copy any URL to the clipboard, click the <a class="btn btn-default" title="Copy URL"><span class="glyphicon glyphicon-copy"></span></a> icon to the right of the URL. Map view provides a simple web mapping client where you can preview your published view service. Visit [Using the Feature Explorer](https://www.wetransform.to/help/en/help-page-category-datasetworkflow/help-page-subcategory-datasetworkflowpublishservices/2015/01/02/dataset-feature-explorer/) for more information about accessing the Feature Explorer tool from the HTML view of the GetFeatureInfo client.
+The View service panel provides a list of published view services. You can directly access the capabilities documents for WMS 1.1.1 and 1.3.0. To copy any URL to the clipboard, click the <a className="btn btn-default" title="Copy URL"><span className="glyphicon glyphicon-copy"></span></a> icon to the right of the URL. Map view provides a simple web mapping client where you can preview your published view service. Visit [Using the Feature Explorer](https://www.wetransform.to/help/en/help-page-category-datasetworkflow/help-page-subcategory-datasetworkflowpublishservices/2015/01/02/dataset-feature-explorer/) for more information about accessing the Feature Explorer tool from the HTML view of the GetFeatureInfo client.
 
-The Metadata panel provides a list of published metadata. Click on “Metadata (Dataset)” or “Metadata (View Service)” to open it in a browser and view the XML data directly. Click on the <a class="btn btn-default" title="Copy URL"><span class="glyphicon glyphicon-copy"></span></a> icon to copy the service URL.
+The Metadata panel provides a list of published metadata. Click on “Metadata (Dataset)” or “Metadata (View Service)” to open it in a browser and view the XML data directly. Click on the <a className="btn btn-default" title="Copy URL"><span className="glyphicon glyphicon-copy"></span></a> icon to copy the service URL.
 
 The test reports panel provides a list of PDFs which contain the results of a series of tests executed on published metadata and services. Click on the test report to open it in a browser and view the test results directly.
 
@@ -21,7 +21,7 @@ Metadata tests are executed on dataset metadata and download and view service me
 
 Tests executed on Metadata:
 
-<table class="tb">
+<table className="tb">
     <th colspan="2">Test</th>
     <th colspan="2">Conformity Level</th>
     <th colspan="2">Resource</th>

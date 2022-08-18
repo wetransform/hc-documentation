@@ -10,7 +10,7 @@ language: en
 
 Process notifications allow users to get insights about the status of the past and current processes on hale»connect. 
 
-<img src={require("/images/help/process-notification-icons.png").default} alt="" title="Darstellungs-Dienste publizieren" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/process-notification-icons.png").default} alt="" title="Darstellungs-Dienste publizieren" className="img-responsive img-inline-help"/>
 
 The status is indicated by an icon and a short message. The icons have the following meaning: 
 

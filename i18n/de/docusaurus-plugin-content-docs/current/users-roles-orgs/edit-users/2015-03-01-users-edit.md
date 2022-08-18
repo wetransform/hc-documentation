@@ -25,6 +25,6 @@ Der Benutzername kann nicht nachträglich geändert werden.
 
 :::caution
 
-Wenn sie ein Anzeigebild verwenden möchten, nutzen sie <a class="alert-link" href="http://www.gravatar.com/" target="_blank">Gravatar</a> um ihrer Email-Adresse ein Profilbild ihrer Wahl zuzuordnen.
+Wenn sie ein Anzeigebild verwenden möchten, nutzen sie <a className="alert-link" href="http://www.gravatar.com/" target="_blank">Gravatar</a> um ihrer Email-Adresse ein Profilbild ihrer Wahl zuzuordnen.
 
 :::

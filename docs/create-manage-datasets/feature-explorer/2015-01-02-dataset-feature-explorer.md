@@ -13,7 +13,7 @@ The Feature Explorer makes it easy to navigate the nested structure of complex G
 enables the exploration of complex GML attributes. GML attributes which contain links to related features, codelists, or attachment files are viewable via the tool.
 
 The Feature Explorer tool can be accessed from the «show Details» button in the HTML GetFeatureInfo response of WMS view services on hale»connect.
-<img src={require("/images/help/en/Feature Explorer.png").default} alt="" title="Accessing the Feature Explorer tool using the show details button" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Feature Explorer.png").default} alt="" title="Accessing the Feature Explorer tool using the show details button" className="img-responsive img-inline-help"/>
 
  To enable the tool, first activate GetFeatureInfo on your theme.
   * Go to the «Themes» menu and select the theme you are working with from the list

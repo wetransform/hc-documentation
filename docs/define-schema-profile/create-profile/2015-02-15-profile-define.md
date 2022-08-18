@@ -16,8 +16,8 @@ To create a new profile, follow this workflow logged in as a Superuser or Theme 
 
 1.	Go to “Schemas” on the main toolbar.
 2.	Go to “Create new schema” at the bottom of the schema list, chose “Create profile” and click &laquo;Continue&raquo;.
-<img src={require("/images/help/en/Screenshot_2018-10-23 Create new schema.png").default} alt="" title="Creating a profile" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Screenshot_2018-10-23 Create new schema.png").default} alt="" title="Creating a profile" className="img-responsive img-inline-help"/>
 3.	Add profile information. Next, provide the name, author, version and description of your profile. When you are finished, click &laquo;Continue&raquo;.
 4.  Select the schema your profile will be based on. Click the &laquo;+Select Schema&raquo; button and navigate to the desired schema. Click the » to select it. When you are finished, click &laquo;Continue&raquo;.
-<img src={require("/images/help/en/Screenshot_2018-10-23 Create new schema_1.png").default} alt="" title="Creating a profile" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Screenshot_2018-10-23 Create new schema_1.png").default} alt="" title="Creating a profile" className="img-responsive img-inline-help"/>
 5. Confirm creation. In the final step, review your profile. You have the option to add or create a theme for your profile. When you are finished, click &laquo;Create&raquo; to generate the profile.

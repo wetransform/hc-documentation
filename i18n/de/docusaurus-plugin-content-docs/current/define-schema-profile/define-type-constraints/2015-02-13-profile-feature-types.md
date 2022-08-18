@@ -13,19 +13,19 @@ Im &laquo;Objektarten&raquo;-Bereich werden die Objektarten angezeigt, die im Sc
 Die Suchfunktion am oberen Ende der Seite ermöglicht es, die Objektarten nach ihrem Namen zu filtern. Aktivieren sie den &laquo;Geerbte Eigenschaften anzeigen&raquo;-Schalter, um zusätzlich die geerbten Eigenschaften der Objektarten angezeigt zu bekommen. Aktivieren sie den &laquo;Nur Änderungen anzeigen&raquo;-Schalter, um nur die Objektarten angezeigt zu bekommen, die durch das Profil erweitert werden.
 
 Für jede Eigenschaft einer Objektart werden der Name und der Datentyp angezeigt. Klicken sie auf das Pfeil-Symbol, um zusätzliche Informationen zu einer Eigenschaft, wie beispielsweise dazu definierte Bedingungen, anzeigen zu lassen. 
-<img src={require("/images/help/de/Screenshot_2018-10-23 Profile details.png").default} alt="" title="Profildetails" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/de/Screenshot_2018-10-23 Profile details.png").default} alt="" title="Profildetails" className="img-responsive img-inline-help"/>
 
 ### Einschränkungen für Objektarten definieren
 
 Um eine Objektart verpflichtend zu machen, aktivieren sie den Schalter auf der obersten Ebene der Objektart. Eine verpflichtende Objektart muss in jedem Dokument auf Grundlage dieses Profils mindestens einmal vorkommen. Das ist insbesondere bei der Verwendung von GML Feature Collections nützlich, wenn sie festlegen möchten,  welche Objektarten vorkommen müssen.
-<img src={require("/images/help/de/typeLevel.png").default} alt="" title="Einschränkungen für Objektarten definieren" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/de/typeLevel.png").default} alt="" title="Einschränkungen für Objektarten definieren" className="img-responsive img-inline-help"/>
 
 ### Einschränkungen für Eigenschaften definieren
 
 Klicken sie auf das Stift-Symbol neben dem Namen einer Objektart, um dieser eine Einschränkung für eine ihrer Eigenschaften hinzuzufügen.
 
 Verpflichtende Inhalte, zugelassene Werte, Kardinalität und Tag/Wert-Paare können auf der Eigenschaften-Ebene definiert werden. Klicken sie auf das Pfeil-Symbol neben dem Datentyp der entsprechenden Eigenschaft, um das Eingabefeld zu erweitern.
-<img src={require("/images/help/de/allowedValues.png").default} alt="" title="Einschränkungen für Eigenschaften definieren" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/de/allowedValues.png").default} alt="" title="Einschränkungen für Eigenschaften definieren" className="img-responsive img-inline-help"/>
 
 **Inhalt verpflichtend** In einem Profil wird gelegentlich strenger gefasst, ob eine Eigenschaft in jedem Fall einen Inhalt haben muss, oder nicht. Erlaubt das Schema, die Eigenschaft auch leerzulassen, kann ein gültiger Inhalt im Profil unter Nutzung des Aufklappmenüs verpflichtend gemacht werden. Diese Auswahl ist nur dann möglich, wenn die Eigenschaft nicht von vornherein verpflichtend war. Der Verpflichtungsgrad von Choices kann nicht verändert werden, da das Konstrukt Choice bedeutet, dass aus einer Liste von Optionen genau ein Element gewählt werden muss. Soll der Inhalt sichergestellt werden, muss dies auf der referenzierenden Eigenschaft festgelegt werden. Die Prüfung, ob diese Bedingung erfüllt wird, steht auch in der hale connect-Dateianalyse zur Verfügung.
 
@@ -62,7 +62,7 @@ Beispiel für ein invalides Fragment:
   
 In diesem Beispiel wird der `example-xml`-Tag genutzt, um ein CharacterString-Beispiel für das `gmd:language`-Element festzulegen.
 
-  <img src={require("/images/help/en/exampleTag.png").default} alt="" title="Nutzung des `example-xml`-Tags" class="img-responsive img-inline-help"/>
+  <img src={require("/images/help/en/exampleTag.png").default} alt="" title="Nutzung des `example-xml`-Tags" className="img-responsive img-inline-help"/>
 
 Die folgende XML-Datei ist das Beispiel-XML-Dokument zu diesem Profil und enthält den im `example-xml`-Tag angegebenen CharacterString-Wert.
 

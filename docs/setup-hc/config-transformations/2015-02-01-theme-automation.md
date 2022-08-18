@@ -26,4 +26,4 @@ When logged in as a theme manager or organisation superuser, follow these steps 
     * **Weekly:** Pick the weekday and the time of the day at which the transformation and publishing should be executed.
     * **Monthly:** Pick the day of the month and the time of the day at which the transformation and publishing should be executed.
     <br/>
-    <img src={require("/images/help/en/automated_publishing.png").default} alt="" title="Automating publishing" class="img-responsive img-inline-help"/>
+    <img src={require("/images/help/en/automated_publishing.png").default} alt="" title="Automating publishing" className="img-responsive img-inline-help"/>

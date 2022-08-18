@@ -16,8 +16,8 @@ Um ein neues Profil zu erstellen, melden sie sich in der Rolle &laquo;Superanwen
 
 1.	Gehen sie auf &laquo;Schemas&raquo;.
 2.	Klicken sie auf &laquo;+ Neues Schema anlegen&raquo; am Ende der Schema-Liste, wählen sie &laquo;Profil erstellen&raquo; und klicken sie &laquo;Weiter&raquo;.
-<img src={require("/images/help/de/Screenshot_2018-10-23 Create new schema.png").default} alt="" title="Profil erstellen" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/de/Screenshot_2018-10-23 Create new schema.png").default} alt="" title="Profil erstellen" className="img-responsive img-inline-help"/>
 3.	&laquo;Profil-Informationen ergänzen&raquo; Geben sie Name, Autorin oder Autor, Version und Beschreibung ihres Profils an. Wenn sie fertig sind, klicken sie auf &laquo;Weiter&raquo;.
 4.  &laquo;Schema auswählen&raquo; Wählen sie das Schema, auf dem ihr Profil basieren soll. Klicken sie auf &laquo;+Schema auswählen&raquo; und navigieren sie zu dem gewünschten Schema. Klicken sie auf das „»“-Symbol, um es auszuwählen. Wenn sie fertig sind, klicken sie auf &laquo;Weiter&raquo;.
-<img src={require("/images/help/de/Screenshot_2018-10-23 Create new schema_1.png").default} alt="" title="Profil anlegen" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/de/Screenshot_2018-10-23 Create new schema_1.png").default} alt="" title="Profil anlegen" className="img-responsive img-inline-help"/>
 5. &laquo;Anlegen bestätigen&raquo; Überprüfen sie in einem letzten Schritt ihr Profil. Sie können für ihr Profil ein Thema hinzufügen oder anlegen. Wenn sie fertig sind, klicken sie auf &laquo;Anlegen&raquo;.

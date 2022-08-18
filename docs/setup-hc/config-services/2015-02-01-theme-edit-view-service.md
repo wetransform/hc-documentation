@@ -15,7 +15,7 @@ To edit this configuration, follow these steps as a logged in theme manager or o
 1.	Go to &laquo;Themes&raquo;
 1.	Pick the theme you'd like to change the configuration for
 1.	Go to &laquo;View Services&raquo;
-1.	Pick the type of service you'd like to publish (as of 1.0, only WMS 1.3.0 and WMTS 1.0.0 are available)<img src={require("/images/help/en/configure_view_services1.png").default} alt="" title="Configuring view services" class="img-responsive img-inline-help"/>
+1.	Pick the type of service you'd like to publish (as of 1.0, only WMS 1.3.0 and WMTS 1.0.0 are available)<img src={require("/images/help/en/configure_view_services1.png").default} alt="" title="Configuring view services" className="img-responsive img-inline-help"/>
 1.	Choose at least one coordinate reference system (CRS) that should be supported. You can add additional CRS by clicking the &laquo;+&raquo; button.
 1.	Activate or deactivate GetFeatureInfo. Activating GetFeatureInfo enables feature query in the WMS.
 1.	Upload a Styled Layer Descriptor to define the cartographic configuration for the view service.

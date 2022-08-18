@@ -15,7 +15,7 @@ Folgen sie in der Rolle &laquo;Superanwender&raquo; oder &laquo;Themenmanager&ra
 2.	Wählen sie das Thema aus, dessen Konfiguration sie bearbeiten wollen.
 3.	Gehen sie auf &laquo;Transformation&raquo;.
 4.  Wählen sie &laquo;Neue Transformations-Konfiguration anlegen&raquo; aus.
-5.	Wählen sie &laquo;Projekt auswählen&raquo; aus.<img src={require("/images/help/de/configure_transformation_project.png").default} alt="" title="Transformationsprojekte zuordnen und konfigurieren" class="img-responsive img-inline-help"/>
+5.	Wählen sie &laquo;Projekt auswählen&raquo; aus.<img src={require("/images/help/de/configure_transformation_project.png").default} alt="" title="Transformationsprojekte zuordnen und konfigurieren" className="img-responsive img-inline-help"/>
 6.	Wählen sie nun das Transformationsprojekt aus, das sie dem Thema hinzufügen wollen, indem sie auf das »-Symbol gehen.
 7.	Legen sie nun fest, welches Zielthema Datensätzen, die durch die Transformation erstellt werden, zugeordnet werden soll. Dazu klicken sie auf &laquo;Ziel-Thema auswählen&raquo;.
 8.  Wählen sie aus der Liste ein Thema aus, um es zuzuordnen, indem sie auf das »-Symbol gehen

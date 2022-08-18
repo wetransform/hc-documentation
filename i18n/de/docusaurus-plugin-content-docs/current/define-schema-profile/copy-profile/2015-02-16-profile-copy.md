@@ -12,4 +12,4 @@ language: de
 
 Um ein Profil zu kopieren, klicken sie im &laquo;Übersicht&raquo;-Bereich des Profils auf den &laquo;Profil kopieren&raquo;-Knopf. Das kopierte Profil wird der Schema-Übersicht ihrer Organisation hinzugefügt. Das kopierte Profil erhält den Namen des ursprünglichen Profils zuzüglich des Wortes "copy". 
 
-<img src={require("/images/help/de/copy_profile.png").default} alt="" title="Copying a profile" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/de/copy_profile.png").default} alt="" title="Copying a profile" className="img-responsive img-inline-help"/>

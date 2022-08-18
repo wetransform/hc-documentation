@@ -12,18 +12,18 @@ The Feature types section displays the feature types contained in the profile's 
 
 The search box at the top of the page allows you to filter feature types by name. Toggle the *Show inherited properties* switch to view additional, inherited properties for each feature type. Toggle the *Show diff* switch to view the feature types that are extended by the profile.
 
-For each property in a feature type, the name and data type are listed. Click the » button to view additional information on the property, such as constraints defined on it. <img src={require("/images/help/en/Screenshot_2018-10-23 Profile details.png").default} alt="" title="Profile details" class="img-responsive img-inline-help"/>
+For each property in a feature type, the name and data type are listed. Click the » button to view additional information on the property, such as constraints defined on it. <img src={require("/images/help/en/Screenshot_2018-10-23 Profile details.png").default} alt="" title="Profile details" className="img-responsive img-inline-help"/>
 
 ### Setting type level constraints
 
 To make a single feature type mandatory, toggle the switch in the feature type header. A mandatory feature type has to occur at least once in any document. This is particularly useful in GML Feature Collections, when you want to state which types of objects have to be present.
-<img src={require("/images/help/en/typeLevel.png").default} alt="" title="Setting type level constraints" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/typeLevel.png").default} alt="" title="Setting type level constraints" className="img-responsive img-inline-help"/>
 
 ### Setting property level constraints
 
 Click the «Edit» icon next to the name of the feature type to add property level constraints.
 
-Required fields, range values, cardinality and tagged values can each be defined on the property level. Click the » button next to the property's data type to expand the panel.<img src={require("/images/help/en/allowedValues.png").default} alt="" title="Setting property level constraints" class="img-responsive img-inline-help"/>
+Required fields, range values, cardinality and tagged values can each be defined on the property level. Click the » button next to the property's data type to expand the panel.<img src={require("/images/help/en/allowedValues.png").default} alt="" title="Setting property level constraints" className="img-responsive img-inline-help"/>
 
 **Content required** Click the drop down menu to make the property optional or mandatory. This is only possible if the property was not previously mandatory.
 
@@ -60,7 +60,7 @@ Example of an invalid fragment:
 
 In this example, the `example-xml` tag is used to provide a character string value in the `gmd:language` element.
 
-  <img src={require("/images/help/en/exampleTag.png").default} alt="" title="Using the example tag" class="img-responsive img-inline-help"/>
+  <img src={require("/images/help/en/exampleTag.png").default} alt="" title="Using the example tag" className="img-responsive img-inline-help"/>
 
 The file below is the example XML document export which contains the character string value provided in the `example-xml` tag.
 

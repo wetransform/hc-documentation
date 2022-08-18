@@ -71,16 +71,16 @@ Um einen neuen Datensatz mit verschiedenen Daten-Formaten anzulegen, folgen sie 
       * Verpflichtende Metadaten-Felder werden mit roten Symbolen gekennzeichnet. Optionale Metadaten-Felder werden mit orangen Symbolen gekennzeichnet.
       * Metadaten-Kategorien werden mit einem grünen Haken dargestellt, wenn alle erforderlichen Metadaten angegeben wurden.
       * Klicken sie auf «Automatisch befüllen», wenn sie versehentlich vorausgefüllte Werte löschen oder überschreiben und sie möchten, dass die ursprünglichen Werte wieder abgerufen werden.
-      * Klicken sie auf &laquo;Weiter&raquo;, um die Metadaten zu speichern.<img src={require("/images/help/de/create-dataset-metadata.png").default} alt="" title="Der Metadaten-Editor" class="img-responsive img-inline-help"/>
+      * Klicken sie auf &laquo;Weiter&raquo;, um die Metadaten zu speichern.<img src={require("/images/help/de/create-dataset-metadata.png").default} alt="" title="Der Metadaten-Editor" className="img-responsive img-inline-help"/>
 
       <br/>
     Wenn das Thema die Option &laquo;Existierende Metadaten neu publizieren&raquo; nutzt:
 
-      * Laden sie ihre bestehende Metadaten-Datei hoch.<img src={require("/images/help/de/create-dataset-metadata_2.png").default} alt="" title="Existierende Metadaten hochladen" class="img-responsive img-inline-help"/>
+      * Laden sie ihre bestehende Metadaten-Datei hoch.<img src={require("/images/help/de/create-dataset-metadata_2.png").default} alt="" title="Existierende Metadaten hochladen" className="img-responsive img-inline-help"/>
 
     Wenn das Thema die Option &laquo;Existierende Metadaten verlinken&raquo; nutzt:
 
-      * Geben sie einen Link zu Ihrer Metadaten-Datei an.<img src={require("/images/help/de/create-dataset-metadata_3.png").default} alt="" title="Existierende Metadaten verlinken" class="img-responsive img-inline-help"/>
+      * Geben sie einen Link zu Ihrer Metadaten-Datei an.<img src={require("/images/help/de/create-dataset-metadata_3.png").default} alt="" title="Existierende Metadaten verlinken" className="img-responsive img-inline-help"/>
        <br/>
 7. Der Schritt «Projektvariablen eingeben» wird angezeigt, wenn ihr Thema eine Transformationskonfiguration hat und sie ihrem Transformationsprojekt in hale»studio Projektvariablen hinzugefügt haben. hale»connect bietet Benutzenden die Möglichkeit, die Projektvariablen des Transformationsprojekts in diesem optionalen Schritt zu bearbeiten.
 

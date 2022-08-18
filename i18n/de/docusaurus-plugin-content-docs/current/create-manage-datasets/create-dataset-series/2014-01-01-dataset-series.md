@@ -78,7 +78,7 @@ Sobald das Thema entsprechend konfiguriert ist, können Nutzende, die ihrer Orga
 
 
     **Datensatz-Reihen mit Massen-Upload:**
-      * Aktivieren sie den Schalter für die Nutzung des Massen-Uploads. Für einen solchen Upload wird nur die folgende Datenhaltung unterstützt: Es muss eine zip-Datei hochgeladen werden, welche die Datensätze als zip-Dateien enthält.<img src={require("/images/help/de/batch_upload.png").default} alt="batch upload" title="Datensatz-Reihen mit Massen-Upload" class="img-responsive img-inline-help"/>
+      * Aktivieren sie den Schalter für die Nutzung des Massen-Uploads. Für einen solchen Upload wird nur die folgende Datenhaltung unterstützt: Es muss eine zip-Datei hochgeladen werden, welche die Datensätze als zip-Dateien enthält.<img src={require("/images/help/de/batch_upload.png").default} alt="batch upload" title="Datensatz-Reihen mit Massen-Upload" className="img-responsive img-inline-help"/>
 
       * Die Schritte zur Angabe des Datensatz-Namens und von Metadaten sind beim Anlegen von Datensätzen über Massen-Upload nicht verfügbar. Wir empfehlen, in ihrem Thema eine [Autofill-Regel für den Datensatz-Namen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-thememetadata/2015/02/10/theme-edit-metadata/) zu konfigurieren, um Datensätze, die zu einer Datensatz-Reihe gehören, automatisch zu benennen. Die Metadaten können sie nach dem Anlegen der Datensatz-Reihe für jeden enthaltenen Datensatz bearbeiten.
 

@@ -25,6 +25,6 @@ The username cannot be edited.
 
 :::caution
 
-If you'd like to see a proper portrait picture or avatar, use <a class="alert-link" href="http://www.gravatar.com/" target="_blank">Gravatar</a> to add a picture of your choice to your e-mail address.
+If you'd like to see a proper portrait picture or avatar, use <a className="alert-link" href="http://www.gravatar.com/" target="_blank">Gravatar</a> to add a picture of your choice to your e-mail address.
 
 :::

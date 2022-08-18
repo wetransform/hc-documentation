@@ -12,4 +12,4 @@ language: en
 
 To copy a profile, click on the &laquo;Copy profile&raquo; button on the profile's overview page. The copied profile will be added to the schema resource list in your organisation. The newly copied profile is named after the original profile with the word "copy" appended.
 
-<img src={require("/images/help/en/copy_profile.png").default} alt="" title="Copying a profile" class="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/copy_profile.png").default} alt="" title="Copying a profile" className="img-responsive img-inline-help"/>

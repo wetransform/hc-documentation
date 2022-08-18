@@ -25,4 +25,4 @@ Folgen sie in der Rolle &laquo;Superanwender&raquo; oder &laquo;Administrator&ra
   * **Wöchentlich:** Bestimmen sie den Wochentag und die Uhrzeit, zu welcher die Transformation durchgeführt werden soll.
   * **Monatlich:** Bestimmen sie das Datum und die Uhrzeit, zu welcher die Transformation durchgeführt werden soll.
   <br/>
-  <img src={require("/images/help/de/automated_publishing.png").default} alt="" title="Automating publishing" class="img-responsive img-inline-help"/>
+  <img src={require("/images/help/de/automated_publishing.png").default} alt="" title="Automating publishing" className="img-responsive img-inline-help"/>

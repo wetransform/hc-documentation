@@ -11,10 +11,10 @@ sidebar_position: 4
 
 The Download services section displays the operational status of your published download services. You can activate and deactivate your services using the toggle button in the top left corner. After activation, you manually start the publishing process with the &laquo;Publish Services&raquo; button in the top right corner.
 
-The Download service panel provides a list of published download services. Click on the name of the service to open it in a browser and view the data directly. Click on the <a class="btn btn-default" title="Copy URL"><span class="glyphicon glyphicon-copy"></span></a> icon to copy the service URL. URL (Download-Service/ATOM) provides an ATOM feed URL. This URL can best be watched with Firefox or an ATOM feed client. IE11, Chrome and Edge do not have native ATOM feed clients, though plug-ins are available.
+The Download service panel provides a list of published download services. Click on the name of the service to open it in a browser and view the data directly. Click on the <a className="btn btn-default" title="Copy URL"><span className="glyphicon glyphicon-copy"></span></a> icon to copy the service URL. URL (Download-Service/ATOM) provides an ATOM feed URL. This URL can best be watched with Firefox or an ATOM feed client. IE11, Chrome and Edge do not have native ATOM feed clients, though plug-ins are available.
 
 The Metadata panel provides a list of published metadata. To copy any URL to the clipboard, click the
-<a class="btn btn-default" title="Copy URL"><span class="glyphicon glyphicon-copy"></span></a>
+<a className="btn btn-default" title="Copy URL"><span className="glyphicon glyphicon-copy"></span></a>
  icon to the right of the URL.
 
 The test reports panel provides a list of PDFs which contain the results of a series of tests executed on published metadata and services. Click on the test report to open it in a browser and view the test results directly.
