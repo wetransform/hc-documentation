@@ -10,6 +10,8 @@ In order to migrate a document from the old documentation website, the following
 - Replace inline styles with [JSX compliant styles](#use-inline-styles). Use `style="(([\w.-]+:\s*[^\s;]\s;?\s*)*)"` to retrieve inline styles.
 - Replace custom HTML components with Docusaurus built-in ones. See [this section](#use-docusaurus-built-in-components).
 
+*Note*: To find and replace the text using the regular expressions suggested above, the Code Editor built-in Find & Replace feature can be used. Place the search and the replace regular expressions in the Find and the Replace boxes respectively. This feature can also be used with filters, so filtering the search to the documents folders might be useful.
+
 # Writing Markdown Documents
 Before writing Markdown documents, in addition to conforming to the Markdown rules (e.g. indentation), please consider the following points as it's required to write only valid documents.
 
@@ -29,9 +31,14 @@ In order to include an image in the document, use the `<img/>` tag, and make sur
   ```
   Referencing assets like this guarantees valid file paths when using a different locale base endpoint (e.g. `/de`), since each locale has its own application.
 
-### Use Inline Styles
+### Conform to the JSX Syntax
+
+#### Use Inline Styles
 Using styles in documents has to be consistent with JSX syntax, thus `<span style="font-size: 8px;">` is not valid. Instead use `<span style={{fontSize: "8px"}}>`.
 Usually for a valid JSX inline styling, remove the dash and camel-case the property, e.g. background-color becomes backgroundColor. (Read on JSX inline styling [here](https://www.w3schools.com/react/react_css.asp))
+
+#### Use className Keyword
+In order to add a class to a specific HTML element, use `className` keyword instead of `class`.
 
 ### Use Docusaurus Built-in Components
 Docusaurus provides multiple components that can be used, such as warning/danger cards, etc. They are easy to use, and are compatible with the theme. See the full list [here](https://docusaurus.io/docs/markdown-features)
