@@ -4,7 +4,7 @@ categories:
 - "help-page-category-faq"
 - "help-page-subcategory-faq"
 layout: help-detail
-language: en
+language: de
 ---
 
 <h2>Die URL der Schemadatei hat sich geändert. Was muss ich tun, damit bei der Validierung auf das neue Schema bzw. die Veränderte URL des Schemas zugegriffen werden kann ?</h2>
