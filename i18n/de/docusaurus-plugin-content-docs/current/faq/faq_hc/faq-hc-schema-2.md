@@ -1,5 +1,5 @@
 ---
-title: "Questions and answers on hale»connect"
+title: "Fragen und Antworten für hale»connect"
 categories:
 - "help-page-category-faq"
 - "help-page-subcategory-faq"
