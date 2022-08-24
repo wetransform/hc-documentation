@@ -28,8 +28,7 @@ C:\Users\Mustermann>mkdir .hale
 
 **Installation via update-site**
 
-If internet access is available without the need to use a proxy, the hale»studio pro plugins can be installed via the 
-<a href="http://help.halestudio.org/latest/index.jsp?topic=%2Feu.esdihumboldt.hale.doc.user%2Fhtml%2Fgetting_started%2Finstall_plugins.html&cp%3D0_2_3">online update site</a>.
+If internet access is available without the need to use a proxy, the hale»studio pro plugins can be installed via the <a href="http://help.halestudio.org/latest/index.jsp?topic=%2Feu.esdihumboldt.hale.doc.user%2Fhtml%2Fgetting_started%2Finstall_plugins.html&cp%3D0_2_3">online update site</a>.
 The update site for hale»studio pro plugins and the required password for the access are provided by the <a href="https://wetransform.atlassian.net/servicedesk/customer/portal/1">Service Desk</a> upon request.
 
 

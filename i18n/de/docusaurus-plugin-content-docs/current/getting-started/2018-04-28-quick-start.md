@@ -39,7 +39,7 @@ Folgen sie diesen Schritten um einen neuen Datensatz auf hale»connect zu veröf
 
 *	Gehen sie auf den Bereich &laquo;Daten&raquo; im Hauptmenü.
 *	Klicken sie auf &laquo;+ Neuen Datensatz anlegen&raquo; am Ende der Datensatz-Liste.
-*  	Wählen sie ein Thema aus, dem ihr Datensatz angehören soll. Ein Thema enthält mindestens ein Schema sowie Konfigurationen zur Veröffentlichung der zugehörigen Web-Dienste.
+*  Wählen sie ein Thema aus, dem ihr Datensatz angehören soll. Ein Thema enthält mindestens ein Schema sowie Konfigurationen zur Veröffentlichung der zugehörigen Web-Dienste.
 *	Wählen sie die Quell-Dateien aus. Es gibt verschiedene Wege, die Dateien hochzuladen, die zu ihrem Datensatz gehören:
     * Klicken sie auf &laquo;+ Datei(en) auswählen&raquo; und navigieren sie zur gewünschten Datei.
     * Klicken sie auf &laquo;+ URL(s) eingeben&raquo; und navigieren sie zur gewünschten URL bzw. dem gewünschten WFS.

@@ -39,7 +39,7 @@ To create a new custom metadata field in your organisation profile, follow this 
 * Click the Organisations section and select your organisation from the list
 <img src={require("/images/help/en/Tutorial_organisations.png").default} alt="" title="Organisation profile page" className="img-responsive img-inline-help"/>
 * Scroll to the bottom of the organisation profile page and click &laquo;+Add field&raquo; to add your custom key, value pair
-    * The key, value pair that you enter will be available to you in the autofill assistant during metadata configuration.
+  * The key, value pair that you enter will be available to you in the autofill assistant during metadata configuration.
 <img src={require("/images/help/en/Tutorial_custom_fields.png").default} alt="" title="Creating a custom metadata field" className="img-responsive img-inline-help"/>
 
 To add a custom field to your user profile, follow this workflow logged in as a Data Manager, Theme Manager or Superuser:
@@ -120,7 +120,7 @@ Let's take a look at the list of fields in a category object, because that is wh
 It is important to understand that the internal mapping is based on the ```name``` field of each category object. Values entered in the ```name``` field are limited to the following values:
 
 *	md-dataset.citation.title
-* *md-dataset.identification.\**
+* md-dataset.identification.\*
     *	md-dataset.identification.abstract
     *	md-dataset.identification.keyword_inspire
     *	md-dataset.identification.keyword_simple
@@ -133,7 +133,7 @@ It is important to understand that the internal mapping is based on the ```name`
     *	md-dataset.identification.constraints.useLimitations
     *	md-dataset.identification.constraints.useConstraints
     *	md-dataset.identification.constraints.accessContraints
-    *	*md-dataset.identification.contactForResource.\**
+    *	md-dataset.identification.contactForResource.\*
         *	md-dataset.identification.contactForResource.individualName
         *	md-dataset.identification.contactForResource.authorityUrl
         *	md-dataset.identification.contactForResource.organisationName
@@ -147,7 +147,7 @@ It is important to understand that the internal mapping is based on the ```name`
         *	md-dataset.identification.contactForResource.country
         *	md-dataset.identification.contactForResource.voicePhone
         *	md-dataset.identification.contactForResource.facsimile
-*	*md-dataset.contactForMetadata.\**
+*	md-dataset.contactForMetadata.\*
     *	md-dataset.contactForMetadata.individualName
     *	md-dataset.contactForMetadata.authorityUrl
     *	md-dataset.contactForMetadata.organisationName

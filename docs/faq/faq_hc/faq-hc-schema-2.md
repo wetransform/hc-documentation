@@ -17,7 +17,8 @@ Sadly the efforts we could spend on that did not include any support in the User
 What you need to do is to add a setting `customTypeContent` to the settings of the XML Schema Reader in the hale project file (XML format, save as `.halex` to edit).
 Here is an example of the schema reader configuration in an existing project:
 
-```<resource action-id="eu.esdihumboldt.hale.io.schema.read.target" provider-id="eu.esdihumboldt.hale.io.xsd.reader">
+```
+<resource action-id="eu.esdihumboldt.hale.io.schema.read.target" provider-id="eu.esdihumboldt.hale.io.xsd.reader">
     <complex-setting name="customTypeContent">
         <xsd:typeContentConfig xmlns:xsd="http://www.esdi-humboldt.eu/hale/io/xsd">
             <core:list xmlns:core="http://www.esdi-humboldt.eu/hale/core">

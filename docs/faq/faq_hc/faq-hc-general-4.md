@@ -13,7 +13,7 @@ When validating datasets in hale»connect, the Schema locations of the feature t
 
 
 If the schema location changes, an error in the dataset validation occurs. This error can be fixed using the following workflow. 
-	* Create schema with new schema location.
-	* Exchange the feature types of the theme.
-	* Now the validation should work as expected. 
-	* Republishing the services is only required, if the data has changed. 
+* Create schema with new schema location.
+* Exchange the feature types of the theme.
+* Now the validation should work as expected. 
+* Republishing the services is only required, if the data has changed. 

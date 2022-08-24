@@ -30,16 +30,15 @@ A profile specifically contains the following types of information:
 
    Set allowed maximum and minimum cardinality e.g. from unbounded in the schema to exactly 1 <img src={require("/images/help/en/pmt_tutorial_cardinality.png").default} alt="Setting allowed maximum and minimum cardinality" title="Setting allowed maximum and minimum cardinality" className="img-responsive img-inline-help"/>
 
-  **Domain restrictions**
+  **Domain restrictions**  
+    Domain restrictions allow users to manage specific code lists and remove codelist values, if required. 
+    Domain restrictions can also be used to enumerate allowed values. <img src={require("/images/help/en/pmt_tutorial_domain.png").default} alt="Domain restrictions" title="Domain restrictions" className="img-responsive img-inline-help"/>
 
-    Domain restrictions allow users to manage specific code lists and remove codelist values, if required. Domain restrictions can also be used to enumerate allowed values. <img src={require("/images/help/en/pmt_tutorial_domain.png").default} alt="Domain restrictions" title="Domain restrictions" className="img-responsive img-inline-help"/>
+  **Type restrictions**  
+    Type restrictions can be used to require a certain property type where otherwise multiple types are allowed e.g. limiting choices or anyTypes
+  <img src={require("/images/help/en/pmt_tutorial_typeres.png").default} alt="Restricting property types" title="Restricting property types" className="img-responsive img-inline-help"/>
 
-  **Type restrictions**
-
-    Type restrictions can be used to require a certain property type where otherwise multiple types are allowed e.g. limiting choices or anyTypes <img src={require("/images/help/en/pmt_tutorial_typeres.png").default} alt="Restricting property types" title="Restricting property types" className="img-responsive img-inline-help"/>
-
-  **Consistency constraints**
-
+  **Consistency constraints**  
     Consistency constraints can be used to test across multiple elements.
     Value dependencies can be defined on profile elements, e.g. When Element A has value X, Element B must have value Y.
     Existence dependencies can be defined on profile elements, e.g. When Element A exists, Element B must not exist.

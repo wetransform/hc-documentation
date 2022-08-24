@@ -7,8 +7,7 @@ layout: help-detail
 language: en
 ---
 
-<h2>The INSPIRE Validator is returning a 
-<code>Severity: ERROR Message: TargetNamespace.1: Expecting namespace '[...]', 
+<h2>The INSPIRE Validator is returning a <code>Severity: ERROR Message: TargetNamespace.1: Expecting namespace '[...]', 
 but the target namespace of the schema document is '[...]'" error for a WFS validation</code>. 
 Why?</h2>
 

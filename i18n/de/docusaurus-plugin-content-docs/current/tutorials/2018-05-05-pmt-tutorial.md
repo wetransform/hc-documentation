@@ -24,17 +24,18 @@ Ein Profil enthält dabei die folgenden Arten von Informationen:
   **Verpflichtung für Attribute**
    Die Verpflichtung für Attribute ermöglicht Nutzenden festzulegen, ob ein Attribut in einem Datensatz vorkommen muss. Im Folgenden finden sich einige Beispiele:
 
-    Inhalt für ein Attribut verpflichtend machen (vgl. nillable flag) <img src={require("/images/help/de/pmt_tutorial_content.png").default} alt="Requiring content in an attribute" title="Inhalt für ein Attribut verpflichtend machen" className="img-responsive img-inline-help"/>
+  Inhalt für ein Attribut verpflichtend machen (vgl. nillable flag) <img src={require("/images/help/de/pmt_tutorial_content.png").default} alt="Requiring content in an attribute" title="Inhalt für ein Attribut verpflichtend machen" className="img-responsive img-inline-help"/>
 
-    Erlaubte Kardinalität festlegen - beipsielweise von unbegrenzt im Schema zu genau einem Vorkommen <img src={require("/images/help/de/pmt_tutorial_cardinality.png").default} alt="Setting allowed maximum and minimum cardinality" title="Kardinalität festlegen" className="img-responsive img-inline-help"/>
+  Erlaubte Kardinalität festlegen - beipsielweise von unbegrenzt im Schema zu genau einem Vorkommen <img src={require("/images/help/de/pmt_tutorial_cardinality.png").default} alt="Setting allowed maximum and minimum cardinality" title="Kardinalität festlegen" className="img-responsive img-inline-help"/>
 
-  **Bedingungen für Wertebereich**
+  **Bedingungen für Wertebereich**  
     Bedingungen für den Wertebereich ermöglichen es Nutzenden, Codelisten für ein Attribut zu verwalten oder Codelisten-Werte zu entfernen, falls notwendig. Bedingungen für den Wertebereich können auch genutzt werden, um alle erlaubten Werte aufzuzählen. <img src={require("/images/help/de/pmt_tutorial_domain.png").default} alt="Domain restrictions" title="Bedingungen für Wertebereiche" className="img-responsive img-inline-help"/>
 
-  **Bedingungen für Datentypen**
-    Bedingungen für Typen können genutzt werden, um einen bestimmten Datentyp erforderlich zu machen, wo im Schema mehrere Datentypen erlaubt sind, beispielsweise eine Einschränkung bei Vorkommen von choice oder anyType. <img src={require("/images/help/de/pmt_tutorial_typeres.png").default} alt="Restricting property types" title="Bedingungen für Datentypen" className="img-responsive img-inline-help"/>
+  **Bedingungen für Datentypen**  
+    Bedingungen für Typen können genutzt werden, um einen bestimmten Datentyp erforderlich zu machen, wo im Schema mehrere Datentypen erlaubt sind, beispielsweise eine Einschränkung bei Vorkommen von choice oder anyType. 
+  <img src={require("/images/help/de/pmt_tutorial_typeres.png").default} alt="Restricting property types" title="Bedingungen für Datentypen" className="img-responsive img-inline-help"/>
 
-  **Konsistenz-Bedingungen**
+  **Konsistenz-Bedingungen**  
     Konsistenz-Bedingungen können genutzt werden, um über mehrere Elemente hinweg zu testen.
       Werte-Abhängigkeiten für Profil-Elementen können definiert werden, beispielsweise &laquo;Wenn Element A den Wert X hat, muss Element B den Wert Y haben&raquo;.
       Existenz-Abhängigkeiten können für Profil-Elemente definiert werden, beispielsweise &laquo;Wenn Element A existiert, darf Element B nicht existieren&raquo;.
