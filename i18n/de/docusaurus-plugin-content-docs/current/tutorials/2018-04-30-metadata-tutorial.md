@@ -39,7 +39,7 @@ Um im Profil ihrer Organisation ein neues eigenes Metadaten-Feld hinzuzufügen, 
 * Klicken sie auf den &laquo;Organisationen&raquo;-Bereich und wählen sie ihre Organisation aus der Liste aus.
 <img src={require("/images/help/de/Tutorial_organisations.png").default} alt="" title="Organisations-Profil" className="img-responsive img-inline-help"/>
 * Scrollen sie an das Ende der Organisations-Profil-Seite und klicken Sie auf &laquo;+Profilfeld hinzufügen&raquo; um ihr eigenes Schlüssel-Wert-Paar hinzuzufügen.
-    * Das Schlüssel-Wert-Paar, das sie eingeben, wird ihnen während der Metadaten-Konfiguration im Autofill-Assistenten zur Verfügung stehen.
+  * Das Schlüssel-Wert-Paar, das sie eingeben, wird ihnen während der Metadaten-Konfiguration im Autofill-Assistenten zur Verfügung stehen.
 <img src={require("/images/help/de/Tutorial_custom_fields.png").default} alt="" title="Ein eigenes Metadaten-Feld anlegen" className="img-responsive img-inline-help"/>
 
 Um ihrem Nutzerprofil ein eigenes Metadaten-Feld hinzuzufügen, folgen Sie mit der Rolle &laquo;Datenmanager&raquo;, &laquo;Themenmanager&raquo; oder &laquo;Supernutzer&raquo; diesem Ablauf:
@@ -120,7 +120,7 @@ Werfen wir einen Blick auf die Liste von Feldern in einem Kategorie-Objekt, denn
 Es können nur die folgenden Werte in das ```name```-Feld eingegeben werden:
 
 *	md-dataset.citation.title
-* *md-dataset.identification.\**
+* md-dataset.identification.\*
     *	md-dataset.identification.abstract
     *	md-dataset.identification.keyword_inspire
     *	md-dataset.identification.keyword_simple
@@ -133,7 +133,7 @@ Es können nur die folgenden Werte in das ```name```-Feld eingegeben werden:
     *	md-dataset.identification.constraints.useLimitations
     *	md-dataset.identification.constraints.useConstraints
     *	md-dataset.identification.constraints.accessContraints
-    *	*md-dataset.identification.contactForResource.\**
+    *	md-dataset.identification.contactForResource.\*
         *	md-dataset.identification.contactForResource.individualName
         *	md-dataset.identification.contactForResource.authorityUrl
         *	md-dataset.identification.contactForResource.organisationName
@@ -147,7 +147,7 @@ Es können nur die folgenden Werte in das ```name```-Feld eingegeben werden:
         *	md-dataset.identification.contactForResource.country
         *	md-dataset.identification.contactForResource.voicePhone
         *	md-dataset.identification.contactForResource.facsimile
-*	*md-dataset.contactForMetadata.\**
+*	md-dataset.contactForMetadata.\*
     *	md-dataset.contactForMetadata.individualName
     *	md-dataset.contactForMetadata.authorityUrl
     *	md-dataset.contactForMetadata.organisationName

@@ -37,7 +37,7 @@ Tests executed on Metadata:
   </tr>
   <tr>
     <td>md_gdi</td>
-    <td>Metadaten | Metadata: ISO and GDI-DE</td>
+    <td>Metadaten |  <br/> Metadata: ISO and GDI-DE</td>
     <td>X</td>
     <td></td>
     <td>X</td>
