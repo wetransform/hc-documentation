@@ -75,7 +75,6 @@ Once the theme is configured, any user belonging to your organisation or a sub-o
 
       * Execution rules are displayed in the final step of the workflow if your theme contains a transformation configuration. You can activate toggles to execute the transformation and create services for a series enabled target theme.
 
-
     **Dataset series using batch upload:**
       * Toggle the switch to use batch upload. There is only one way to upload files using batch upload. Creating a dataset series using batch upload requires the upload of a zip that directly contains the datasets as zips.<img src={require("/images/help/en/batch_upload.png").default} alt="batch upload" title="Dataset series using batch upload" className="img-responsive img-inline-help"/>
 

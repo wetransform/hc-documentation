@@ -18,9 +18,9 @@ Um Dienste zu publizieren, melden sie sich in der Rolle &laquo;Datenmanager&raqu
 5.	Klicken sie auf den Button &laquo;Dienste publizieren&raquo; um den Dienst zu erstellen und zu starten.
     *	Sobald ein Dienst erstellt ist, beginnt im Hintergrund die Testreport-Erstellung, auch bei Neustart. Es erscheint ein Fortschrittsbalken, der den Status für die Erstellung, das Testen und das Veröffentlichen der Dienste anzeigt. Sie erhalten außerdem eine Email mit Infomationen über den Erfolg oder Misserfolg, wenn die Publikation abgeschlossen ist. Für Publikationen, die länger als eine Stunde dauern, nimmt die Plattform an, dass sie fehlgeschlagen sind und sie erhalten eine entsprechende Email, auch wenn die Publikation noch läuft. <img src={require("/images/help/de/publish_services.png").default} alt="" title="Darstellungs-Dienste publizieren" className="img-responsive img-inline-help"/>
 6.	Wenn der Dienst erfolgreich angelegt wurde, erhalten sie diverse Informationen zu dem jeweiligen Dienst auf der entsprechenden Seite (&laquo;Darstellungs-Dienst&raquo; oder &laquo;Download-Dienst&raquo;):
-    *	Web-Adressen für Datensatz-Metadaten und Dienste-Metadaten
-    *	Web-Adresse Vorschau (nur bei &laquo;Darstellungs-Dienst&raquo;)
-    * 	Test-Ergebnisse
+    * Web-Adressen für Datensatz-Metadaten und Dienste-Metadaten
+    * Web-Adresse Vorschau (nur bei &laquo;Darstellungs-Dienst&raquo;)
+    * Test-Ergebnisse
     * Dienst-Einstellungen
     * Dienst-log <img src={require("/images/help/de/publish_services_testing.png").default} alt="" title="Darstellungs-Dienste publizieren" className="img-responsive img-inline-help"/>
 7.	Um den Dienst zu stoppen, deaktivieren sie den Schalter und wählen sie &laquo;Dienste löschen&raquo;.
