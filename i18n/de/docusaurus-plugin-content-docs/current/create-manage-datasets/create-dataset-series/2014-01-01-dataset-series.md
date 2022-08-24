@@ -75,8 +75,6 @@ Sobald das Thema entsprechend konfiguriert ist, können Nutzende, die ihrer Orga
 
       * Ausführungsregeln werden im letzten Schritt des Workflows angezeigt, wenn ihr Thema eine Transformationskonfiguration enthält. Sie können den Schalter aktivieren, um die Transformation auszuführen und Dienste für ein reihenfähiges Zielthema zu erstellen. 
 
-
-
     **Datensatz-Reihen mit Massen-Upload:**
       * Aktivieren sie den Schalter für die Nutzung des Massen-Uploads. Für einen solchen Upload wird nur die folgende Datenhaltung unterstützt: Es muss eine zip-Datei hochgeladen werden, welche die Datensätze als zip-Dateien enthält.<img src={require("/images/help/de/batch_upload.png").default} alt="batch upload" title="Datensatz-Reihen mit Massen-Upload" className="img-responsive img-inline-help"/>
 
