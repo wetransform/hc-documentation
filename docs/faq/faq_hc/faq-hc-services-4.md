@@ -12,4 +12,4 @@ or the publication of sub-datasets of a series fails with <code>Cannot perform o
 
 Check if WFS publication is activated for the series theme. 
 It is currently not possible to publish series without having the WFS enabled.
-See the <a href="https://www.wetransform.to/help/en/help-page-category-datasetworkflow/help-page-subcategory-datasetworkflowcreatedatasetseries/2014/01/01/dataset-series/">help page</a> about dataset series.
+See the <a href="../../create-manage-datasets/create-dataset-series/2014-01-01-dataset-series">help page</a> about dataset series.

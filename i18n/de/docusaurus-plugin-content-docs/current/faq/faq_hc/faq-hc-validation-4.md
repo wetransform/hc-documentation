@@ -12,4 +12,4 @@ Outer ring of polygon is clockwise within element Polygon"</code> fehl. Wieso?</
 
 Im INSPIRE Validator gibt es einen Fehler bezüglich linkshändiger Koordinatenreferenzsysteme. 
 
-Mehr Informationen finden sich <a href="https://github.com/inspire-eu-validation/ets-repository/issues/60">hier</a>.
+Mehr Informationen finden sich <a target="_blank" href="https://github.com/inspire-eu-validation/ets-repository/issues/60">hier</a>.

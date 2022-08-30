@@ -11,4 +11,4 @@ language: en
 
 hale»connect provides users the possibility to set up an automated workflow to perform service updates and transformations. 
 
-Detailed information on how to execute these automated workflows can be found in <a href="https://www.wetransform.to/help/en/help-page-category-reference/help-page-subcategory-reference-themes/2018/04/04/reference-themes-automation/">this section</a> of our documentation.
+Detailed information on how to execute these automated workflows can be found in <a href="../../references/themes/2018-04-04-reference-themes-automation">this section</a> of our documentation.

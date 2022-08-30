@@ -11,5 +11,5 @@ language: en
 
 Services contain all layers whose style is defined. As for most of the INSPIRE layers, there are default styles defined in the platform. 
 That is why you see empty layers. 
-You can also visit the <a href="https://www.wetransform.to/help/en/help-page-category-reference/help-page-subcategory-reference-themes/2018/04/07/reference-themes-view-services/.">help page</a> about view services.
+You can also visit the <a href="../../references/themes/2018-04-07-reference-themes-view-services">help page</a> about view services.
 

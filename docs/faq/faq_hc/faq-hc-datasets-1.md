@@ -11,4 +11,4 @@ language: en
 
 At present, hale»connect does not support the upload of more than one raster file. 
 
-More information can be found in <a href="https://www.wetransform.to/help/en/help-page-category-datasetworkflow/help-page-subcategory-datasetworkflowcreatedataset/2015/01/09/dataset-multiSource/">this section</a> of our documentation.
+More information can be found in <a href="../../create-manage-datasets/create-dataset/2015-01-09-dataset-multiSource">this section</a> of our documentation.
