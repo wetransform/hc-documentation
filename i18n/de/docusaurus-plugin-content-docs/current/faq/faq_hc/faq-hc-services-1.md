@@ -12,4 +12,4 @@ language: de
 Die hale»connect Plattform unterstützt derzeit keine leeren <code>boundedBy</code>-Elemente und keine Arc-Geometrien (Bögen). 
 
 Prüfen sie bitte, ob solche Elemente oder Geometrien in ihrer XML-Datei enthalten sind und entfernen oder ersetzen sie diese gegebenenfalls.
-Detailierte Informationen finden sie in der <a href="https://www.wetransform.to/help/en/help-page-category-datasetworkflow/help-page-subcategory-datasetworkflowcreatedataset/2015/01/10/dataset-create/">hale»connect Dokumentation.</a>
+Detailierte Informationen finden sie in der <a href="../../create-manage-datasets/create-dataset/2015-01-10-dataset-create">hale»connect Dokumentation.</a>

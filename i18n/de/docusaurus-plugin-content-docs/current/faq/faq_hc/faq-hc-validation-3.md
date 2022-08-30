@@ -11,5 +11,5 @@ language: de
 but the target namespace of the schema document is '[...]</code> aus. Wieso?</h2>
 
 Der INSPIRE Validator akzeptiert keine Objekte aus verschiedenen Namensräumen auf oberster Ebene. 
-Entsprechende Informationen finden sich in diesem <a href="https://github.com/opengeospatial/ets-wfs20/issues/217">Issue</a>.
+Entsprechende Informationen finden sich in diesem <a target="_blank" href="https://github.com/opengeospatial/ets-wfs20/issues/217">Issue</a>.
 

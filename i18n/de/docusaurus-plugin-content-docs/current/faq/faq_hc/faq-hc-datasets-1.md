@@ -11,5 +11,5 @@ language: de
 
 Im Moment wird das Hochladen von mehr als einer Raster-Datei für einen Datensatz nicht durch hale»connect unterstützt. 
 
-Mehr Informationen finden sich in <a href="https://www.wetransform.to/help/de/help-page-category-datasetworkflow/help-page-subcategory-datasetworkflowcreatedataset/2015/01/09/dataset-multiSource/">diesem Abschnitt unserer Dokumentation</a>.
+Mehr Informationen finden sich in <a href="../../create-manage-datasets/create-dataset/2015-01-09-dataset-multiSource">diesem Abschnitt unserer Dokumentation</a>.
 

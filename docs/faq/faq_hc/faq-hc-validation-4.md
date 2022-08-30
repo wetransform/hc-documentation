@@ -12,5 +12,5 @@ language: en
 Why?</h2>
 
 There is a bug concerning left-handed coordinate reference systems in the INSPIRE Validator 
-that can lead to such an error message. See the <a href="https://github.com/inspire-eu-validation/ets-repository/issues/60">discussion</a> about this issue.
+that can lead to such an error message. See the <a target="_blank" href="https://github.com/inspire-eu-validation/ets-repository/issues/60">discussion</a> about this issue.
 

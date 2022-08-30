@@ -29,15 +29,15 @@ C:\Users\Mustermann>mkdir .hale
 **Installation über update-site**
 
 Wenn für die Verbindung ins Internet kein Proxy erforderlich ist, 
-können die hale»studio pro Plugins über den <a href="http://help.halestudio.org/latest/index.jsp?topic=%2Feu.esdihumboldt.hale.doc.user%2Fhtml%2Fgetting_started%2Finstall_plugins.html&cp%3D0_2_3">eingebauten Installationsmechanismus</a> installiert werden.
-Die Adresse der Update-Site für hale-pro-Plugins und das Passwort für den Zugriff können über das <a href="https://wetransform.atlassian.net/servicedesk/customer/portal/1">Service Desk</a> angefragt werden.
+können die hale»studio pro Plugins über den <a target="_blank" href="http://help.halestudio.org/latest/index.jsp?topic=%2Feu.esdihumboldt.hale.doc.user%2Fhtml%2Fgetting_started%2Finstall_plugins.html&cp%3D0_2_3">eingebauten Installationsmechanismus</a> installiert werden.
+Die Adresse der Update-Site für hale-pro-Plugins und das Passwort für den Zugriff können über das <a target="_blank" href="https://wetransform.atlassian.net/servicedesk/customer/portal/1">Service Desk</a> angefragt werden.
 
 **Download der hale»studio pro Plugins**
 
 Wenn die Installation über die Update-Site z. B. wegen eines Proxys nicht verwendet werden kann, 
-kann die Update-Site als ZIP-Archiv unter <a href="https://wetransform.app.box.com/v/hale-pro-plugins">dieser Adresse</a> heruntergeladen werden.
-Das Passwort für den Zugriff kann über das <a href="https://wetransform.atlassian.net/servicedesk/customer/portal/1">Service Desk</a> angefragt werden.
-Das heruntergeladene Archiv kann dann als Update-Site eingebunden werden (<a href="http://help.halestudio.org/latest/index.jsp?topic=%2Feu.esdihumboldt.hale.doc.user%2Fhtml%2Fgetting_started%2Finstall_plugins.html&cp%3D0_2_3">Anleitung</a>).
+kann die Update-Site als ZIP-Archiv unter <a target="_blank" href="https://wetransform.app.box.com/v/hale-pro-plugins">dieser Adresse</a> heruntergeladen werden.
+Das Passwort für den Zugriff kann über das <a target="_blank" href="https://wetransform.atlassian.net/servicedesk/customer/portal/1">Service Desk</a> angefragt werden.
+Das heruntergeladene Archiv kann dann als Update-Site eingebunden werden (<a target="_blank" href="http://help.halestudio.org/latest/index.jsp?topic=%2Feu.esdihumboldt.hale.doc.user%2Fhtml%2Fgetting_started%2Finstall_plugins.html&cp%3D0_2_3">Anleitung</a>).
 
 
 **Installation von Plugins für hale»studio-Versionen < 3.5.0**

@@ -28,14 +28,14 @@ C:\Users\Mustermann>mkdir .hale
 
 **Installation via update-site**
 
-If internet access is available without the need to use a proxy, the hale»studio pro plugins can be installed via the <a href="http://help.halestudio.org/latest/index.jsp?topic=%2Feu.esdihumboldt.hale.doc.user%2Fhtml%2Fgetting_started%2Finstall_plugins.html&cp%3D0_2_3">online update site</a>.
-The update site for hale»studio pro plugins and the required password for the access are provided by the <a href="https://wetransform.atlassian.net/servicedesk/customer/portal/1">Service Desk</a> upon request.
+If internet access is available without the need to use a proxy, the hale»studio pro plugins can be installed via the <a target="_blank" href="http://help.halestudio.org/latest/index.jsp?topic=%2Feu.esdihumboldt.hale.doc.user%2Fhtml%2Fgetting_started%2Finstall_plugins.html&cp%3D0_2_3">online update site</a>.
+The update site for hale»studio pro plugins and the required password for the access are provided by the <a target="_blank" href="https://wetransform.atlassian.net/servicedesk/customer/portal/1">Service Desk</a> upon request.
 
 
 **Download the hale»studio pro Plugins**
 
-In case the installation via the online update site is not possible (e.g. due to a proxy) it can instead be downloaded as a ZIP archive <a href="https://wetransform.app.box.com/v/hale-pro-plugins">here</a>.
-The required password for the access is provided by the <a href="https://wetransform.atlassian.net/servicedesk/customer/portal/1">Service Desk</a> upon request.
+In case the installation via the online update site is not possible (e.g. due to a proxy) it can instead be downloaded as a ZIP archive <a target="_blank" href="https://wetransform.app.box.com/v/hale-pro-plugins">here</a>.
+The required password for the access is provided by the <a target="_blank" href="https://wetransform.atlassian.net/servicedesk/customer/portal/1">Service Desk</a> upon request.
 
 **Installation of hale plugins for versions < 3.5.0**
 
