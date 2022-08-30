@@ -20,6 +20,11 @@ When writing a document, include the english version in the `docs/` folder. And 
 
 In order to group similar documents under the same dropdown in the website sidebar, simply include them in the same folder. Futher limitless nested structure can be created to make a dropdown containing more dropdowns in it for instance.
 
+### Reference Documents
+Documents can be referenced with relative paths. For instance, the reference is in a document within the folder `a`, and it is referencing a document within the folder `b`, then the path `../b/doc` can be used in an anchor element as `<a href="../b/create-dataset">Create a dataset</a>`.
+
+Note: the above relative referencing scheme works with the user configured `locale` accordingly. i.e. it will reference the English version if the user is using the English locale, and vice versa.
+
 ### Use Assets & Images
 In order to include an image in the document, use the `<img/>` tag, and make sure:
 - The image tag is properly closed, e.g. `<img src="example.png" />` is valid. But `<img src="example.png" >` is not. (notice the closing tag `/>`)
@@ -41,10 +46,10 @@ Usually for a valid JSX inline styling, remove the dash and camel-case the prope
 In order to add a class to a specific HTML element, use `className` keyword instead of `class`.
 
 ### Use Docusaurus Built-in Components
-Docusaurus provides multiple components that can be used, such as warning/danger cards, etc. They are easy to use, and are compatible with the theme. See the full list [here](https://docusaurus.io/docs/markdown-features)
+Docusaurus provides multiple components that can be used, such as warning/danger cards, etc. They are easy to use, and are compatible with the theme. See the full list [here](https://docusaurus.io/docs/markdown-features).
 
 ### Add Navigation for New Content
-When new documents are added, they won't appear in the sidebar until they are added to the sidebar.js file. See [the official documentation](https://docusaurus.io/docs/sidebar/items) for more details on this.
+When new documents are added, they won't appear in the sidebar until they are added to the `sidebar.js` file. See [the official documentation](https://docusaurus.io/docs/sidebar/items) for more details on this.
 
 ### Generate Translations
 When new content is added, whether in `docs` folder or elsewhere, run `npm run docusaurus write-translations -- --locale [locale]` to generate translation entries from the new content. Fill those generated entries with the correct translations for that given locale.
