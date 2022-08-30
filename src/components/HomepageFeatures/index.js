@@ -4,47 +4,48 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/images/undraw_docusaurus_mountain.svg').default,
+    title: 'Define a theme',
+    img: require('@site/static/images/index-theme.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        A theme is a central configuration object that links all types of resources.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/images/undraw_docusaurus_tree.svg').default,
+    title: 'Create a dataset',
+    img: require('@site/static/images/index-dataset.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        A data set contains one or more files and associated metadata, and can be published via different types of services.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/images/undraw_docusaurus_react.svg').default,
+    title: 'Manage users and organisations',
+    img: require('@site/static/images/index-usersOrgs.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        All users are associated with an organisation and have a role inside it.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({img, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+    <div className={clsx('col col--4 popular-article')}>
+      <a href="#">
+        <div className='wrapper'>
+          <div className="text--center">
+            <img src={img} className={styles.img} role="img" />
+          </div>
+          <div className="text--center padding-horiz--md">
+            <h3>{title}</h3>
+            <p>{description}</p>
+          </div>
+        </div>
+      </a>
     </div>
   );
 }
@@ -52,7 +53,8 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container popular-articles">
+        <h1>Popular Articles</h1>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
