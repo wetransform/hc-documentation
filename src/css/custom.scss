@@ -12,6 +12,9 @@ $wetf-stroke: #2604294F;
 $wetf-dark-blue-rgb: 64, 87, 115;
 $wetf-white: #fff;
 
+$wetf-white-secondary: #f6f6f6;
+$wetf-black-secondary: #222;
+
 @font-face {
     font-family: 'Manrope';
     font-style: normal;
@@ -36,6 +39,7 @@ $wetf-white: #fff;
     --ifm-color-primary-dark: #{$wetf-dark-blue};
     --ifm-color-primary-light: #{$wetf-mid-blue};
     --ifm-color-primary-lighter: #{$wetf-light-blue};    
+    --ifm-background-secondary: #{$wetf-white-secondary};    
     /* Hero and footer */ 
     --ifm-menu-color: #{$wetf-text};
     --ifm-hero-background-color: #{$wetf-dark-blue};
@@ -54,6 +58,7 @@ $wetf-white: #fff;
     --ifm-color-primary-dark: #{$wetf-dark-blue};
     --ifm-color-primary-light: #{$wetf-mid-blue};
     --ifm-color-primary-lighter: #{$wetf-light-blue};
+    --ifm-background-secondary: #{$wetf-black-secondary};    
     /* Style Search Plugin */
     --aa-primary-color-rgb: #{$wetf-white} !important;
     --aa-muted-color-rgb: #{$wetf-white} !important;  
@@ -87,9 +92,10 @@ $wetf-white: #fff;
 }
 
 .aa-DetachedCancelButton {
-  color: var(--ifm-font-color-base);  
+  color: #{$wetf-text} !important;  
   background: $wetf-organge!important;  
-  border-radius: 15px!important;
+  border-radius: 12px !important;
+  font-size: 12px !important;
 }
 
 .hero--primary {
@@ -203,10 +209,10 @@ tr:nth-child(even) {
 
 .popular-article {
   .wrapper {
-    color: #{$wetf-dark-blue};
-    background: #{$wetf-light-blue};
+    color: var(--ifm-menu-color);
+    background: var(--ifm-background-secondary);
     border-radius: 8px;
-    padding: 16px 4px;
+    padding: 16px;
     box-shadow:
       0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -214,6 +220,7 @@ tr:nth-child(even) {
       0 22.3px 17.9px rgba(0, 0, 0, 0.072),
       0 41.8px 33.4px rgba(0, 0, 0, 0.086),
       0 100px 80px rgba(0, 0, 0, 0.12);
+    border-bottom: solid 4px var(--ifm-color-primary);
   }
   img {
     border-radius: 2px;
@@ -235,5 +242,19 @@ tr:nth-child(even) {
   h1 {
     font-size: 42px;
     margin-bottom: 32px;
+  }
+}
+
+
+.button--link {
+  color: var(--ifm-color-primary);
+  border-radius: 15px !important;
+  border: none;
+  transition: 0.25s;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 20px 30px 20px 30px;
+  &:hover {
+    transform: translateX(4px);
   }
 }

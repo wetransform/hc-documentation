@@ -8,10 +8,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'hale»connect',
   tagline: 'One of the world\'s leading platforms for Geodata Transformations',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docusaurus.wetransform.eu',
   baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'images/favicon.ico',
 
   // GitHub pages deployment config.
