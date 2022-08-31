@@ -269,5 +269,41 @@
   "cmfcmf/d-s-l.searchBar.noResults": {
     "message": "Keine Suchergebnissse gefunden.",
     "description": "message shown if no results are found"
+  },
+  "hero.gotoDocs": {
+    "message": "Gehen Sie zur hale»connect-Dokumentation"
+  },
+  "hero.learnMore": {
+    "message": "Mehr erfahren"
+  },
+  "hero.estimatePricing": {
+    "message": "Schätzen Sie die Kosten für eine hale»connect Cloud-Lösung"
+  },
+  "hero.signUp": {
+    "message": "Melden Sie sich für eine kostenlose 14-tägige Testversion an"
+  },
+  "Define a theme": {
+    "message": "Ein Thema anlegen"
+  },
+  "Create a dataset": {
+    "message": "Datensatz anlegen und publizieren"
+  },
+  "Manage users and organisations": {
+    "message": "Benutzer und Organisationen verwalten"
+  },
+  "hero.popularArticles": {
+    "message": "populäre Artikel"
+  },
+  "hero.hcDescription": {
+    "message": "hale»connect ist das weltweit beste Software-as-a-Service-Tool für die agile, datengetriebene Design und Implementierung von mehr als 5.000 offenen Standards wie INSPIRE, ALKIS, XPlanGML, SOSI, eCH, WFD, FFH, Natura2000, CDDA , und ArcGIS. Es reduziert die komplexe Aufgabe der Veröffentlichung von Datensätzen als Dienste, gekoppelt mit Metadaten, auf einen einzigen benutzerfreundlichen automatisierten Workflow."
+  },
+  "A theme is a central configuration object that links all types of resources.": {
+    "message": "Das Thema ist ein Konfigurationsobjekt, mit dem sämtliche Ressourcen verknüpft werden."
+  },
+  "A data set contains one or more files and associated metadata, and can be published via different types of services.": {
+    "message": "Ein Datensatz enthält eine oder mehrere Dateien, denen Metadaten zugeordnet werden. Zu diesem können Dienste publiziert werden."
+  },
+  "All users are associated with an organisation and have a role inside it.": {
+    "message": "Alle Benutzer gehören zu einer Organisation und haben innerhalb dieser eine Rolle inne."
   }
 }

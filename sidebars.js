@@ -16,11 +16,6 @@ const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
     {
-      // shorthand of this object is 'intro'
-      type: 'doc',
-      id: 'intro',
-    },
-    {
       // shorthand of this object is {'FAQ': [docs]}
       type: 'category',
       label: 'FAQ', 
