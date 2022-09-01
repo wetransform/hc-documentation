@@ -30,6 +30,6 @@ The Show metadata editor on data set creation toggle switch enables you to contr
   * Toggle switch is active: Display the metadata editor during data set creation.
   * Toggle switch is deactivated: Don’t display the metadata editor during data set creation. Deactivating the editor means that users don’t have any control over metadata in the initial dataset creation, but can still later on go to the data set -> metadata section to edit the generated metadata.
 
-Visit the [Edit metadata configuration](/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-thememetadata/2015/02/10/theme-edit-metadata/) documentation for more information.
+Visit the [Edit metadata configuration](../../setup-hc/edit-metadata-config/2015-02-10-theme-edit-metadata.md) documentation for more information.
 
 Click the “Save” button to save any changes to the metadata configurations.

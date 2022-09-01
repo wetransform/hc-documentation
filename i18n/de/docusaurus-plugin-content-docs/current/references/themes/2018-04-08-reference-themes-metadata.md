@@ -28,7 +28,7 @@ Der &laquo;Editor bei Datensatz-Erstellung anzeigen&raquo;-Schalter ermöglicht 
 *	Auswahl aktiv: Der Metadaten-Editor wird während der Erstellung des Datensatzes angezeigt.
 *	Auswahl inaktiv: Der Metadaten-Editor wird während der Erstellung des Datensatzes nicht angezeigt. Nutzer haben dann während der initialen Erstellung eines Datensatzes keine Kontrolle über die Metadaten, können diese aber nach Erstellung des Datensatzes unter &laquo;Daten&raquo; -> &laquo;Metadaten&raquo; bearbeiten.
 
-Für mehr Informationen ziehen sie bitte die [Metadatenkonfiguration bearbeiten](/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-thememetadata/2015/02/10/theme-edit-metadata/)-Dokumentation zurate.
+Für mehr Informationen ziehen sie bitte die [Metadatenkonfiguration bearbeiten](../../setup-hc/edit-metadata-config/2015-02-10-theme-edit-metadata.md)-Dokumentation zurate.
 
 Click the “Save” button to save any changes to the metadata configurations.
 

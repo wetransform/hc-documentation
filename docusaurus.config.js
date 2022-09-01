@@ -114,7 +114,7 @@ const config = {
             items: [
               {
                 label: 'Getting Started with hale»connect',
-                to: '/docs/intro',
+                to: '/docs/getting-started/2018-04-28-quick-start',
               },
               {
                 label: 'FAQ',
