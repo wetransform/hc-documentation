@@ -16,11 +16,11 @@ The ESRI shapefile is a vector data storage format comprised of three files with
   * dbf: dBase file used to store attribute information
 
 Shapefiles may have additional files, such as `.prj` which stores coordinate system information (used by ArcGIS), or `.cpg` which specifies the code page for identifying the character set to be used. By definition, a vector is a Cartesian-based (i.e. X,Y) data structure used to store spatial data. Most geographic information systems, including ESRI's ArcGIS, store geospatial data in vector format. Other common spatial data formats include raster and TIN.
-For more information, read the [ESRI Shapefile Technical Description: An ESRI White Paper-July 1988](www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
+For more information, read the [ESRI Shapefile Technical Description: An ESRI White Paper-July 1988](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
 
 **ESRI prj files and WKT files**
 
-A shapefile is typically accompanied by a `.prj` file that contains a Well known text (WKT) string which stores coordinate reference system information. Well known text (WKT) is a text markup language for representing vector geometry objects on a map. The format was originally defined by the Open Geospatial Consortium (OGC) and described in their Simple Feature Access specification, to which ESRI was a contributing member. The [current version of the WKT standard]((https://www.opengeospatial.org/standards/wkt-crs)) was published on August 13, 2019.
+A shapefile is typically accompanied by a `.prj` file that contains a Well known text (WKT) string which stores coordinate reference system information. Well known text (WKT) is a text markup language for representing vector geometry objects on a map. The format was originally defined by the Open Geospatial Consortium (OGC) and described in their Simple Feature Access specification, to which ESRI was a contributing member. The [current version of the WKT standard](https://www.opengeospatial.org/standards/wkt-crs) was published on August 13, 2019.
 
 Not all `.prj` files contain the same parameters. There are also syntactical differences between ESRI WKT files and OGC WKT files. Visit the [EPSG.io](https://epsg.io/) to view examples of different WKT files. Here are examples of WKT files for EPSG:25832:
 

@@ -16,7 +16,7 @@ ESRI Shapefile ist ein Speicherformat für Vektor-Geodaten, welches auf dem Data
   * dbf: dBase-Datei, die zur Speicherung von Attribut-Informationen dient
 
 Zu einem Shapefile können weitere Dateien gehören - beispielsweise `.prj`-Dateien, welche Informationen zum Koordinatensystem für ArcGIS enthalten oder `.cpg`-Dateien, welche den verwendeten Zeichensatz spezifizieren. Shapefiles enthalten Vektor-Geodaten. Die meisten geographischen Informationssysteme, darunter beispielsweise ArcGIS von ESRI, speichern räumliche Daten im Vektor-Format. Andere übliche Datenformate sind beispielsweise Raster oder TIN.
-Für mehr Informationen können sie [ESRI Shapefile Technical Description: An ESRI White Paper-July 1988](www.esri.com/library/whitepapers/pdfs/shapefile.pdf) lesen.
+Für mehr Informationen können sie [ESRI Shapefile Technical Description: An ESRI White Paper-July 1988](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf) lesen.
 
 **ESRI prj-Dateien und WKT-Dateien**
 
