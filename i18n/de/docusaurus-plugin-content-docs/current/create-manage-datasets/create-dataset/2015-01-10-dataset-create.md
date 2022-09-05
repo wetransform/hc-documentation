@@ -45,7 +45,7 @@ Die Größenbeschränkung für Anhänge auf haleconnect.com liegt bei 750 MB.
     * Anhänge, die während des Anlegens eines Datensatzes hochgeladen werden, werden automatisch zum &laquo;Anhang&raquo;-Fenster im &laquo;Dateien&raquo;-Bereich hinzugefügt.
     * Für die Anhang-Dateien, die auf hale»connect hochgeladen werden, gibt es öffentlich zugängliche Links. Die Links zu Anhang-Dateien können in ihren *Predefined Data*-Download-Dienst eingebunden werden. Die Links zu den Anhang-Dateien und externen URLs können auch im Feature Explorer-Werkzeug betrachtet werden.
   * Für Anhang-Dateien werden keine separaten Dienste-Layer erstellt.
-  * Besuchen Sie unsere Hilfe-Seite für [mehr Informationen zum Arbeiten mit Anhängen](https://www.wetransform.to/help/de/help-page-category-reference/help-page-subcategory-reference-data/2018/03/10/reference-data-files/)
+  * Besuchen Sie unsere Hilfe-Seite für [mehr Informationen zum Arbeiten mit Anhängen](../../references/data/2018-03-10-reference-data-files.md)
 
 **Kombination der verschiedenen Datenformate**
   * Datensätze können sowohl \*.gml- als auch Raster- und Anhang-Ressourcen enthalten. In Darstellungs- und Download-Diensten werden Vektor- und Rasterdaten in separaten Layern veröffentlicht.

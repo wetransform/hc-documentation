@@ -65,10 +65,10 @@ When you are finished, click &laquo;Continue&raquo;
 
 The next step in the online transformation project workflow is to create a source schema, or schemas, for your source data. Your source data is the data that you want to transform to another format, such as INSPIRE GML. hale»connect provides several options for creating a schema. You can visit the following documentation pages to learn more about schema creation:
 
-  * [Create a schema based on a schema preset](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-preset/)
-  * [Create a schema by uploading a schema file](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-file/)
-  * [Create a schema using a web address](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-external/)
-  * [Create a new schema based on an existing schema](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-existing/)
+  * [Create a schema based on a schema preset](../setup-hc/create-a-schema/2018-01-28-schema-preset.md)
+  * [Create a schema by uploading a schema file](../setup-hc/create-a-schema/2018-01-28-schema-create-file.md)
+  * [Create a schema using a web address](../setup-hc/create-a-schema/2018-01-28-schema-create-external.md)
+  * [Create a new schema based on an existing schema](../setup-hc/create-a-schema/2018-01-28-schema-create-existing.md)
 
 In this tutorial, we will work with the option to create a schema by uploading a schema file. Your source data is in shapefile format, and the option to create a schema by uploading a schema file enables us to simply upload a shapefile. hale»connect automatically reads the shapefile and generates a schema for you.
 

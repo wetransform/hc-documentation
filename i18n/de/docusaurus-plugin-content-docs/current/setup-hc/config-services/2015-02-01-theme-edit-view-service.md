@@ -39,6 +39,6 @@ Das SLD muss eine valide Styled Layer Descriptor-Datei sein. Im folgenden ist ei
                   </ogc:PropertyName>
                 </se:Geometry>
                 …
-Für weitere Informationen zu SLD-Dateien auf hale»connect, besuchen sie bitte das [SLD-Tutorial](https://www.wetransform.to/help/de/help-page-category-tutorials/help-page-subcategory-tutorials/2018/05/03/sld-tutorial/).
+Für weitere Informationen zu SLD-Dateien auf hale»connect, besuchen sie bitte das [SLD-Tutorial](../../tutorials/2018-05-03-sld-tutorial.md).
 
 1. Aktivieren sie den &laquo;Zusätzliche Ebenen aus Raster-Quellen erlauben&raquo;-Schalter. Das Aktivieren des Schalters ermöglicht es Nutzenden, zusätzlich zu Vektor-Daten Raster-Daten im PNG- oder GeoTIFF-Format während des Anlegens eines Datensatzes hochzuladen und zu veröffentlichen. Die Raster-Daten werden in einem separaten Raster-Layer veröffentlicht.

@@ -40,6 +40,6 @@ The SLD must be a fully valid Styled Layer Descriptor file. The following is an 
                   </ogc:PropertyName>
                 </se:Geometry>
                 …
-For more information about SLDs on hale»connect, visit the [SLD tutorial](https://www.wetransform.to/help/en/help-page-category-tutorials/help-page-subcategory-tutorials/2018/05/03/sld-tutorial/).
+For more information about SLDs on hale»connect, visit the [SLD tutorial](../../tutorials/2018-05-03-sld-tutorial.md).
 
 1. Activate or deactivate additional raster layers from raster sources. The toggle enables users to upload and publish PNG or GeoTIFF raster data, in addition to vector data, during dataset creation. The raster data will be published in a separate raster layer.

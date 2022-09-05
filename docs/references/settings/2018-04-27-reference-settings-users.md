@@ -19,4 +19,4 @@ Each user record is displayed with their personal icon, user alias, user name, o
 
 Superusers have additional options available when viewing the account details of users; they have the ability to edit accounts details, change user roles and to deactivate or delete users.
 
-Superusers can also create new users in the Users section. For more information, visit the  [Add Users](https://www.wetransform.to/help/en/help-page-category-users/help-page-subcategory-users-register/2015/03/05/users-add/) section of the documentation.
+Superusers can also create new users in the Users section. For more information, visit the  [Add Users](../../users-roles-orgs/registration/2015-03-05-users-add.md) section of the documentation.

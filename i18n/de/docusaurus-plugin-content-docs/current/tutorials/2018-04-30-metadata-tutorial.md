@@ -55,10 +55,10 @@ Um ihrem Nutzerprofil ein eigenes Metadaten-Feld hinzuzufügen, folgen Sie mit d
 
 Der nächste Schritt im Metadaten-Konfigurations-Ablauf ist, ein Schema und ein Thema für ihren Datensatz anzulegen. Ihr Datensatz besteht aus den Daten, für die sie Metadaten erzeugen möchten. hale»connect bietet verschiedene Möglichkeiten, ein Schema anzulegen. Mehr Informationen zu diesen finden sie in den folgenden Abschnitten der Dokumentation:
 
-  * [Ein neues Schema über die Auswahl eines Presets erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-preset/)
-  * [Ein neues Schema über das Hochladen von Schemadateien erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-file/)
-  * [Ein neues Schema über Angabe einer Web-Adresse eines Schemas erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-external/)
-  * [Ein neues Schema auf Basis eines bestehenden Schemas erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-existing/)
+  * [Ein neues Schema über die Auswahl eines Presets erstellen](../setup-hc/create-a-schema/2018-01-28-schema-preset.md)
+  * [Ein neues Schema über das Hochladen von Schemadateien erstellen](../setup-hc/create-a-schema/2018-01-28-schema-create-file.md)
+  * [Ein neues Schema über Angabe einer Web-Adresse eines Schemas erstellen](../setup-hc/create-a-schema/2018-01-28-schema-create-external.md)
+  * [Ein neues Schema auf Basis eines bestehenden Schemas erstellen](../setup-hc/create-a-schema/2018-01-28-schema-create-existing.md)
 
 In diesem Tutorial werden wir die Option nutzen, ein neues Schema über das Hochladen einer Schema-Datei zu erstellen. Ihre Quell-Daten sind in Shape-Format und hale»connect ermöglicht das Erstellen eines Schemas aus einer vorliegenden Shape-Datei. hale»connect liest diese Shape-Datei automatisch und generiert ihr Schema.
 
@@ -86,7 +86,7 @@ Ein Thema ist ein wiederverwendbares Konfigurationsobjekt, das verwendet wird, u
 * Verbindungen zu Transformationsprojekten, die Format-Konvertierungen und Schema-Transformationen erlauben.
 * Eine Konfiguration für einen automatischen Ablauf, die dafür sorgt, dass die Dienste-Bereitstellung und die Daten-Transformation durch bestimmte Ereignisse, wie die Aktualisierung eines Datensatzes ausgelöst werden können.
 
-Das Metadaten-Editor-Werkzeug befindet sich im &laquo;Metadaten&raquo;-Bereich ihres Themas. In diesem Schritt nutzen wir den Metadaten-Editor um eine wiederverwendbare Metadaten-Konfiguration zu erstellen, die eigene Metadaten-Felder, Autofill-Regeln und Enumerationen verwendet. Die Metadaten-Konfiguration wird für alle Datensätze verwendet, die ihr Thema nutzen. Wenn sie Metadaten haben, die sie wiederverwenden wollen, finden sie Informationen dazu im [Metadatenkonfiguration bearbeiten](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-thememetadata/2015/02/10/theme-edit-metadata/)-Bereich unserer Hilfe.
+Das Metadaten-Editor-Werkzeug befindet sich im &laquo;Metadaten&raquo;-Bereich ihres Themas. In diesem Schritt nutzen wir den Metadaten-Editor um eine wiederverwendbare Metadaten-Konfiguration zu erstellen, die eigene Metadaten-Felder, Autofill-Regeln und Enumerationen verwendet. Die Metadaten-Konfiguration wird für alle Datensätze verwendet, die ihr Thema nutzen. Wenn sie Metadaten haben, die sie wiederverwenden wollen, finden sie Informationen dazu im [Metadatenkonfiguration bearbeiten](../setup-hc/edit-metadata-config/2015-02-10-theme-edit-metadata.md)-Bereich unserer Hilfe.
 
 Navigieren sie zunächst zu dem Thema, das sie während des Anlegen des Schemas in Schritt 2 angelegt haben.
 
@@ -220,7 +220,7 @@ Im letzten Schritt legen wir einen Datensatz an und prüfen die Metadaten, die w
 hale»connect beginnt sofort, ihre Metadaten zu testen und zu validieren.
 
 * Klicken sie auf den &laquo;Datstellungs-Dienste&raquo;-Bereich.
-* Das Testberichte-Feld stellt eine Liste von PDF-Dateien zur Verfügung, welche die Ergebnisse einer Reihe von Tests enthalten, die mit den veröffentlichten Metadaten und Diensten durchgeführt werden. Die Tests überprüfen die Konformität zu ISO, GDI-DE und INSPIRE. Mehr Informationen darüber finden sie im [Darstellungs-Dienste](https://www.wetransform.to/help/de/help-page-category-reference/help-page-subcategory-reference-data/2018/03/08/reference-data-view-services/)-Bereich unserer Hilfe.
+* Das Testberichte-Feld stellt eine Liste von PDF-Dateien zur Verfügung, welche die Ergebnisse einer Reihe von Tests enthalten, die mit den veröffentlichten Metadaten und Diensten durchgeführt werden. Die Tests überprüfen die Konformität zu ISO, GDI-DE und INSPIRE. Mehr Informationen darüber finden sie im [Darstellungs-Dienste](../references/data/2018-03-08-reference-data-view-services.md)-Bereich unserer Hilfe.
 * Klicken sie auf einen der aufgelisteten Testberichte um die Ergebnisse anzusehen.
 
 Die Konfiguration von Metadaten hilft Nutzenden Metadaten schnell und effizient zu erzeugen, während das Fehlerpotential deutlich reduziert wird. hale»connect sammelt Informationen von verschiedenen Stellen der PLattform um den Metadaten-Generierungs-Prozess zu automatisieren und valide sowie konforme Datensatz- und Dienste-Metadaten zu produzieren. In diesem Tutorial haben wir Metadaten in einem Thema konfiguriert, dass von verschiedenen Nutzern mit allen möglichen Rollen so oft wir nötig wiederverwendet werden kann, wodurch die Belastung durch Vorgaben zu Metadaten deutlich vermindert werden kann.
