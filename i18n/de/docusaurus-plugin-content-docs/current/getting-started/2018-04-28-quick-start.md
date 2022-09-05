@@ -50,11 +50,11 @@ Folgen sie diesen Schritten um einen neuen Datensatz auf hale»connect zu veröf
 
 Mehr Informationen zu Datensätzen finden sie in den folgenden Abschnitten der Dokumentation:
 
-[Einen neuen Datensatz anlegen](https://www.wetransform.to/help/de/help-page-category-datasetworkflow/help-page-subcategory-datasetworkflowcreatedataset/2015/01/10/dataset-create/)
+[Einen neuen Datensatz anlegen](../create-manage-datasets/create-dataset/2015-01-10-dataset-create.md)
 
-[Metadaten für einen Datensatz bearbeiten](https://www.wetransform.to/help/de/help-page-category-datasetworkflow/help-page-subcategory-datasetworkfloweditmetadata/2015/01/05/dataset-enter-metadata/)
+[Metadaten für einen Datensatz bearbeiten](../create-manage-datasets/edit-metadata/2015-01-05-dataset-enter-metadata.md)
 
-[Dienste für einen Datensatz veröffentlichen](https://www.wetransform.to/help/de/help-page-category-datasetworkflow/help-page-subcategory-datasetworkflowpublishservices/2015/01/01/dataset-publish-services/)
+[Dienste für einen Datensatz veröffentlichen](../create-manage-datasets/publish-services/2015-01-01-dataset-publish-services.md)
 
 **Ein online-Transformationsprojekt veröffentlichen**
 

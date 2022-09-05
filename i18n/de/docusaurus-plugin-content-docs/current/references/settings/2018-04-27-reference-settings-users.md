@@ -19,4 +19,4 @@ Alle aufgeführten Nutzenden werden mit dem zugehörigen Symbol, Nutzernamen, Na
 
 Für Nutzende, die mit der Rolle &laquo;Superanwender&raquo; eingeloggt sind, sind zusätzliche Optionen verfügbar, wenn sie die Profildetails Nutzender einsehen. Sie können Profil-Details bearbeiten, Rollen von Nutzenden ändern und Nutzende deaktivieren oder löschen.
 
-Benutzende mit der Rolle &laquo;Superanwender&raquo; können im &laquo;Benutzer&raquo;-Bereich auch neue Benutzende hinzufügen. Nähere Informationen dazu finden sie in der [Benutzer anlegen](https://www.wetransform.to/help/de/help-page-category-users/help-page-subcategory-users-register/2015/03/05/users-add/) Bereich der Dokumentation.
+Benutzende mit der Rolle &laquo;Superanwender&raquo; können im &laquo;Benutzer&raquo;-Bereich auch neue Benutzende hinzufügen. Nähere Informationen dazu finden sie in der [Benutzer anlegen](../../users-roles-orgs/registration/2015-03-05-users-add.md) Bereich der Dokumentation.

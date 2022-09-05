@@ -21,4 +21,4 @@ Superusers have additional options available when viewing the account details of
 
 To add an existing user to your organisation, click &laquo;Add existing user&raquo; and enter the user name and email address of the user you want to invite to the organisation. Click  &laquo;Add&raquo; to send an invitation email to the user.
 
-Superusers can also create new users and suborganisations in the Organisations section. For more information, visit the  [Add Users](https://www.wetransform.to/help/en/help-page-category-users/help-page-subcategory-users-register/2015/03/05/users-add/) and [Create an organisation](https://www.wetransform.to/help/en/help-page-category-users/help-page-subcategory-users-orgs/2015/03/05/users-add-organisation/) sections of the documentation.
+Superusers can also create new users and suborganisations in the Organisations section. For more information, visit the  [Add Users](../../users-roles-orgs/registration/2015-03-05-users-add.md) and [Create an organisation](../../users-roles-orgs/manage-orgs/2015-03-04-users-add-organisation.md) sections of the documentation.

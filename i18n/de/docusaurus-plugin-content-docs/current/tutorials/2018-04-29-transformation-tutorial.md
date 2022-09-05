@@ -67,10 +67,10 @@ Wenn sie fertig sind, klicken sie auf &laquo;Weiter&raquo;.
 
 Der nächste Schritt für die Erstellung eines Online-Transformationsprojekts ist das Anlegen eines oder mehrerer Quell-Schemas für ihre Quell-Daten. Ihre Quell-Daten sind die Daten, die sie in ein anderes Format, wie beispielsweise INSPIRE-GML, überführen möchten. hale»connect stellt verschiedene Möglichkeiten bereit, ein Schema anzulegen. Mehr Informationen zum Anlegen von Schemas finden sie auf den folgenden Seiten der Dokumentation:
 
-  * [Ein neues Schema über die Auswahl eines Presets erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-preset/)
-  * [Ein neues Schema über das Hochladen von Schemadateien erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-file/)
-  * [Ein neues Schema über Angabe einer Web-Adresse eines Schemas erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-external/)
-  * [Ein neues Schema auf Basis eines bestehenden Schemas erstellen](https://www.wetransform.to/help/de/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-existing/)
+  * [Ein neues Schema über die Auswahl eines Presets erstellen](../setup-hc/create-a-schema/2018-01-28-schema-preset.md)
+  * [Ein neues Schema über das Hochladen von Schemadateien erstellen](../setup-hc/create-a-schema/2018-01-28-schema-create-file.md)
+  * [Ein neues Schema über Angabe einer Web-Adresse eines Schemas erstellen](../setup-hc/create-a-schema/2018-01-28-schema-create-external.md)
+  * [Ein neues Schema auf Basis eines bestehenden Schemas erstellen](../setup-hc/create-a-schema/2018-01-28-schema-create-existing.md)
 
 In diesem Tutorial werden wir die Option nutzen, ein neues Schema über das Hochladen einer Schema-Datei zu erstellen. Ihre Quell-Daten sind in Shape-Format und hale»connect ermöglicht das Erstellen eines Schemas aus einer vorliegenden Shape-Datei. hale»connect liest diese Shape-Datei automatisch und generiert ihr Schema.
 

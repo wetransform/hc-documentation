@@ -38,7 +38,7 @@ hale»connect currently supports a range of file formats which can be used to cr
   * Attachments uploaded during data set creation are added to the attachments section automatically
   * The attachment files uploaded to hale»connect have a publicly available link to the attachment file. The links to attachment files can be included in your Predefined data set download service. The links to attachment files and external URLs can also be viewed in the Feature Explorer Tool.
   * Separate service layers are not created for attachment files
-  * Visit our help page for [more information about working with attachments](https://www.wetransform.to/help/en/help-page-category-reference/help-page-subcategory-reference-data/2018/03/10/reference-data-files/)
+  * Visit our help page for [more information about working with attachments](../../references/data/2018-03-10-reference-data-files.md)
 
 **A combination of these data resources**
   * Data sets can include \*.gml, raster and attachment data resources. View and download services for vector and raster data are published as separate layers.

@@ -50,11 +50,11 @@ Follow these steps to publish a new data set on hale»connect:
 
 For more information about data sets, visit the following sections in our documentation:
 
-[Create a new data set](https://www.wetransform.to/help/en/help-page-category-datasetworkflow/help-page-subcategory-datasetworkflowcreatedataset/2015/01/10/dataset-create/)
+[Create a new data set](../create-manage-datasets/create-dataset/2015-01-10-dataset-create.md)
 
-[Edit metadata for a data set](https://www.wetransform.to/help/en/help-page-category-datasetworkflow/help-page-subcategory-datasetworkfloweditmetadata/2015/01/05/dataset-enter-metadata/)
+[Edit metadata for a data set](../create-manage-datasets/edit-metadata/2015-01-05-dataset-enter-metadata.md)
 
-[Publish services for a data set](https://www.wetransform.to/help/en/help-page-category-datasetworkflow/help-page-subcategory-datasetworkflowpublishservices/2015/01/01/dataset-publish-services/)
+[Publish services for a data set](../create-manage-datasets/publish-services/2015-01-01-dataset-publish-services.md)
 
 **Publishing an online transformation project**
 

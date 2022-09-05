@@ -55,10 +55,10 @@ To add a custom field to your user profile, follow this workflow logged in as a 
 
 The next step in the metadata configuration workflow is to create a schema and a theme for your dataset. Your dataset is the data that you want to create metadata for. hale»connect provides several options for creating a schema. You can visit the following documentation pages to learn more about schema creation:
 
-  * [Create a schema based on a schema preset](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-preset/)
-  * [Create a schema by uploading a schema file](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-file/)
-  * [Create a schema using a web address](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-external/)
-  * [Create a new schema based on an existing schema](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-schema-create/2018/01/28/schema-create-existing/)
+  * [Create a schema based on a schema preset](../setup-hc/create-a-schema/2018-01-28-schema-preset.md)
+  * [Create a schema by uploading a schema file](../setup-hc/create-a-schema/2018-01-28-schema-create-file.md)
+  * [Create a schema using a web address](../setup-hc/create-a-schema/2018-01-28-schema-create-external.md)
+  * [Create a new schema based on an existing schema](../setup-hc/create-a-schema/2018-01-28-schema-create-existing.md)
 
 In this tutorial, we will work with the option to create a schema by uploading a schema file. Your source data is in shapefile format, and the option to create a schema by uploading a schema file enables us to simply upload a shapefile. hale»connect automatically reads the shapefile and generates a schema for you.
 
@@ -86,7 +86,7 @@ A theme is a re-usable configuration object used to define common settings for d
 * An association with a transformation project that enables format conversion and schema transformation
 * A configuration for an automated workflow that can be set to execute service publishing and data transformation on certain events such as an update to a dataset
 
-The metadata editor tool is located in the Metadata section of your theme. In this step, we will use the metadata editor to create a re-useable metadata configuration which utilizes custom fields, autofill rules and enumerations. The metadata configuration is applied to all datasets that use your theme. If you have metadata that you want to re-use, visit the [Edit metadata configuration](https://www.wetransform.to/help/en/help-page-category-setup-haleconnect/help-page-subcategory-setup-haleconnect-thememetadata/2015/02/10/theme-edit-metadata/) section of our help for more information.
+The metadata editor tool is located in the Metadata section of your theme. In this step, we will use the metadata editor to create a re-useable metadata configuration which utilizes custom fields, autofill rules and enumerations. The metadata configuration is applied to all datasets that use your theme. If you have metadata that you want to re-use, visit the [Edit metadata configuration](../setup-hc/edit-metadata-config/2015-02-10-theme-edit-metadata.md) section of our help for more information.
 
 First, navigate to the theme you created during schema creation in Step 2.
 
@@ -220,7 +220,7 @@ In the final step, we will create a dataset and view the metadata that we config
 hale»connect will immediately begin to test and validate your metadata.
 
 * Click the section named View Services
-* The test reports panel provides a list of PDFs which contain the results of a series of tests executed on published metadata and services. Tests check for ISO, GDI-DE and INSPIRE compliancy. For more information, visit our [View Services](https://www.wetransform.to/help/en/help-page-category-reference/help-page-subcategory-reference-data/2018/03/08/reference-data-view-services/) help section.
+* The test reports panel provides a list of PDFs which contain the results of a series of tests executed on published metadata and services. Tests check for ISO, GDI-DE and INSPIRE compliancy. For more information, visit our [View Services](../references/data/2018-03-08-reference-data-view-services.md) help section.
 * Click on any of the listed test reports to view the results
 
 Metadata configuration helps users to create metadata quickly and efficiently, greatly reducing the potential for error. The hale»connect platform gathers information from across the platform to automate the metadata generation process and produce valid and compliant dataset and network service metadata. In this tutorial we configured metadata in a theme which can be reused by multiple users, with any role, as often as necessary, greatly reducing the burden of metadata requirements.
