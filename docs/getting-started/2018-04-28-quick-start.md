@@ -10,7 +10,7 @@ language: en
 
 hale»connect is a cloud-based platform that enables users to publish datasets, OGC webservices, and metadata.  Using hale»connect, users can also access transformation projects created in hale»studio to automate online data transformations. hale»connect gives users the ability to create, access, transform, collaborate on and share resources within their organization or with the public. For more information about annual subscriptions to hale»connect, please visit our [product page](https://www.wetransform.to/products/haleconnect/) section of the documentation.
 
-This quick start guide walks users through account registration and provides a brief overview of the different types of resources that are managed on hale»connect, as well as an introduction to some of the most common data publishing workflows. For more information, please visit our [documentation pages](https://www.wetransform.to/help/en/).
+This quick start guide walks users through account registration and provides a brief overview of the different types of resources that are managed on hale»connect, as well as an introduction to some of the most common data publishing workflows. For more information, please visit our [documentation pages](../../).
 
 ### **Getting started on hale»connect**
 
