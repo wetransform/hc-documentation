@@ -29,8 +29,7 @@ function HomepageHeader() {
         <div style={{ marginTop: '64px', display: 'flex', alignContent: 'center', flexDirection: 'column' }} >
           <p style={{ width: '40%', marginBottom: 0, alignSelf: 'center' }}>
             <Translate id="hero.hcDescription">
-              hale»connect is the world’s best Software-as-a-Service tool for the agile, data-
-              driven design and implementation of more than 5.000 Open Standards such as
+              hale»connect is the world’s best Software-as-a-Service tool for the Agile, data-driven design and implementation of more than 5.000 Open Standards such as
               INSPIRE, ALKIS, XPlanGML, SOSI, eCH, WFD, FFH, Natura2000, CDDA, and ArcGIS.
               It cuts down the complex task of publishing datasets as services, coupled with
               metadata, into a single user-friendly automated workflow.
@@ -45,14 +44,15 @@ function HomepageHeader() {
           </Link>
           <div style={{ marginTop: '32px' }}>
             <Link
-              className="button button--link"
+              className="button button--secondary button--lg"
+              style={{marginRight: '16px'}}
               to="https://wetransform.to/haleconnect-pricing/">
               <Translate id="hero.estimatePricing">
-                Estimate a hale»connect cloud solution costs
+                Estimate your hale»connect costs
               </Translate>
             </Link>
             <Link
-              className="button button--link"
+              className="button button--secondary button--lg"
               to="https://haleconnect.com/">
               <Translate id="hero.signUp">
                 Sign up for a free 14-day trial
