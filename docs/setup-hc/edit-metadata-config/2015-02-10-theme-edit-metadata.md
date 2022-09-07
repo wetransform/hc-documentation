@@ -53,9 +53,9 @@ Every category has a list of field objects. Every field object describes how the
 *	**label:** The label that should be displayed to the user next to the input field.
 *	**description:** A longer, explanatory text for the fields that is displayed on hovering over the label.
 *	**type:** The primitive type of data this field expects. One of string, object, array, integer and float.
-*	**schema:** The schema or format of the value to be inserted. One of email, enum, geojson, json, wkt and csv. For more information about enumeration fields, see [Working with Enumeration Fields](#enumerationvalues)
+*	**schema:** The schema or format of the value to be inserted. One of email, enum, geojson, json, wkt and csv. For more information about enumeration fields, see [Working with Enumeration Fields](#working-with-enumeration-fields)
 *	**defaultValue:** A fixed default value that will always be assigned to the field.
-*	**autofillRule:** A dynamic default value that will be assigned to the field. This value is calculated from the current environment variables such as the user, the organisation context, the data set and the theme. When you click into a row with an ```autofillRule``` property key, an assistant for choosing a value appears in the upper right corner of the editor. For more information about autofill rules, see [Working with Autofill Rules](#autofill)
+*	**autofillRule:** A dynamic default value that will be assigned to the field. This value is calculated from the current environment variables such as the user, the organisation context, the data set and the theme. When you click into a row with an ```autofillRule``` property key, an assistant for choosing a value appears in the upper right corner of the editor. For more information about autofill rules, see [Working with Autofill Rules](#working-with-autofill-rules)
 *	**required:** Set to ```true``` if a type and schema compliant value must be provided.
 *	**editable:** Set to```true``` when the data manager should be able to edit the value in this field.
 *	**minOccurs:** Defines the minimum count of valid values for this input.
@@ -161,7 +161,6 @@ The following paths can be used for the ```name``` and ```target``` fields:
 
 
 ### Working with Enumeration Fields
-{:#enumerationvalues}
 Enumeration fields enable you to create dropdown menus on fields. Dropdown menus limit the end-user's data entry options to a set of pre-defined values, making metadata entry easier and less error prone. To use an enumeration field, enter "enum" in the schema field. Next, create a new field named "enumValues" at the end of the category object. The values are contained within square brackets []. Each label/value pair is contained within curly brackets {}. Copy the pattern of the "enumValues" field in the code block below to create an enumeration field in the category object of your choice. Replace the values after the colons in the label/value pairs with your own data.
 
         {
@@ -236,7 +235,6 @@ The image below displays the configured enumeration field. The dropdown menu is 
 <img src={require("/images/help/en/enumerationValues.png").default} alt="" title="Enumeration values" className="img-responsive img-inline-help"/>
 
 ### Working with Autofill Rules
-{:#autofill}
 Autofill rules enable the automatic generation of metadata through the use of variables. hale»connect allows you to use data you have previously provided to populate metadata fields. A few examples of these data include the contact details of your organisation, the name of your dataset, or attribute data associated with your dataset's feature types. Additionally, there are autofill rules for accessing the published services of a dataset. They are not executed when filling the metadata of a dataset, but only after its publication. They can be accessed under "publication" in the Autofill assistant. Autofill rules cannot be used for schemas that contain special characters in their name. To create an autofill rule, click on the value next to the ```autofillRule``` property key. The Autofill assistant appears in the top right corner of the Metadata editor. When you click on a value in the Autofill assistant, the autofill rule is inserted at the cursor position.
 
 <img src={require("/images/help/en/autofillAssistant1.png").default} alt="" title="Autofill assistant" className="img-responsive img-inline-help"/>

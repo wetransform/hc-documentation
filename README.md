@@ -21,9 +21,18 @@ When writing a document, include the english version in the `docs/` folder. And 
 In order to group similar documents under the same dropdown in the website sidebar, simply include them in the same folder. Futher limitless nested structure can be created to make a dropdown containing more dropdowns in it for instance.
 
 ### Reference Documents
-Documents can be referenced with relative paths. For instance, the reference is in a document within the folder `a`, and it is referencing a document within the folder `b`, then the path `../b/doc` can be used in an anchor element as `<a href="../b/create-dataset">Create a dataset</a>`.
+Documents can be referenced with relative paths. For instance, the reference is in a document within the folder `a`, and it is referencing a document within the folder `b`, then the path `../b/doc` can be used in an anchor element as `<a href="../b/create-dataset.md">Create a dataset</a>` or `[Create a dataset](../b/create-dataset.md)`. Using the `.md` file extension is optional in this case.
 
 Note: the above relative referencing scheme works with the user configured `locale` accordingly. i.e. it will reference the English version if the user is using the English locale, and vice versa.
+
+### Reference Sections of a Document
+Sections of a document can also be referenced. Docusaurus generates automatically heading identifiers for each heading to be used in section references. e.g. A `Hello World` heading will have a `hello-world` identifier. In order to reference its section, the anchor `[Go to HW Section](#hello-world)` can be used. 
+
+This same section can also be referenced from another file with `[Go to HW Section](./hw-file#hello-world)`. Notice that in this case, adding `.md` is not allowed and will break the reference. 
+
+Additionally, a custom heading identifier can be defined, e.g. `### Hello World {#my-explicit-id}`.
+
+The full documentation on this can be found [here](https://docusaurus.io/docs/next/markdown-features/toc#heading-ids).
 
 ### Use Assets & Images
 In order to include an image in the document, use the `<img/>` tag, and make sure:

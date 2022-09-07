@@ -50,9 +50,9 @@ Jeder Kategorie wird eine Liste an Feldern (fields) zugeordnet. Jedes Feld-Objek
 *	**label:** Die Bezeichnung, die neben dem Eingabefeld in der Metadatenmaske angezeigt werden soll.
 *	**description:** Ein erläuternder Text zu dem Eingabefeld.
 *	**type:** Die Datenart des Feldes. Zulässig sind string, object, array, integer und float.
-*	**schema:** Die Struktur des Wertes, der eingetragen werden soll. Zulässig sind email, enum, geojson, json, wkt und csv. Für weitere Informationen zu Aufzählungsfeldern, siehe auch [Mit Aufzählungsfeldern arbeiten](#enumerationvalues).
+*	**schema:** Die Struktur des Wertes, der eingetragen werden soll. Zulässig sind email, enum, geojson, json, wkt und csv. Für weitere Informationen zu Aufzählungsfeldern, siehe auch [Mit Aufzählungsfeldern arbeiten](#mit-aufzählungsfeldern-arbeiten).
 *	**defaultValue:** Ein statischer Standard-Wert, der dem Feld zugewiesen werden soll.
-*	**autofillRule:** Ein dynamischer Standard-Wert, der dem Feld zugewiesen werden soll. Der Wert wird aus den aktuellen Umgebungsvariablen (Benutzerin oder Benutzer, Organisation, Datensatz, Thema, Dienst) abgeleitet. Wenn sie in eine Zeile mit dem Schlüsselwort autofillRule klicken, erscheint in der oberen rechten Ecke des Editors der Autofill Assistent. Für mehr Informationen zu Autofill-Regeln, sieht auch [Mit Autofill-Regeln arbeiten](#autofill).
+*	**autofillRule:** Ein dynamischer Standard-Wert, der dem Feld zugewiesen werden soll. Der Wert wird aus den aktuellen Umgebungsvariablen (Benutzerin oder Benutzer, Organisation, Datensatz, Thema, Dienst) abgeleitet. Wenn sie in eine Zeile mit dem Schlüsselwort autofillRule klicken, erscheint in der oberen rechten Ecke des Editors der Autofill Assistent. Für mehr Informationen zu Autofill-Regeln, sieht auch [Mit Autofill-Regeln arbeiten](#mit-autofill-regeln-arbeiten).
 *	**required:** wird auf true gesetzt, wenn in jedem Fall ein typ- und schemakonformer Wert einzutragen ist.
 *	**editable:** wird auf true gesetzt, wenn der Datenmanager dieses Feld editieren können soll.
 *	**minOccurs:** Gibt an, wie viele Felder dieses Typs minimal auszufüllen sind.
@@ -159,7 +159,6 @@ Die folgenden Pfade sind als targets verfügbar:
 
 
 ### Mit Aufzählungsfeldern arbeiten
-{:#enumerationvalues}
 Aufzählungsfelder ermöglichen das Anlegen von Aufklappmenüs für Felder. Aufklappmenüs schränken die möglichen Auswahloptionen der oder des Endnutzenden auf vordefinierte Werte ein, wodurch das Eintragen von Metadaten einfacher und weniger fehleranfällig wird. Um ein Aufzählungsfeld zu nutzen, geben sie &laquo;enum&raquo; in das Schemafeld ein. Legen sie dann ein Feld mit dem Namen &laquo;enumValues&raquo; am Ende des Kategorie-Objekts an. Die Werte werden in eckigen Klammern [] angegeben. Jedes label/value-Paar wird in geschweiften Klammern angegeben {}. Kopieren sie das Muster des &laquo;enumValues&raquo;-Feldes in den folgenden Code-Block um ein Aufzählungsfeld im Kategorie-Objekt ihrer Wahl anzulegen. Ersetzen sie in den label/value-Paaren die Werte nach den Doppelpunkten mit ihren eigenen Daten.
 
         {
@@ -233,7 +232,6 @@ In der folgenden Abbildung wird das konfigurierte Aufzählungsfeld dargestellt. 
 <img src={require("/images/help/de/enumerationValues.png").default} alt="" title="Aufzählungswerte" className="img-responsive img-inline-help"/>
 
 ### Mit Autofill-Regeln arbeiten
-{:#autofill}
 Autofill-Regeln ermöglichen durch die Nutzung von Variablen die automatische Genierung von Metadaten. hale»connect ermöglicht die Nutzung von zuvor bereitgestellten Metadaten für die Füllung von Metadaten-Feldern. Darunter sind beispielsweise die Kontaktdetails ihrer Organisation, der Name ihres Datensatzes und Informationen zu Attributen, die zu den Objektarten ihres Datensatzes gehören. Außerdem Autofill-Regeln, die auf die Publikation zugreifen und somit nicht beim Füllen der Metadaten-Felder des Datensatzes greifen, sondern erst bei der Publizierung der zugehörigen Dienste. Diese sind im Autofill Assistenten unter "Publication" zugänglich. Autofill-Regeln funktionieren nicht für Schemata, die Sonderzeichen in ihren Namen verwenden. Um eine Autofill-Regel zu erstellen, klicken sie auf auf den Wert neben dem ```autofillRule```-Schlüsselwort. Der Autofill Assistent erscheint in der rechten oberen Ecke des Metadaten-Editors. Wenn sie auf einen Wert im Autofill Assistent klicken, wird die Autofill-Regel an der Position eingefügt, an der sich gerade der Cursor befindet.
 <img src={require("/images/help/de/autofillAssistant1.png").default} alt="" title="Autofill Assistent" className="img-responsive img-inline-help"/>
 Der Autofill-Assistent greift auf Daten aus der gesamten Plattform zu, um sie in Metadaten zu verwenden. Die Daten sind in mehrere Kategorien unterteilt:
