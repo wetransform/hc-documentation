@@ -84,7 +84,7 @@
     "description": "The label for category Using the Feature Explorer Tool in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Using the Map Preview": {
-    "message": "Verwenden des Map Preview",
+    "message": "Verwenden der Map Preview",
     "description": "The label for category Using the Map Preview in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Define a profile of a schema": {
