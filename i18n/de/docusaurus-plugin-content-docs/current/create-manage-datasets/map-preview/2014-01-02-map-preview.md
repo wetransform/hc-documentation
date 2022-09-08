@@ -16,4 +16,4 @@ Das Layer-Widget enthält Legendeninformationen, die Option zum Ein- und Ausscha
 
 <img src={require("/images/help/de/series.png").default} alt="Ausgewählte Sub-Datensätze im Layer-Widget" title="Ausgewählte Sub-Datensätze im Layer-Widget" className="img-responsive img-inline-help"/>
 
-Das Map-Preview enthält ein sich anpassendes Maßstabs-Widget und eine Koordinatenanzeige für den Mauszeiger. Koordinaten können eingegeben werden, um die Ausdehnung der Karte zu aktualisieren und auf einen bestimmten Ort zu zoomen. Unten links im Map-Preview befindet sich ein „Teilen“-Link, der einen Permalink mit Ausdehnung und Zoomstufe generiert, der mit anderen geteilt werden kann.
+Die Kartenansicht enthält ein sich anpassendes Maßstabs-Widget und eine Koordinatenanzeige für den Mauszeiger. Koordinaten können eingegeben werden, um die Ausdehnung der Karte zu aktualisieren und auf einen bestimmten Ort zu zoomen. Unten links im Map-Preview befindet sich ein „Teilen“-Link, der einen Permalink mit Ausdehnung und Zoomstufe generiert, der mit anderen geteilt werden kann.
