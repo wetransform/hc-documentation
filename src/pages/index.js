@@ -72,7 +72,7 @@ export default function Home() {
       title={`Documentation - ${siteConfig.title}`}
       description="hale»connect is the world’s best Software-as-a-Service tool for the agile, data-
       driven design and implementation of more than 5.000 Open Standards such as 
-      INSPIRE, ALKIS, XPlanGML, SOSI, eCH, WFD, FFH, Natura2000, CDDA, and ArcGIS.
+      INSPIRE, ALKIS, XPlanGML, SOSI, eCH, WFD, FFH, Natura2000, CDDA, and END.
       It cuts down the complex task of publishing datasets as services, coupled with 
       metadata, into a single user-friendly automated workflow.">
       <HomepageHeader />
