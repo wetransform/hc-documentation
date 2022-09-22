@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'hale»connect',
   tagline: 'One of the world\'s leading platforms for Geodata Transformations',
-  url: 'https://docusaurus.wetransform.eu',
+  url: 'https://help.wetransform.to',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
