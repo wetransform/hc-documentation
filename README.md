@@ -1,16 +1,14 @@
-### Website
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+### Documentation for [hale»connect](https://wetransform.to/haleconnect/)
 
-# Migrating Remaining Documents
-In order to migrate a document from the old documentation website, the following transformations are required:
-- Include similar documents within the same folder. Create the same file structure for other languages. (e.g. German)
-- Insert the [closing tag](#use-assets--images) for `img` elements. Use this `(<img("[^"]*"|[^\/">])*)>` regex to retrieve them, and `$1/>` to apply the fix.
-- Transform `img` `src` attribute to use [dynamic imports](#use-assets--images). Use `src=("(?:[^"\/]*\/)*([^"]+)")` to retrieve those instances and `src={require($1).default}` to apply the fix.
-- Replace inline styles with [JSX compliant styles](#use-inline-styles). Use `style="(([\w.-]+:\s*[^\s;]\s;?\s*)*)"` to retrieve inline styles.
-- Replace custom HTML components with Docusaurus built-in ones. See [this section](#use-docusaurus-built-in-components).
+This documentation is built as a website using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-*Note*: To find and replace the text using the regular expressions suggested above, the Code Editor built-in Find & Replace feature can be used. Place the search and the replace regular expressions in the Find and the Replace boxes respectively. This feature can also be used with filters, so filtering the search to the documents folders might be useful.
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 # Writing Markdown Documents
 Before writing Markdown documents, in addition to conforming to the Markdown rules (e.g. indentation), please consider the following points as it's required to write only valid documents.
