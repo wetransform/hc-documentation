@@ -30,7 +30,7 @@ function HomepageHeader() {
           <p style={{ width: '40%', marginBottom: 0, alignSelf: 'center' }}>
             <Translate id="hero.hcDescription">
               hale»connect is the world’s best Software-as-a-Service tool for the Agile, data-driven design and implementation of more than 5.000 Open Standards such as
-              INSPIRE, ALKIS, XPlanGML, SOSI, eCH, WFD, FFH, Natura2000, CDDA, and ArcGIS.
+              INSPIRE, ALKIS, XPlanGML, SOSI, eCH, WFD, FFH, Natura2000, CDDA, and END.
               It cuts down the complex task of publishing datasets as services, coupled with
               metadata, into a single user-friendly automated workflow.
             </Translate>
