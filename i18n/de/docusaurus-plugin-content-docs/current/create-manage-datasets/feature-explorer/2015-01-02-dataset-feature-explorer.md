@@ -11,8 +11,8 @@ language: de
 
 Der Feature Explorer ermöglicht eine einfache Navigation durch verschachtelte Strukturen komplexer GML-Dateien und eine Betrachtung komplexer GML-Attribute. GML-Attribute, die Links zu verknüpften Objekten, Codelisten oder angehängten Dateien enthalten, können mit Hilfe des Werkzeuges betrachtet werden.
 
-Auf das Feature-Explorer-Werkzeug kann über die Schaltfläche «Details anzeigen» in der HTML-GetFeatureInfo-Antwort der WMS-Dienste bei hale»connect zugegriffen werden.
-<img src={require("/images/help/de/Feature Explorer.png").default} alt="" title="Zugriff auf das Feature-Explorer-Tool über die Schaltfläche Details anzeigen" className="img-responsive img-inline-help"/>
+Auf das Tool Feature Explorer können Sie zugreifen, indem Sie in der Kartenvorschau von hale»connect auf ein Feature in WMS-View-Services klicken.
+<img src={require("/images/help/de/Feature Explorer.png").default} alt="" title="Zugriff auf das Feature-Explorer-Tool" className="img-responsive img-inline-help"/>
 
 Um das Werkzeug nutzen zu können, aktivieren sie zunächst &laquo;GetFeatureInfo&raquo; für ihr Thema.
   * Gehen sie auf &laquo;Themen&raquo;.
@@ -30,4 +30,4 @@ Um das Feature Explorer Werzeug aufzurufen, klicken sie auf den &laquo;Kartenans
   * Wählen sie über einen Klick in die Kartenanzeige auf der Demoseite ein Objekt aus.
   * Klicken sie auf den &laquo;Details anzeigen&raquo;-Knopf in der HTML-Ansicht des GetFeatureInfo-Clients.
 
-Der Feature Explorer öffnet sich in einer neuen Registerkarte, auf der die zum ausgewählten Objekt gehörigen Attribute angezeigt werden. Klicken sie auf die vorhandenen Links, um die Attribute und verknüpften Objekte detaillierter anzeigen zu lassen. Klicken sie auf den &laquo;+&raquo;-Knopf rechts von den aufgeführten Attributen um weitere Ebenen verschachtelter Attribute anzeigen zu lassen.
+Der Feature Explorer öffnet sich in einer Seitenleiste, auf der die zum ausgewählten Objekt gehörigen Attribute angezeigt werden. Klicken sie auf die vorhandenen Links, um die Attribute und verknüpften Objekte detaillierter anzeigen zu lassen. Klicken sie auf den &laquo;+&raquo;-Knopf rechts von den aufgeführten Attributen um weitere Ebenen verschachtelter Attribute anzeigen zu lassen.

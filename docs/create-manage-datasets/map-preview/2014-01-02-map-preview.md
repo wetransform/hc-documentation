@@ -16,4 +16,9 @@ The layer widget contains legend information, the option to toggle layers on and
 
 <img src={require("/images/help/en/series.png").default} alt="Selected sub-datasets in the layer widget" title="Selected sub-datasets in the layer widget" className="img-responsive img-inline-help"/>
 
-The map preview includes a responsive scale widget, and cursor coordinate display. Coordinates can be entered to update the extent of the map and zoom to a particular location. A “Share” link is located in the bottom left of the map preview, which generates a permalink with the currently selected extent and zoom level that can be shared with others.
+The map preview includes a responsive scale widget, including scale factor and cursor coordinate display in the bottom right hand corner of the application. Coordinates can be entered to update the extent of the map and zoom to a particular location.
+
+The vertical row of buttons in the upper left hand corner of the map preview enable users to:
+  * zoom in and out
+  * generate a permalink with the currently selected extent, layer configuration and zoom level which can be shared
+  * print the current map extent or generate a PDF
