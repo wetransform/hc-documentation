@@ -18,9 +18,9 @@ hale»connect currently supports a range of file formats which can be used to cr
   * One or more  \*.gml files per data set is supported
     * INSPIRE, 3A, CityGML, XPlanung and ISYBAU are fully supported
   * \*.gml files containing the element gml:GenericMetaData, an empty gml:boundedBy element or arc geometries are currently not supported
-  * GeoPackages are supported as source data for use in online transformation projects
-    * URL link to a GeoPackage in a zip folder is currently supported
-    * GeoPackage source themes are empty and do not contain any feature types
+  * One or more  \*.gpkg files per data set is supported
+    * \*.gpkg schemas can be exported from hale»studio as \*.json.hsd files for use in hale»connect
+    * \*.gpkg is supported as source and target in online transformation configurations
 
 **Non-spatial data**
   * Supported data formats include \*.xml
