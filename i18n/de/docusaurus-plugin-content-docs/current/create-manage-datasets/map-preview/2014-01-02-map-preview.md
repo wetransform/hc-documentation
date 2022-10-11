@@ -21,4 +21,4 @@ Die Kartenansicht enthält ein sich anpassendes Maßstabs-Widget und eine Koordi
 Die vertikale Schaltflächenreihe in der oberen linken Ecke der Kartenvorschau ermöglicht Nutzenden Folgendes:
   * Vergrößern und Verkleinern
   * Generieren eines Permalinks mit der aktuell ausgewählten Ausdehnung, Ebenenkonfiguration und Zoomstufe, der geteilt werden kann
-  * Drucken sie die aktuelle Kartenausdehnung aus oder generieren Sie eine PDF-Datei
+  * Drucken der aktuellen Kartenausdehnung oder Generieren einer PDF-Datei
