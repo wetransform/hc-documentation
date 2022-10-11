@@ -19,7 +19,7 @@ hale»connect currently supports a range of file formats which can be used to cr
     * INSPIRE, 3A, CityGML, XPlanung and ISYBAU are fully supported
   * \*.gml files containing the element gml:GenericMetaData, an empty gml:boundedBy element or arc geometries are currently not supported
   * One or more  \*.gpkg files per data set is supported
-    * \*.gpkg schemas can be exported from hale»studio as \*.json.hsd files for use in hale»connect
+    * \*.gpkg schemas can be exported from hale»studio as \*.json.hsd  or \*.hsd files for use in hale»connect
     * \*.gpkg is supported as source and target in online transformation configurations
 
 **Non-spatial data**

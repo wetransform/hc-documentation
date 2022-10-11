@@ -11,7 +11,7 @@ language: de
 
 Der Feature Explorer ermöglicht eine einfache Navigation durch verschachtelte Strukturen komplexer GML-Dateien und eine Betrachtung komplexer GML-Attribute. GML-Attribute, die Links zu verknüpften Objekten, Codelisten oder angehängten Dateien enthalten, können mit Hilfe des Werkzeuges betrachtet werden.
 
-Auf das Tool Feature Explorer können Sie zugreifen, indem Sie in der Kartenvorschau von hale»connect auf ein Feature in WMS-View-Services klicken.
+Auf das Feature Explorer-Werkzeug können sie zugreifen, indem sie in der Kartenvorschau von hale»connect auf ein Objekt klicken.
 <img src={require("/images/help/de/Feature Explorer.png").default} alt="" title="Zugriff auf das Feature-Explorer-Tool" className="img-responsive img-inline-help"/>
 
 Um das Werkzeug nutzen zu können, aktivieren sie zunächst &laquo;GetFeatureInfo&raquo; für ihr Thema.
