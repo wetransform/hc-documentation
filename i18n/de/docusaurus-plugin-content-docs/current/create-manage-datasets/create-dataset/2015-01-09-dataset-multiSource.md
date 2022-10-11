@@ -20,7 +20,7 @@ hale»connect unterstützt derzeit verschiedene Daten-Formate, die genutzt werde
   * \*.gml-Dateien, die ein gml:GenericMetaData-Element, ein leeres gml:boundedBy-Element oder Arc-Geometrien enthalten, werden derzeit nicht unterstüzt.
   * Es können mehrere \*.gpkg-Dateien hochgeladen werden, um einen Datensatz anzulegen.
       * GeoPackages werden als Quell- und Zieldaten zur Verwendung in hale»connect Transformationsprojekten unterstützt.
-      * \*.gpkg-Schemas können aus hale»studio als \*.json.hsd-Dateien zur Verwendung in hale»connect exportiert werden.
+      * \*.gpkg-Schemas können aus hale»studio als \*.json.hsd-Dateien oder \*.hsd-Dateien zur Verwendung in hale»connect exportiert werden.
 
 **Nicht-räumliche Daten**
   * Das unterstützte Daten-Format ist \*.xml.
