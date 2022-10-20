@@ -1,5 +1,5 @@
 ---
-title: "Beutzende deaktivieren"
+title: "Benutzende deaktivieren"
 categories:
 - "help-page-category-users"
 - "help-page-subcategory-users-edit"
