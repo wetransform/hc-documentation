@@ -1,0 +1,154 @@
+{
+  "version.label": {
+    "message": "Další",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Začínáme",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorials & Training": {
+    "message": "Návody a školení",
+    "description": "The label for category Tutorials & Training in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Key Concepts: Resources": {
+    "message": "Klíčové pojmy: Zdroje",
+    "description": "The label for category Key Concepts: Resources in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Set up hale»connect": {
+    "message": "Konfigurace hale»connect",
+    "description": "The label for category Set up hale»connect in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a schema": {
+    "message": "Vytvořte schéma",
+    "description": "The label for category Create a schema in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a transformation project": {
+    "message": "Vytvořte transformační projekt",
+    "description": "The label for category Create a transformation project in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a theme": {
+    "message": "Vytvořte téma",
+    "description": "The label for category Create a theme in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Edit metadata configuration": {
+    "message": "Upravit konfiguraci metadat",
+    "description": "The label for category Edit metadata configuration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configure services": {
+    "message": "Nakonfigurujte služby",
+    "description": "The label for category Configure services in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configure transformation projects and automated workflows": {
+    "message": "Nakonfigurujte transformační projekty a automatizované pracovní postupy",
+    "description": "The label for category Configure transformation projects and automated workflows in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create and manage data sets": {
+    "message": "Vytvářejte a spravujte datové sady",
+    "description": "The label for category Create and manage data sets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a new data set": {
+    "message": "Vytvořte novou datovou sadu",
+    "description": "The label for category Create a new data set in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Edit Metadata": {
+    "message": "Upravit metadata",
+    "description": "The label for category Edit Metadata in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a new data set series": {
+    "message": "Vytvořte novou řadu datové sady",
+    "description": "The label for category Create a new data set series in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Publish services": {
+    "message": "Publikovat služby",
+    "description": "The label for category Publish services in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Using the Feature Explorer Tool": {
+    "message": "Použití nástroje Průzkumník funkcí",
+    "description": "The label for category Using the Feature Explorer Tool in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Define a profile of a schema": {
+    "message": "Definujte profil schématu",
+    "description": "The label for category Define a profile of a schema in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create a profile": {
+    "message": "Vytvořte si profil",
+    "description": "The label for category Create a profile in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Copy a profile": {
+    "message": "Zkopírujte profil",
+    "description": "The label for category Copy a profile in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Download a profile as a test suite or an example XML document": {
+    "message": "Stáhněte si profil jako testovací sadu nebo vzorový dokument XML",
+    "description": "The label for category Download a profile as a test suite or an example XML document in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Define type and property level constraints": {
+    "message": "Definujte omezení na úrovni typu a vlastnosti",
+    "description": "The label for category Define type and property level constraints in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Define profile consistency conditions": {
+    "message": "Definujte podmínky konzistence profilu",
+    "description": "The label for category Define profile consistency conditions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Delete a profile": {
+    "message": "Smazat profil",
+    "description": "The label for category Delete a profile in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Users, Roles, and Organisations": {
+    "message": "Uživatelé, role a organizace",
+    "description": "The label for category Users, Roles, and Organisations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Introduction to users": {
+    "message": "Úvod uživatelům",
+    "description": "The label for category Introduction to users in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Registration": {
+    "message": "Registrace",
+    "description": "The label for category Registration in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Edit users": {
+    "message": "Upravit uživatele",
+    "description": "The label for category Edit users in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Manage organisations": {
+    "message": "Řídit organizace",
+    "description": "The label for category Manage organisations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Harvesting Metadata": {
+    "message": "Sběr metadat",
+    "description": "The label for category Harvesting Metadata in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.References": {
+    "message": "Reference",
+    "description": "The label for category References in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Browser Compatibility": {
+    "message": "Kompatibilita prohlížeče",
+    "description": "The label for category Browser Compatibility in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Data": {
+    "message": "Data",
+    "description": "The label for category Data in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Themes": {
+    "message": "Témata",
+    "description": "The label for category Themes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Schemas": {
+    "message": "Schémata",
+    "description": "The label for category Schemas in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Transformation projects": {
+    "message": "Transformační projekty",
+    "description": "The label for category Transformation projects in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Settings": {
+    "message": "Nastavení",
+    "description": "The label for category Settings in sidebar tutorialSidebar"
+  }
+}
