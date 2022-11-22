@@ -453,7 +453,7 @@ The ``defaultValue`` field can be populated with free text, provided in double q
 
 ### Working with gmx:anchor elements in string fields
 
-hale»connect supports the use of gmx:anchor encoding for gco:CharacterString elements that exist in hale»connect generated metadata. Markdown style notation can be used to specify a text value and URL. A gmx:Anchor encoded element can be generated using the pattern: \[<text>\](<link>)
+hale»connect supports the use of gmx:anchor encoding for gco:CharacterString elements that exist in hale»connect generated metadata. Markdown style notation can be used to specify a text value and URL. A gmx:Anchor encoded element can be generated using the pattern: \[<text\>\](<link\>)
 
 There are some exceptions where this will not work as expected due to special handling. The ``Namespace (Authority URL)`` string field in the contact for metadata cannot be encoded as gmx:anchor.
 
