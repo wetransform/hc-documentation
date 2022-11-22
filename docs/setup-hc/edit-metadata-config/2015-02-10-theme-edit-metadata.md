@@ -18,7 +18,7 @@ To edit the metadata configuration, follow these steps as a logged in theme mana
 <img src={require("/images/help/en/metadata1.png").default} alt="" title="The metadata editor" className="img-responsive img-inline-help"/>
 1. The «Dataset name pattern» field allows you to define an autofill rule for the dataset name. Autofill rules enable the automatic generation of metadata through the use of variables. To create an autofill rule, click in the «Dataset name pattern» field. The Autofill assistant appears in the top right corner. Click on a value in the Autofill assistant to insert the autofill rule. For example, you may want to automatically assign the value in a dataset attribute as the dataset name. In the Autofill Assistant, navigate to File Analysis, and next, to Attribute Values. Select the attribute that contains the dataset name in your dataset. During dataset creation, the dataset name is automatically populated by the value in the dataset.
 1. Select the metadata source in the dropdown menu. Available options include:
-      * Use metadata editor- Select this option to let hale connect generate the metadata. To define how hale connect should generate the metadata, the system provides a special-purpose text editor. The default metadata configuration displays INSPIRE compliant metadata elements.
+      * Use metadata editor- Select this option to let hale»connect generate the metadata. To define how hale»connect should generate the metadata, the system provides a special-purpose text editor. The default metadata configuration displays INSPIRE compliant metadata elements.
       When you choose to use the metadata editor, hale»connect generates dataset and service metadata based on the user-supplied input. For some fields, such as *Keywords*, hale»connect automatically applies the values entered for dataset metadata to the service metadata. If you want to use different *Keywords* in your service metadata, enter the values in the text field provided.
       <img src={require("/images/help/en/generate_metadata.PNG").default} alt="" title="Generate metadata using hale»connect" className="img-responsive img-inline-help"/>
       * Republish existing metadata- Select this option to upload your existing metadata file during data set creation. Please note that the elements gml:TimePeriod and gmd:MD_RestrictionCode are currently not supported in existing metadata.
@@ -450,3 +450,76 @@ The ``defaultValue`` field can be populated with free text, provided in double q
                     "bsp": "md-dataset.identification.constraints.useConstraints"
                 }
             }
+
+### Working with gmx:anchor elements in string fields
+
+hale»connect supports the use of gmx:anchor encoding for gco:CharacterString elements that exist in hale»connect generated metadata. Markdown style notation can be used to specify a text value and URL. A gmx:Anchor encoded element can be generated using the pattern: \[<text>\](<link>)
+
+There are some exceptions where this will not work as expected due to special handling. The ``Namespace (Authority URL)`` string field in the contact for metadata cannot be encoded as gmx:anchor.
+
+In the following example, a gmx:anchor is added as ``defaultValue`` and it is added to the ``enumValues`` field.
+
+            {
+              "name": "md-dataset.identification.constraints.useConstraints",
+              "required": false,
+              "minOccurs": 0,
+              "maxOccurs": -1,
+              "comment": "MD_Metadata/identificationInfo//resourceConstraints//useConstraints",
+              "label": "Use constraints",
+              "description": "Access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.",
+              "type": "enum",
+              "schema": null,
+              "defaultValue": "\[Datenlizenz Deutschland - Zero - Version 2.0\](https://www.govdata.de/dl-de/zero-2-0)",
+              "autofillRule": null,
+              "visibility": true,
+              "editable": true,
+              "openValue": true,
+              "enumValues": [
+                  {
+                      "label": "No conditions apply to access and use",
+                      "value": "noConditionsApply"
+                  },
+                  {
+                      "label": "The conditions applying to access and use are unknown",
+                      "value": "conditionsUnknown"
+                  },
+                  {
+                      "label": "Datenlizenz Deutschland - Zero - Version 2.0",
+                      "value": "\[Datenlizenz Deutschland - Zero - Version 2.0\](https://www.govdata.de/dl-de/zero-2-0)"
+                  }
+              ],
+
+
+
+#### Adding JSON values in string fields
+
+JSON values can be added to string fields in the metadata editor. The JSON values must be escaped before they are added to the metadata configuration. In the example below, a JSON value is added as ``defaultValue`` and it is added to the ``enumValues`` field.
+
+            {
+               "name": "md-dataset.identification.constraints.useConstraints",
+               "required": false,
+               "minOccurs": 0,
+               "maxOccurs": -1,
+               "comment": "MD_Metadata/identificationInfo//resourceConstraints//useConstraints",
+               "label": "Use constraints",
+               "description": "Access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.",
+               "type": "enum",
+               "schema": null,
+               "defaultValue": "{\"id\":\"geoNutz/20130319\",\"name\":\"Nutzungsbestimmungen für die Bereitstellung von Geo-daten des Bundes\",\"url\":\"https://sg.geodatenzent-rum.de/web_public/gdz/lizenz/geonutzv.pdf\",\"quelle\":\"Quelle: © GeoBasis-DE / BKG (Jahr des letzten Datenbezugs)\"}",
+               "autofillRule": null,
+               "visibility": true,
+               "editable": true,
+               "openValue": true,
+               "enumValues": [
+                   {
+                       "label": "No conditions apply to access and use",
+                       "value": "noConditionsApply"
+                   },
+                   {
+                       "label": "The conditions applying to access and use are unknown",
+                       "value": "conditionsUnknown"
+                   },
+                   {
+                       "label": "Nutzungsbestimmungen für die Bereitstellung von Geo-daten des Bundes",
+                       "value": "{\"id\":\"geoNutz/20130319\",\"name\":\"Nutzungsbestimmungen für die Bereitstellung von Geo-daten des Bundes\",\"url\":\"https://sg.geodatenzent-rum.de/web_public/gdz/lizenz/geonutzv.pdf\",\"quelle\":\"Quelle: © GeoBasis-DE / BKG (Jahr des letzten Datenbezugs)\"}"
+                   }
