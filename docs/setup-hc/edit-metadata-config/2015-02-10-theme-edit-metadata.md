@@ -60,6 +60,8 @@ Every category has a list of field objects. Every field object describes how the
 *	**editable:** Set to```true``` when the data manager should be able to edit the value in this field.
 *	**minOccurs:** Defines the minimum count of valid values for this input.
 *	**maxOccurs:** Defines the maximum count of valid values for this input.
+* **openValue** The field is based on an enumeration but allows other values.
+* **enum** The field uses an enumeration.
 *	**targets:** This is a list with mapping rules to external services, such as metadata catalogues. By default, there should always be at least a ```bsp``` target defined. ```bsp``` is what hale»connect needs in order to publish services
 
 The following paths can be used for the ```name``` and ```target``` fields:
@@ -455,7 +457,7 @@ The ``defaultValue`` field can be populated with free text, provided in double q
 
 hale»connect supports the use of gmx:anchor encoding for gco:CharacterString elements that exist in hale»connect generated metadata. Markdown style notation can be used to specify a text value and URL. A gmx:Anchor encoded element can be generated using the pattern: \[<text\>\](<link\>)
 
-There are some exceptions where this will not work as expected due to special handling. The ``Namespace (Authority URL)`` string field in the contact for metadata cannot be encoded as gmx:anchor.
+There are some exceptions where this will not work as expected due to special handling. The ``Namespace (Authority URL)`` string field in the contact for metadata cannot be encoded as gmx:anchor. ``Use limitations`` is another example of a string field which cannot be encoded using gmx:anchor.
 
 In the following example, a gmx:anchor is added as ``defaultValue`` and it is added to the ``enumValues`` field.
 
@@ -469,7 +471,7 @@ In the following example, a gmx:anchor is added as ``defaultValue`` and it is ad
               "description": "Access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.",
               "type": "enum",
               "schema": null,
-              "defaultValue": "\[Datenlizenz Deutschland - Zero - Version 2.0\](https://www.govdata.de/dl-de/zero-2-0)",
+              "defaultValue": "[Datenlizenz Deutschland - Zero - Version 2.0](https://www.govdata.de/dl-de/zero-2-0)",
               "autofillRule": null,
               "visibility": true,
               "editable": true,
@@ -485,7 +487,7 @@ In the following example, a gmx:anchor is added as ``defaultValue`` and it is ad
                   },
                   {
                       "label": "Datenlizenz Deutschland - Zero - Version 2.0",
-                      "value": "\[Datenlizenz Deutschland - Zero - Version 2.0\](https://www.govdata.de/dl-de/zero-2-0)"
+                      "value": "[Datenlizenz Deutschland - Zero - Version 2.0](https://www.govdata.de/dl-de/zero-2-0)"
                   }
               ],
 
