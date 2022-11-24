@@ -57,11 +57,12 @@ Every category has a list of field objects. Every field object describes how the
 *	**defaultValue:** A fixed default value that will always be assigned to the field.
 *	**autofillRule:** A dynamic default value that will be assigned to the field. This value is calculated from the current environment variables such as the user, the organisation context, the data set and the theme. When you click into a row with an ```autofillRule``` property key, an assistant for choosing a value appears in the upper right corner of the editor. For more information about autofill rules, see [Working with Autofill Rules](#working-with-autofill-rules)
 *	**required:** Set to ```true``` if a type and schema compliant value must be provided.
+*	**visibility:** Set to ```true``` to display the value in the user interface.
 *	**editable:** Set to```true``` when the data manager should be able to edit the value in this field.
 *	**minOccurs:** Defines the minimum count of valid values for this input.
 *	**maxOccurs:** Defines the maximum count of valid values for this input.
 * **openValue** The field is based on an enumeration but allows other values.
-* **enum** The field uses an enumeration.
+* **enumValues** The field contains the values that can be entered in the metadata.
 *	**targets:** This is a list with mapping rules to external services, such as metadata catalogues. By default, there should always be at least a ```bsp``` target defined. ```bsp``` is what hale»connect needs in order to publish services
 
 The following paths can be used for the ```name``` and ```target``` fields:
@@ -453,13 +454,13 @@ The ``defaultValue`` field can be populated with free text, provided in double q
                 }
             }
 
-### Working with gmx:anchor elements in string fields
+### Working with gmx:Anchor elements in string fields
 
-hale»connect supports the use of gmx:anchor encoding for gco:CharacterString elements that exist in hale»connect generated metadata. Markdown style notation can be used to specify a text value and URL. A gmx:Anchor encoded element can be generated using the pattern: \[<text\>\](<link\>)
+hale»connect supports the use of gmx:Anchor encoding for gco:CharacterString elements that exist in hale»connect generated metadata. Markdown style notation can be used to specify a text value and URL. A gmx:Anchor encoded element can be generated using the pattern: \[<text\>\](<link\>)
 
-There are some exceptions where this will not work as expected due to special handling. The ``Namespace (Authority URL)`` string field in the contact for metadata cannot be encoded as gmx:anchor. ``Use limitations`` is another example of a string field which cannot be encoded using gmx:anchor.
+There are some exceptions where this will not work as expected due to special handling. The ``Namespace (Authority URL)`` string field in the contact for metadata cannot be encoded as gmx:Anchor.
 
-In the following example, a gmx:anchor is added as ``defaultValue`` and it is added to the ``enumValues`` field.
+In the following example, a gmx:Anchor is added as ``defaultValue`` and it is added to the ``enumValues`` field.
 
             {
               "name": "md-dataset.identification.constraints.useConstraints",
