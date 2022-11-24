@@ -54,11 +54,12 @@ Jeder Kategorie wird eine Liste an Feldern (fields) zugeordnet. Jedes Feld-Objek
 *	**defaultValue:** Ein statischer Standard-Wert, der dem Feld zugewiesen werden soll.
 *	**autofillRule:** Ein dynamischer Standard-Wert, der dem Feld zugewiesen werden soll. Der Wert wird aus den aktuellen Umgebungsvariablen (Benutzerin oder Benutzer, Organisation, Datensatz, Thema, Dienst) abgeleitet. Wenn sie in eine Zeile mit dem Schlüsselwort autofillRule klicken, erscheint in der oberen rechten Ecke des Editors der Autofill Assistent. Für mehr Informationen zu Autofill-Regeln, sieht auch [Mit Autofill-Regeln arbeiten](#mit-autofill-regeln-arbeiten).
 *	**required:** wird auf true gesetzt, wenn in jedem Fall ein typ- und schemakonformer Wert einzutragen ist.
+*	**visibility:** wird auf true gesetzt, wenn der Datenmanager dieses Feld im GUI sehen können soll.
 *	**editable:** wird auf true gesetzt, wenn der Datenmanager dieses Feld editieren können soll.
 *	**minOccurs:** Gibt an, wie viele Felder dieses Typs minimal auszufüllen sind.
 *	**maxOccurs:** Gibt an, wie viele Felder dieses Typs maximal auszufüllen sind.
 * **openValue** Das Feld basiert auf einer Enumeration, lässt aber andere Werte zu.
-* **enum** Das Feld verwendet eine Enumeration.
+* **enumValues** Das Feld enthält die Werte, die in die Metadaten eingetragen werden können.
 *	**targets:** Abbildungsregeln für externe Dienste. Für die interne Publikation ist stets der folgende Wert einzugeben: <br />"bsp": "{{name}}"<br />{{name}} ist durch den Namen des Feldes zu ersetzen.
 
 Die folgenden Pfade sind als targets verfügbar:
@@ -452,13 +453,13 @@ Das Feld `` defaultValue`` kann mit freiem Text in doppelten Anführungszeichen 
                 }
             }
 
-### Mit gmx:anchor-Elementen in String-Feldern arbeiten
+### Mit gmx:Anchor-Elementen in String-Feldern arbeiten
 
-hale»connect unterstützt die Verwendung von gmx:anchor-Codierung für gco:CharacterString-Elemente, die in von hale»connect generierten Metadaten vorhanden sind. Die Notation im Markdown-Stil kann verwendet werden, um einen Textwert und eine URL anzugeben. Ein gmx:Anchor-codiertes Element kann mit dem Muster generiert werden: \[<text\>\](<link\>)
+hale»connect unterstützt die Verwendung von gmx:Anchor-Codierung für gco:CharacterString-Elemente, die in von hale»connect generierten Metadaten vorhanden sind. Die Notation im Markdown-Stil kann verwendet werden, um einen Textwert und eine URL anzugeben. Ein gmx:Anchor-codiertes Element kann mit dem Muster generiert werden: \[<text\>\](<link\>)
 
-Es gibt einige Ausnahmen, bei denen dies aufgrund einer besonderen Behandlung nicht wie erwartet funktioniert. Das Zeichenfolgenfeld ``Webadresse der Organisation (Namensraum)`` im Kontakt für Metadaten kann nicht als gmx:anchor codiert werden. ``Nutzungseinschränkungen`` ist ein weiteres Beispiel für ein String-Felder, das nicht mit gmx:anchor codiert werden kann.
+Es gibt einige Ausnahmen, bei denen dies aufgrund einer besonderen Behandlung nicht funktioniert. Das CharacterString-Element ``Webadresse der Organisation (Namensraum)`` im Kontakt für Metadaten kann nicht als gmx:Anchor codiert werden.
 
-Im folgenden Beispiel wird ein gmx:anchor als ``defaultValue`` hinzugefügt und dem Feld ``enumValues`` hinzugefügt.
+Im folgenden Beispiel wird ein gmx:Anchor als ``defaultValue`` und dem Feld ``enumValues`` hinzugefügt.
 
             {
               "name": "md-dataset.identification.constraints.useConstraints",
@@ -492,7 +493,7 @@ Im folgenden Beispiel wird ein gmx:anchor als ``defaultValue`` hinzugefügt und 
 
 #### Hinzufügen von JSON-Werten in String-Feldern
 
-JSON-Werte können im Metadaten-Editor zu String-Feldern hinzugefügt werden. Die JSON-Werte müssen maskiert werden, bevor sie der Metadatenkonfiguration hinzugefügt werden. Im folgenden Beispiel wird ein JSON-Wert als ``defaultValue`` hinzugefügt und dem Feld ``enumValues`` hinzugefügt.
+JSON-Werte können im Metadaten-Editor zu String-Feldern hinzugefügt werden. Die JSON-Werte müssen maskiert werden, bevor sie der Metadatenkonfiguration hinzugefügt werden. Im folgenden Beispiel wird ein JSON-Wert als ``defaultValue`` und dem Feld ``enumValues`` hinzugefügt.
 
               {
                  "name": "md-dataset.identification.constraints.useConstraints",
