@@ -57,12 +57,12 @@ Every category has a list of field objects. Every field object describes how the
 *	**defaultValue:** A fixed default value that will always be assigned to the field.
 *	**autofillRule:** A dynamic default value that will be assigned to the field. This value is calculated from the current environment variables such as the user, the organisation context, the data set and the theme. When you click into a row with an ```autofillRule``` property key, an assistant for choosing a value appears in the upper right corner of the editor. For more information about autofill rules, see [Working with Autofill Rules](#working-with-autofill-rules)
 *	**required:** Set to ```true``` if a type and schema compliant value must be provided.
-*	**visibility:** Set to ```true``` to display the value in the user interface.
+*	**visibility:** Set to ```true``` to display the value to the data manager.
 *	**editable:** Set to```true``` when the data manager should be able to edit the value in this field.
 *	**minOccurs:** Defines the minimum count of valid values for this input.
 *	**maxOccurs:** Defines the maximum count of valid values for this input.
 * **openValue** The field is based on an enumeration but allows other values.
-* **enumValues** The field contains the values that can be entered in the metadata.
+* **enumValues** The field contains the values that can be entered via a dropdown menu for that metadata field.
 *	**targets:** This is a list with mapping rules to external services, such as metadata catalogues. By default, there should always be at least a ```bsp``` target defined. ```bsp``` is what hale»connect needs in order to publish services
 
 The following paths can be used for the ```name``` and ```target``` fields:

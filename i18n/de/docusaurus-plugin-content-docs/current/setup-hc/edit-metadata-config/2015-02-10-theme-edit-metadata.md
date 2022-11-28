@@ -54,12 +54,12 @@ Jeder Kategorie wird eine Liste an Feldern (fields) zugeordnet. Jedes Feld-Objek
 *	**defaultValue:** Ein statischer Standard-Wert, der dem Feld zugewiesen werden soll.
 *	**autofillRule:** Ein dynamischer Standard-Wert, der dem Feld zugewiesen werden soll. Der Wert wird aus den aktuellen Umgebungsvariablen (Benutzerin oder Benutzer, Organisation, Datensatz, Thema, Dienst) abgeleitet. Wenn sie in eine Zeile mit dem Schlüsselwort autofillRule klicken, erscheint in der oberen rechten Ecke des Editors der Autofill Assistent. Für mehr Informationen zu Autofill-Regeln, sieht auch [Mit Autofill-Regeln arbeiten](#mit-autofill-regeln-arbeiten).
 *	**required:** wird auf true gesetzt, wenn in jedem Fall ein typ- und schemakonformer Wert einzutragen ist.
-*	**visibility:** wird auf true gesetzt, wenn der Datenmanager dieses Feld im GUI sehen können soll.
+*	**visibility:** wird auf true gesetzt, wenn Nutzende mit der Rolle Datenmanager dieses Feld im GUI sehen können sollen.
 *	**editable:** wird auf true gesetzt, wenn der Datenmanager dieses Feld editieren können soll.
 *	**minOccurs:** Gibt an, wie viele Felder dieses Typs minimal auszufüllen sind.
 *	**maxOccurs:** Gibt an, wie viele Felder dieses Typs maximal auszufüllen sind.
 * **openValue** Das Feld basiert auf einer Enumeration, lässt aber andere Werte zu.
-* **enumValues** Das Feld enthält die Werte, die in die Metadaten eingetragen werden können.
+* **enumValues** Das Feld enthält die Werte, die im GUI für dieses Metadaten-Feld in einem Dropdown-Menü verfügbar sind.
 *	**targets:** Abbildungsregeln für externe Dienste. Für die interne Publikation ist stets der folgende Wert einzugeben: <br />"bsp": "{{name}}"<br />{{name}} ist durch den Namen des Feldes zu ersetzen.
 
 Die folgenden Pfade sind als targets verfügbar:
