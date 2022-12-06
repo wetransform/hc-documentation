@@ -20,7 +20,7 @@ In der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; könne
       * Metadaten-Editor verwenden: Wählen sie diese Option, wenn die Metadaten vom System generiert werden sollen. Es steht ein spezieller Text-Editor zur Verfügung, mit dem die Generierung der Metadaten durch das System konfiguriert werden kann. Die vorgegebene Metadaten-Konfiguration zeigt INSPIRE-konforme Metadaten-Elemente an.
 		Wenn sie sich dafür entscheiden, den Metadateneditor zu verwenden, generiert haleconnect Datensatz- und Dienste-Metadaten basierend auf dem Input der oder des Nutzenden. Für einige Felder, wie beispielsweise *Keywords*, übernimmt haleconnect automatisch den für die Datensatz-Metadaten angegebenen Wert für die Dienste-Metadaten. Wenn sie in ihren Dienste-Metadaten abweichende *Keywords* verwenden möchten, geben sie die Werte in das dafür vorgesehene Textfeld ein.
       <img src={require("/images/help/de/generate_metadata.PNG").default} alt="" title="Generieren von Metadaten mit haleconnect" className="img-responsive img-inline-help"/>
-      * Existierende Metadaten neu publizieren: Wählen sie diese Option, um während der Datensatz-Erstellung eine bestehende Metadaten-Datei hochzuladen. 
+      * Existierende Metadaten neu publizieren: Wählen sie diese Option, um während der Datensatz-Erstellung eine bestehende Metadaten-Datei hochzuladen.
 		Wenn sie sich dafür entscheiden, existierende Metadaten neu zu publizieren, generiert haleconnect Datensatz-Metadaten basierend auf einer Kopie der Daten, die über eine URL oder einen Daten-Upload bereitgestellt werden. Bitte beachten sie, dass die Elemente gml:TimePeriod und gmd:MD_RestrictionCode in existierenden Metadaten derzeit nicht unterstüzt werden.
       <img src={require("/images/help/de/copy_metadata.PNG").default} alt="" title="Metadaten kopieren" className="img-responsive img-inline-help"/>
       * Existierende Metadaten verlinken: Wählen sie diese Option, um während der Datensatz-Erstellung einen Link zu einer bestehende Metadaten-Datei anzugeben.
@@ -54,9 +54,12 @@ Jeder Kategorie wird eine Liste an Feldern (fields) zugeordnet. Jedes Feld-Objek
 *	**defaultValue:** Ein statischer Standard-Wert, der dem Feld zugewiesen werden soll.
 *	**autofillRule:** Ein dynamischer Standard-Wert, der dem Feld zugewiesen werden soll. Der Wert wird aus den aktuellen Umgebungsvariablen (Benutzerin oder Benutzer, Organisation, Datensatz, Thema, Dienst) abgeleitet. Wenn sie in eine Zeile mit dem Schlüsselwort autofillRule klicken, erscheint in der oberen rechten Ecke des Editors der Autofill Assistent. Für mehr Informationen zu Autofill-Regeln, sieht auch [Mit Autofill-Regeln arbeiten](#mit-autofill-regeln-arbeiten).
 *	**required:** wird auf true gesetzt, wenn in jedem Fall ein typ- und schemakonformer Wert einzutragen ist.
+*	**visibility:** wird auf true gesetzt, wenn Nutzende mit der Rolle Datenmanager dieses Feld im GUI sehen können sollen.
 *	**editable:** wird auf true gesetzt, wenn der Datenmanager dieses Feld editieren können soll.
 *	**minOccurs:** Gibt an, wie viele Felder dieses Typs minimal auszufüllen sind.
 *	**maxOccurs:** Gibt an, wie viele Felder dieses Typs maximal auszufüllen sind.
+* **openValue** Das Feld basiert auf einer Enumeration, lässt aber andere Werte zu.
+* **enumValues** Das Feld enthält die Werte, die im GUI für dieses Metadaten-Feld in einem Dropdown-Menü verfügbar sind.
 *	**targets:** Abbildungsregeln für externe Dienste. Für die interne Publikation ist stets der folgende Wert einzugeben: <br />"bsp": "{{name}}"<br />{{name}} ist durch den Namen des Feldes zu ersetzen.
 
 Die folgenden Pfade sind als targets verfügbar:
@@ -449,3 +452,74 @@ Das Feld `` defaultValue`` kann mit freiem Text in doppelten Anführungszeichen 
                     "bsp": "md-dataset.identification.constraints.useConstraints"
                 }
             }
+
+### Mit gmx:Anchor-Elementen in String-Feldern arbeiten
+
+hale»connect unterstützt die Verwendung von gmx:Anchor-Codierung für gco:CharacterString-Elemente, die in von hale»connect generierten Metadaten vorhanden sind. Die Notation im Markdown-Stil kann verwendet werden, um einen Textwert und eine URL anzugeben. Ein gmx:Anchor-codiertes Element kann mit dem Muster generiert werden: \[<text\>\](<link\>)
+
+Es gibt einige Ausnahmen, bei denen dies aufgrund einer besonderen Behandlung nicht funktioniert. Das CharacterString-Element ``Webadresse der Organisation (Namensraum)`` im Kontakt für Metadaten kann nicht als gmx:Anchor codiert werden.
+
+Im folgenden Beispiel wird ein gmx:Anchor als ``defaultValue`` und dem Feld ``enumValues`` hinzugefügt.
+
+            {
+              "name": "md-dataset.identification.constraints.useConstraints",
+              "required": false,
+              "minOccurs": 0,
+              "maxOccurs": -1,
+              "comment": "MD_Metadata/identificationInfo//resourceConstraints//useConstraints",
+              "label": "Use constraints",
+              "description": "Access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.",
+              "type": "enum",
+              "schema": null,
+              "defaultValue": "[Datenlizenz Deutschland - Zero - Version 2.0](https://www.govdata.de/dl-de/zero-2-0)",
+              "autofillRule": null,
+              "visibility": true,
+              "editable": true,
+              "openValue": true,
+              "enumValues": [
+                  {
+                      "label": "No conditions apply to access and use",
+                      "value": "noConditionsApply"
+                  },
+                  {
+                      "label": "The conditions applying to access and use are unknown",
+                      "value": "conditionsUnknown"
+                  },
+                  {
+                      "label": "Datenlizenz Deutschland - Zero - Version 2.0",
+                      "value": "[Datenlizenz Deutschland - Zero - Version 2.0](https://www.govdata.de/dl-de/zero-2-0)"
+                  }
+              ],
+
+#### Hinzufügen von JSON-Werten in String-Feldern
+
+JSON-Werte können im Metadaten-Editor zu String-Feldern hinzugefügt werden. Die JSON-Werte müssen maskiert werden, bevor sie der Metadatenkonfiguration hinzugefügt werden. Im folgenden Beispiel wird ein JSON-Wert als ``defaultValue`` und dem Feld ``enumValues`` hinzugefügt.
+
+              {
+                 "name": "md-dataset.identification.constraints.useConstraints",
+                 "required": false,
+                 "minOccurs": 0,
+                 "maxOccurs": -1,
+                 "comment": "MD_Metadata/identificationInfo//resourceConstraints//useConstraints",
+                 "label": "Use constraints",
+                 "description": "Access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.",
+                 "type": "enum",
+                 "schema": null,
+                 "defaultValue": "{\"id\":\"geoNutz/20130319\",\"name\":\"Nutzungsbestimmungen für die Bereitstellung von Geo-daten des Bundes\",\"url\":\"https://sg.geodatenzent-rum.de/web_public/gdz/lizenz/geonutzv.pdf\",\"quelle\":\"Quelle: © GeoBasis-DE / BKG (Jahr des letzten Datenbezugs)\"}",
+                 "autofillRule": null,
+                 "visibility": true,
+                 "editable": true,
+                 "openValue": true,
+                 "enumValues": [
+                     {
+                         "label": "No conditions apply to access and use",
+                         "value": "noConditionsApply"
+                     },
+                     {
+                         "label": "The conditions applying to access and use are unknown",
+                         "value": "conditionsUnknown"
+                     },
+                     {
+                         "label": "Nutzungsbestimmungen für die Bereitstellung von Geo-daten des Bundes",
+                         "value": "{\"id\":\"geoNutz/20130319\",\"name\":\"Nutzungsbestimmungen für die Bereitstellung von Geo-daten des Bundes\",\"url\":\"https://sg.geodatenzent-rum.de/web_public/gdz/lizenz/geonutzv.pdf\",\"quelle\":\"Quelle: © GeoBasis-DE / BKG (Jahr des letzten Datenbezugs)\"}"
+                     }
