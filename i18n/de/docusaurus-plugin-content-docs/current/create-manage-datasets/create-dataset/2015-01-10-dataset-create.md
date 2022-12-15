@@ -9,11 +9,11 @@ language: de
 
 ## Unterstützte Formate ##
 
-hale»connect unterstützt unterschiedliche Raster- und Vektordatenformate sowie nicht-räumliche Datenformate (Encodings) für das Laden und Speichern von Datensätzen. 
-Dabei liegt die Größenbeschränkung für das Hochladen einzelner Dateien je Datei bei 2 GB. 
+hale»connect unterstützt unterschiedliche Raster- und Vektordatenformate sowie nicht-räumliche Datenformate (Encodings) für das Laden und Speichern von Datensätzen.
+Dabei liegt die Größenbeschränkung für das Hochladen einzelner Dateien je Datei bei 2 GB.
 Ein hale»connect Datensatz kann aus mehreren Einzeldateien zusammengesetzt werden.6
 
-Die Größenbeschränkung für Anhänge auf haleconnect.com liegt bei 750 MB. 
+Die Größenbeschränkung für Anhänge auf haleconnect.com liegt bei 750 MB.
 
 ### Die unterstützten Datenformate im Überblick ###
 
@@ -58,13 +58,12 @@ Um einen Datensatz anzulegen, melden Sie sich in der Rolle &laquo;Datenmanager&r
 1. Gehen Sie auf &laquo;Daten&raquo;.
 2. Gehen Sie auf &laquo;Neuen Datensatz anlegen&raquo;.
 3. Bestimmen Sie, welchem Thema der Datensatz zugeordnet werden soll.
-    * Ein Datensatz kann auch ohne Themenzuordnung erstellt werden, kann dann aber nicht als Dienst publiziert werden.
     * Nutzende mit der Rolle &laquo;Superanwender&raquo;, die mehr als einer Organisation angehören, können auswählen, in welcher dieser Organisationen der Datensatz angelegt werden soll. Das Aufklappmenü mit den verfügbaren Organisationen ermöglicht es Nutzenden mit der Rolle &laquo;Superanwender&raquo Datensätze für Organisationen anzulegen, in denen sie derzeit nicht angemeldet sind.
 4.	Laden Sie die zum Datensatz gehörigen Dateien hoch. Dafür gibt es mehrere Wege:
     * Klicken Sie auf &laquo;Datei(en) auswählen&raquo; und navigieren Sie zum gewünschten Datensatz.
     * Klicken Sie auf &laquo;URL(s) eingeben&raquo; und fügen Sie die gewünschte URL oder WFS GetFeature-Anfrage hinzu. Fügen Sie den API-Schlüssel in das Feld Autorisierung ein, wenn Sie einen API-Schlüssel im Autorisierungsheader der HTTP-Anfrage zum Herunterladen von Daten über die API übergeben möchten.
     * Ziehen Sie einen Datensatz auf &laquo;Datei(en) hierher ziehen&raquo;.
-    
+
     Die Größenbeschränkung für das Hochladen einzelner Dateien für den Datensatz ist 2 GB.
 
     <br/>

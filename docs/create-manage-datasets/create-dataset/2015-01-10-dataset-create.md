@@ -52,7 +52,6 @@ To create a new data set, follow this workflow as a logged in data manager or th
 1. Go to &laquo;Data&raquo; on the main toolbar
 2. Go to &laquo;Create new Data Set&raquo; at the bottom of the data set list
 3. Select a theme to link to your data set.
-    * You can also create a data set without linking it to a theme, but without the link, you can't publish services or execute transformation projects for that data set.
     * Superusers who belong to more than one organisation can select the organisation in which to create a dataset. The dropdown menu of available organisations enables Superusers to create datasets for organizations that they are not currently logged into.
 4. Select the data source. There are a few ways to upload the files belonging to your dataset:
     *	Click &laquo;Select file(s)&raquo; and navigate to the desired dataset.
