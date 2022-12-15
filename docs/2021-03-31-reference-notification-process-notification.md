@@ -16,5 +16,4 @@ The status is indicated by an icon and a short message. The icons have the follo
 
 * Up arrow: Update of a dataset by upload or transformation
 * Magnifying glasses: Completed analysis
-* Hook: GDI-DE Test Suite Tests are completed
 * Arrow: Transformation executed
