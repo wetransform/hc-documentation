@@ -52,7 +52,6 @@ Chcete-li vytvořit novou datovou sadu, dodržujte tento pracovní postup, jste-
 1. Přejděte na položku &laquo;Data&raquo; na hlavním panelu nástrojů.
 2. Přejděte na &laquo;Vytvořit novou datovou sadu&raquo; ve spodní části seznamu datových sad
 3. Vyberte téma, které chcete propojit s vaší datovou sadou.
-    * Můžete také vytvořit datovou sadu bez propojení s tématem, ale bez propojení nemůžete pro danou datovou sadu publikovat služby, ani realizovat transformační projekty.
     * Superuživatelé, kteří patří do více než jedné organizace, si mohou vybrat organizaci, ve které se má datová sada vytvořit. Rozbalovací nabídka dostupných organizací umožňuje superuživatelům vytvářet datové sady pro organizace, do kterých momentálně nejsou přihlášeni.
 4. Vyberte zdroj dat. Existuje několik způsobů, jak nahrát soubory patřící do vaší datové sady:
     * Klikněte na položku &laquo;Vybrat soubor(y)&raquo; a přejděte na požadovanou datovou sadu.
