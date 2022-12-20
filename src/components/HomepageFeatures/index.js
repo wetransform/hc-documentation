@@ -16,7 +16,7 @@ const FeatureList = [
     description: (
       <>
         <Translate>
-          A theme is a central configuration object that links all types of resources.
+          A theme is a central configuration object that links all types of reserves.
         </Translate>
       </>
     ),
