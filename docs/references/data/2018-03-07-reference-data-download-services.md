@@ -17,49 +17,75 @@ The Metadata panel provides a list of published metadata. To copy any URL to the
 <a className="btn btn-default" title="Copy URL"><span className="glyphicon glyphicon-copy"></span></a>
  icon to the right of the URL.
 
-The test reports panel provides a list of PDFs which contain the results of a series of tests executed on published metadata and services. Click on the test report to open it in a browser and view the test results directly.
+ The Validation reports panel provides a list of results for a series of tests executed on published metadata and services. Click on the download icon to download the test result directly. Green checkmarks indicate that the ETF report is valid. Red X's indicate errors or a test that did not execute. Users can choose re-run the ETF tests for all resources listed by clicking the «Run all tests» button. Alternatively, users can re-run a single test by clicking the circular arrow icon next to the download icon. The yellow warning icon appears for resources with conformance classes that require manual checks.
 
-The number and type of tests executed on your metadata and services reflect your compliancy requirements.
+ A set of default conformance classes are executed on dataset metadata, download and view service metadata, and services, and can be configured in the theme. Tests check for INSPIRE compliancy. The number and type of tests executed on your metadata and services reflect your compliancy requirements. Visit [Configure validation](../../setup-hc/config-validation/2015-02-10-validation.md) for more information. Direct download WFS service testing is not currently supported.
 
-Metadata tests are executed on dataset metadata and download and view service metadata. Tests check for ISO, GDI-DE and INSPIRE compliancy.
+ Tests executed on Metadata and Download Services:
 
-Tests executed on Metadata:
+ <table className="tb">
+     <th colspan="2">Test</th>
+     <th colspan="2">Conformity Level</th>
+     <th colspan="2">Resource</th>
+     <tr>
+       <td>Title</td>
+       <td>INSPIRE</td>
+       <td>Dataset-Metadata</td>
+       <td>Service-Metadata</td>
+       <td>Service</td>
+     </tr>
+   <tr>
+     <td>Common Requirements for ISO/TC 19139:2007 based INSPIRE metadata records</td>
+     <td>X</td>
+     <td>X</td>
+     <td>X</td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>Conformance Class 1: 'Baseline metadata for data sets and data set series</td>
+     <td>X</td>
+     <td>X</td>
+     <td></td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>Conformance Class 2: 'INSPIRE data sets and data set series interoperability metadata'</td>
+     <td>X</td>
+     <td>X</td>
+     <td></td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>Conformance Class 2b: 'INSPIRE data sets and data set series metadata for Monitoring'</td>
+     <td>X</td>
+     <td>X</td>
+     <td></td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>Conformance Class 3: 'INSPIRE Spatial Data Service baseline metadata'</td>
+     <td>X</td>
+     <td></td>
+     <td>X</td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>Conformance Class 4: 'INSPIRE Network Services'</td>
+     <td>X</td>
+     <td></td>
+     <td>X</td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>Conformance Class 'Download Service Pre-defined Atom'</td>
+     <td>X</td>
+     <td></td>
+     <td></td>
+     <td>X</td>
+   </tr>
+ </table>
 
-<table>
-    <th colspan="2">Test</th>
-    <th colspan="2">Conformity Level</th>
-    <th colspan="2">Resource</th>
-    <th>Comments</th>
-  <tr>
-    <td># internal identifier</td>
-    <td>Title</td>
-    <td>GDI-DE</td>
-    <td>INSPIRE</td>
-    <td>Dataset-Metadata</td>
-    <td>Service-Metadata</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>md_gdi</td>
-    <td>Metadaten | Metadata: ISO and GDI-DE</td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>not executed for restricted services</td>
-  </tr>
-  <tr>
-    <td>md_inspire</td>
-    <td>Metadaten | Metadata: INSPIRE</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-  </tr>
-</table>
-
-<br/>
+ <br/>
 
 The Service settings panel provides a toggle switch to flip the coordinate axes of your data set. If your data set is displaying in flipped coordinates, toggle the switch to correct the display.
 
