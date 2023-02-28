@@ -5,7 +5,7 @@ categories:
 - "help-page-subcategory-reference-themes"
 layout: help-detail
 language: en
-sidebar_position: 10
+sidebar_position: 11
 
 ---
 

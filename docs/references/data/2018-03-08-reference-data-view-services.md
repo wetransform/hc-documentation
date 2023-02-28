@@ -15,43 +15,71 @@ The View service panel provides a list of published view services. You can direc
 
 The Metadata panel provides a list of published metadata. Click on “Metadata (Dataset)” or “Metadata (View Service)” to open it in a browser and view the XML data directly. Click on the <a className="btn btn-default" title="Copy URL"><span className="glyphicon glyphicon-copy"></span></a> icon to copy the service URL.
 
-The test reports panel provides a list of PDFs which contain the results of a series of tests executed on published metadata and services. Click on the test report to open it in a browser and view the test results directly.
+The Validation reports panel provides a list of results for a series of tests executed on published metadata and services. Click on the download icon to download the test result directly. Green checkmarks indicate that the ETF report is valid. Red X's indicate errors or a test that did not execute. Users can choose re-run the ETF tests for all resources listed by clicking the «Run all tests» button. Alternatively, users can re-run a single test by clicking the circular arrow icon next to the download icon. The yellow warning icon appears for resources with conformance classes that require manual checks.
 
-Metadata tests are executed on dataset metadata and download and view service metadata. Tests check for ISO, GDI-DE and INSPIRE compliancy, depending on the language of the theme. English themes are tested for ISO schema validation. German themes are tested using the "Konventionen der GDI-DE für INSPIRE-relevante Metadaten" conformance class.
+A set of default conformance classes are executed on dataset metadata, download and view service metadata, and services, and can be configured in the theme. Tests check for INSPIRE compliancy. The number and type of tests executed on your metadata and services reflect your compliancy requirements. Visit [Configure validation](../../setup-hc/config-validation/2015-02-10-validation.md) for more information.
 
-Tests executed on Metadata:
+Tests executed on Metadata and View Services:
 
 <table className="tb">
     <th colspan="2">Test</th>
     <th colspan="2">Conformity Level</th>
     <th colspan="2">Resource</th>
-    <th>Comments</th>
+    <tr>
+      <td>Title</td>
+      <td>INSPIRE</td>
+      <td>Dataset-Metadata</td>
+      <td>Service-Metadata</td>
+      <td>Service</td>
+    </tr>
   <tr>
-    <td># internal identifier</td>
-    <td>Title</td>
-    <td>GDI-DE</td>
-    <td>INSPIRE</td>
-    <td>Dataset-Metadata</td>
-    <td>Service-Metadata</td>
+    <td>Common Requirements for ISO/TC 19139:2007 based INSPIRE metadata records</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
   </tr>
   <tr>
-    <td>md_gdi</td>
-    <td>Metadaten |  <br/> Metadata: ISO and GDI-DE</td>
+    <td>Conformance Class 1: 'Baseline metadata for data sets and data set series</td>
+    <td>X</td>
     <td>X</td>
     <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>not executed for restricted services</td>
+    <td></td>
   </tr>
   <tr>
-    <td>md_inspire</td>
-    <td>Metadaten | Metadata: INSPIRE</td>
-    <td></td>
-    <td>X</td>
+    <td>Conformance Class 2: 'INSPIRE data sets and data set series interoperability metadata'</td>
     <td>X</td>
     <td>X</td>
     <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Conformance Class 2b: 'INSPIRE data sets and data set series metadata for Monitoring'</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Conformance Class 3: 'INSPIRE Spatial Data Service baseline metadata'</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Conformance Class 4: 'INSPIRE Network Services'</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Conformance Class 'View Service WMS'</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
   </tr>
 </table>
 
