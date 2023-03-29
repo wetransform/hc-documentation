@@ -14,7 +14,7 @@ The data set name is editable. Click on the name to edit the value. The descript
 
 The ownership panel lists the organisation of the user who created the data set, the user who created the data set, the date the data set was created and the date of the last update to the data set.
 
-The content panel lists the data volume of the files associated with the data set, the number of files contained in the data set and the theme associated with the data set.
+The content panel lists the data volume of the files associated with the data set, the capacity points used, the number of objects contained in the data set and the theme associated with the data set.
 
 The status panel provides an overview of the system status of published resources related to the data set. Green checkmarks indicate that the resource is valid and operating normally. Yellow exclamation marks indicate that the resource has validation warnings and is operating with errors. Red X's indicate that the resource has validation errors and is not operating normally. Grey dashes indicate that the resource is not published.
 
