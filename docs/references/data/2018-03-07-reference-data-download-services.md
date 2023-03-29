@@ -21,7 +21,7 @@ The Metadata panel provides a list of published metadata. To copy any URL to the
 
  A set of default conformance classes are executed on dataset metadata, download and view service metadata, and services, and can be configured in the theme. Tests check for INSPIRE compliancy. The number and type of tests executed on your metadata and services reflect your compliancy requirements. Visit [Configure validation](../../setup-hc/config-validation/2015-02-10-validation.md) for more information. Direct download WFS service testing is not currently supported.
 
- Tests executed on Metadata and Download Services:
+## Tests executed on Metadata and Download Services: ##
 
  <table className="tb">
      <th colspan="2">Test</th>
