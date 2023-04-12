@@ -22,7 +22,7 @@ To create a metadata only theme, follow this workflow as a logged in data manage
 5. In the next step, Add feature types, accept the default and click &laquo;Continue&raquo;.
 6. In the final step, click &laquo;Create&raquo;.
 
-The newly created theme is displayed. The toggle *Publish metadata only* on the theme overview page must be activated. Navigate to the Metadata section of the theme to configure metadata. For more information about configuring metadata, visit the [Edit metadata configuration](../../setup-hc/edit-metadata-config/2015-02-10-theme-edit-metadata.md) page.
+The newly created theme is displayed. The toggle *Publish metadata only* on the theme overview page must be activated. Navigate to the Metadata section of the theme to configure metadata. For more information about configuring metadata, visit the [Edit metadata configuration](../../setup-hc/edit-metadata-config/2015-02-10-theme-edit-metadata) page.
 
 ## Create metadata ##
 
