@@ -15,46 +15,75 @@ Im &laquo;Download-Dienst&raquo;-Feld wird eine Liste der veröffentlichten Down
 
 Im &laquo;Metadaten&raquo;-Feld wird eine Liste der veröffentlichten Metadaten angezeigt. Klicken sie auf &laquo;Metadaten (Datensatz)&raquo;, &laquo;Metadaten (Download-Dienst/ATOM)&raquo; oder &laquo;Metadaten (Download-Dienst/WFS)&raquo; um die entsprechende XML-Datei direkt im Browser anzeigen zu lassen. Klicken sie auf das <a className="btn btn-default" title="Link kopieren"><span className="glyphicon glyphicon-copy"></span></a>-Icon um den Link zu den entsprechenden Metadaten in die Zwischenablage zu kopieren.
 
-Im &laquo;Testreports&raquo;-Feld wird eine Liste von PDF-Dateien angezeigt, die die Ergebnisse verschiedener Tests enthalten, die auf die veröffentlichten Metadaten und Dienste angewandt wurden. Klicken sie auf die gewünschte PDF-Datei um diese zu öffnen und die Testergebnisse direkt einsehen zu können. Die Anzahl und Art der Tests, die auf ihre Metadaten und ihre Dienste angewandt wird hängt von ihren Konformitätsanforderungen an die Metadaten und Dienste ab.
+Im &laquo;Validierungsberichte&raquo;-Feld enthält eine Ergebnisliste für eine Reihe von Tests, die für veröffentlichte Metadaten und Dienste ausgeführt wurden. Klicken Sie auf das Download-Symbol, um das Testergebnis direkt herunterzuladen. Grüne Häkchen zeigen an, dass der ETF-Bericht gültig ist. Rote Xs weisen auf Fehler oder einen nicht ausgeführten Test hin. Benutzer können die ETF-Tests für alle aufgelisteten Ressourcen erneut ausführen, indem sie auf die Schaltfläche «Alle Tests ausführen» klicken. Alternativ können Benutzer einen einzelnen Test erneut ausführen, indem sie auf das kreisförmige Pfeilsymbol neben dem Download-Symbol klicken. Das gelbe Warnsymbol wird für Ressourcen mit Konformitätsklassen angezeigt, die manuelle Überprüfungen erfordern.
 
-Metadaten-Tests werden auf Datensatz-Metadaten sowie Dienste-Metadaten angewandt. Die Tests prüfen ISO-, GDI-DE- und INSPIRE-Konformität.
-Folgende Tests werden auf Metadaten angewandt:
+Eine Reihe von standardmäßigen Konformitätsklassen wird auf Dataset-Metadaten ausgeführt, Service-Metadaten und Services heruntergeladen und angezeigt und kann im Design konfiguriert werden. Tests prüfen die INSPIRE-Konformität. Die Anzahl und Art der Tests, die an Ihren Metadaten und Diensten durchgeführt werden, spiegeln Ihre Compliance-Anforderungen wider. Weitere Informationen finden Sie unter [Validierung konfigurieren](../../setup-hc/config-validation/2015-02-10-validation.md). WFS-Diensttests mit direktem Download werden derzeit nicht unterstützt.
 
-<table>
-    <th colspan="2">Test</th>
-    <th colspan="2">Konformitätslevel</th>
-    <th colspan="2">Ressource</th>
-    <th>Kommentare</th>
-  <tr>
-    <td># internal identifier</td>
-    <td>Titel</td>
-    <td>GDI-DE</td>
-    <td>INSPIRE</td>
-    <td>Datensatz-Metadaten</td>
-    <td>Service-Metadaten</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>md_gdi</td>
-    <td>Metadaten | Metadata: ISO and GDI-DE</td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>für Dienste mit eingeschränktem Zugang nicht ausgeführt</td>
-  </tr>
-  <tr>
-    <td>md_inspire</td>
-    <td>Metadaten | Metadata: INSPIRE</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-  </tr>
-</table>
+## Auf Metadaten und Download-Diensten ausgeführte Tests: ##
 
-<br/>
+  <table className="tb">
+      <th colspan="2">Test</th>
+      <th colspan="2">Konformitätsstufe</th>
+      <th colspan="2">Ressource</th>
+      <tr>
+        <td>Titel</td>
+        <td>INSPIRIERT</td>
+        <td>Datensatz-Metadaten</td>
+        <td>Service-Metadaten</td>
+        <td>Dienst</td>
+      </tr>
+    <tr>
+      <td>Allgemeine Anforderungen für ISO/TC 19139:2007-basierte INSPIRE-Metadatensätze</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Konformitätsklasse 1: 'Baseline-Metadaten für Datensätze und Datensatzserien</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Konformitätsklasse 2: „Interoperabilitätsmetadaten von INSPIRE-Datensätzen und Datensatzreihen“</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Konformitätsklasse 2b: „INSPIRE-Datensätze und Datensatzserien-Metadaten für die Überwachung“</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Konformitätsklasse 3: 'INSPIRE Spatial Data Service Baseline Metadata'</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Konformitätsklasse 4: „INSPIRE Network Services“</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Konformitätsklasse „Download Service Pre-defined Atom“</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+    </tr>
+  </table>
+
+  <br/>
 
 Im &laquo;Diensteinstellungen&raquo;-Feld können sie mit Hilfe des Schalters die Koordinatenachsen ihres Datensatzes tauschen. Wenn ihr Datensatz mit vertauschten Koordinaten angezeigt wird, verändern sie die Position des Schalters, um die Darstellung zu berichtigen.
 
