@@ -39,6 +39,14 @@
     "message": "Erstellen Sie ein Schema",
     "description": "The label for category Create a schema in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.Configure validation": {
+    "message": "Validation konfigurieren",
+    "description": "The label for category Configure validation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configure source data": {
+    "message": "Quelldaten konfigurieren",
+    "description": "The label for category Configure validation in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.Create a transformation project": {
     "message": "Erstellen Sie ein Transformationsprojekt",
     "description": "The label for category Create a transformation project in sidebar tutorialSidebar"
@@ -65,6 +73,10 @@
   },
   "sidebar.tutorialSidebar.category.Create a new data set": {
     "message": "Neuen Datensatz erstellen",
+    "description": "The label for category Create a new data set in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create metadata": {
+    "message": "Metadaten erstellen",
     "description": "The label for category Create a new data set in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Edit Metadata": {
