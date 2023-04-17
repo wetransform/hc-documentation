@@ -15,7 +15,13 @@ Im &laquo;Download-Dienst&raquo;-Feld wird eine Liste der veröffentlichten Down
 
 Im &laquo;Metadaten&raquo;-Feld wird eine Liste der veröffentlichten Metadaten angezeigt. Klicken sie auf &laquo;Metadaten (Datensatz)&raquo;, &laquo;Metadaten (Download-Dienst/ATOM)&raquo; oder &laquo;Metadaten (Download-Dienst/WFS)&raquo; um die entsprechende XML-Datei direkt im Browser anzeigen zu lassen. Klicken sie auf das <a className="btn btn-default" title="Link kopieren"><span className="glyphicon glyphicon-copy"></span></a>-Icon um den Link zu den entsprechenden Metadaten in die Zwischenablage zu kopieren.
 
-Im &laquo;Validierungsberichte&raquo;-Feld enthält eine Ergebnisliste für eine Reihe von Tests, die für veröffentlichte Metadaten und Dienste ausgeführt wurden. Klicken Sie auf das Download-Symbol, um das Testergebnis direkt herunterzuladen. Grüne Häkchen zeigen an, dass der ETF-Bericht gültig ist. Rote Xs weisen auf Fehler oder einen nicht ausgeführten Test hin. Benutzer können die ETF-Tests für alle aufgelisteten Ressourcen erneut ausführen, indem sie auf die Schaltfläche «Alle Tests ausführen» klicken. Alternativ können Benutzer einen einzelnen Test erneut ausführen, indem sie auf das kreisförmige Pfeilsymbol neben dem Download-Symbol klicken. Das gelbe Warnsymbol wird für Ressourcen mit Konformitätsklassen angezeigt, die manuelle Überprüfungen erfordern.
+## Validierungsberichte ##
+
+Das &laquo;Validierungsberichte&raquo;-Feld enthält eine Ergebnisliste für eine Reihe von Tests, die für veröffentlichte Metadaten und Dienste ausgeführt wurden.
+Klicken Sie auf das Download-Symbol, um den Validierungsbericht direkt herunterzuladen. Grüne Häkchen zeigen an, dass der Validierungsbericht (ETF-Bericht) gültig ist. Rote Xs weisen auf Fehler oder einen nicht ausgeführten Test hin.
+
+Benutzer können die Validierungsprüfung (ETF-Tests) für alle aufgelisteten Ressourcen erneut ausführen, indem sie auf die Schaltfläche «Alle Tests ausführen» klicken. Alternativ können Benutzer einen einzelnen Test erneut ausführen, indem sie auf das kreisförmige Pfeilsymbol neben dem Download-Symbol klicken.
+Das gelbe Warnsymbol wird für Ressourcen mit Konformitätsklassen angezeigt, die manuelle Überprüfungen erfordern.
 
 Eine Reihe von standardmäßigen Konformitätsklassen wird auf Dataset-Metadaten ausgeführt, Service-Metadaten und Services heruntergeladen und angezeigt und kann im Design konfiguriert werden. Tests prüfen die INSPIRE-Konformität. Die Anzahl und Art der Tests, die an Ihren Metadaten und Diensten durchgeführt werden, spiegeln Ihre Compliance-Anforderungen wider. Weitere Informationen finden Sie unter [Validierung konfigurieren](../../setup-hc/config-validation/2015-02-10-validation.md). WFS-Diensttests mit direktem Download werden derzeit nicht unterstützt.
 
@@ -85,6 +91,8 @@ Eine Reihe von standardmäßigen Konformitätsklassen wird auf Dataset-Metadaten
 
   <br/>
 
-Im &laquo;Diensteinstellungen&raquo;-Feld können sie mit Hilfe des Schalters die Koordinatenachsen ihres Datensatzes tauschen. Wenn ihr Datensatz mit vertauschten Koordinaten angezeigt wird, verändern sie die Position des Schalters, um die Darstellung zu berichtigen.
+Im &laquo;Diensteinstellungen&raquo;-Feld können sie mit Hilfe des Schalters «Koordinatenreihenfolge tauschen»- die Koordinatenachsen ihres Datensatzes tauschen.
+
+Diese Funktion ist sinnvoll, wenn ihr Datensatz mit vertauschten Koordinaten angezeigt wird und führt dazu, das die Darstellung in der Kartenanzeige korrigiert wird.
 
 Im &laquo;Statusmeldungen&raquo;-Feld wird ein Transaktions-Report angezeigt, der die auf ihren Datensatz angewandten Prozesse sowie alle gegebenenfalls bei der Veröffentlichung auftretenden Fehler beschreibt. Die Statusmeldungen werden durch den service publisher generiert.

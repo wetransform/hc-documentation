@@ -17,9 +17,13 @@ Im &laquo;Metadaten&raquo;-Feld wird eine Liste der veröffentlichten Metadaten 
 
 Im &laquo;Validierungsberichte&raquo;-Feld enthält eine Ergebnisliste für eine Reihe von Tests, die für veröffentlichte Metadaten und Dienste ausgeführt wurden. Klicken Sie auf das Download-Symbol, um das Testergebnis direkt herunterzuladen. Grüne Häkchen zeigen an, dass der ETF-Bericht gültig ist. Rote Xs weisen auf Fehler oder einen nicht ausgeführten Test hin. Benutzer können die ETF-Tests für alle aufgelisteten Ressourcen erneut ausführen, indem sie auf die Schaltfläche «Alle Tests ausführen» klicken. Alternativ können Benutzer einen einzelnen Test erneut ausführen, indem sie auf das kreisförmige Pfeilsymbol neben dem Download-Symbol klicken. Das gelbe Warnsymbol wird für Ressourcen mit Konformitätsklassen angezeigt, die manuelle Überprüfungen erfordern.
 
-Eine Reihe von standardmäßigen Konformitätsklassen wird auf Dataset-Metadaten ausgeführt, Service-Metadaten und Services heruntergeladen und angezeigt und kann im Design konfiguriert werden. Tests prüfen die INSPIRE-Konformität. Die Anzahl und Art der Tests, die an Ihren Metadaten und Diensten durchgeführt werden, spiegeln Ihre Compliance-Anforderungen wider. Weitere Informationen finden Sie unter [Validierung konfigurieren](../../setup-hc/config-validation/2015-02-10-validation.md).
+## Konfiguration der Validierungstests ##
 
-## Auf Metadaten und Darstellungs-Diensten ausgeführte Tests: ##
+Die Metadaten werden basierend auf standardisierten Konformitätsklassen validiert. Welche das sind, kann im «Thema» im Bereich «Validierung» konfiguriert werden. Die Tests prüfen die INSPIRE-Konformität Ihrer Datensätze und Dienste.
+Die Anzahl und Art der Tests, die auf Ihre Metadaten und Dienste angewendet werden, spiegeln Ihre Compliance-Anforderungen wieder.
+Weitere Informationen finden Sie unter [Validierung konfigurieren](../../setup-hc/config-validation/2015-02-10-validation.md).
+
+## Auf Metadaten und Darstellungs-Diensten ausgeführte Validierungstests: ##
 
 <table className="tb">
      <th colspan="2">Test</th>
