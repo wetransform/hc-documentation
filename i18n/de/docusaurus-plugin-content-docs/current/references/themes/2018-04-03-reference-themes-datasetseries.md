@@ -13,4 +13,11 @@ Der &laquo;Datensatz-Reihe&raquo;-Bereich ermöglicht es ihnen, das Anlegen von 
 
 Aktivieren sie den Schalter *Publiziere aggregierte Dienste für alle Datensätze mit diesem Thema*, um alle Datensätze, die diesem Thema zugeordnet werden, einer gemeinsamen Datensatz-Reihe hinzuzufügen.
 
-Themen, für die Datensatz-Reihen aktiviert sind, erlauben es Nutzenden, während des Anlegens eines Datensatzes Dateien über den Massen-Upload hochzuladen. Wenn beim Anlegen eines Datensatzes ein Thema ausgewählt wird, für das Datensatz-Reihen aktiviert sind, wird ein Schalter angezeigt, mit dessen Hilfe der Massen-Upload aktiviert werden kann. Nutzende können dann eine zip-Datei hochladen, welche die zur Datensatz-Reihe gehörenden Datensätze für den Massen-Upload als zip-Dateien enthält. Datensatz-Reihen können alternativ auch über das Hochladen einer einzelnen Datei erzeugt werden.
+
+# Massen-Upload #
+
+Themen, die als Datensatz-Reihe konfiguriert sind, erlauben bei Anlage eines Datensatzes die Dateien über den Massen-Upload hochzuladen.
+
+Wird bei Anlage eines Datensatzes ein Thema ausgewählt, für das Datensatz-Reihe aktiviert ist, wird ein Schalter angezeigt, mit dessen Hilfe der Massen-Upload aktiviert werden kann. Nutzende können dann eine zip-Datei hochladen, welche die zur Datensatz-Reihe gehörenden Datensätze für den Massen-Upload wiederum als zip-Dateien enthält.
+
+Datensatz-Reihen können alternativ auch über das Hochladen einer einzelnen Datei erzeugt werden.
