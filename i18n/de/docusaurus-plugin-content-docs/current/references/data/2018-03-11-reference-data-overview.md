@@ -34,8 +34,6 @@ Das &laquo;Status&raquo;-Feld bietet einen Überblick über alle Ressourcen, die
     * Das X in einem roten Kreis zeigt Validierungsfehler an. Die Ressource kann im System nicht planmäßig genutzt werden.
     * Ein Strich in einem grauen Kreis bedeutet, dass die entsprechende Ressource nicht veröffentlicht ist.
 
- Sind diese mit einem Haken in einem grünen Kreis gekennzeichnet, sind sie valide und können im System regulär genutzt werden. Sind sie mit einem Ausrufezeichen in einem gelben Kreis gekennzeichnet, liegen Validierungswarnungen vor und bei ihrer Nutzung im System treten Fehler auf. Sind sie mit einem X in einem roten Kreis gekennzeichnet, liegen Validierungsfehler vor und sie können im System nicht planmäßig genutzt werden. Ein Strich in einem grauen Kreis bedeutet, dass die entsprechende Ressource nicht veröffentlicht ist.
-
 Die Spalte „Validierungsberichte“ enthält eine Reihe von herunterladbaren ETF-Testergebnissen und einen Dateianalysebericht der Quelldaten.
 
 Im Bericht werden die Ergebnisse der Prüfung gegen die im Thema konfigurierten Datensatz-Konformitätsklassen dokumentiert. Des weiteren erfolgt eine Bewertung der Gültigkeit der Datei basierend auf der anfänglichen Dateianalyse, die während des Datenuploads durchgeführt wurde.

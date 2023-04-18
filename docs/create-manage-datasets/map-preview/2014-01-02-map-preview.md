@@ -16,9 +16,9 @@ The map preview is a simple web map application that enables the viewing of publ
 
 The layer widget contains:
 
-    * Legend Informationen,
+    * Legend Information,
     * the options to turn layers on and off, and
-    * the option to filter raster datasets for display withint a dataset series
+    * the option to filter raster datasets for display within a dataset series
 
 # Select single datasets in a dataset series #
 
@@ -28,7 +28,7 @@ For published dataset series services, click on the filter icon within the layer
 
 The layer widget also offers the option to supply a custom basemap URL. Visit the following documentation page for more information about adding a custom WMS basemap to your organisation: [Adding an organisation](../../users-roles-orgs/manage-orgs/2015-03-04-users-add-organisation).
 
-# Externen WMS als Hintergrundkarte hinzufügen #
+# Add external WMS as background map #
 
 In addition, the layer widget supports the option to add external WMS services to the map preview so that external services can be viewed alongside hale»connect services.
 
