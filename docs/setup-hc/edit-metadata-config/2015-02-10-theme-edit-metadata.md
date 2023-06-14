@@ -281,7 +281,7 @@ The Autofill assistant provides several options for you to choose from. To popul
             "type": "string",
             "schema": null,
             "defaultValue": null,
-            "autofillRule":  {% raw %}"{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NAME}}"{% endraw %},
+            "autofillRule": "{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NAME}}",
             "visibility": true,
             "editable": true,
             "targets": {
@@ -338,8 +338,8 @@ hale»connect enables users to provide multiple autofill rules in a theme's meta
              "schema": null,
              "defaultValue": null
              "autofillRule": [
-                 {% raw %}"{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NAME}}"{% endraw %},
-                 {% raw %}"{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NUMBER}}"{% endraw %}
+                 "{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NAME}}",
+                 "{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NUMBER}}"
                  ],
              "visibility": true,
              "editable": true,
@@ -454,6 +454,45 @@ The ``defaultValue`` field can be populated with free text, provided in double q
                 }
             }
 
+### Adding more than one ```otherConstraints``` element
+
+hale»connect supports the configuration of multiple ```otherConstraints``` elements. In the ```defaultValue``` field shown below, an array of three, comma-separated string values creates three separate ```otherConstraints``` elements.
+
+            {
+              "name": "md-dataset.identification.constraints.useConstraints",
+              "required": false,
+              "minOccurs": 0,
+              "maxOccurs": -1,
+              "comment": "MD_Metadata/identificationInfo//resourceConstraints//useConstraints",
+              "label": "Use constraints",
+              "description": "Access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.",
+              "type": "enum",
+              "schema": null,
+              "defaultValue": "defaultValue": [
+                    "Es gelten die Lizenzbedingungen „Datenlizenz Deutschland - Namensnennung - Version 2.0" bzw. „dl-de/by-2-0" (https://www.govdata.de/dl-de/by-2-0) mit den dort geforderten Angaben zum Quellenvermerk. Als Rechteinhaber und Bereitsteller ist „Stadt Hildesheim", sowie das Jahr des Datenbezugs in Klammern anzugeben. Beispiel für Quellenvermerk: Stadt Hildesheim (2023) Datenlizenz Deutschland - Namensnennung - Version 2.0 (www.govdata.de/dl-de/by-2-0).",
+                    "{\"id\":\"dl-de-zero-2.0\",\"name\":\"Datenlizenz Deutschland - Zero - Version 2.0\",\"url\":\"https://www.govdata.de/dl-de/zero-2-0\",\"quelle\":\"Quelle: Stadt Hildesheim\"}",
+                    "Die Daten können den Lizenzbedingungen entsprechend genutzt werden. Die Stadt Hildesheim übernimmt keine Gewähr für die Fehlerfreiheit ihrer Produkte, die Richtigkeit und Vollständigkeit der Daten. Es wird jede Haftung für Schäden ausgeschlossen, die bei Nutzern direkt oder indirekt durch die Geodatennutzung entstehen."
+                ],
+              "autofillRule": null,
+              "visibility": true,
+              "editable": true,
+              "openValue": true,
+              "enumValues": [
+                  {
+                      "label": "No conditions apply to access and use",
+                      "value": "noConditionsApply"
+                  },
+                  {
+                      "label": "The conditions applying to access and use are unknown",
+                      "value": "conditionsUnknown"
+                  },
+                  {
+                      "label": "Datenlizenz Deutschland - Zero - Version 2.0",
+                      "value": "[Datenlizenz Deutschland - Zero - Version 2.0](https://www.govdata.de/dl-de/zero-2-0)"
+                  }
+              ],
+
+
 ### Working with gmx:Anchor elements in string fields
 
 hale»connect supports the use of gmx:Anchor encoding for gco:CharacterString elements that exist in hale»connect generated metadata. Markdown style notation can be used to specify a text value and URL. A gmx:Anchor encoded element can be generated using the pattern: \[<text\>\](<link\>)
@@ -493,8 +532,7 @@ In the following example, a gmx:Anchor is added as ``defaultValue`` and it is ad
               ],
 
 
-
-#### Adding JSON values in string fields
+### Adding JSON values in string fields
 
 JSON values can be added to string fields in the metadata editor. The JSON values must be escaped before they are added to the metadata configuration. In the example below, a JSON value is added as ``defaultValue`` and it is added to the ``enumValues`` field.
 

@@ -275,7 +275,7 @@ Der Autofill Assistent bietet ihnen mehrere Optionen an, zwischen denen sie wäh
             "type": "string",
             "schema": null,
             "defaultValue": null,
-            "autofillRule":  {% raw %}"{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NAME}}"{% endraw %},
+            "autofillRule": "{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NAME}}",
             "visibility": true,
             "editable": true,
             "targets": {
@@ -337,8 +337,8 @@ Mit hale»connect können Benutzende mehrere Autofill-Regeln in der Metadatenkon
               "schema": null,
               "defaultValue": null
               "autofillRule":[
-                    {% raw %}"{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NAME}}"{% endraw %},
-                    {% raw %}"{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NUMBER}}"{% endraw %}
+                    "{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NAME}}",
+                    "{{fileAnalysis.attributeValues.SchoolDistrict.SchoolDistrictFeatures.NUMBER}}"
                   ],
               "visibility": true,
               "editable": true,
