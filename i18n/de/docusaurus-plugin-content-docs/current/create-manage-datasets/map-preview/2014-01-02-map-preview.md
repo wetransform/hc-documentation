@@ -16,9 +16,9 @@ Die Kartenansicht ist eine einfache Web-Anwendung, die die Anzeige von veröffen
 
 Das Layer-Widget enthält
 
-    * Legendeninformationen,
-    * die Option zum Ein- und Ausschalten von Layern und
-    * die Option zum Filtern von Raster-Datensätzen für die Anzeige innerhalb einer Datensatzserie.
+* Legendeninformationen,
+* die Option zum Ein- und Ausschalten von Layern und
+* die Option zum Filtern von Raster-Datensätzen für die Anzeige innerhalb einer Datensatzserie.
 
 # Auswahl von Einzeldatensätzen einer Datensatzserie #
 
