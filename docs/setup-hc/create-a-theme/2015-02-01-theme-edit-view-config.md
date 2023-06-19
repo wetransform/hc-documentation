@@ -9,7 +9,7 @@ language: en
 ---
 
 
-A common issue with type and property names from data schemas is that they are hard to understand. They tend to be cryptic abbreviations, especially when they come from a Shapefile, or are defined using a foreign language. To provide effective view services despite this, you can define display properties which are then used for legends and GetFeatureInfo popups. hale»connect supports the configuration aliases for feature type names and feature properties.
+A common issue with type and property names from data schemas is that they are hard to understand. They tend to be cryptic abbreviations, especially when they come from a Shapefile, or are defined using a foreign language. To provide effective view services despite this, you can define display properties which are then used for legends and GetFeatureInfo popups. hale»connect supports the configuration of aliases for feature type names and feature properties.
 
 To set display properties, follow these steps as a logged in theme manager or organisation superuser:
 
@@ -26,8 +26,8 @@ The renderer enables users to control the formatting of values displayed in the 
 
 * Default (no renderer)
 * Formatted number (enter a number format, e.g. ###.##)
-* Formatted Date (choose a date format option)
-* Codelist Labels (substitute coded values can be provided in lookup table)
+* Formatted date (choose a date format option)
+* Codelist labels (substitute coded values can be provided in lookup table)
     * semicolon separated CSV or valid JSON values can be provided
     * the first column must contain values found in the data and the second column must contain the display values
 

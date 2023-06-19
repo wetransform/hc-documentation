@@ -298,7 +298,7 @@ The image below displays the configured Keywords field as it appears in the data
 
 ### Adding multiple default values for one metadata field
 
-hale»connect enables users to provide multiple default values in a theme's metadata configuration. Multiple, comma-separated values can be added within square brackets. In the example below, the keywords "INSPIRE" and "environment" are added to separate ´´´descriptiveKeyword´´´ elements in the dataset metadata.
+hale»connect enables users to provide multiple default values in a theme's metadata configuration. Multiple, comma-separated values can be added within square brackets to any element with a maximum cardinality greater than 1 and where enumeration values are used for ```defaultValue```.  In the example below, the keywords "INSPIRE" and "environment" are added to separate ´´´descriptiveKeyword´´´ elements in the dataset metadata.
 
               {
                "name": "md-dataset.identification.keyword_simple",
@@ -321,6 +321,42 @@ hale»connect enables users to provide multiple default values in a theme's meta
                    "bsp": "md-dataset.identification.keyword_simple"
                }
            }
+
+In the example shown below, an array of three, comma-separated string values creates three separate ```otherConstraints``` elements.
+
+           {
+             "name": "md-dataset.identification.constraints.useConstraints",
+             "required": false,
+             "minOccurs": 0,
+             "maxOccurs": -1,
+             "comment": "MD_Metadata/identificationInfo//resourceConstraints//useConstraints",
+             "label": "Use constraints",
+             "description": "Access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.",
+             "type": "enum",
+             "schema": null,
+             "defaultValue": [
+                   "Es gelten die Lizenzbedingungen „Datenlizenz Deutschland - Namensnennung - Version 2.0" bzw. „dl-de/by-2-0" (https://www.govdata.de/dl-de/by-2-0) mit den dort geforderten Angaben zum Quellenvermerk. Als Rechteinhaber und Bereitsteller ist „Stadt Hildesheim", sowie das Jahr des Datenbezugs in Klammern anzugeben. Beispiel für Quellenvermerk: Stadt Hildesheim (2023) Datenlizenz Deutschland - Namensnennung - Version 2.0 (www.govdata.de/dl-de/by-2-0).",
+                   "{\"id\":\"dl-de-zero-2.0\",\"name\":\"Datenlizenz Deutschland - Zero - Version 2.0\",\"url\":\"https://www.govdata.de/dl-de/zero-2-0\",\"quelle\":\"Quelle: Stadt Hildesheim\"}",
+                   "Die Daten können den Lizenzbedingungen entsprechend genutzt werden. Die Stadt Hildesheim übernimmt keine Gewähr für die Fehlerfreiheit ihrer Produkte, die Richtigkeit und Vollständigkeit der Daten. Es wird jede Haftung für Schäden ausgeschlossen, die bei Nutzern direkt oder indirekt durch die Geodatennutzung entstehen."
+               ],
+             "autofillRule": null,
+             "visibility": true,
+             "editable": true,
+             "openValue": true,
+             "enumValues": [
+                 {
+                     "label": "No conditions apply to access and use",
+                     "value": "noConditionsApply"
+                 },
+                 {
+                     "label": "The conditions applying to access and use are unknown",
+                     "value": "conditionsUnknown"
+                 },
+                 {
+                     "label": "Datenlizenz Deutschland - Zero - Version 2.0",
+                     "value": "[Datenlizenz Deutschland - Zero - Version 2.0](https://www.govdata.de/dl-de/zero-2-0)"
+                 }
+             ],
 
 ### Adding multiple autofill rules for one metadata field
 
@@ -453,45 +489,6 @@ The ``defaultValue`` field can be populated with free text, provided in double q
                     "bsp": "md-dataset.identification.constraints.useConstraints"
                 }
             }
-
-### Adding more than one ```otherConstraints``` element
-
-hale»connect supports the configuration of multiple ```otherConstraints``` elements. In the ```defaultValue``` field shown below, an array of three, comma-separated string values creates three separate ```otherConstraints``` elements.
-
-            {
-              "name": "md-dataset.identification.constraints.useConstraints",
-              "required": false,
-              "minOccurs": 0,
-              "maxOccurs": -1,
-              "comment": "MD_Metadata/identificationInfo//resourceConstraints//useConstraints",
-              "label": "Use constraints",
-              "description": "Access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.",
-              "type": "enum",
-              "schema": null,
-              "defaultValue": "defaultValue": [
-                    "Es gelten die Lizenzbedingungen „Datenlizenz Deutschland - Namensnennung - Version 2.0" bzw. „dl-de/by-2-0" (https://www.govdata.de/dl-de/by-2-0) mit den dort geforderten Angaben zum Quellenvermerk. Als Rechteinhaber und Bereitsteller ist „Stadt Hildesheim", sowie das Jahr des Datenbezugs in Klammern anzugeben. Beispiel für Quellenvermerk: Stadt Hildesheim (2023) Datenlizenz Deutschland - Namensnennung - Version 2.0 (www.govdata.de/dl-de/by-2-0).",
-                    "{\"id\":\"dl-de-zero-2.0\",\"name\":\"Datenlizenz Deutschland - Zero - Version 2.0\",\"url\":\"https://www.govdata.de/dl-de/zero-2-0\",\"quelle\":\"Quelle: Stadt Hildesheim\"}",
-                    "Die Daten können den Lizenzbedingungen entsprechend genutzt werden. Die Stadt Hildesheim übernimmt keine Gewähr für die Fehlerfreiheit ihrer Produkte, die Richtigkeit und Vollständigkeit der Daten. Es wird jede Haftung für Schäden ausgeschlossen, die bei Nutzern direkt oder indirekt durch die Geodatennutzung entstehen."
-                ],
-              "autofillRule": null,
-              "visibility": true,
-              "editable": true,
-              "openValue": true,
-              "enumValues": [
-                  {
-                      "label": "No conditions apply to access and use",
-                      "value": "noConditionsApply"
-                  },
-                  {
-                      "label": "The conditions applying to access and use are unknown",
-                      "value": "conditionsUnknown"
-                  },
-                  {
-                      "label": "Datenlizenz Deutschland - Zero - Version 2.0",
-                      "value": "[Datenlizenz Deutschland - Zero - Version 2.0](https://www.govdata.de/dl-de/zero-2-0)"
-                  }
-              ],
-
 
 ### Working with gmx:Anchor elements in string fields
 
