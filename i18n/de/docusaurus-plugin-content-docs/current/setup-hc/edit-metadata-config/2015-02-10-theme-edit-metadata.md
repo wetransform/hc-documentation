@@ -292,7 +292,7 @@ IIn der folgenden Abbildung wird das konfigurierte Schlüsselwörter-Feld darges
 
 ### Hinzufügen mehrerer Standardwerte für ein Metadatenfeld
 
-Mit hale»connect können Benutzende mehrere Standardwerte in der Metadatenkonfiguration eines Themas angeben. In eckigen Klammern können mehrere durch Kommas getrennte Werte hinzugefügt werden. Im folgenden Beispiel werden die Schlüsselwörter "INSPIRE" und "Umwelt" zu separaten Keyword-Elementen in den Datensatz-Metadaten hinzugefügt.
+Mit hale»connect können Benutzende mehrere Standardwerte in der Metadatenkonfiguration eines Themas angeben. Mehrere durch Kommas getrennte Werte können in eckigen Klammern zu jedem Element hinzugefügt werden, dessen maximale Kardinalität größer als 1 ist und bei dem Aufzählungswerte für „defaultValue“ verwendet werden. Im folgenden Beispiel werden die Schlüsselwörter "INSPIRE" und "Umwelt" zu separaten Keyword-Elementen in den Datensatz-Metadaten hinzugefügt.
 
               {
                "name": "md-dataset.identification.keyword_simple",
@@ -315,6 +315,43 @@ Mit hale»connect können Benutzende mehrere Standardwerte in der Metadatenkonfi
                    "bsp": "md-dataset.identification.keyword_simple"
                }
            }
+
+Im unten gezeigten Beispiel erstellt ein Array aus drei durch Kommas getrennten Zeichenfolgenwerten drei separate „otherConstraints“-Elemente.
+
+            {
+             "name": "md-dataset.identification.constraints.useConstraints",
+             "required": false,
+             "minOccurs": 0,
+             "maxOccurs": -1,
+             "comment": "MD_Metadata/identificationInfo//resourceConstraints//useConstraints",
+             "label": "Use constraints",
+             "description": "Access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.",
+             "type": "enum",
+             "schema": null,
+             "defaultValue": [
+                   "Es gelten die Lizenzbedingungen „Datenlizenz Deutschland - Namensnennung - Version 2.0" bzw. „dl-de/by-2-0" (https://www.govdata.de/dl-de/by-2-0) mit den dort geforderten Angaben zum Quellenvermerk. Als Rechteinhaber und Bereitsteller ist „Stadt Hildesheim", sowie das Jahr des Datenbezugs in Klammern anzugeben. Beispiel für Quellenvermerk: Stadt Hildesheim (2023) Datenlizenz Deutschland - Namensnennung - Version 2.0 (www.govdata.de/dl-de/by-2-0).",
+                   "{\"id\":\"dl-de-zero-2.0\",\"name\":\"Datenlizenz Deutschland - Zero - Version 2.0\",\"url\":\"https://www.govdata.de/dl-de/zero-2-0\",\"quelle\":\"Quelle: Stadt Hildesheim\"}",
+                   "Die Daten können den Lizenzbedingungen entsprechend genutzt werden. Die Stadt Hildesheim übernimmt keine Gewähr für die Fehlerfreiheit ihrer Produkte, die Richtigkeit und Vollständigkeit der Daten. Es wird jede Haftung für Schäden ausgeschlossen, die bei Nutzern direkt oder indirekt durch die Geodatennutzung entstehen."
+               ],
+             "autofillRule": null,
+             "visibility": true,
+             "editable": true,
+             "openValue": true,
+             "enumValues": [
+                 {
+                     "label": "No conditions apply to access and use",
+                     "value": "noConditionsApply"
+                 },
+                 {
+                     "label": "The conditions applying to access and use are unknown",
+                     "value": "conditionsUnknown"
+                 },
+                 {
+                     "label": "Datenlizenz Deutschland - Zero - Version 2.0",
+                     "value": "[Datenlizenz Deutschland - Zero - Version 2.0](https://www.govdata.de/dl-de/zero-2-0)"
+                 }
+             ],
+
            **Metadatenkonfiguration für die Nutzung von Attributwerten einzelner Objektarten als Schlüsselwörter**
 
            In der folgenden Abbildung wird das konfigurierte Schlüsselwörter-Feld dargestellt, wie es in den Datensatz-Metadaten erscheint. Das Feld ist mit den Attributwerten belegt, die im Metadaten-Editor ausgewählt wurden - in diesem Fall handelt es sich um Schulbezirksnamen.
