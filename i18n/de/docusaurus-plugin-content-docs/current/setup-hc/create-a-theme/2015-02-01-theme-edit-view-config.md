@@ -7,7 +7,7 @@ layout: help-detail
 language: de
 ---
 
-Oft sind Feld- und Klassennamen im Schema nur schwierig zu verstehen, beispielweise wenn sie in einer Fremdsprache definiert sind oder aufgrund von Beschränkungen stark abgekürzt wurden. Um trotzdem nützliche Darstellungsdienste bereitstellen zu können, können sie die Anzeigeeigenschaften für dem Thema zugeordnete Objektarten bearbeiten. Diese werden dann beispielsweise für die Legenden und für GetFeatureInfo-Popups genutzt.
+Oft sind Feld- und Klassennamen im Schema nur schwierig zu verstehen, beispielweise wenn sie in einer Fremdsprache definiert sind oder aufgrund von Beschränkungen stark abgekürzt wurden. Um trotzdem nützliche Darstellungsdienste bereitstellen zu können, können sie die Anzeigeeigenschaften für dem Thema zugeordnete Objektarten bearbeiten. Diese werden dann beispielsweise für die Legenden und für GetFeatureInfo-Popups genutzt. hale»connect unterstützt die Konfiguration von Aliasen für Feature-Typ-Namen und Feature-Eigenschaften.
 
 Um diese anzupassen, gehen sie in der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; wie folgt vor:
 
@@ -17,3 +17,20 @@ Um diese anzupassen, gehen sie in der Rolle &laquo;Themenmanager&raquo; oder &la
 4.	Klicken sie auf die Objektart, deren Anzeigeeigenschaften sie bearbeiten wollen .
 5.	Bestimmen sie in der nun sichtbaren Tabelle für jedes Feld, ob dieses in einem Darstellungsdienst sichtbar sein soll, und wenn ja, mit welchem Alias (Beschriftung).<img src={require("/images/help/de/property_editing.png").default} alt="" title="Objektarteneigenschaften bearbeiten" className="img-responsive img-inline-help"/>
 6.	Speichern sie die Änderungen unterhalb der Tabelle.
+
+# Anzeigewerte formatieren #
+
+Mit dem Renderer können Benutzer die Formatierung der im Feature Explorer angezeigten Werte steuern. Benutzer haben die Möglichkeit, einen der folgenden Renderer auszuwählen:
+
+* Standard (kein Renderer)
+* Formatierte Zahl (geben Sie ein Zahlenformat ein, z. B. ###.##)
+* Formatiertes Datum (wählen Sie eine Option für das Datumsformat)
+* Codelisten-Beschriftungen (ersetzende codierte Werte können in der Nachschlagetabelle bereitgestellt werden)
+
+     * Durch Semikolons getrennte CSV- oder gültige JSON-Werte können bereitgestellt werden
+     * Die erste Spalte muss in den Daten gefundene Werte enthalten und die zweite Spalte muss die Anzeigewerte enthalten
+
+Hier ist ein Beispiel dafür, wie codierte Werte mithilfe von Beschriftungen ersetzt werden, die über eine Nachschlagetabelle bereitgestellt werden:
+<img src={require("/images/help/de/renderer.png").default} alt="" title="Codierte Werte durch Labels ersetzen" className="img-responsive img-inline-help"/>
+
+Um angewendete Renderer zu bearbeiten, klicken Sie auf das Zahnradsymbol, um Ihre Änderungen vorzunehmen.
