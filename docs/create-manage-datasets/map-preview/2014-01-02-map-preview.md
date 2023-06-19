@@ -16,7 +16,7 @@ The map preview is a simple web map application that enables the viewing of publ
 
 The layer widget contains:
 
-* Legend Information,
+* legend information,
 * the option to add external WMS layers,
 * the options to turn layers on and off, and
 * the option to filter raster datasets for display within a dataset series
