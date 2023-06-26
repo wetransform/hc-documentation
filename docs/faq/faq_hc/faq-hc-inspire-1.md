@@ -5,6 +5,7 @@ categories:
 - "help-page-subcategory-faq"
 layout: help-detail
 language: en
+displayed_sidebar: tutorialSidebar
 ---
 
 <h2>According to the INSPIRE Technical Guidelines for Metadata version 2.0 a <code>gmx:Anchor</code> element has to be applied for <code>LegalConstraints</code>. Is this implemented in hale»connect?</h2>
