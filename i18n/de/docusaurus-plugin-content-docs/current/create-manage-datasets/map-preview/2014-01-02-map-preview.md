@@ -23,15 +23,15 @@ Das Layer-Widget enthält
 
 # Auswahl von Einzeldatensätzen einer Datensatzserie #
 
-Klicken Sie für veröffentlichte Datensatzseriendienste auf das Filtersymbol im Layer-Widget, um den Datensatzauswahldialog aufzurufen und Teildatensätze für die Anzeige auszuwählen. <img src={require("/images/help/de/series.png").default} alt="Ausgewählte Sub-Datensätze im Layer-Widget" title="Ausgewählte Sub-Datensätze im Layer-Widget" className="img-responsive img-inline-help"/>
+Klicken sie für veröffentlichte Datensatzseriendienste auf das Filtersymbol im Layer-Widget, um den Datensatzauswahldialog aufzurufen und Teildatensätze für die Anzeige auszuwählen. <img src={require("/images/help/de/series.png").default} alt="Ausgewählte Sub-Datensätze im Layer-Widget" title="Ausgewählte Sub-Datensätze im Layer-Widget" className="img-responsive img-inline-help"/>
 
 # Externen WMS-Layer hinzufügen #
 
-Das Layer-Widget unterstützt die Option, externe WMS-Layern zur Kartenvorschau hinzuzufügen, sodass externe Layern zusammen mit den hale»connect-Diensten angezeigt werden können. Es können auch weitere hale»connect-Dienste hinzugefügt werden. Klicken sie im Layer-Feld auf das Pluszeichen, um ihr WMS hinzuzufügen. Sie können die Reihenfolge der Layern in der Layer-Liste ändern, um die Anzeige der Layern in der Kartenvorschau zu konfigurieren.
+Das Layer-Widget unterstützt die Option, externe WMS-Layer zur Kartenvorschau hinzuzufügen, sodass externe Layer zusammen mit den hale»connect-Diensten angezeigt werden können. Es können auch weitere hale»connect-Dienste hinzugefügt werden. Klicken sie im Layer-Feld auf das Pluszeichen, um ihren WMS hinzuzufügen. Sie können die Reihenfolge der Layer in der Layer-Liste ändern, um die Anzeige der Layer in der Kartenvorschau zu konfigurieren.
 
 # Benutzerdefinierten WMS als Hintergrundkarte hinzufügen #
 
-Das Layer-Widget bietet auch die Möglichkeit, eine benutzerdefinierte Hintergrundkarte per URL bereitzustellen. Klicken sie im Grundkartenbereich auf das Pluszeichen, um ihre URL hinzuzufügen. Für mehr Informationen zum Hinzufügen einer Hintergrundkarte zu ihrer Organisation, lesen sie  [diesen Abschnitt der Dokumentation](../../users-roles-orgs/manage-orgs/2015-03-04-users-add-organisation.md).
+Das Layer-Widget bietet auch die Möglichkeit, eine benutzerdefinierte Hintergrundkarte per URL bereitzustellen. Klicken sie im Basemap-Bereich auf das Pluszeichen, um ihre URL hinzuzufügen. Für mehr Informationen zum Hinzufügen einer Hintergrundkarte zu ihrer Organisation, lesen sie  [diesen Abschnitt der Dokumentation](../../users-roles-orgs/manage-orgs/2015-03-04-users-add-organisation.md).
 
 # Externen WMS als Hintergrundkarte hinzufügen #
 
