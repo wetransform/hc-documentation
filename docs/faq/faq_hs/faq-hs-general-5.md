@@ -5,6 +5,7 @@ categories:
 - "help-page-subcategory-faq"
 layout: help-detail
 language: en
+displayed_sidebar: tutorialSidebar
 ---
 
 <h2>How can I use the File GeoDataBase (FGDB) reader with the command line?</h2>

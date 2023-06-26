@@ -5,6 +5,7 @@ categories:
 - "help-page-subcategory-faq"
 layout: help-detail
 language: en
+displayed_sidebar: tutorialSidebar
 ---
 
 <h2>My dataset using xml data won't publish with a conversion service error <code>Conversion failed</code>. What can I do?</h2>

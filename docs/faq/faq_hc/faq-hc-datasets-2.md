@@ -5,6 +5,7 @@ categories:
 - "help-page-subcategory-faq"
 layout: help-detail
 language: en
+displayed_sidebar: tutorialSidebar
 ---
 
 <h2>My data cannot be validated, because the INSPIRE schemas are not available. What can I do?</h2>

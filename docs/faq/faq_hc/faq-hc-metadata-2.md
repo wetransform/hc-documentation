@@ -5,6 +5,7 @@ categories:
 - "help-page-subcategory-faq"
 layout: help-detail
 language: en
+displayed_sidebar: tutorialSidebar
 ---
 
 <h2>How can I access/harvest metadata of data and services published on hale»connect?</h2>

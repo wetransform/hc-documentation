@@ -5,6 +5,7 @@ categories:
 - "help-page-subcategory-faq"
 layout: help-detail
 language: en
+displayed_sidebar: tutorialSidebar
 ---
 
 <h2>The Schema location has changed. What do I need to do, what do I have to do in order to ensure that my dataset will still be validated?</h2>

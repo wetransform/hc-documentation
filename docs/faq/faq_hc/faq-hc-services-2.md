@@ -5,6 +5,7 @@ categories:
 - "help-page-subcategory-faq"
 layout: help-detail
 language: en
+displayed_sidebar: tutorialSidebar
 ---
 
 <h2>My dataset using existing metadata won't publish with a <code>Feature 'TimePeriod' not found.</code> error. What can I do?</h2>

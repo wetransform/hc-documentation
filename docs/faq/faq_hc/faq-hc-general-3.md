@@ -5,6 +5,7 @@ categories:
 - "help-page-subcategory-faq"
 layout: help-detail
 language: en
+displayed_sidebar: tutorialSidebar
 ---
 
 <h2>Why are no <i>FeatureTypes</i> assigned to a theme that was created together with a new schema?</h2>
