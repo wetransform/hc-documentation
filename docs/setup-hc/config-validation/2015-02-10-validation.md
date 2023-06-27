@@ -15,4 +15,4 @@ To edit the validation configuration, follow these steps as a logged in theme ma
 1. Go to &laquo;Themes&raquo;
 1. Pick the theme you'd like to edit the validation configuration for
 1. Go to &laquo;Validation&raquo;. Dropdown menus for dataset metadata, service metadata, services and data are displayed. Select or deselect the conformance classes you are interested in for each category. All available conformance classes used for testing resources belonging to each category are available in the dropdown menus. Users are not able to add the same test, in the same category, twice. Direct download WFS service testing is not currently supported.
-<img src={require("/images/help/en/metadata1.png").default} alt="" title="The metadata editor" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/configure_validation.png").default} alt="" title="The metadata editor" className="img-responsive img-inline-help"/>
