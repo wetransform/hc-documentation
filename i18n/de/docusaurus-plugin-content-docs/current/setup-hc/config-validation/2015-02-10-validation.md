@@ -20,4 +20,4 @@ Um die Validierungskonfiguration zu bearbeiten, befolgen Sie diese Schritte als 
 1. Gehen Sie zu &laquo;Themen&raquo;
 2. Wählen Sie das Thema aus, für das Sie die Validierungskonfiguration bearbeiten möchten
 3. Gehen Sie zu &laquo;Validierung&raquo;. Dropdown-Menüs für Datensatz-Metadaten, Dienste-Metadaten, Dienste und Daten werden angezeigt. Aktivieren oder deaktivieren Sie die Konformitätsklassen, an denen Sie interessiert sind, für jede Kategorie. Alle verfügbaren Konformitätsklassen, die zum Testen von Ressourcen verwendet werden, die zu jeder Kategorie gehören, sind in den Dropdown-Menüs verfügbar. Benutzer können denselben Test nicht zweimal in derselben Kategorie hinzufügen. WFS-Diensttests mit direktem Download werden derzeit nicht unterstützt.
-<img src={require("/images/help/de/metadata1.png").default} alt="" title="Der Metadaten-Editor" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/de/configure_validation.png").default} alt="" title="Der Metadaten-Editor" className="img-responsive img-inline-help"/>
