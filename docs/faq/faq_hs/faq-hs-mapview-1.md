@@ -1,5 +1,5 @@
 ---
-title: "Questions and answers on hale»studio"
+title: "Q&A 8"
 categories:
 - "help-page-category-faq"
 - "help-page-subcategory-faq"
