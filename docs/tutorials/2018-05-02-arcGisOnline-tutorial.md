@@ -32,11 +32,11 @@ Your WMS layer should appear in the layers panel on the left. Left click on the 
 
 Next, click on the black arrow next to the WMS name. Your WMS layer should appear. Left click on the three dots which appear under the layer name to activate pop-ups.
 
-<img src={require("/images/help/en/Tutorial_arcPopUp.PNG").default} alt="" title="Pop ups in ArcGIS Online" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Tutorial_arcPopUp.png").default} alt="" title="Pop ups in ArcGIS Online" className="img-responsive img-inline-help"/>
 
 Once you activate pop-ups for your layer, the GetFeatureInfo response will display in the pop-up dialog for any feature that you click. If you click on an area with overlapping features, results for each feature will be listed. hale»connect services provide the unique ability to explore complex GML through the hale»connect FeatureExplorer. In the pop-up dialog in ArcGIS Online, click on the Details anzeigen button for the feature you are interested in.
 
-<img src={require("/images/help/en/Tutorial_arcPopUpDialog.PNG").default} alt="" title="Pop ups in ArcGIS Online" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Tutorial_arcPopUpDialog.png").default} alt="" title="Pop ups in ArcGIS Online" className="img-responsive img-inline-help"/>
 
 The hale»connect FeatureExplorer will open in a new tab in your browser. The FeatureExplorer enables you to navigate through any level of nested, complex GML to further investigate the linked resources, linked features, codelists or attributes that you are interested in.
 

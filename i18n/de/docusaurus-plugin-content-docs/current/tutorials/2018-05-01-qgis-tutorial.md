@@ -21,7 +21,7 @@ Um ihren hale»connect WMS in QGIS darzustellen, benötigen sie die URL zum Capa
 
 Öffnen sie QGIS und klicken sie auf das Layer-Menü. Wählen sie im &laquo;Layer&raquo;-Menü &laquo;Layer hinzufügen&raquo; und dann &laquo;WMS/WMTS-Layer hinzufügen...&raquo;.
 
-<img src={require("/images/help/en/Tutorial_qgisAddLayer.PNG").default} alt="" title="Einen WMS-Layer zu QGIS hinzufügen" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Tutorial_qgisAddLayer.png").default} alt="" title="Einen WMS-Layer zu QGIS hinzufügen" className="img-responsive img-inline-help"/>
 
 Klicken sie im erscheinenden Dialog &laquo;Datenquellenverwaltung&raquo; auf den &laquo;Neu&raquo;-Knopf. Daraufhin öffnet sich ein Dialog, in welchem sie eine neue WMS-Verbindung anlegen können. Geben sie ihrer neuen Verbindung einen Namen und geben sie die URL zu ihrem hale»connect-Dienst in das &laquo;URL&raquo;-Feld ein. Klicken sie &laquo;OK&raquo;.
 
@@ -33,7 +33,7 @@ Ihr neuer Layer sollte nun oben im Dialog &laquo;Datenquellenverwaltung&raquo; a
 
 Die von ihnen ausgewählten Layer sollten in der &laquo;Layer&raquo;-Ansicht auf der linken Seite erscheinen. Die von QGIS dargestellte Legende wird aus der GetLegendGraphic-Abfrage an den WMS abgeleitet. Über einen Rechtsklick auf den Layer können sie unter &laquo;Eigenschaften...&raquo; mehr Informationen zu dem zugrundeliegenden Dienst einsehen.
 
-<img src={require("/images/help/en/Tutorial_qgisMap.PNG").default} alt="" title="WMS-Layer in QGIS" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Tutorial_qgisMap.png").default} alt="" title="WMS-Layer in QGIS" className="img-responsive img-inline-help"/>
 
 ### **Objekte in einem WMS abfragen**
 
