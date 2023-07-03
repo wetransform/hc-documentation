@@ -352,11 +352,11 @@ Im unten gezeigten Beispiel erstellt ein Array aus drei durch Kommas getrennten 
                  }
              ],
 
-           **Metadatenkonfiguration für die Nutzung von Attributwerten einzelner Objektarten als Schlüsselwörter**
+**Metadatenkonfiguration für die Nutzung von Attributwerten einzelner Objektarten als Schlüsselwörter**
 
-           In der folgenden Abbildung wird das konfigurierte Schlüsselwörter-Feld dargestellt, wie es in den Datensatz-Metadaten erscheint. Das Feld ist mit den Attributwerten belegt, die im Metadaten-Editor ausgewählt wurden - in diesem Fall handelt es sich um Schulbezirksnamen.
+In der folgenden Abbildung wird das konfigurierte Schlüsselwörter-Feld dargestellt, wie es in den Datensatz-Metadaten erscheint. Das Feld ist mit den Attributwerten belegt, die im Metadaten-Editor ausgewählt wurden - in diesem Fall handelt es sich um Schulbezirksnamen.
 
-           <img src={require("/images/help/de/AttributeValues.png").default} alt="" title="Attributwerte als Schlüsselwörter" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/de/AttributeValues.png").default} alt="" title="Attributwerte als Schlüsselwörter" className="img-responsive img-inline-help"/>
 
 ### Hinzufügen mehrerer Autofill-Regeln für ein Metadatenfeld
 
