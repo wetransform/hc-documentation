@@ -33,4 +33,4 @@ Mit dem Renderer können Nutzende die Formatierung der im Feature Explorer angez
 Hier ist ein Beispiel dafür, wie codierte Werte mithilfe von Beschriftungen ersetzt werden, die über eine Mappingtabelle bereitgestellt werden:
 <img src={require("/images/help/de/renderer.png").default} alt="" title="Codierte Werte durch Labels ersetzen" className="img-responsive img-inline-help"/>
 
- Um angewendete Renderer zu bearbeiten, klicken sie auf das Zahnradsymbol.
+Um angewendete Renderer zu bearbeiten, klicken sie auf das Zahnradsymbol.
