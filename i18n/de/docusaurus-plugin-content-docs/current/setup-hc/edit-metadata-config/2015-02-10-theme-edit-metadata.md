@@ -19,13 +19,13 @@ In der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; könne
 5.  Wählen sie die Metadaten-Quelle aus dem Aufklappmenü aus. Verfügbare Optionen sind:
       * Metadaten-Editor verwenden: Wählen sie diese Option, wenn die Metadaten vom System generiert werden sollen. Es steht ein spezieller Text-Editor zur Verfügung, mit dem die Generierung der Metadaten durch das System konfiguriert werden kann. Die vorgegebene Metadaten-Konfiguration zeigt INSPIRE-konforme Metadaten-Elemente an.
 		Wenn sie sich dafür entscheiden, den Metadateneditor zu verwenden, generiert haleconnect Datensatz- und Dienste-Metadaten basierend auf dem Input der oder des Nutzenden. Für einige Felder, wie beispielsweise *Keywords*, übernimmt haleconnect automatisch den für die Datensatz-Metadaten angegebenen Wert für die Dienste-Metadaten. Wenn sie in ihren Dienste-Metadaten abweichende *Keywords* verwenden möchten, geben sie die Werte in das dafür vorgesehene Textfeld ein.
-      <img src={require("/images/help/de/generate_metadata.PNG").default} alt="" title="Generieren von Metadaten mit haleconnect" className="img-responsive img-inline-help"/>
+      <img src={require("/images/help/de/generate_metadata.png").default} alt="" title="Generieren von Metadaten mit haleconnect" className="img-responsive img-inline-help"/>
       * Existierende Metadaten neu publizieren: Wählen sie diese Option, um während der Datensatz-Erstellung eine bestehende Metadaten-Datei hochzuladen.
 		Wenn sie sich dafür entscheiden, existierende Metadaten neu zu publizieren, generiert haleconnect Datensatz-Metadaten basierend auf einer Kopie der Daten, die über eine URL oder einen Daten-Upload bereitgestellt werden. Bitte beachten sie, dass die Elemente gml:TimePeriod und gmd:MD_RestrictionCode in existierenden Metadaten derzeit nicht unterstüzt werden.
-      <img src={require("/images/help/de/copy_metadata.PNG").default} alt="" title="Metadaten kopieren" className="img-responsive img-inline-help"/>
+      <img src={require("/images/help/de/copy_metadata.png").default} alt="" title="Metadaten kopieren" className="img-responsive img-inline-help"/>
       * Existierende Metadaten verlinken: Wählen sie diese Option, um während der Datensatz-Erstellung einen Link zu einer bestehende Metadaten-Datei anzugeben.
 		Wenn sie sich dafür entscheiden, einen Link zu existierenden Metadaten anzugeben, generiert haleconnect Datensatz-Metadaten über einen Zugriff auf die angegebene URL. Bitte beachten sie, dass die Elemente gml:TimePeriod und gmd:MD_RestrictionCode in existierenden Metadaten derzeit nicht unterstüzt werden.
-      <img src={require("/images/help/de/remote_url_metadata.PNG").default} alt="" title="Existierende Metadaten verlinken" className="img-responsive img-inline-help"/>
+      <img src={require("/images/help/de/remote_url_metadata.png").default} alt="" title="Existierende Metadaten verlinken" className="img-responsive img-inline-help"/>
 
 6.	Wählen sie die Metadaten-Sprache aus dem Aufklappmenü aus. Alle europäischen Sprachen werden unterstützt.
 

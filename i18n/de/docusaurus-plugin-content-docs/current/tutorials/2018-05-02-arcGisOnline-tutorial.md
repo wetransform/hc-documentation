@@ -32,11 +32,11 @@ Ihr WMS-Layer sollte nun in der &laquo;Layer&raquo;-Ansicht auf der linken Seite
 
 Klicken sie als nächstes auf den schwarzen Pfeil neben dem WMS-Namen. Ihr WMS-Layer sollte angezeigt werden. Klicken sie mit der linken Maustaste auf die drei Punkte, die unter dem Layernamen angezeigt werden, um Dialogfenster zu aktivieren.
 
-<img src={require("/images/help/en/Tutorial_arcPopUp.PNG").default} alt="" title="Dialogfenster in ArcGIS Online" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Tutorial_arcPopUp.png").default} alt="" title="Dialogfenster in ArcGIS Online" className="img-responsive img-inline-help"/>
 
 Nachdem sie Dialogfenster für ihren Layer aktiviert haben, wird die Antwort auf GetFeatureInfo-Anfragen für jedes Objekt, auf das sie klicken, im Dialogfenster angezeigt. Wenn sie auf einen Bereich mit überlappenden Objekten klicken, werden die Ergebnisse für jedes Objekt aufgelistet. Mit hale»connect- Diensten haben sie die einzigartige Funktion, komplexe GML-Dateien über den hale»connect-FeatureExplorer zu erkunden. Klicken sie dazu im Dialogfensterin ArcGIS Online auf den &laquo;Details anzeigen&raquo;-Knopf des Objektes von Interesse.
 
-<img src={require("/images/help/en/Tutorial_arcPopUpDialog.PNG").default} alt="" title="Dialogfenster in ArcGIS Online" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Tutorial_arcPopUpDialog.png").default} alt="" title="Dialogfenster in ArcGIS Online" className="img-responsive img-inline-help"/>
 
 Der hale»connect-FeatureExplorer wird sich in einem neuen Tab ihres Internet-Browsers öffnen. Er ermöglicht es ihnen, durch die verschiedenen Ebenen verschachtelter, komplexer GML-Daten zu navigieren, um referenzierte Ressourcen, Objekte, Codelisten oder Attribute, an denen sie interessiert sind, näher zu untersuchen.
 
