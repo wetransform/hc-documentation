@@ -21,7 +21,7 @@ In order to view your hale»connect WMS in QGIS, you will need a URL link to the
 
 Open QGIS and click on the Layer menu. From the Layer menu, select Add Layer and then select Add WMS/WMTS Layer.
 
-<img src={require("/images/help/en/Tutorial_qgisAddLayer.PNG").default} alt="" title="Adding a WMS Layer to QGIS" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Tutorial_qgisAddLayer.png").default} alt="" title="Adding a WMS Layer to QGIS" className="img-responsive img-inline-help"/>
 
 In the Data Source Manager dialog, click the New button. This opens a dialog which allows you to define a new WMS connection. Give your new connection a name, and enter the URL to your hale»connect service in the URL field. Click OK.
 
@@ -33,7 +33,7 @@ Your new layer should appear at the top of the Data Source Manager. Click the Co
 
 The layers you select should appear in the layers panel on the left. QGIS displays the legend received from the GetLegendGraphic request made to the WMS. Right click on a layer and select Properties to view more information about the service.
 
-<img src={require("/images/help/en/Tutorial_qgisMap.PNG").default} alt="" title="WMS Layer in QGIS" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/Tutorial_qgisMap.png").default} alt="" title="WMS Layer in QGIS" className="img-responsive img-inline-help"/>
 
 ### **Identifying features in a WMS**
 

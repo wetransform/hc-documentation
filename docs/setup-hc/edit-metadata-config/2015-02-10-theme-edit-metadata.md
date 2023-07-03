@@ -20,13 +20,13 @@ To edit the metadata configuration, follow these steps as a logged in theme mana
 1. Select the metadata source in the dropdown menu. Available options include:
       * Use metadata editor- Select this option to let hale»connect generate the metadata. To define how hale»connect should generate the metadata, the system provides a special-purpose text editor. The default metadata configuration displays INSPIRE compliant metadata elements.
       When you choose to use the metadata editor, hale»connect generates dataset and service metadata based on the user-supplied input. For some fields, such as *Keywords*, hale»connect automatically applies the values entered for dataset metadata to the service metadata. If you want to use different *Keywords* in your service metadata, enter the values in the text field provided.
-      <img src={require("/images/help/en/generate_metadata.PNG").default} alt="" title="Generate metadata using hale»connect" className="img-responsive img-inline-help"/>
+      <img src={require("/images/help/en/generate_metadata.png").default} alt="" title="Generate metadata using hale»connect" className="img-responsive img-inline-help"/>
       * Republish existing metadata- Select this option to upload your existing metadata file during data set creation. Please note that the elements gml:TimePeriod and gmd:MD_RestrictionCode are currently not supported in existing metadata.
       When you choose to republish dataset metadata, hale»connect generates dataset metadata based on a copy of the URL or file upload provided.
-      <img src={require("/images/help/en/copy_metadata.PNG").default} alt="" title="Copy metadata" className="img-responsive img-inline-help"/>
+      <img src={require("/images/help/en/copy_metadata.png").default} alt="" title="Copy metadata" className="img-responsive img-inline-help"/>
       * Link to existing metadata- Select this option to provide a link to your metadata file during data set creation.
       When you choose to provide a link to existing metadata, hale»connect generates dataset metadata by accessing the remote URL provided. Please note that the elements gml:TimePeriod and gmd:MD_RestrictionCode are currently not supported in existing metadata.
-      <img src={require("/images/help/en/remote_url_metadata.PNG").default} alt="" title="Link to a remote url" className="img-responsive img-inline-help"/>
+      <img src={require("/images/help/en/remote_url_metadata.png").default} alt="" title="Link to a remote url" className="img-responsive img-inline-help"/>
 
 1. Select the metadata language in the dropdown menu. All European languages are supported.
 
