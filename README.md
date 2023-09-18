@@ -61,6 +61,20 @@ When new documents are added, they won't appear in the sidebar until they are ad
 ### Generate Translations
 When new content is added, whether in `docs` folder or elsewhere, run `npm run docusaurus write-translations -- --locale [locale]` to generate translation entries from the new content. Fill those generated entries with the correct translations for that given locale.
 
+### Useful Components
+#### Collapsable Sections
+Any content can be made collapsable with the help of the `details` HTML element. Wrap whatever content as follows:
+
+```
+<details>
+<summary>Title for the collapsed section</summary>
+
+[content goes here]
+
+</details>
+```
+Note: the feature was discovered through a SO post [here](https://stackoverflow.com/questions/60827828/docusaurus-v2-collapsible-section-in-markdown). ([demo here](https://gist.github.com/joyrexus/16041f2426450e73f5df9391f7f7ae5f))
+
 <hr/>
 
 # Technical Setup
