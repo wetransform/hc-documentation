@@ -65,7 +65,10 @@ Every category has a list of field objects. Every field object describes how the
 * **enumValues** The field contains the values that can be entered via a dropdown menu for that metadata field.
 *	**targets:** This is a list with mapping rules to external services, such as metadata catalogues. By default, there should always be at least a ```bsp``` target defined. ```bsp``` is what hale»connect needs in order to publish services
 
-The following paths can be used for the ```name``` and ```target``` fields, the xpaths to the metadata elements are provided here for reference:
+The following paths can be used for the ```name``` and ```target``` fields. The xpaths to the metadata elements are provided here for reference:
+
+<details>
+<summary>XPath references</summary>
 
 *	md-dataset.citation.title
    <br/>XPATH /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString
@@ -196,9 +199,65 @@ The following paths can be used for the ```name``` and ```target``` fields, the 
 * md-dataset.referenceSystemInfoCode
   <br/>XPATH /gmd:MD_Metadata/gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier/gmd:RS_Identifier/gmd:code/gco:CharacterString
 
+</details>
 
-#### Example configuration excerpt
+<details>
+<summary>Example configuration excerpt</summary>
 
+```json
+
+   [
+        {
+            "categoryName": "general",
+            "title": "Allgemeine Angaben",
+            "name": "general",
+            "fields": [
+                {
+                    "name": "md-dataset.citation.title",
+                    "required": true,
+                    "minOccurs": 1,
+                    "maxOccurs": 1,
+                    "comment": "ISO 3.2.1 #360",
+                    "label": "Datensatz-Titel",
+                    "description": "Bezeichnung, unter der der Datensatz bekannt ist",
+                    "type": "string",
+                    "schema": null,
+                    "defaultValue": null,
+                    "autofillRule": "{{dataset.name}}",
+                    "editable": true,
+                    "targets": {
+                        "bsp": "md-dataset.citation.title"
+                    }
+                },
+                {
+                    "name": "md-dataset.identification.abstract",
+                    "required": true,
+                    "minOccurs": 1,
+                    "maxOccurs": 1,
+                    "comment": "ISO B2.2.1 #24",
+                    "label": "Kurzbeschreibung Datensatz",
+                    "description": "kurze, beschreibende Zusammenfassung des Datensatzes",
+                    "type": "string",
+                    "schema": null,
+                    "defaultValue": null,
+                    "autofillRule": null,
+                    "editable": true,
+                    "targets": {
+                        "bsp": "md-dataset.identification.abstract"
+                    }
+                }
+            ]
+        }
+   ]
+
+```
+
+</details>
+
+<details>
+<summary>Example configuration (detailed)</summary>
+
+```json
     [
            {
               "categoryName": "dataset_general",
@@ -2531,6 +2590,8 @@ The following paths can be used for the ```name``` and ```target``` fields, the 
               ]
            }
     ]
+```
+</details>
 
 
 ### Working with Enumeration Fields
