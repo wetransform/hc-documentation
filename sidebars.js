@@ -92,7 +92,7 @@ const sidebars = {
       ]
     },
     {
-      'Set up hale»connect': [
+      'Set up hale»connect!': [
         {
           'Create a schema': [
             {
