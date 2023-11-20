@@ -14,7 +14,10 @@ Enter this URL in your favorite browser: https://haleconnect.com/swagger/
 
 For on-premise users, enter: https://[yourdomain]/swagger/
 
-Select Login, and provide your hale»connect user name and password to obtain an authentication token. Click in the Model Schema field on the right hand side to copy the code template to the body.
+wetransform can enable use of the hale»connect API for on-premise customers upon request.
+
+
+Select Login, and provide your hale»connect user name and password to obtain an authentication token. If the Login endpoint is not visible, enter https://haleconnect.com/accounts/swagger.yaml in the URL input field at the tope of the page and click on &laquo;Explore&raquo;. Click in the Model Schema field on the right hand side to copy the code template to the body.
 
 <img src={require('@site/static/images/help/en/swaggerUI.png').default} alt="" title="Swagger UI" className="img-responsive img-inline-help"/>
 
@@ -38,17 +41,12 @@ bucket_service:
 
   Attachment: https://haleconnect.com/store/attachments/swagger.yaml
 
-A bucket is a container for objects stored in Amazon S3. The hale»connect bucket service APIs provide access to files and datasets associated with each resource type.
+A bucket is a container for objects stored in file storage. The hale»connect bucket service APIs provide access to files and datasets associated with each resource type.
 
 ### Interaction service
 interaction_service: https://haleconnect.com/interactions/swagger.yaml
 
 The interaction service provides access to comments, tasks and notes on a given resource, as well as the forum.
-
-### Notification service
-notification_service:
-
-The notification service enables users to access notification settings on their account and to subscribe to resources.  
 
 ### Schema service
 schema_service: https://haleconnect.com/schemas/swagger.yaml
@@ -63,7 +61,7 @@ The project service allows users to access transformation projects, alignments a
 ### Workflow manager
 workflow_manager: https://haleconnect.com/workflows/swagger.yaml
 
-The workflow manager service enables users to access information about ETF Validator and Spatineo monitoring. The generic workflows.....????
+The workflow manager service manages most tasks on the platform including transformations, validation, and status updates. The workflow manager service also enables users to access information about ETF Validator and Spatineo monitoring.
 
 ### Resources
 resources: https://haleconnect.com/resources/swagger.yaml
