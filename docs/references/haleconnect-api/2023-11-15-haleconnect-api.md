@@ -8,7 +8,7 @@ language: en
 
 ---
 
-The hale»connect platform can be accessed via API. The hale»connect API enables users to automatically execute workflows, change configuration settings, manage organisations and users, and many other tasks. A series of access URLs permit access to various platform functionality exposed via API. To begin exploring the hale»connect API, it is necessary to log-in using your hale»connect user name and password, in Swagger.
+The hale»connect platform can be accessed via API. The hale»connect API enables users to automatically execute workflows, change configuration settings, manage organisations and users, and many other tasks. A series of access URLs permit access to various platform functionality exposed via API. To begin exploring the hale»connect API in Swagger, it is necessary to log-in using your hale»connect user name and password.
 
 Enter this URL in your favorite browser: https://haleconnect.com/swagger/
 
@@ -22,6 +22,18 @@ Select Login, and provide your hale»connect user name and password to obtain an
 <img src={require('@site/static/images/help/en/swaggerUI.png').default} alt="" title="Swagger UI" className="img-responsive img-inline-help"/>
 
 A valid authentication token is required to execute tasks via API, and to access additional hale»connect API URLs. Click the &laquo;Try it out!&raquo; button and copy the generated token in the response body. At the top of the page, paste the token in the field that contains the text **api_key**. The field is located next to the hale»connect API URL. Once you have logged in and provided a valid authentication token, you can use the hale»connect API to perform tasks.
+
+The HTTP operation(s) available for each endpoint are listed. The operations [GET](https://datatracker.ietf.org/doc/html/rfc9110#name-get), [POST](https://datatracker.ietf.org/doc/html/rfc9110#name-post), [PUT](https://datatracker.ietf.org/doc/html/rfc9110#name-put) and [DELETE](https://datatracker.ietf.org/doc/html/rfc9110#name-delete) are supported.
+
+The GET operation requests the retrieval of data.
+
+The POST operation requests that a server accept data contained in the request.
+
+The PUT operation requests a resource to create or update its state.
+
+The DELETE operation requests deletion of a state or resource.
+
+When working in Swagger, we recommend examining the endpoint, the HTTP operation and the written description of the endpoint available for each entry.
 
 ### User service
 user_service: https://haleconnect.com/accounts/swagger.yaml
@@ -41,7 +53,11 @@ bucket_service:
 
   Attachment: https://haleconnect.com/store/attachments/swagger.yaml
 
-A bucket is a container for objects stored in file storage. The hale»connect bucket service APIs provide access to files and datasets associated with each resource type.
+A bucket is a container for objects stored in file storage. The hale»connect bucket service APIs provide access to files and datasets associated with each resource type. Some bucket service endpoints require providing a bucket id and organisation number. The bucket id and organisation id can be found in hale»connect resource links.
+
+In the following example URL, the bucket id is **abe0849a-5110-43a5-81e4-5880fce3f398** and the organisation id is **599**.
+
+Example URL: https://test.haleconnect.de/#/dataset/org/599/abe0849a-5110-43a5-81e4-5880fce3f398/files
 
 ### Interaction service
 interaction_service: https://haleconnect.com/interactions/swagger.yaml
