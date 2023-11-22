@@ -17,7 +17,7 @@ For on-premise users, enter: https://[yourdomain]/swagger/
 wetransform can enable use of the hale»connect API for on-premise customers upon request.
 
 
-Select Login, and provide your hale»connect user name and password to obtain an authentication token. If the Login endpoint is not visible, enter https://haleconnect.com/accounts/swagger.yaml in the URL input field at the tope of the page and click on &laquo;Explore&raquo;. Click in the Model Schema field on the right hand side to copy the code template to the body.
+Select Login, and provide your hale»connect user name and password to obtain an authentication token. If the Login endpoint is not visible, enter https://haleconnect.com/accounts/swagger.yaml in the URL input field at the top of the page and click on &laquo;Explore&raquo;. Click in the Model Schema field on the right hand side to copy the code template to the body.
 
 <img src={require('@site/static/images/help/en/swaggerUI.png').default} alt="" title="Swagger UI" className="img-responsive img-inline-help"/>
 
@@ -33,7 +33,7 @@ The PUT operation requests a resource to create or update its state.
 
 The DELETE operation requests deletion of a state or resource.
 
-When working in Swagger, we recommend examining the endpoint, the HTTP operation and the written description of the endpoint available for each entry.
+When working in Swagger, wetransform recommends examining the endpoint, the HTTP operation and the written description of the endpoint available for each entry.
 
 ### User service
 user_service: https://haleconnect.com/accounts/swagger.yaml
