@@ -8,9 +8,9 @@ language: de
 
 ---
 
-Der Zugriff auf die hale»connect-Plattform ist über eine API möglich. Die hale»connect API ermöglicht es Benutzenden, Workflows automatisch auszuführen, Konfigurationseinstellungen zu ändern, Organisationen und Benutzende zu verwalten und viele andere Aufgaben zu erledigen. Eine Reihe von Zugriffs-URLs ermöglicht den Zugriff auf verschiedene Plattformfunktionen, die über die API bereitgestellt werden. Um die hale»connect-API in Swagger zu nutzen, müssen Sie sich mit Ihrem hale»connect-Benutzernamen und Passwort anmelden.
+Der Zugriff auf die hale»connect-Plattform ist über eine API möglich. Die hale»connect API ermöglicht es Benutzenden, Workflows automatisch auszuführen, Konfigurationseinstellungen zu ändern, Organisationen und Benutzende zu verwalten und viele andere Aufgaben zu erledigen. Eine Reihe von Zugriffs-URLs ermöglicht den Zugriff auf verschiedene Plattformfunktionen, die über die API bereitgestellt werden. Um die hale»connect-API in Swagger zu nutzen, müssen sie sich mit ihrem hale»connect-Benutzernamen und Passwort anmelden.
 
-Geben sie diese URL in Ihren Browser ein: https://haleconnect.com/swagger/
+Geben sie diese URL in ihren Browser ein: https://haleconnect.com/swagger/
 
 Für On-Premise-Kunden muss die URL wie folgt angepasst werden: https://[yourdomain]/swagger/
 
