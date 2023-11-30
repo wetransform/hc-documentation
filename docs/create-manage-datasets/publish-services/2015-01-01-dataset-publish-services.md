@@ -24,3 +24,5 @@ When you're logged in as a Data Manager or Theme manager, follow these steps to 
     * Service settings
     * Service log <img src={require("/images/help/en/publish_services_testing.png").default} alt="" title="Publishing view services" className="img-responsive img-inline-help"/>
 7.	To unpublish a service, deactivate the toggle switch and click &laquo;Delete services&raquo;.
+
+Services can be protected through the access control settings. Read more [here](../../references/data/2018-03-09-reference-data-accesscontrol.md). 
