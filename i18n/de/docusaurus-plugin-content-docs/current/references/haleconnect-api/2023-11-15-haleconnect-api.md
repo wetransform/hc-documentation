@@ -8,19 +8,19 @@ language: de
 
 ---
 
-Der Zugriff auf die hale»connect-Plattform ist über eine API möglich. Die hale»connect API ermöglicht es Benutzende, Workflows automatisch auszuführen, Konfigurationseinstellungen zu ändern, Organisationen und Benutzer zu verwalten und viele andere Aufgaben zu erledigen. Eine Reihe von Zugriffs-URLs ermöglichen den Zugriff auf verschiedene Plattformfunktionen, die über die API bereitgestellt werden. Um mit der Erkundung der hale»connect-API in Swagger zu beginnen, müssen Sie sich mit Ihrem hale»connect-Benutzernamen und Passwort anmelden.
+Der Zugriff auf die hale»connect-Plattform ist über eine API möglich. Die hale»connect API ermöglicht es Benutzenden, Workflows automatisch auszuführen, Konfigurationseinstellungen zu ändern, Organisationen und Benutzende zu verwalten und viele andere Aufgaben zu erledigen. Eine Reihe von Zugriffs-URLs ermöglicht den Zugriff auf verschiedene Plattformfunktionen, die über die API bereitgestellt werden. Um die hale»connect-API in Swagger zu nutzen, müssen Sie sich mit Ihrem hale»connect-Benutzernamen und Passwort anmelden.
 
-Geben sie diese URL in Ihren Lieblingsbrowser ein: https://haleconnect.com/swagger/
+Geben sie diese URL in Ihren Browser ein: https://haleconnect.com/swagger/
 
-Geben sie für On-Premise-Kunden Folgendes ein:: https://[yourdomain]/swagger/
+Für On-Premise-Kunden muss die URL wie folgt angepasst werden: https://[yourdomain]/swagger/
 
-Auf Wunsch ermöglicht wetransform die Nutzung der hale»connect API für On-Premise-Kunden.
+Auf Wunsch ermöglicht wetransform die Nutzung der hale»connect-API für On-Premise-Kunden.
 
 Wählen sie „Anmelden“ und geben sie ihren hale»connect-Benutzernamen und ihr Passwort ein, um ein Authentifizierungstoken zu erhalten. Wenn der Anmeldeendpunkt nicht sichtbar ist, geben sie https://haleconnect.com/accounts/swagger.yaml in das URL-Eingabefeld oben auf der Seite ein und klicken sie auf &laquo;Explore&raquo;. Klicken sie auf das Feld „Modellschema“ auf der rechten Seite, um die Codevorlage in den Textkörper zu kopieren.
 
 <img src={require('@site/static/images/help/de/swaggerUI.png').default} alt="" title="Swagger UI" className="img-responsive img-inline-help"/ >
 
-Um Aufgaben über die API auszuführen und auf zusätzliche hale»connect API-URLs zuzugreifen, ist ein gültiges Authentifizierungstoken erforderlich. Klicken sie auf die Schaltfläche &laquo;Try it out!&raquo; und kopieren Sie das generierte Token in den Antworttext. Fügen sie oben auf der Seite das Token in das Feld ein, das den Text **api_key** enthält. Das Feld befindet sich neben der hale»connect API-URL. Sobald sie sich angemeldet und ein gültiges Authentifizierungstoken angegeben haben, können sie die hale»connect API zum Ausführen von Aufgaben verwenden.
+Um Aufgaben über die API auszuführen und auf zusätzliche hale»connect-API-URLs zuzugreifen, ist ein gültiges Authentifizierungstoken erforderlich. Klicken sie auf die Schaltfläche &laquo;Try it out!&raquo; und kopieren sie das generierte Token in den Antworttext. Fügen sie oben auf der Seite das Token in das Feld ein, das den Text **api_key** enthält. Das Feld befindet sich neben der hale»connect-API-URL. Sobald sie sich angemeldet und ein gültiges Authentifizierungstoken angegeben haben, können sie die hale»connect API zum Ausführen von Aufgaben verwenden.
 
 Die für jeden Endpunkt verfügbaren HTTP-Vorgänge werden aufgelistet. Die Operationen [GET](https://datatracker.ietf.org/doc/html/rfc9110#name-get), [POST](https://datatracker.ietf.org/doc/html/rfc9110#name-post ), [PUT](https://datatracker.ietf.org/doc/html/rfc9110#name-put) und [DELETE](https://datatracker.ietf.org/doc/html/rfc9110#name-delete ) sind unterstützt.
 
@@ -66,17 +66,17 @@ Der Interaktionsdienst bietet Zugriff auf Kommentare, Aufgaben und Notizen zu ei
 ### Schema service
 schema_service: https://haleconnect.com/schemas/swagger.yaml
 
-Der Schema-Dienst gewährt Zugriff auf Schemas und Profile und ermöglicht Benutzende die Durchführung von Aktionen im Zusammenhang mit Schema-Speicherorten, Namespaces und Feature-Typen.
+Der Schema-Dienst gewährt Zugriff auf Schemas und Profile und ermöglicht Benutzenden die Durchführung von Aktionen im Zusammenhang mit Schema-Speicherorten, Namespaces und Feature-Typen.
 
 ### Project service
 project_service: https://haleconnect.com/projects/swagger.yaml
 
-Der Projektdienst ermöglicht Benutzende den Zugriff auf Transformationsprojekte, Ausrichtungen und Mapping-Zellen.
+Der Projektdienst ermöglicht Benutzenden den Zugriff auf Transformationsprojekte, Alignments und Mapping-Zellen.
 
 ### Workflow manager
 workflow_manager: https://haleconnect.com/workflows/swagger.yaml
 
-Der Workflow-Manager-Dienst verwaltet die meisten Aufgaben auf der Plattform, einschließlich Transformationen, Validierung und Statusaktualisierungen. Der Workflow-Manager-Dienst ermöglicht Benutzende außerdem den Zugriff auf Informationen zum ETF-Validator und zur Spatineo-Überwachung.
+Der Workflow-Manager-Dienst verwaltet die meisten Aufgaben auf der Plattform, einschließlich Transformationen, Validierung und Statusaktualisierungen. Der Workflow-Manager-Dienst ermöglicht Benutzenden außerdem den Zugriff auf Informationen zum ETF-Validator und zur Spatineo-Überwachung.
 
 ### Resources
 resources: https://haleconnect.com/resources/swagger.yaml
@@ -91,4 +91,4 @@ Der Berichtsdienst bietet Zugriff auf Validierungsergebnisse und Nutzungsinforma
 ### Actions
 actions: https://haleconnect.com/actions/swagger.yaml
 
-Mit dem Aktionsdienst können Benutzer eine Organisation löschen und die Standardgrundkarte einer Organisation abrufen.
+Mit dem Aktionsdienst können Benutzende eine Organisation löschen und die Standardgrundkarte einer Organisation abrufen.
