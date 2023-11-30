@@ -24,3 +24,5 @@ Um Dienste zu publizieren, melden sie sich in der Rolle &laquo;Datenmanager&raqu
     * Dienst-Einstellungen
     * Dienst-log <img src={require("/images/help/de/publish_services_testing.png").default} alt="" title="Darstellungs-Dienste publizieren" className="img-responsive img-inline-help"/>
 7.	Um den Dienst zu stoppen, deaktivieren sie den Schalter und wählen sie &laquo;Dienste löschen&raquo;.
+
+Dienste können über die Zugriffskontrolleinstellungen geschützt werden. Lesen sie mehr [hier](../../references/data/2018-03-09-reference-data-accesscontrol.md).
