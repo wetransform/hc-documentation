@@ -9,7 +9,7 @@ sidebar_position: 2
 
 ---
 
-Der Abschnitt &laquo;Zugriffskontrolle&raquo; definiert, wie auf veröffentlichte hale»connect-Dienste zugegriffen werden kann. hale»connect unterstützt sichere Serviceanfragen durch den Einsatz von Authentifizierungstokens. Aktivieren sie &laquo;Authentifizierung mit Organisations-Token&raquo;, um sichere Serviceanfragen zu ermöglichen. Darstellungs- und Download-Dienste können separat konfiguriert werden.
+Der Abschnitt &laquo;Zugriffskontrolle&raquo; definiert, wie auf veröffentlichte hale»connect-Dienste zugegriffen werden kann. hale»connect unterstützt sichere Serviceanfragen durch den Einsatz von Authentifizierungstokens. Aktivieren sie &laquo;Authentifizierung mit Organisations-Token&raquo;, um sichere Serviceanfragen zu ermöglichen. Darstellungs- und Download-Dienste können dabei unabhängig voneinander konfiguriert werden.
 
 Authentifizierungstoken können auf der Profilseite der Organisation generiert werden. Klicken sie auf den Knopf «Token generieren», um ein Authentifizierungstoken zu generieren. Tokens sind zwei Wochen lang gültig und werden im Browser-Cache gespeichert. Der Parameter ```kelvin_token``` wird automatisch zu Diensten hinzugefügt, die über die Token-Authentifizierung geschützt sind. Das Token muss in der URL enthalten sein, um auf den geschützten Dienst zugreifen zu können.
 
