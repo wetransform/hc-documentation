@@ -27,6 +27,7 @@ hale»connect currently supports a range of file formats which can be used to cr
 
 **Raster data**
   * Supported formats include \*.png, and \*.GeoTIFF
+  * Use an RGB image with transparency through an additional alpha channel or with NoData values
   * Currently the upload of one raster data resource per data set is supported
   * Publishing raster resources without vector resources is not supported. A dummy vector file needs to be added in this case
   * A separate raster layer is published in the view and download services

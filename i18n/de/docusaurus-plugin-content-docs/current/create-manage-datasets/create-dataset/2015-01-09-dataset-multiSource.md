@@ -27,6 +27,7 @@ hale»connect unterstützt derzeit verschiedene Daten-Formate, die genutzt werde
 
 **Raster-Daten**
   * Die unterstützten Formate sind \*.png, und \*.GeoTIFF.
+  * Bitte verwenden sie ein RGB-Bild mit Transparenzangaben in einem Alpha-Kanal oder einem Kanal mit NoData-Werten.
   * Derzeit wird das Hochladen einer Raster-Daten-Ressource pro Datensatz unterstützt.
   * Das Veröffentlichen von Rasterdaten ohne Vektordaten wird nicht unterstützt. Für solche Fälle muss eine Dummy-Vektor-Datei erzeugt werden.
   * In den Darstellungs- und Download-Diensten wird ein separater Raster-Layer veröffentlicht.

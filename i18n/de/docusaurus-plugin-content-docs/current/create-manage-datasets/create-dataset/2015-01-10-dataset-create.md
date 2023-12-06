@@ -34,6 +34,7 @@ Die Größenbeschränkung für Anhänge auf haleconnect.com liegt bei 750 MB.
 
 **Raster-Datenformate**
   * Die unterstützten Formate sind \*.png, und \*.GeoTIFF.
+  * Bitte verwenden sie ein RGB-Bild mit Transparenzangaben in einem Alpha-Kanal oder einem Kanal mit NoData-Werten.
   * Derzeit wird das Hochladen einer Rasterdatenquelle pro Datensatz unterstützt.
   * Das Veröffentlichen von Rasterdaten ohne Vektordaten wird nicht unterstützt. Für solche Fälle muss eine sogenannte "Dummy-Vektordatei" erzeugt werden.
   * In den Darstellungs- und Downloaddiensten wird ein separater Rasterlayer veröffentlicht.
