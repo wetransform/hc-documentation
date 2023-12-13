@@ -23,4 +23,4 @@ Use the *description* field to enter a description of the transformation project
 
 *Created* and *Last updated* display the dates of transformation project creation and the last update to the transformation project.
 
-The toggle switches indicate current settings of the theme. Activate the *Public* toggle switch to make the theme visible to the public. Activate the *Subscribed* toggle switch to receive email notifications when there are new comments or tasks added.
+The toggle switches indicate current settings of the transformation project. Activate the *Public* toggle switch to make the transformation project visible to the public. Activate the *Subscribed* toggle switch to receive email notifications when there are new comments or tasks added.
