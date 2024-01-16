@@ -5,7 +5,7 @@ categories:
 - "help-page-subcategory-reference-data"
 layout: help-detail
 language: de
-sidebar_position: 7
+sidebar_position: 9
 
 ---
 
