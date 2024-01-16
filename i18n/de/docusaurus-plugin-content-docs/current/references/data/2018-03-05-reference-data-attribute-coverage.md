@@ -5,7 +5,7 @@ categories:
 - "help-page-subcategory-reference-data"
 layout: help-detail
 language: de
-sidebar_position: 6
+sidebar_position: 8
 
 ---
 
@@ -16,5 +16,5 @@ Attribute werden durch einen Balken mit abgestuften Farben abgebildet, der die a
   * Wenn das Attribut für alle Instanzen der Objektart den gleichen Wert hat, wird ein hellgrüner Balken ohne Abstufungen angezeigt.
   * Wenn das Attribut Zahlenwerte enthält, werden diese in Intervalle eingeteilt und in abgestuften Farben von hell- bis dunkelgrün angezeigt. Die kleinsten Werte werden dabei in hell-, die höchsten Werte in dunkelgrün angezeigt.
   * Die Breite eines Intervalls hängt vom Vorkommen der beinhalteten Werte ab. Intervalle, die viele Werte enthalten, sind breiter als solche, die weniger Werte enthalten.
-  
+
 Gehen sie mit ihrer Maus über ein Intervall im farblich abgestuften Balken um den oder die darin enthaltenen Werte, deren Vorkommen und Prozentsatz anzuzeigen.
