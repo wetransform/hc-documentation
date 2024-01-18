@@ -1,5 +1,5 @@
 ---
-title: "Access control"
+title: "Access controls"
 categories:
 - "help-page-category-reference"
 - "help-page-subcategory-reference-data"
@@ -9,7 +9,7 @@ sidebar_position: 3
 
 ---
 
-The access control section defines how published hale»connect services can be accessed. hale»connect supports secure service requests through the use of authentication tokens. Toggle &laquo;Authentication with Organisation Token&raquo; to enable secure service requests. View and download services can be configured separately.
+The Access controls section defines how published hale»connect services can be accessed. hale»connect supports secure service requests through the use of authentication tokens. Toggle &laquo;Authentication with Organisation Token&raquo; to enable secure service requests. View and download services can be configured separately.
 
 Authentication tokens can be generated on the organisation profile page. Click the &laquo;Generate token&raquo; button to generate an authentication token. Tokens are valid for two weeks and are stored in the browser cache. The ```kelvin_token``` parameter is automatically added to services protected via token authentication. The token must be included in the URL to access the protected service.
 
