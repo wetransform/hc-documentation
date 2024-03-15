@@ -11,7 +11,7 @@ language: de
 
 Die Metadatenkonfiguration definiert, welche Metadaten zu Datensätzen eines Themas einzugeben sind. Sie enthält Automatisierungsregeln, mit denen dieser Vorgang weitgehend automatisiert werden kann. Der Ablauf wird ohne Eingreifen durch Benutzende automatisch als Hintergrund-Prozess ausgeführt. Er wird ausgelöst, wenn bestimmte Aktionen, wie beispielsweise Service-Updates oder Transformationen, durchgeführt werden. Weitere Informationen sind in <a href="../../references/themes/2018-04-04-reference-themes-automation">diesem Abschnitt</a> unserer Dokumentation zu finden.
 
-Auch nach der Erstellung eines Datensatzes ist es möglich, die Metadaten zu aktualisieren bzw. neu zu erzeugen. Dabei wird für Themen, deren Automatisierungsregel auf “Sofort“ steht, das Metadaten-Autofill der zugehörigen Datensätzen neu getriggert, sobald Änderungen am Metadaten-Editor vorgenommen wurden.
+Auch nach der Erstellung eines Datensatzes ist es möglich, die Metadaten zu aktualisieren bzw. neu zu erzeugen. Wenn die Änderungen im Metadaten-Editor des entsprechenden Themas beendet sind, können diese unter Nutzung des "Automatisch befüllen"-Buttons im Metadaten-Bereich des Datensatzes übernommen werden.
 
 Die Regeln dafür haben jedoch eine unterschiedliche Gewichtung: 
 * Wird eine Autofill-Regel angepasst, so werden alle bisherigen Werte überschrieben.

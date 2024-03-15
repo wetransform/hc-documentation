@@ -12,7 +12,7 @@ displayed_sidebar: tutorialSidebar
 
 The metadata configuration defines which metadata data managers need to provide for all data sets associated with a theme. The metadata configuration contains autofill rules and default values, which you can use to automate metadata entry almost entirely. An automated workflow performs service publishing and data transformation as a background process that does not require any user interaction. The automated workflow responds to events including data and configuration updates and transformations. More information on automation can be found <a href="../../references/themes/2018-04-04-reference-themes-automation">this section</a> of our documentation.
 
-Metadata can still be updated after the creation of the dataset. For all themes that have the autofill rule set to "immediately", the automated metadata entry will be triggered for the respective datasets as soon as changes are made to the metadata editor. 
+Metadata can still be updated after the creation of the dataset. Once the changes in the respective theme's metadata editor are done, they can be applied for a dataset by using the "Fill automatically" buttons on the dataset's metadata section.
 
 However, different rules apply: 
 * If an autofill rule is changed, all values are changed accordingly. 
