@@ -35,10 +35,6 @@
     "message": "Getting Started with Hale»Connect",
     "description": "The label of footer link with label=Getting Started with Hale»Connect linking to /docs/intro"
   },
-  "link.item.label.FAQ": {
-    "message": "FAQ",
-    "description": "The label of footer link with label=FAQ linking to /docs/faq/2018-05-06-faq-hs"
-  },
   "link.item.label.Forum": {
     "message": "Forum",
     "description": "The label of footer link with label=Forum linking to https://discuss.wetransform.to/#/forum"

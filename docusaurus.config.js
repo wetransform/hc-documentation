@@ -117,10 +117,6 @@ const config = {
                 to: '/docs/getting-started/2018-04-28-quick-start',
               },
               {
-                label: 'FAQ',
-                to: '/docs/faq/2018-05-06-faq-hs',
-              },
-              {
                 label: 'Forum',
                 href: 'https://discuss.wetransform.to/#/forum',
               },
