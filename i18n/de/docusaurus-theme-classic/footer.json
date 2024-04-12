@@ -15,10 +15,6 @@
     "message": "Erste Schritte mit hale»connect",
     "description": "The label of footer link with label=Getting Started with hale»connect linking to /docs/intro"
   },
-  "link.item.label.FAQ": {
-    "message": "FAQ",
-    "description": "The label of footer link with label=FAQ linking to /docs/faq/2018-05-06-faq-hs"
-  },
   "link.item.label.Stack Overflow": {
     "message": "Stack Overflow",
     "description": "The label of footer link with label=Stack Overflow linking to https://stackoverflow.com/questions/tagged/docusaurus"
