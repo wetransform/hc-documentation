@@ -6,22 +6,22 @@ export default function FooterLayout({style, links, logo, copyright}) {
       className={clsx('footer', {
         'footer--dark': style === 'dark',
       })}>
-      <img class="wetf-footer-bg wetf-footer-bg-left" src="https://wetransform.to/wp-content/uploads/2022/04/bg-footer-2.svg" alt=""></img>
-      <img class="wetf-footer-bg wetf-footer-bg-right" src="https://wetransform.to/wp-content/uploads/2022/04/bg-footer.svg" alt="">
+      <img className="wetf-footer-bg wetf-footer-bg-left" src="https://wetransform.to/wp-content/uploads/2022/04/bg-footer-2.svg" alt=""></img>
+      <img className="wetf-footer-bg wetf-footer-bg-right" src="https://wetransform.to/wp-content/uploads/2022/04/bg-footer.svg" alt="">
 
       </img>
       <div className="container container-fluid">
         <div className="row">
-          <div class="col col--3">
-          <a aria-label="Logo Wetransform" href="https://wetransform.to" class="wetf-footer-logo">
-            <img class="lazy " width="100" height="78" 
+          <div className="col col--3">
+          <a aria-label="Logo Wetransform" href="https://wetransform.to" className="wetf-footer-logo">
+            <img className="lazy " width="100" height="78" 
               src="https://wetransform.to/wp-content/uploads/2022/04/we-logo-white-300dpi-100x78-c-default.png"
-              srcset="https://wetransform.to/wp-content/uploads/2022/04/we-logo-white-300dpi-100x78-c-default@1x.png 1x, https://wetransform.to/wp-content/uploads/2022/04/we-logo-white-300dpi-100x78-c-default@2x.png 2x" 
+              srcSet="https://wetransform.to/wp-content/uploads/2022/04/we-logo-white-300dpi-100x78-c-default@1x.png 1x, https://wetransform.to/wp-content/uploads/2022/04/we-logo-white-300dpi-100x78-c-default@2x.png 2x" 
               alt="Wetransform">
             </img>
           </a>  
           </div>
-          <div class="col col--7 col--offset-2">
+          <div className="col col--7 col--offset-2">
             {links}    
           </div>
         </div>
