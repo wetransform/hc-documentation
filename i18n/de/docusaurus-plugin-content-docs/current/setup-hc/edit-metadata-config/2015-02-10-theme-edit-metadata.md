@@ -2960,7 +2960,7 @@ Im folgenden Beispiel wird ein gmx:Anchor als ``defaultValue`` und dem Feld ``en
                   }
               ],
 
-#### Hinzufügen von JSON-Werten in String-Feldern
+### Hinzufügen von JSON-Werten in String-Feldern
 
 JSON-Werte können im Metadaten-Editor zu String-Feldern hinzugefügt werden. Die JSON-Werte müssen maskiert werden, bevor sie der Metadatenkonfiguration hinzugefügt werden. Im folgenden Beispiel wird ein JSON-Wert als ``defaultValue`` und dem Feld ``enumValues`` hinzugefügt.
 
