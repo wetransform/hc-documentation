@@ -40,9 +40,7 @@ If you have hale»studio installed on your computer, you can load the transforma
 
 The next step is to update the schema used in the transformation project, so that it uses the INSPIRE Protected Sites schema version 5.0 instead of 4.0.
 
-In hale»studio navigate to the File menu and select the option to Reload and update schemas. In the dialog that appears, double-click on the schema URL that is displayed and navigate to the INSPIRE presets and select the INSPIRE Protected Sites 5.0 schema.
-<a className="image-news text-center col-xs-12 mt mb"><img src={require("/images/help/en/update_schemas.png").default} alt="" title="Selecting a new schema" className="img-responsive center-block"/>
-</a>
+In hale»studio navigate to the File menu and select the option to Reload and update schemas. In the dialog that appears, double-click on the schema URL that is displayed and navigate to the INSPIRE presets and select the INSPIRE Protected Sites 5.0 schema. <a className="image-news text-center col-xs-12 mt mb"><img src={require("/images/help/en/update_schemas.png").default} alt="" title="Selecting a new schema" className="img-responsive center-block"/></a>
 
 Click &laquo;OK&raquo;. The INSPIRE schema used in the transformation project is updated to v5.0.
 
@@ -54,8 +52,7 @@ It is useful to review the changes that have been made to the schema you are upd
 
 First, load the source data in hale»studio. Navigate to the File menu and select Import, next, select Source data...
 
-Once the source data is loaded, a potentially large number of cell entity dialogs will appear successively until all elements have been updated to reflect the new schema. A complete update requires the end user to manually select the element in the element tree that hale»studio is searching for, for each updated reference. In some cases, hale»studio will correctly identify the matching element in the new schema (for example if only the namespace changed but the type and property name remain the same), in other cases, direct user input is required. It is possible to skip one or more mappings in the dialog if the handling is not fully clear. Skipping a mapping allows the end user to continue with automatically assigned, or recognised mappings, without having to cancel the entire process. Unhandled mappings can be edited afterwards in the hale»studio UI. <a className="image-news text-center col-xs-12 mt mb"><img src={require("/images/help/en/cell_entity_could_not_be_resolved.png").default} alt="" title="Cell entity matching" className="img-responsive center-block"/>
-</a>
+Once the source data is loaded, a potentially large number of cell entity dialogs will appear successively until all elements have been updated to reflect the new schema. A complete update requires the end user to manually select the element in the element tree that hale»studio is searching for, for each updated reference. In some cases, hale»studio will correctly identify the matching element in the new schema (for example if only the namespace changed but the type and property name remain the same), in other cases, direct user input is required. It is possible to skip one or more mappings in the dialog if the handling is not fully clear. Skipping a mapping allows the end user to continue with automatically assigned, or recognised mappings, without having to cancel the entire process. Unhandled mappings can be edited afterwards in the hale»studio UI. <a className="image-news text-center col-xs-12 mt mb"><img src={require("/images/help/en/cell_entity_could_not_be_resolved.png").default} alt="" title="Cell entity matching" className="img-responsive center-block"/></a>
 
 **Step 4: Check validation and save transformation project**
 
