@@ -8,8 +8,7 @@ language: en
 
 ---
 
-In February 2024, several INSPIRE GML application schemas were updated. Data harmonized using v4.0 schemas, which currently have a v5.0 available,
-must be re-transformed using an updated transformation project to be compliant against the latest version of the schema. Breaking changes have also been introduced to v4.0 schemas, although no major version change was made. Automated online transformation workflows configured on the hale»connect platform can be easily updated to use a new schema version to publish, transform and validate datasets and services within minutes.
+In February 2024, several INSPIRE GML application schemas were updated. Data harmonized using v4.0 schemas, which currently have a v5.0 available, must be re-transformed using an updated transformation project to be compliant against the latest version of the schema. Breaking changes have also been introduced to v4.0 schemas, although no major version change was made. Automated online transformation workflows configured on the hale»connect platform can be easily updated to use a new schema version to publish, transform and validate datasets and services within minutes.
 
 This tutorial reviews the steps required to update the schema used in automated online transformation workflows. Updating an online transformation workflow requires the update of multiple resources and it must be performed by a user with Theme manager or Superuser permissions. Before we begin, let's review a list of the resources we need:
 
@@ -48,7 +47,7 @@ Click &laquo;OK&raquo;. The INSPIRE schema used in the transformation project is
 
 In this step, we will load the source data and complete the steps displayed in the cell entity matching dialogs that appear in hale»studio. Cell entity matching dialogs appear when a schema is changed and hale»studio cannot determine how to update the existing mappings due to changed type names, property names or changed namespaces. In these cases, the end user must provide hale»studio information on how to update the existing mappings, based on the new schema.
 
-It is useful to review the changes that have been made to the schema you are updating to obtain an overview of the elements that need to be updated.  The changes are documented as comments in the INSPIRE \*.xsd schema files available [here](https://inspire.ec.europa.eu/schemas/index.html).
+It is useful to review the changes that have been made to the schema you are updating to obtain an overview of the elements that need to be updated. The changes are documented as comments in the INSPIRE \*.xsd schema files available [here](https://inspire.ec.europa.eu/schemas/index.html).
 
 First, load the source data in hale»studio. Navigate to the File menu and select Import, next, select Source data...
 
