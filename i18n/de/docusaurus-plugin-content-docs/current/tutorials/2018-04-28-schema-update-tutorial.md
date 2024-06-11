@@ -1,5 +1,5 @@
 ---
-title: "Schema-Updates auf hale»studio und auf hale»connect"
+title: "Schema-Updates in hale»studio und auf hale»connect"
 categories:
 - "help-page-category-tutorials"
 - "help-page-subcategory-tutorials"
@@ -8,12 +8,12 @@ language: de
 
 ---
 
-Im Februar 2024 wurden mehrere INSPIRE GML-Anwendungsschemata aktualisiert. Daten, die mit v4.0-Schemata harmonisiert wurden, für die derzeit eine Version 5.0 verfügbar ist, müssen mit einem aktualisierten Transformationsprojekt neu transformiert werden, um mit der neuesten Version des Schemas kompatibel zu sein. Auch an v4.0-Schemata wurden bahnbrechende Änderungen vorgenommen, obwohl keine größeren Versionsänderungen vorgenommen wurden. Automatisierte Online-Transformationsworkflows, die auf der hale»connect-Plattform konfiguriert sind, können problemlos aktualisiert werden, um eine neue Schemaversion zu verwenden, um Datensätze und Dienste innerhalb von Minuten zu veröffentlichen, zu transformieren und zu validieren.
+Im Februar 2024 wurden mehrere INSPIRE GML-Schemata aktualisiert. Daten, die mit v4.0-Schemata harmonisiert wurden, für die jetzt eine Version 5.0 verfügbar ist, müssen mit einem aktualisierten Transformationsprojekt neu transformiert werden, um mit der neuesten Version des Schemas kompatibel zu sein. Auch an v4.0-Schemata wurden nicht abwärtskompatible Änderungen vorgenommen, ohne Versionsänderungen vorzunehmen. Automatisierte Online-Transformationsworkflows, die auf der hale»connect-Plattform konfiguriert sind, können problemlos aktualisiert werden, um Datensätze und Dienste innerhalb von Minuten mit neuen Schema-Versionen zu veröffentlichen, zu transformieren und zu validieren.
 
-In diesem Tutorial werden die Schritte erläutert, die zum Aktualisieren des in automatisierten Online-Transformationsworkflows verwendeten Schemas erforderlich sind. Das Aktualisieren eines Online-Transformationsworkflows erfordert die Aktualisierung mehrerer Ressourcen und muss von einem Benutzer mit Theme-Manager- oder Superuser-Berechtigungen durchgeführt werden. Bevor wir beginnen, sehen wir uns eine Liste der benötigten Ressourcen an:
+In diesem Tutorial werden die Schritte erläutert, die zum Aktualisieren des in automatisierten Online-Transformationsworkflows verwendeten Schemas erforderlich sind. Das Aktualisieren eines Online-Transformationsworkflows erfordert die Aktualisierung mehrerer Ressourcen und muss von Nutzenden mit Theme-Manager- oder Superuser-Berechtigungen durchgeführt werden. Bevor wir beginnen, sehen wir uns eine Liste der benötigten Ressourcen an:
 
 * ein Transformationsprojekt von hale»studio
-* ein Schema für Ihre Zieldaten
+* ein Schema für ihre Zieldaten
 * ein Zielthema
 
 ### **Beispiel-Daten**
@@ -22,18 +22,18 @@ Die Installation von hale»studio und die Erstellung von Abbildungen gehen über
 
 Für dieses Tutorial verwenden wir:
 
-* Ein vorhandenes Transformationsprojekt von hale»studio. sie können das Transformationsprojekt [hier](https://test.haleconnect.de/#/transformation/org/740/fee5465b-52eb-4adf-9fec-3b59dffdee71/overview) herunterladen.
-* Quelldaten. sie können das Shapefile [hier](https://wetransform.box.com/s/6m9ygbmzestcmq9gk6uwrbs9kcyp12v5) herunterladen.
+* Ein vorhandenes Transformationsprojekt von hale»studio. Sie können das Transformationsprojekt [hier](https://test.haleconnect.de/#/transformation/org/740/fee5465b-52eb-4adf-9fec-3b59dffdee71/overview) herunterladen.
+* Quelldaten. Sie können das Shapefile [hier](https://wetransform.box.com/s/6m9ygbmzestcmq9gk6uwrbs9kcyp12v5) herunterladen.
 
-Das Transformationsprojekt ordnet Daten deutscher geschützter Standorte dem INSPIRE-Featuretyp „ProtectedSite“ zu, der im INSPIRE Protected Sites 4.0-Schema zu finden ist.
+Das Transformationsprojekt ordnet Daten deutscher Schutzgebiete dem INSPIRE-Featuretyp „ProtectedSite“ zu, der im INSPIRE Protected Sites 4.0-Schema zu finden ist.
 
 ### **Ein Transformationsprojekt aktualisieren**
 
-**Schritt 1: Ein vorhandenes Transformationsprojekt in hale»studio öffenen**
+**Schritt 1: Ein vorhandenes Transformationsprojekt in hale»studio öffnen**
 
-Ein Transformationsprojekt ist ein [hale»studio](https://www.wetransform.to/products/halestudio/) Projekt in den Formaten \*.halex oder \*.halez, das auf hale»connect hochgeladen wurde. Das Projekt beinhaltet Referenzen zu Quell- und Ziel-Schemas, eine Abbildung, die über die Zuordnung von Elementen des Quell-Schemas zu Elementen des Ziel-Schemas die Transformation definiert, zusätzliche Konfigurationen für die geladenen Schemas und Konfigurationen für den gewünschten Output des Projekts.
+Ein Transformationsprojekt ist ein [hale»studio](https://www.wetransform.to/products/halestudio/) Projekt in den Formaten \*.halex oder \*.halez, das auf hale»connect hochgeladen wurde. Das Projekt beinhaltet Referenzen zu Quell- und Ziel-Schemata, ein Mapping, das über die Zuordnung von Elementen des Quell-Schemas zu Elementen des Ziel-Schemas die Transformation definiert, zusätzliche Konfigurationen für die geladenen Schemata und Konfigurationen für den gewünschten Output des Projekts.
 
-Wenn sie hale»studio auf Ihrem Computer installiert haben, können sie das Transformationsprojekt mit dem Namen „INSPIRE_ProtectedSites.halex“ laden, das in den Beispiel-Daten enthalten ist.
+Wenn sie hale»studio auf ihrem Computer installiert haben, können sie das Transformationsprojekt mit dem Namen „INSPIRE_ProtectedSites.halex“ laden, das in den Beispiel-Daten enthalten ist.
 
 **Schritt 2: Das vom Transformationsprojekt verwendete INSPIRE-Schema aktualisieren**
 
@@ -46,30 +46,30 @@ Klicken sie auf &laquo;OK&raquo;. Das im Transformationsprojekt verwendete INSPI
 
 **Schritt 3: Quelldaten laden und Zellentitätsabgleich abschließen**
 
-In diesem Schritt laden wir die Quelldaten und schließen die Schritte ab, die in den Zellentitätsabgleichsdialogen angezeigt werden, die in hale»studio erscheinen. Zellentitätsabgleichsdialoge werden angezeigt, wenn ein Schema geändert wird und hale»studio aufgrund geänderter Typnamen, Eigenschaftsnamen oder geänderter Namespaces nicht feststellen kann, wie die vorhandenen Zuordnungen aktualisiert werden sollen. In diesen Fällen muss der Endbenutzer hale»studio Informationen zur Aktualisierung der vorhandenen Zuordnungen basierend auf dem neuen Schema bereitstellen.
+In diesem Schritt laden wir die Quelldaten und schließen die Schritte ab, die in den Zellentitätsabgleichsdialogen angezeigt werden, die in hale»studio erscheinen. Zellentitätsabgleichsdialoge werden angezeigt, wenn ein Schema geändert wird und hale»studio aufgrund geänderter Typnamen, Eigenschaftsnamen oder geänderter Namespaces nicht feststellen kann, wie die vorhandenen Mappings aktualisiert werden sollen. In diesen Fällen müssen Nutzende hale»studio Informationen zur Aktualisierung der vorhandenen Zuordnungen basierend auf dem neuen Schema bereitstellen.
 
 Es ist sinnvoll, die Änderungen zu überprüfen, die an dem zu aktualisierenden Schema vorgenommen wurden, um einen Überblick über die zu aktualisierenden Elemente zu erhalten. Die Änderungen werden als Kommentare in den INSPIRE \*.xsd-Schemadateien dokumentiert, die [hier](https://inspire.ec.europa.eu/schemas/index.html) verfügbar sind.
 
 Laden sie zunächst die Quelldaten in hale»studio. Navigieren sie zum Menü Datei und wählen sie Importieren, anschließend wählen sie Quelldaten...
 
-Sobald die Quelldaten geladen sind, werden nacheinander möglicherweise viele Dialoge zu Zellentitäten angezeigt, bis alle Elemente aktualisiert wurden, um das neue Schema widerzuspiegeln. Für eine vollständige Aktualisierung muss der Endbenutzer für jede aktualisierte Referenz das von hale»studio gesuchte Element im Elementbaum manuell auswählen. In einigen Fällen identifiziert hale»studio das passende Element im neuen Schema korrekt (z. B. wenn sich nur der Namespace geändert hat, aber Typ und Eigenschaftsname gleich bleiben), in anderen Fällen ist eine direkte Benutzereingabe erforderlich. Es ist möglich, eine oder mehrere Zuordnungen im Dialog zu überspringen, wenn die Handhabung nicht ganz klar ist. Durch das Überspringen einer Zuordnung kann der Endbenutzer mit automatisch zugewiesenen oder erkannten Zuordnungen fortfahren, ohne den gesamten Vorgang abbrechen zu müssen. Nicht verarbeitete Zuordnungen können anschließend in der hale»studio-Benutzeroberfläche bearbeitet werden.
+Sobald die Quelldaten geladen sind, werden nacheinander möglicherweise viele Dialoge zu Zellentitäten angezeigt, bis alle Elemente aktualisiert wurden, um das neue Schema widerzuspiegeln. Für eine vollständige Aktualisierung müssen Nutzende für jede aktualisierte Referenz das von hale»studio gesuchte Element im Elementbaum manuell auswählen. In einigen Fällen identifiziert hale»studio das passende Element im neuen Schema korrekt (z. B. wenn sich nur der Namespace geändert hat, aber Typ und Eigenschaftsname gleich bleiben), in anderen Fällen ist eine direkte Benutzereingabe erforderlich. Es ist möglich, eine oder mehrere Zuordnungen im Dialog zu überspringen, wenn die Handhabung nicht ganz klar ist. Durch das Überspringen einer Zuordnung kann der Endbenutzer mit automatisch zugewiesenen oder erkannten Zuordnungen fortfahren, ohne den gesamten Vorgang abbrechen zu müssen. Nicht verarbeitete Zuordnungen können anschließend in der hale»studio-Benutzeroberfläche bearbeitet werden.
 <a className="image-news text-center col-xs-12 mt mb"><img src={require("/images/help/de/cell_entity_could_not_be_resolved.png").default} alt="" title="Cell entity matching" className="img-responsive center-block"/></a>
 
 **Schritt 4: Validierung prüfen und Transformationsprojekt speichern**
 
-Nachdem alle Cell entity matchings abgeschlossen sind, nehmen sie sich einen Moment Zeit, um die Validierung des aktualisierten Transformationsprojekts zu prüfen, um sicherzustellen, dass alle erforderlichen Schemaelemente ordnungsgemäß behandelt wurden. Öffnen sie in hale»studio das Fenster „Berichtsliste“, um den Status der Instanztransformation und der Instanzvalidierung anzuzeigen. Ein grünes Häkchen zeigt ein gültiges Projekt an. Eine gelbe Warnung zeigt an, dass das Projekt Zuordnungen mit Warnungen enthält, die im Eigenschaftenfenster überprüft werden können. Doppelklicken sie im Fenster „Berichtsliste“ auf die Instanztransformation und den Instanzvalidierungstext, um weitere Informationen zu Warnungen im Eigenschaftenfenster anzuzeigen.
+Nachdem alle Zellentitätsabgleiche abgeschlossen sind, nehmen sie sich einen Moment Zeit, um die Validierung des aktualisierten Transformationsprojekts zu prüfen und so sicherzustellen, dass alle erforderlichen Schemaelemente ordnungsgemäß behandelt wurden. Öffnen sie in hale»studio das Fenster „Report List“, um den Status der Instanztransformation und der Instanzvalidierung anzuzeigen. Ein grünes Häkchen zeigt ein gültiges Projekt an. Eine gelbe Warnung zeigt an, dass das Projekt Zuordnungen mit Warnungen enthält, die im Eigenschaftenfenster überprüft werden können. Doppelklicken sie im Fenster „Report List“ auf die Instanztransformation und den Instanzvalidierungstext, um weitere Informationen zu Warnungen im Eigenschaftenfenster anzuzeigen.
 
-Speichern sie Ihr Projekt, sobald Ihre Prüfung abgeschlossen ist.
+Speichern sie ihr Projekt, sobald ihre Prüfung abgeschlossen ist.
 
-sie können das Transformationsprojekt INSPIRE_ProtectedSites direkt in Ihr hale»connect-Konto exportieren, sobald sie mit der Aktualisierung des Projekts fertig sind. Wenn sie Hilfe benötigen, besuchen sie das Hilfethema [Freigeben und Aktualisieren eines Transformationsprojekts auf hale»connect](http://help.halestudio.org/latest/index.jsp?topic=%2Feu.esdihumboldt.hale.doc.user%2Fhtml%2Ftasks%2Fhaleconnect%2Fshareproject.html) im Benutzerhandbuch von hale»studio für weitere Anweisungen.
+Sie können das Transformationsprojekt INSPIRE_ProtectedSites direkt in Ihr hale»connect-Konto exportieren, sobald sie mit der Aktualisierung des Projekts fertig sind. Wenn sie Hilfe benötigen, besuchen sie das Hilfethema [Freigeben und Aktualisieren eines Transformationsprojekts auf hale»connect](http://help.halestudio.org/latest/index.jsp?topic=%2Feu.esdihumboldt.hale.doc.user%2Fhtml%2Ftasks%2Fhaleconnect%2Fshareproject.html) im Benutzerhandbuch von hale»studio für weitere Anweisungen.
 
-sie können ein Transformationsprojekt auch manuell hochladen.
+Sie können ein Transformationsprojekt auch manuell hochladen.
 
-### **Ein Online-Transformationsworkflows auf hale»connect aktualisieren**
+### **Einen Online-Transformationsworkflow auf hale»connect aktualisieren**
 
-**Schritt 1: Eine neue Schema erstellen**
+**Schritt 1: Ein neues Schema erstellen**
 
-Das aktualisierte Transformationsprojekt, mit dem sie arbeiten, transformiert deutsche Protected Sites-Daten in INSPIRE Protected Sites v5.0. Diese INSPIRE-Featuretypen befinden sich im Schema INSPIRE Protected Sites 5.0, daher erstellen sie dieses Schema auf hale»connect. hale»connect enthält eine große Anzahl von Schemavorgaben, darunter alle aktualisierten INSPIRE-Schemata.
+Das aktualisierte Transformationsprojekt, mit dem sie arbeiten, transformiert deutsche Schutzgebiet-Daten in INSPIRE Protected Sites v5.0. Diese INSPIRE-Featuretypen befinden sich im Schema INSPIRE Protected Sites 5.0, daher erstellen sie dieses Schema auf hale»connect. hale»connect enthält eine große Anzahl von Schema-Presets, darunter alle aktualisierten INSPIRE-Schemata.
 
 Um ein neues Schema unter Nutzung eines Presets anzulegen, folgen sie in der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; diesem Ablauf:
 
@@ -85,15 +85,15 @@ Um ein neues Schema unter Nutzung eines Presets anzulegen, folgen sie in der Rol
     * Anlegen bestätigen. Überprüfen sie in einem abschließenden Schritt ihr Schema. Sie haben die Option, Ihrem Schema ein Thema hinzuzufügen oder ein solches für ihr Schema zu erstellen. Wenn sie fertig sind, klicken sie auf &laquo;Anlegen&raquo; um ihr Schema zu speichern.
 
 
-**Schritt 2: Featuretypen des Ziel-Themas aktualisieren**
+**Schritt 2: Objektarten des Ziel-Themas aktualisieren**
 
-Der nächste Schritt besteht darin, den Abschnitt „Featuretypen“ Ihres INSPIRE Protected Sites-Themas zu aktualisieren, um die Featuretypen aus dem INSPIRE Protected Sites 5.0-Schema zu verwenden.
+Der nächste Schritt besteht darin, den Abschnitt „Objektarten“ ihres INSPIRE Protected Sites-Themas zu aktualisieren, um die Objektarten aus dem INSPIRE Protected Sites 5.0-Schema zu verwenden.
 
-Navigieren sie zunächst zu Ihrem vorhandenen Protected Sites-Thema auf hale»connect. Wählen sie den Abschnitt „Featuretypen“ aus.
+Navigieren sie zunächst zu ihrem vorhandenen Protected Sites-Thema auf hale»connect. Wählen sie den Abschnitt „Objektarten“ aus.
 <img src={require("/images/help/de/update_feature_types_de.png").default} alt="" title="Featuretypen aktualisieren" className="img-responsive img-inline-help"/>
 
-Klicken sie auf das rote „x“, um die vorhandenen Featuretypen zu löschen, und klicken sie auf &laquo;+ Neuen Typ hinzufügen&raquo;. Navigieren sie im angezeigten Dialogfeld zum Schema INSPIRE Protected Sites 5.0 und wählen sie &laquo;Alle hinzufügen&raquo;. Ihr vorhandenes Thema ist jetzt aktualisiert und verwendet die Featuretypen aus dem Schema INSPIRE Protected Sites 5.0.
+Klicken sie auf das rote „x“, um die vorhandenen Objektarten zu löschen, und klicken sie auf &laquo;+ Neuen Typ hinzufügen&raquo;. Navigieren sie im angezeigten Dialogfeld zum Schema INSPIRE Protected Sites 5.0 und wählen sie &laquo;Alle hinzufügen&raquo;. Ihr vorhandenes Thema ist jetzt aktualisiert und verwendet die Objektarten aus dem Schema INSPIRE Protected Sites 5.0.
 
 **Schritt 3: Das aktualisierte Transformationsprojekt auslösen und vorhandene Ressourcen erneut veröffentlichen**
 
-Nachdem sie Ihr Transformationsprojekt aktualisiert und die Featuretypen in Ihrem vorhandenen Ziel-Thema aktualisiert haben, können sie die Online-Transformation erneut ausführen, um Ihre veröffentlichten Ressourcen auf hale»connect zu aktualisieren.
+Nachdem sie ihr Transformationsprojekt aktualisiert und die Objektarten in ihrem vorhandenen Ziel-Thema aktualisiert haben, können sie die Online-Transformation erneut ausführen, um ihre veröffentlichten Ressourcen auf hale»connect zu aktualisieren.
