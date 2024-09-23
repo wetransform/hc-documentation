@@ -3022,6 +3022,8 @@ Example:
 This option enables use of the term ```information``` in the ```transferOptions``` element in the WFS GetCapabilities document.  The term ```information``` is found in the code list ```CI_OnLineFunctionCode```. The German Metadata conventions, v.2.1.1, Chapter 4.3.1, recommends use of the term ```information``` and users seeking to comply with GDI-DE metadata conventions receive a warning if alternate terms are used.
 In the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0, TG Recommendation 3.5: metadata/2.0/rec/sds/resource-type-url-target, an example is given in which the WFS GetCapabilities uses the value ```download```. The hale»connect default value is ```download```, however the default value can be overridden through use of this profile.
 
+This profile is included in the metadata profile entitled: "Conventions of GDI-DE (implicitly includes specific other profiles)".
+
 Example:
 
 ```
@@ -3069,11 +3071,18 @@ Example:
 
 This option relates to TG Requirement 3.6: metadata/2.0/req/sds/coupled-resource in the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0. There are multiple, valid approaches to providing the required link to metadata. Activation of this option satisfies the GDI-DE convention, which expects that references to the dataset metadata in the ```operatesOn``` element in service metadata is the same as the dataset metadata identifier code. The dataset metadata identifier code consists of a namespace and ID forming a URL to the GDI-DE registry. By default, hale»connect populates the coupled resource link in the ```operatesOn``` element using a URL containing a fragment identifier pointing to the ```gmd:MD_DataIdentification``` element. The default approach can be overridden through activation of this option.
 
+This profile is included in the metadata profile entitled: "Conventions of GDI-DE (implicitly includes specific other profiles)".
+
 Example:
 
 ```
 <srv:operatesOn xlink:href="https://registry.gdi-de.org/id/de.ni.lk.ni.csw/6857805e-ccfd-488f-93bc-c2bb41f6062d" uuidref="ce78d145-bc82-4278-8ae2-a484d68c7eb1"/>
 ```
+
+**Conventions of GDI-DE (implicitly includes specific other profiles)**
+
+This option includes the metadata profiles entitled: *Use \"information\" as online function code for WFS (GDI-DE convention)* and *Use MDIdentifier code for operatesOn (GDI-DE convention)*. The purpose of this metadata profile is to provide users interested in generating GDI-DE compliant metadata the ability to do so using a single profile. It is recommended to enable the profile in both the dataset and service metadata.
+
 **Configuring metadata profiles**
 
 Metadata profiles can be selected in the dataset and service metadata sections of a published dataset via the UI.
