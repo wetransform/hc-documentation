@@ -2997,13 +2997,11 @@ JSON values can be added to string fields in the metadata editor. The JSON value
 
 hale»connect metadata profiles provide options for adding and removing additional metadata elements in the hale»connect auto-generated metadata. Metadata profiles are available in the dataset and service metadata configurations, as some options affect both dataset and service metadata. Metadata profiles are not mandatory and more than one metadata profile can be applied. The metadata elements that can be added to metadata are described below:
 
-**Use gmx:Anchor for coordinate reference system code in reference system information**
+**Use `gmx:Anchor` for coordinate reference system code in reference system information**
 
-This option satisfies TG Recommendation 2.1.1: metadata/2.0/rec/isdss/crs-id of the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0. The following example displays the metadata elements added to dataset and service metadata when the option is enabled.
+This profile satisfies TG Recommendation 2.1.1: metadata/2.0/rec/isdss/crs-id of the document ["Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007"](https://knowledge-base.inspire.ec.europa.eu/publications/technical-guidance-implementation-inspire-dataset-and-service-metadata-based-isots-191392007_en), Version 2.2.0. The following example displays the metadata elements added to dataset and service metadata when the option is enabled:
 
-Example:
-
-```
+```xml
 <gmd:referenceSystemInfo>
   <gmd:MD_ReferenceSystem>
     <gmd:referenceSystemIdentifier>
@@ -3017,28 +3015,26 @@ Example:
 </gmd:referenceSystemInfo>
 ```
 
-**Use \"information\" as online function code for WFS (GDI-DE convention)**
+**Use "information" as online function code for WFS (GDI-DE convention)**
 
-This option enables use of the term ```information``` in the ```transferOptions``` element in the WFS GetCapabilities document.  The term ```information``` is found in the code list ```CI_OnLineFunctionCode```. The German Metadata conventions, v.2.1.1, Chapter 4.3.1, recommends use of the term ```information``` and users seeking to comply with GDI-DE metadata conventions receive a warning if alternate terms are used.
-In the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0, TG Recommendation 3.5: metadata/2.0/rec/sds/resource-type-url-target, an example is given in which the WFS GetCapabilities uses the value ```download```. The hale»connect default value is ```download```, however the default value can be overridden through use of this profile.
+This profile enables use of the term `information` in the `transferOptions` element in the WFS Capabilities document.  The term `information` is found in the code list `CI_OnLineFunctionCode`. Section 4.3.1 of the [GDI-DE Metadata conventions](https://www.gdi-de.org/download/AK_Metadaten_Konventionen_zu_Metadaten.pdf) (v2.2.1) recommends use of the value `information` and users seeking to comply with GDI-DE metadata conventions receive a warning from the GDI-DE Testsuite if other values are used.
+In the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0, TG Recommendation 3.5: metadata/2.0/rec/sds/resource-type-url-target, an example is given in which the WFS Capabilities document uses the value `download`. The hale»connect default value is `download`, however the default value can be overridden through use of this profile.
 
 This profile is included in the metadata profile entitled: "Conventions of GDI-DE (implicitly includes specific other profiles)".
 
 Example:
 
-```
+```xml
 <gmd:function>
   <gmd:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>
 </gmd:function>
 ```
 
-**Use gmx:Anchor for spatial data service category keyword**
+**Use `gmx:Anchor` for spatial data service category keyword**
 
-This option applies ```gmx:Anchor``` encoding for thesaurus name and the service type keyword for ```SpatialDataServiceCategory``` and fulfils TG Recommendation 3.2: metadata/2.0/rec/sds/sds-category-cv in the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0. The following example displays the encoding applied to the keyword in the service metadata with this option enabled:
+This profile applies `gmx:Anchor` encoding for the citation in the `gmd:thesaurusName` element and the service type keyword from the code list `SpatialDataServiceCategory`. It satisfies TG Recommendation 3.2: metadata/2.0/rec/sds/sds-category-cv in the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0. The following example shows the encoding applied to the keyword in the service metadata with this profile enabled:
 
-Example:
-
-```
+```xml
 <gmd:descriptiveKeywords>
   <gmd:MD_Keywords>
     <gmd:keyword>
@@ -3057,7 +3053,7 @@ Example:
               <gco:Date>2008-12-03</gco:Date>
             </gmd:date>
             <gmd:dateType>
-              <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode"  codeListValue="publication">publication</gmd:CI_DateTypeCode>
+              <gmd:CI_DateTypeCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
             </gmd:dateType>
           </gmd:CI_Date>
         </gmd:date>
@@ -3067,78 +3063,83 @@ Example:
 </gmd:descriptiveKeywords>
 ```
 
-**Use MD_Identifier code for operatesOn (GDI-DE convention)**
+**Use `MD_Identifier` code for operatesOn (GDI-DE convention)**
 
-This option relates to TG Requirement 3.6: metadata/2.0/req/sds/coupled-resource in the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0. There are multiple, valid approaches to providing the required link to metadata. Activation of this option satisfies the GDI-DE convention, which expects that references to the dataset metadata in the ```operatesOn``` element in service metadata is the same as the dataset metadata identifier code. The dataset metadata identifier code consists of a namespace and ID forming a URL to the GDI-DE registry. By default, hale»connect populates the coupled resource link in the ```operatesOn``` element using a URL containing a fragment identifier pointing to the ```gmd:MD_DataIdentification``` element. The default approach can be overridden through activation of this option.
+This profile relates to TG Requirement 3.6: metadata/2.0/req/sds/coupled-resource in the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0. There are multiple valid approaches to providing the required link to metadata. Activation of this option satisfies the GDI-DE convention which expects that references to the dataset metadata in the `operatesOn` element in service metadata is the same as the dataset metadata identifier code. The dataset metadata identifier code consists of a namespace and ID forming a URL pointing to the GDI-DE registry. By default, hale»connect populates the coupled resource link in the `operatesOn` element using a URL containing a fragment identifier pointing to the `gmd:MD_DataIdentification` element in the referenced metadata document. The default approach can be overridden through activation of this profile.
 
 This profile is included in the metadata profile entitled: "Conventions of GDI-DE (implicitly includes specific other profiles)".
 
 Example:
 
-```
+```xml
 <srv:operatesOn xlink:href="https://registry.gdi-de.org/id/de.ni.lk.ni.csw/6857805e-ccfd-488f-93bc-c2bb41f6062d" uuidref="ce78d145-bc82-4278-8ae2-a484d68c7eb1"/>
 ```
 
 **Conventions of GDI-DE (implicitly includes specific other profiles)**
 
-This option includes the metadata profiles entitled: *Use \"information\" as online function code for WFS (GDI-DE convention)* and *Use MDIdentifier code for operatesOn (GDI-DE convention)*. The purpose of this metadata profile is to provide users interested in generating GDI-DE compliant metadata the ability to do so using a single profile. It is recommended to enable the profile in both the dataset and service metadata.
+This profile includes the following metadata profiles: 
+
+- *Use "information" as online function code for WFS (GDI-DE convention)*
+- *Use MD_Identifier code for operatesOn (GDI-DE convention)*.
+
+The purpose of this metadata profile is to provide users who would like to generate metadata compliant to the GDI-DE conventions the ability to do so using a single profile. It is recommended to enable the profile in both the dataset and service metadata.
 
 **Configuring metadata profiles**
 
-Metadata profiles can be selected in the dataset and service metadata sections of a published dataset via the UI.
+Metadata profiles can be selected in the dataset and service metadata sections of a dataset via the UI.
 Metadata profiles can also be viewed and selected in the JSON metadata editor in the dataset and service metadata sections:
 
+```json
+   {
+      "name": "md-service.profiles",
+      "required": false,
+      "minOccurs": 0,
+      "maxOccurs": -1,
+      "comment": "Allows adapting metadata generation behavior",
+      "label": "Metadata profiles",
+      "description": "Metadata profiles to enable or disable",
+      "type": "enum",
+      "enumValues": [
             {
-               "name": "md-service.profiles",
-               "required": false,
-               "minOccurs": 0,
-               "maxOccurs": -1,
-               "comment": "Allows adapting metadata generation behavior",
-               "label": "Metadata profiles",
-               "description": "Metadata profiles to enable or disable",
-               "type": "enum",
-               "enumValues": [
-                   {
-                       "label": "Use gmx:Anchor for coordinate reference system code in reference system information",
-                       "value": "crs-info-anchor"
-                   },
-                   {
-                       "label": "[Disable] Use gmx:Anchor for coordinate reference system code in reference system information",
-                       "value": "!crs-info-anchor"
-                   },
-                   {
-                       "label": "Use \"information\" as online function code for WFS (GDI-DE convention)",
-                       "value": "wfs-information"
-                   },
-                   {
-                       "label": "[Disable] Use \"information\" as online function code for WFS (GDI-DE convention)",
-                       "value": "!wfs-information"
-                   },
-                   {
-                       "label": "[Disable] Use gmx:Anchor for spatial data service category keyword",
-                       "value": "!service-types-keyword-anchor"
-                   },
-                   {
-                       "label": "Use MDIdentifier code for operatesOn (GDI-DE convention)",
-                       "value": "operates-on-use-mdidentifier"
-                   },
-                   {
-                       "label": "[Disable] Use MDIdentifier code for operatesOn (GDI-DE convention)",
-                       "value": "!operates-on-use-mdidentifier"
-                   },
-                   {
-                       "label": "Conventions of GDI-DE (implicitly includes specific other profiles)",
-                       "value": "gdi-de"
-                   }
-               ],
-               "schema": null,
-               "defaultValue": null,
-               "autofillRule": null,
-               "visibility": true,
-               "editable": true,
-               "targets": {
-                   "bsp": "md-service.profiles"
-               }
-             }
-          ]
-        }                
+               "label": "Use gmx:Anchor for coordinate reference system code in reference system information",
+               "value": "crs-info-anchor"
+            },
+            {
+               "label": "[Disable] Use gmx:Anchor for coordinate reference system code in reference system information",
+               "value": "!crs-info-anchor"
+            },
+            {
+               "label": "Use \"information\" as online function code for WFS (GDI-DE convention)",
+               "value": "wfs-information"
+            },
+            {
+               "label": "[Disable] Use \"information\" as online function code for WFS (GDI-DE convention)",
+               "value": "!wfs-information"
+            },
+            {
+               "label": "[Disable] Use gmx:Anchor for spatial data service category keyword",
+               "value": "!service-types-keyword-anchor"
+            },
+            {
+               "label": "Use MD_Identifier code for operatesOn (GDI-DE convention)",
+               "value": "operates-on-use-mdidentifier"
+            },
+            {
+               "label": "[Disable] Use MD_Identifier code for operatesOn (GDI-DE convention)",
+               "value": "!operates-on-use-mdidentifier"
+            },
+            {
+               "label": "Conventions of GDI-DE (implicitly includes specific other profiles)",
+               "value": "gdi-de"
+            }
+      ],
+      "schema": null,
+      "defaultValue": null,
+      "autofillRule": null,
+      "visibility": true,
+      "editable": true,
+      "targets": {
+            "bsp": "md-service.profiles"
+      }
+   }
+```
