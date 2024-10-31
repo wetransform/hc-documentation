@@ -42,6 +42,7 @@ Wenn eine Benutzerin oder ein Benutzer Zugriff auf eine Ressource anfragt, muss 
 
 ### Beispiel roles.json
 
+```json
     {
       "anonymous": {
         "resource": {
@@ -215,3 +216,4 @@ Wenn eine Benutzerin oder ein Benutzer Zugriff auf eine Ressource anfragt, muss 
         }
       }
     }
+```

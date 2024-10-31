@@ -99,23 +99,26 @@ Der &laquo;Metadaten&raquo;-Bereich enthält Konfigurations-Optionen und einen e
 
 Werfen wir einen Blick auf die Liste von Feldern in einem Kategorie-Objekt, denn diese wird für die Metadaten-Konfiguration benötigt.
 
-        {
-            "name": "md-dataset.citation.title",
-            "required": true,
-            "minOccurs": 1,
-            "maxOccurs": 1,
-            "comment": "ISO 3.2.1 #360",
-            "label": "Title",
-            "description": "name by which the cited resource is known",
-            "type": "string",
-            "schema": null,
-            "defaultValue": null,
-            "autofillRule": "{{dataset.name}}",
-            "visibility": true,
-            "editable": true,
-            "targets": {
-                "bsp": "md-dataset.citation.title"
-        }
+```json
+{
+  "name": "md-dataset.citation.title",
+  "required": true,
+  "minOccurs": 1,
+  "maxOccurs": 1,
+  "comment": "ISO 3.2.1 #360",
+  "label": "Title",
+  "description": "name by which the cited resource is known",
+  "type": "string",
+  "schema": null,
+  "defaultValue": null,
+  "autofillRule": "{{dataset.name}}",
+  "visibility": true,
+  "editable": true,
+  "targets": {
+    "bsp": "md-dataset.citation.title"
+  }
+}
+```
 
 Es können nur die folgenden Werte in das ```name```-Feld eingegeben werden:
 

@@ -99,23 +99,26 @@ Nejprve přejděte na téma, které jste vytvořili během vytváření schémat
 
 Podívejme se na seznam polí v objektu kategorie, protože právě tohle musíte nakonfigurovat.
 
-        {
-            "name": "md-dataset.citation.title",
-            "required": true,
-            "minOccurs": 1,
-            "maxOccurs": 1,
-            "comment": "ISO 3.2.1 #360",
-            "label": "Title",
-            "description": "name by which the cited resource is known",
-            "type": "string",
-            "schema": null,
-            "defaultValue": null,
-            "autofillRule": "{{dataset.name}}",
-            "visibility": true,
-            "editable": true,
-            "targets": {
-                "bsp": "md-dataset.citation.title"
-        }
+```json
+{
+  "name": "md-dataset.citation.title",
+  "required": true,
+  "minOccurs": 1,
+  "maxOccurs": 1,
+  "comment": "ISO 3.2.1 #360",
+  "label": "Title",
+  "description": "name by which the cited resource is known",
+  "type": "string",
+  "schema": null,
+  "defaultValue": null,
+  "autofillRule": "{{dataset.name}}",
+  "visibility": true,
+  "editable": true,
+  "targets": {
+    "bsp": "md-dataset.citation.title"
+  }
+}
+```
 
 Je důležité si uvědomit, že interní mapování je založeno na poli ``název`` každého objektu kategorie. Hodnoty zadané do pole ```název``` jsou omezeny na následující hodnoty:
 

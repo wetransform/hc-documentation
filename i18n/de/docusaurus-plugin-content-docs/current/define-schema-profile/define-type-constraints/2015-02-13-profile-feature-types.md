@@ -66,48 +66,50 @@ In diesem Beispiel wird der `example-xml`-Tag genutzt, um ein CharacterString-Be
 
 Die folgende XML-Datei ist das Beispiel-XML-Dokument zu diesem Profil und enthält den im `example-xml`-Tag angegebenen CharacterString-Wert.
 
-      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-      <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
-        <gmd:language>
-          <gco:CharacterString>ger</gco:CharacterString>
-        </gmd:language>
-        <gmd:contact>
-          <gmd:CI_ResponsibleParty>
-            <gmd:role>
-              <gmd:CI_RoleCode codeList="http://schemas.opengis.net/iso/19139/20070417/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="custodian"/>
-            </gmd:role>
-          </gmd:CI_ResponsibleParty>
-        </gmd:contact>
-        <gmd:dateStamp>
-          <gco:DateTime>2018-05-30T09:00:00</gco:DateTime>
-        </gmd:dateStamp>
-        <gmd:identificationInfo>
-          <gmd:MD_DataIdentification>
-            <gmd:citation>
-              <gmd:CI_Citation>
-                <gmd:title>
-                  <gco:CharacterString>example string</gco:CharacterString>
-                </gmd:title>
-                <gmd:date>
-                  <gmd:CI_Date>
-                    <gmd:date>
-                      <gco:DateTime>2018-05-30T09:00:00</gco:DateTime>
-                    </gmd:date>
-                    <gmd:dateType>
-                      <gmd:CI_DateTypeCode codeList="http://schemas.opengis.net/iso/19139/20070417/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode codeListValue="creation"/>
-                    </gmd:dateType>
-                  </gmd:CI_Date>
-                </gmd:date>
-              </gmd:CI_Citation>
-            </gmd:citation>
-            <gmd:abstract>
-              <gco:CharacterString>example string</gco:CharacterString>
-            </gmd:abstract>
-            <gmd:language>
-              <gco:CharacterString>example string</gco:CharacterString>
-            </gmd:language>
-          </gmd:MD_DataIdentification>
-        </gmd:identificationInfo>
-      </gmd:MD_Metadata>
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
+  <gmd:language>
+    <gco:CharacterString>ger</gco:CharacterString>
+  </gmd:language>
+  <gmd:contact>
+    <gmd:CI_ResponsibleParty>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://schemas.opengis.net/iso/19139/20070417/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="custodian"/>
+      </gmd:role>
+    </gmd:CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp>
+    <gco:DateTime>2018-05-30T09:00:00</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification>
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>example string</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:DateTime>2018-05-30T09:00:00</gco:DateTime>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://schemas.opengis.net/iso/19139/20070417/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode codeListValue="creation"/>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract>
+        <gco:CharacterString>example string</gco:CharacterString>
+      </gmd:abstract>
+      <gmd:language>
+        <gco:CharacterString>example string</gco:CharacterString>
+      </gmd:language>
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+</gmd:MD_Metadata>
+```
 
 Wenn sie mit dem Hinzufügen von Einschränkungen für die ausgewählte Objektart fertig sind, klicken sie auf &laquo;Aktualisieren&raquo;.
