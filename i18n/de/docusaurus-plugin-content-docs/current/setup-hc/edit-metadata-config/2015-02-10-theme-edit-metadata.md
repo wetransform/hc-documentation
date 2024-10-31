@@ -60,7 +60,7 @@ Jeder Kategorie wird eine Liste an Feldern (fields) zugeordnet. Jedes Feld-Objek
 *	**maxOccurs:** Gibt an, wie viele Felder dieses Typs maximal auszufüllen sind.
 * **openValue** Das Feld basiert auf einer Enumeration, lässt aber andere Werte zu.
 * **enumValues** Das Feld enthält die Werte, die im GUI für dieses Metadaten-Feld in einem Dropdown-Menü verfügbar sind.
-*	**targets:** Abbildungsregeln für externe Dienste. Für die interne Publikation ist stets der folgende Wert einzugeben: <br />"bsp": "{{name}}"<br />{{name}} ist durch den Namen des Feldes zu ersetzen.
+*	**targets:** Abbildungsregeln für externe Dienste. Für die interne Publikation ist stets der folgende Wert einzugeben: <br />`"bsp": "{{name}}"`<br />`{{name}}` ist durch den Namen des Feldes zu ersetzen.
 
 Die verfügbaren Pfade für `name` und `target` and die Abbildungen auf ihre korrespondierenden Metadaten-Elemente werden im Folgenden als Referenz aufgeführt:
 
