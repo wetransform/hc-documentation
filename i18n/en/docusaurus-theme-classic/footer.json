@@ -64,7 +64,7 @@
     "description": "The label of footer link with label=Newsletter linking to https://wetransform.to/news-and-events/"
   },
   "copyright": {
-    "message": "© wetransform GmbH 2022",
+    "message": "© 2024 wetransform GmbH",
     "description": "The footer copyright"
   }
 }
