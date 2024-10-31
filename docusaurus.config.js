@@ -121,7 +121,7 @@ const config = {
                 href: 'https://discuss.wetransform.to/#/forum',
               },
               {
-                label: 'Github',
+                label: 'GitHub',
                 href: 'https://github.com/wetransform',
               },
             ],
