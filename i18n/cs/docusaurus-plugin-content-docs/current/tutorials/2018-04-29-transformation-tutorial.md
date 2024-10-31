@@ -50,8 +50,8 @@ Transformační projekt je projekt [hale»studio](https://www.wetransform.to/pro
 Chcete-li vytvořit nový transformační projekt přímo v hale»connect, aniž byste jej nahráli z hale»studio, využijte tento pracovní postup s přihlášením jako Správce témat nebo Superuživatel:
 
 *	Přejděte na „Transformační projekty“ na hlavním panelu nástrojů
-* Přejděte na „Vytvořit nový transformační projekt “ v dolní části seznamu transformačních projektů <img src="/images/help/en/Tutorial_Transformation_overview.png").default} alt="" title="Vytvoření transformačního projektu" class="img-responsive img-inline-help"/>
-* Nahrajte soubor OpenRivers.halez, který se nachází ve složce s výukovými daty. Po nahrání uvidíte soubor .halex.styles.sld, soubor .halex.alignment.xml a soubor .halex. V těchto souborech je uložen transformační projekt. <img src="/images/help/en/Tutorial_Upload_project.png").default} alt="" title="Nahrávání transformačního projektu" class="img-responsive img-inline-help"/>
+* Přejděte na „Vytvořit nový transformační projekt “ v dolní části seznamu transformačních projektů <img src={require("/images/help/en/Tutorial_Transformation_overview.png").default} alt="" title="Vytvoření transformačního projektu" class="img-responsive img-inline-help"/>
+* Nahrajte soubor OpenRivers.halez, který se nachází ve složce s výukovými daty. Po nahrání uvidíte soubor .halex.styles.sld, soubor .halex.alignment.xml a soubor .halex. V těchto souborech je uložen transformační projekt. <img src={require("/images/help/en/Tutorial_Upload_project.png").default} alt="" title="Nahrávání transformačního projektu" class="img-responsive img-inline-help"/>
   * Klikněte na &laquo;Vybrat soubor(y)&raquo; a přejděte na soubor(y) projektu.
 
     Kontrola verzí je ve výchozím nastavení vypnutá. Aktivujte přepínač řízení verzí, abyste zachovali záznamy o přírůstkových změnách v transformačním projektu. Historii změn transformačního projektu si můžete prohlédnout v sekci Historie vašeho transformačního projektu.
