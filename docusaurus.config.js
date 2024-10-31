@@ -4,10 +4,25 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const getCurrentLocale = () => process.env.DOCUSAURUS_CURRENT_LOCALE ?? 'en';
+
+/**
+ * Workaround for https://github.com/facebook/docusaurus/issues/4542
+ */
+const getTagline = () => {
+  switch (getCurrentLocale()) {
+    case 'de':
+      return 'Eine der führenden Plattformen für Geodatentransformation';
+    case 'en':
+    default:
+      return 'One of the world\'s leading platforms for spatial data transformation';
+  }
+};
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'hale»connect',
-  tagline: 'One of the world\'s leading platforms for Geodata Transformations',
+  tagline: getTagline(),
   url: 'https://help.wetransform.to',
   baseUrl: '/',
   onBrokenLinks: 'throw',
