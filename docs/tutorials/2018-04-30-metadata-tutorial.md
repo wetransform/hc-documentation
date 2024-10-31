@@ -172,7 +172,7 @@ It is important to understand that the internal mapping is based on the ```name`
 *	**description:** A longer, explanatory text for the fields that is displayed on hovering over the label.
 *	**type:** The primitive type of data this field expects. One of string, object, array, integer and float.
 *	**schema:** The schema or format of the value to be inserted. One of email, enum, geojson, json, wkt and csv.
-*	**defaultValue:** A fixed default value that will always be assigned to the field.
+*	**defaultValue:** A fixed default value that will be assigned to the field if it does not contain a value yet. Please note that when transforming data, the metadata values of the source dataset are copied to the target dataset and in that case, a configured default value will not overwrite it.  In on-premise deployments, the behaviour for the target dataset can be changed by setting the feature toggle `TRANSFORMATION_AUTOFILL_REPLACE_DEFAULTS` to `true`.
 *	**autofillRule:** A dynamic default value that will be assigned to the field. This value is calculated from the current environment variables such as the user, the organisation context, the data set and the theme. When you click into a row with an ```autofillRule``` property key, an assistant for choosing a value appears in the upper right corner of the editor.
 *	**editable:** Set to ```true``` when the data manager should be able to edit the value in this field.
 *	**targets:** This is a list with mapping rules to external services, such as metadata catalogues. By default, there should always be at least a ```bsp``` target defined. ```bsp``` is what hale»connect needs in order to publish services.
