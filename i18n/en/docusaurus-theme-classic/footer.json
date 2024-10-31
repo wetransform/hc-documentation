@@ -39,9 +39,9 @@
     "message": "Forum",
     "description": "The label of footer link with label=Forum linking to https://discuss.wetransform.to/#/forum"
   },
-  "link.item.label.Github": {
-    "message": "Github",
-    "description": "The label of footer link with label=Github linking to https://github.com/wetransform"
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/wetransform"
   },
   "link.item.label.Company & Team": {
     "message": "Company & Team",
