@@ -305,5 +305,11 @@
   },
   "All users are associated with an organisation and have a role inside it.": {
     "message": "Alle Benutzer gehören zu einer Organisation und haben innerhalb dieser eine Rolle inne."
+  },
+  "Imprint": {
+    "message": "Impressum"
+  },
+  "Data Privacy Policy": {
+    "message": "Datenschutzrichtlinie"
   }
 }

@@ -152,7 +152,7 @@ const config = {
             ],
           },
         ],
-        copyright: `© wetransform GmbH ${new Date().getFullYear()}`,
+        copyright: `© ${new Date().getFullYear()} wetransform GmbH`,
       },
       prism: {
         theme: lightCodeTheme,

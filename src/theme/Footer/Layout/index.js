@@ -1,5 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
+import Translate from '@docusaurus/Translate';
+
 export default function FooterLayout({style, links, logo, copyright}) {
   return (
     <footer
@@ -31,7 +33,7 @@ export default function FooterLayout({style, links, logo, copyright}) {
             {logo && <div className="margin-bottom--sm">{logo}</div>}
             {copyright}
             <p>
-              <a className='wetf-copyright-link' href="https://wetransform.to/imprint/">Imprint</a> | <a className='wetf-copyright-link' href="https://wetransform.to/privacy/">Data Privacy Policy</a></p>
+              <a className='wetf-copyright-link' href="https://wetransform.to/imprint/"><Translate>Imprint</Translate></a> | <a className='wetf-copyright-link' href="https://wetransform.to/privacy/"><Translate>Data Privacy Policy</Translate></a></p>
           </div>
         )}
       </div>
