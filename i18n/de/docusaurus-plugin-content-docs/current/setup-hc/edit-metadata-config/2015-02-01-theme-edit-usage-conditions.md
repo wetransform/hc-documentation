@@ -11,6 +11,7 @@ Im Pfad &laquo;md-dataset.identification.constraints.mdConstraintPredefined&raqu
 
 Die Hinterlegung der Nutzungsbedingungen erfolgt als Auswahlliste (enum). Im Feld ‚label‘ wird jeweils ein Bezeichner hinterlegt und im Feld ‚value‘ die Nutzungsbedingungen in einem vorgegebenen Textformat. Das Textformat benötigt folgende Grammatik:
 
+```
     ('constraint' '['
       ('useLimitation='<TEXT>)?
        (
@@ -26,6 +27,7 @@ Die Hinterlegung der Nutzungsbedingungen erfolgt als Auswahlliste (enum). Im Fel
            ']'
        )*
     ']')*
+```
 
 Erläuterung der verwendeten Syntax:
 

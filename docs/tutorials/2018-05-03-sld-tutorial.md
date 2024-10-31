@@ -41,13 +41,17 @@ An SLD for a shapefile must contain a namespace declaration which points to the 
 hale»connect searches the SLD for a ```FeatureTypeName``` attribute, which it uses to match against the uploaded dataset.
 The ```FeatureTypeName``` attribute must be added to the ```FeatureTypeStyle``` element. The attribute must contain the shapefile namespace prefix, and the name of the shapefile:
 
+```xml
       <se:FeatureTypeName>ns:nameOfShapefile</se:FeatureTypeName>
+```
 
 The shapefile namespace prefix must be added to any shapefile property that is referenced. For example, if you want to use the shapefile attribute 'name' to label your polygons, it must have the shapefile namespace prefix ```ns```:
 
+```xml
       <se:Label>
           <ogc:PropertyName>ns:name/text()</ogc:PropertyName>
       </se:Label>
+```
 
 :::caution
 
@@ -59,13 +63,16 @@ You must add '/text()' after the referenced property in TextSymbolizer Label tag
 
 Layer names and layer titles can be added to SLDs. Layer names cannot contain white spaces or colons. The INSPIRE layer name for the Protected Sites feature type is ```PS.ProtectedSite```. Layer names can be added to the NamedLayer.Name element:
 
+```xml
 	<NamedLayer>
 	    <se:Name>PS.ProtectedSite</se:Name> ...
 	    ...
 	</NamedLayer>
+```
 
 The INSPIRE layer title for the Protected Sites feature type is ```Protected Sites```. Layer titles can be added to the NamedLayer.Description.Title element:
 
+```xml
 	<NamedLayer>
 	    <se:Name>PS.ProtectedSite</se:Name>
 	    <se:Description>
@@ -73,20 +80,24 @@ The INSPIRE layer title for the Protected Sites feature type is ```Protected Sit
 	    </se:Description>...
 	    ...
 	</NamedLayer>
+```
 
 Rule titles control the text displayed in the WMS legend. Rule titles can be added to the Rule.Description.Title element:
 
+```xml
 	<se:Rule>
 	    <se:Description>
         <se:Title>protected sites: polygon</se:Title>
 	    </se:Description>...
         ...
 	</se:Rule>
+```
 
 Now, let's take a look at an example of a fully valid SLD file which can be published on hale»connect.
 
 ***SLD for shapefile***
 
+```xml
       <?xml version="1.0" encoding="UTF-8"?>
       <StyledLayerDescriptor
       version="1.1.0"  
@@ -151,6 +162,7 @@ Now, let's take a look at an example of a fully valid SLD file which can be publ
         </UserStyle>
       </NamedLayer>
     </StyledLayerDescriptor>
+```
 
 The next example is the Protected Sites INSPIRE SLD. In this example, the INSPIRE Protected Sites schema is declared as ```xmlns:ps="http://inspire.ec.europa.eu/schemas/ps/4.0"```
 
@@ -161,6 +173,7 @@ The ```FeatureTypeName``` attribute must be added to the ```FeatureTypeStyle``` 
 
 The schema namespace prefix must be added to any attribute that is referenced. For example, if you want to use the attribute 'geometry' to filter your features, it must have the namespace prefix ```ps```:
 
+```xml
         <ogc:Filter>
           <ogc:PropertyIsEqualTo>
             <ogc:Function name="IsCurve">
@@ -169,6 +182,7 @@ The schema namespace prefix must be added to any attribute that is referenced. F
             <ogc:Literal>true</ogc:Literal>
           </ogc:PropertyIsEqualTo>
         </ogc:Filter>
+```
 
 In the filter example above, the deegree function ```IsCurve``` is used to filter feature geometry, so that the symobology rule is applied only to line features. For more information about deegree functions which extend the SLD specification, visit the [deegree documentation pages](http://download.deegree.org/documentation/3.4.5/html/renderstyles.html#deegree-specific-extensions).
 
@@ -176,6 +190,7 @@ Here is an example of a fully valid INSPIRE SLD file which can be published on h
 
 ***SLD for GML***
 
+```xml
       <?xml version="1.0" encoding="UTF-8"?>
       <StyledLayerDescriptor
       version="1.1.0"  
@@ -283,3 +298,4 @@ Here is an example of a fully valid INSPIRE SLD file which can be published on h
           </UserStyle>
         </NamedLayer>
       </StyledLayerDescriptor>
+```

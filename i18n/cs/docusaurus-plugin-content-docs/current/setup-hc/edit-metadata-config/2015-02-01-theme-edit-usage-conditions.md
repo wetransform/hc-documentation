@@ -14,6 +14,7 @@ Takové komplexní licence lze použít v cestě „md-dataset.identification.co
 
 Definice licence musí být vytvořena pomocí následující gramatiky:
 
+```
     ('constraint' '['
       ('useLimitation='<TEXT>)?
        (
@@ -29,6 +30,7 @@ Definice licence musí být vytvořena pomocí následující gramatiky:
            ']'
        )*
     ']')*
+```
 
 Vysvětlení syntaxe:
 

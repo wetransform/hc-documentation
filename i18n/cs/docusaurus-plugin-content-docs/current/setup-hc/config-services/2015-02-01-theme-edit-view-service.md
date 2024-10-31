@@ -22,25 +22,27 @@ Chcete-li upravit tuto konfiguraci, proveďte tyto kroky, jste-li přihlášen j
 
 SLD musí být plně platný soubor deskriptoru stylizované vrstvy. Postupujte podle příkladu, jak jsou vrstvy definovány ve WMS (název, popis, styl):
 
-    <StyledLayerDescriptor version="1.1.0" xmlns:usgovserv="http://inspire.ec.europa.eu/schemas/us-govserv/4.0" … >
-      <NamedLayer>
-        <se:Name>areas</se:Name>
-        <se:Description>
-          <se:Title>Bezirke</se:Title>
-          <se:Abstract></se:Abstract>
-        </se:Description>
-        <UserStyle>
-          <se:Name>US.GovernmentalService_1</se:Name>
-          <se:FeatureTypeStyle>
-            <se:FeatureTypeName>…:GovernmentalService</se:FeatureTypeName>
-            <se:Rule>
-              <se:PolygonSymbolizer>
-                <se:Name>symbolizer_Schulstandorte</se:Name>
-                <se:Geometry>
-                  <ogc:PropertyName>…:areaOfResponsibilityByPolygon
-                  </ogc:PropertyName>
-                </se:Geometry>
-                …
+```xml
+<StyledLayerDescriptor version="1.1.0" xmlns:usgovserv="http://inspire.ec.europa.eu/schemas/us-govserv/4.0" … >
+  <NamedLayer>
+    <se:Name>areas</se:Name>
+    <se:Description>
+      <se:Title>Bezirke</se:Title>
+      <se:Abstract></se:Abstract>
+    </se:Description>
+    <UserStyle>
+      <se:Name>US.GovernmentalService_1</se:Name>
+      <se:FeatureTypeStyle>
+        <se:FeatureTypeName>…:GovernmentalService</se:FeatureTypeName>
+        <se:Rule>
+          <se:PolygonSymbolizer>
+            <se:Name>symbolizer_Schulstandorte</se:Name>
+            <se:Geometry>
+              <ogc:PropertyName>…:areaOfResponsibilityByPolygon
+              </ogc:PropertyName>
+            </se:Geometry>
+            …
+```
 
 Další informace o SLD na hale»connect naleznete v [příručce SLD](../../tutorials/2018-05-03-sld-tutorial.md).
 
