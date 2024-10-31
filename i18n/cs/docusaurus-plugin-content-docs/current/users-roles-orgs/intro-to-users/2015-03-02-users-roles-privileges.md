@@ -44,6 +44,7 @@ Požaduje-li uživatel přístup ke zdroji nebo funkcím systému, musí být sp
 
 ### Example roles.json
 
+```json
     {
       "anonymous": {
         "resource": {
@@ -217,3 +218,4 @@ Požaduje-li uživatel přístup ke zdroji nebo funkcím systému, musí být sp
         }
       }
     }
+```

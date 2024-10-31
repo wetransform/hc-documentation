@@ -20,25 +20,28 @@ Um diese anzupassen, gehen sie in der Rolle &laquo;Themenmanager&raquo; oder &la
 7.	Laden sie einen Styled Layer Descriptor hoch, um die kartographische Konfiguration des Darstellungsdiensts vorzunehmen.
 Das SLD muss eine valide Styled Layer Descriptor-Datei sein. Im folgenden ist ein Beispiel aufgeführt um zu verdeutlichen wie Layer im WMS definiert werden (Name, Beschreibung, Darstellung):
 
-    <StyledLayerDescriptor version="1.1.0" xmlns:usgovserv="http://inspire.ec.europa.eu/schemas/us-govserv/4.0" … >
-      <NamedLayer>
-        <se:Name>areas</se:Name>
-        <se:Description>
-          <se:Title>Bezirke</se:Title>
-          <se:Abstract></se:Abstract>
-        </se:Description>
-        <UserStyle>
-          <se:Name>US.GovernmentalService_1</se:Name>
-          <se:FeatureTypeStyle>
-            <se:FeatureTypeName>…:GovernmentalService</se:FeatureTypeName>
-            <se:Rule>
-              <se:PolygonSymbolizer>
-                <se:Name>symbolizer_Schulstandorte</se:Name>
-                <se:Geometry>
-                  <ogc:PropertyName>…:areaOfResponsibilityByPolygon
-                  </ogc:PropertyName>
-                </se:Geometry>
-                …
+```xml
+<StyledLayerDescriptor version="1.1.0" xmlns:usgovserv="http://inspire.ec.europa.eu/schemas/us-govserv/4.0" … >
+  <NamedLayer>
+    <se:Name>areas</se:Name>
+    <se:Description>
+      <se:Title>Bezirke</se:Title>
+      <se:Abstract></se:Abstract>
+    </se:Description>
+    <UserStyle>
+      <se:Name>US.GovernmentalService_1</se:Name>
+      <se:FeatureTypeStyle>
+        <se:FeatureTypeName>…:GovernmentalService</se:FeatureTypeName>
+        <se:Rule>
+          <se:PolygonSymbolizer>
+            <se:Name>symbolizer_Schulstandorte</se:Name>
+            <se:Geometry>
+              <ogc:PropertyName>…:areaOfResponsibilityByPolygon
+              </ogc:PropertyName>
+            </se:Geometry>
+            …
+```
+
 Für weitere Informationen zu SLD-Dateien auf hale»connect, besuchen sie bitte das [SLD-Tutorial](../../tutorials/2018-05-03-sld-tutorial.md).
 
 1. Aktivieren sie den &laquo;Zusätzliche Ebenen aus Raster-Quellen erlauben&raquo;-Schalter. Das Aktivieren des Schalters ermöglicht es Nutzenden, zusätzlich zu Vektor-Daten Raster-Daten im PNG- oder GeoTIFF-Format während des Anlegens eines Datensatzes hochzuladen und zu veröffentlichen. Die Raster-Daten werden in einem separaten Raster-Layer veröffentlicht.
