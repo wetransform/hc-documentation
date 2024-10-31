@@ -37,7 +37,7 @@ Transformační projekt mapuje data UK Ordnance Survey Open Rivers na typy prvk�
 **Krok 1: Vytvořte transformační projekt**
 
 Nejjednodušší způsob, jak vytvořit transformační projekt na platformě hale»connect, je vyexportovat jej přímo z hale»studio. Hale»studio nabízí uživatelům možnost exportovat transformaci jako projekt hale»connect pomocí průvodce exportem. Průvodce vyžaduje, aby uživatelé zadali přihlašovací údaje hale»connect, které použije pro nahrání transformačního projektu do online účtu přihlášeného uživatele.
-{::nomarkdown}
+
 <a class="image-news text-center col-xs-12 mt mb"><img src={require("/images/help/cs/Tutorial_Export_wizard.png").default} alt="" title="Export transformačného projektu do hale»connect" class="img-responsive center-block"/>
 </a>
 
