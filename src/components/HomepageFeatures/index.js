@@ -88,7 +88,7 @@ export default function HomepageFeatures() {
       <div className="container popular-articles">
         <h1>
           <Translate id="hero.popularArticles">
-            Popular Articles
+            Popular Pages
           </Translate>
         </h1>
         <div className="row">

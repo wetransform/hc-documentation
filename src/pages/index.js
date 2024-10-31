@@ -22,17 +22,16 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="./docs/getting-started/2018-04-28-quick-start">
             <Translate id="hero.gotoDocs">
-              Go to hale»connect Documentation
+              Go to the hale»connect documentation
             </Translate>
           </Link>
         </div>
         <div style={{ marginTop: '64px', display: 'flex', alignContent: 'center', flexDirection: 'column' }} >
           <p style={{ width: '40%', marginBottom: 0, alignSelf: 'center' }}>
             <Translate id="hero.hcDescription">
-              hale»connect is the world’s best Software-as-a-Service tool for the Agile, data-driven design and implementation of more than 5.000 Open Standards such as
-              INSPIRE, ALKIS, XPlanGML, SOSI, eCH, WFD, FFH, Natura2000, CDDA, and END.
-              It cuts down the complex task of publishing datasets as services, coupled with
-              metadata, into a single user-friendly automated workflow.
+              hale»connect is the world's leading platform for agile, data-driven design and seamless implementation of over 5,000 open standards, including INSPIRE,
+              ALKIS, XPlanGML, SOSI, eCH, WFD, FFH, Natura2000, CDDA, and END. It simplifies the complex process of publishing spatial data as services—complete with
+              metadata—into one streamlined, user-friendly, automated workflow.
             </Translate>
           </p>
           <Link
