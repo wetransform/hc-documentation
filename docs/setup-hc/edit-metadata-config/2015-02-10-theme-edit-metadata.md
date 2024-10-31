@@ -54,7 +54,7 @@ Every category has a list of field objects. Every field object describes how the
 *	**description:** A longer, explanatory text for the fields that is displayed on hovering over the label.
 *	**type:** The primitive type of data this field expects. One of string, object, array, integer and float.
 *	**schema:** The schema or format of the value to be inserted. One of email, enum, geojson, json, wkt and csv. For more information about enumeration fields, see [Working with Enumeration Fields](#working-with-enumeration-fields)
-*	**defaultValue:** A fixed default value that will always be assigned to the field.
+*	**defaultValue:** A fixed default value that will be assigned to the field if it does not contain a value yet. Please note that when transforming data, the metadata values of the source dataset are copied to the target dataset and in that case, a configured default value will not overwrite it. In on-premise deployments, the behaviour for the target dataset can be changed by setting the feature toggle `TRANSFORMATION_AUTOFILL_REPLACE_DEFAULTS` to `true`.
 *	**autofillRule:** A dynamic default value that will be assigned to the field. This value is calculated from the current environment variables such as the user, the organisation context, the data set and the theme. When you click into a row with an ```autofillRule``` property key, an assistant for choosing a value appears in the upper right corner of the editor. For more information about autofill rules, see [Working with Autofill Rules](#working-with-autofill-rules)
 *	**required:** Set to ```true``` if a type and schema compliant value must be provided.
 *	**visibility:** Set to ```true``` to display the value to the data manager.
