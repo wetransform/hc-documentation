@@ -271,7 +271,7 @@
     "description": "message shown if no results are found"
   },
   "hero.gotoDocs": {
-    "message": "Gehen Sie zur hale»connect-Dokumentation"
+    "message": "Zur hale»connect-Dokumentation"
   },
   "hero.learnMore": {
     "message": "Mehr erfahren"
@@ -292,10 +292,10 @@
     "message": "Benutzer und Organisationen verwalten"
   },
   "hero.popularArticles": {
-    "message": "populäre Artikel"
+    "message": "Beliebte Einträge"
   },
   "hero.hcDescription": {
-    "message": "hale»connect ist das weltweit beste Software-as-a-Service-Tool für die agile, datengetriebene Design und Implementierung von mehr als 5.000 offenen Standards wie INSPIRE, ALKIS, XPlanGML, SOSI, eCH, WFD, FFH, Natura2000, CDDA , und END. Es reduziert die komplexe Aufgabe der Veröffentlichung von Datensätzen als Dienste, gekoppelt mit Metadaten, auf einen einzigen benutzerfreundlichen automatisierten Workflow."
+    "message": "hale»connect ist die weltweit führende Plattform für agiles, datengetriebenes Design und nahtlose Implementierung von über 5.000 offenen Standards, darunter INSPIRE, ALKIS, XPlanGML, SOSI, eCH, WFD, FFH, Natura2000, CDDA und END. hale»connect vereinfacht den komplexen Prozess der Veröffentlichung von Geodaten als Dienste – einschließlich Metadaten – in einem effizienten, benutzerfreundlichen, automatisierten Workflow."
   },
   "A theme is a central configuration object that links all types of resources.": {
     "message": "Das Thema ist ein Konfigurationsobjekt, mit dem sämtliche Ressourcen verknüpft werden."
