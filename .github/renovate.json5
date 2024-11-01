@@ -9,4 +9,5 @@
     "enabled": true,
   },
   "rangeStrategy": "bump",
+  "transitiveRemediation": true,
 }
