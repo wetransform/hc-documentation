@@ -1,13 +1,11 @@
 {
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   extends: [
-    "github>wetransform/renovate-config:self-hosted.json5",
-    "group:allNonMajor",
+    'github>wetransform/renovate-config:self-hosted.json5',
+    'group:allNonMajor',
   ],
-
-  "lockFileMaintenance": {
-    "enabled": true,
+  lockFileMaintenance: {
+    enabled: true,
   },
-  "rangeStrategy": "bump",
-  "transitiveRemediation": true,
+  rangeStrategy: 'bump',
 }
