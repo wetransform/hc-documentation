@@ -4,4 +4,9 @@
     "github>wetransform/renovate-config:self-hosted.json5",
     "group:allNonMajor",
   ],
+
+  "lockFileMaintenance": {
+    "enabled": true,
+  },
+  "rangeStrategy": "bump",
 }

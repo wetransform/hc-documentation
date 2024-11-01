@@ -4,4 +4,4 @@
 # Reference presets that should apply to this repository
 presets:
   - renovate # renovate workflow
-  - renovate-config # managed renovate config
+#  - renovate-config # managed renovate config
