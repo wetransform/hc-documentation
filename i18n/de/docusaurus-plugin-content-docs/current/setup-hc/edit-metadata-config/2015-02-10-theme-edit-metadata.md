@@ -3029,7 +3029,7 @@ Beispiel:
 </gmd:function>
 ```
 
-**`gmx:Anchor`-Element für `SpatialDataServiceCategory`-Schlüsselwort verwenden
+**`gmx:Anchor`-Element für `SpatialDataServiceCategory`-Schlüsselwort verwenden**
 
 Dieses Profil aktiviert die Verwendung eines `gmx:Anchor`-Elements für die Quellenreferenz im Element `gmd:thesaurusName` und für die Referenzierung des Diensttyp-Schlüsselworts aus der Codelist `SpatialDataServiceCategory` an. Es erfüllt die TG-Empfehlung 3.2: metadata/2.0/rec/sds/sds-category-cv im Technischen Leitfaden für die Implementierung von INSPIRE-Datensatz- und Dienstmetadaten auf der Grundlage von ISO/TS 19139:2007, Version 2.2.0. Das folgende Beispiel zeigt die Kodierung, die auf das Schlüsselwort in den Dienst-Metadaten angewendet wird, wenn das Profil aktiviert ist:
 
