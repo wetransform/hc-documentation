@@ -3087,56 +3087,56 @@ Metadatenprofile können in den Abschnitten für Datensatz- und Dienstmetadaten 
 Metadatenprofile können auch im JSON-Metadaten-Editor in den Abschnitten für Datensatz- und Dienst-Metadaten angezeigt und ausgewählt werden:
 
 ```json
-   {
-      "name": "md-service.profiles",
-      "required": false,
-      "minOccurs": 0,
-      "maxOccurs": -1,
-      "comment": "Allows adapting metadata generation behavior",
-      "label": "Metadata profiles",
-      "description": "Metadata profiles to enable or disable",
-      "type": "enum",
-      "enumValues": [
-            {
-               "label": "Use gmx:Anchor for coordinate reference system code in reference system information",
-               "value": "crs-info-anchor"
-            },
-            {
-               "label": "[Disable] Use gmx:Anchor for coordinate reference system code in reference system information",
-               "value": "!crs-info-anchor"
-            },
-            {
-               "label": "Use \"information\" as online function code for WFS (GDI-DE convention)",
-               "value": "wfs-information"
-            },
-            {
-               "label": "[Disable] Use \"information\" as online function code for WFS (GDI-DE convention)",
-               "value": "!wfs-information"
-            },
-            {
-               "label": "[Disable] Use gmx:Anchor for spatial data service category keyword",
-               "value": "!service-types-keyword-anchor"
-            },
-            {
-               "label": "Use MD_Identifier code for operatesOn (GDI-DE convention)",
-               "value": "operates-on-use-mdidentifier"
-            },
-            {
-               "label": "[Disable] Use MD_Identifier code for operatesOn (GDI-DE convention)",
-               "value": "!operates-on-use-mdidentifier"
-            },
-            {
-               "label": "Conventions of GDI-DE (implicitly includes specific other profiles)",
-               "value": "gdi-de"
-            }
-      ],
-      "schema": null,
-      "defaultValue": null,
-      "autofillRule": null,
-      "visibility": true,
-      "editable": true,
-      "targets": {
-            "bsp": "md-service.profiles"
-      }
-   }
+{
+    "name": "md-service.profiles",
+    "required": false,
+    "minOccurs": 0,
+    "maxOccurs": -1,
+    "comment": "Erlaubt Anpassung des Verhaltens bei der Metadaten-Generierung",
+    "label": "Metadaten-Profile",
+    "description": "Aktivieren oder Deaktivieren von Metadaten-Profilen",
+    "type": "enum",
+    "enumValues": [
+        {
+            "label": "gmx:Anchor-Element für CRS-Code in Koordinatenreferenzsystem-Information verwenden",
+            "value": "crs-info-anchor"
+        },
+        {
+            "label": "[Deaktivieren] gmx:Anchor-Element für CRS-Code in Koordinatenreferenzsystem-Information verwenden",
+            "value": "!crs-info-anchor"
+        },
+        {
+            "label": "Wert \"information\" als OnlineFunctionCode für WFS verwenden (GDI-DE-Konvention)",
+            "value": "wfs-information"
+        },
+        {
+            "label": "[Deaktivieren] Wert \"information\" als OnlineFunctionCode für WFS verwenden (GDI-DE-Konvention)",
+            "value": "!wfs-information"
+        },
+        {
+            "label": "[Deaktivieren] gmx:Anchor-Element für SpatialDataServiceCategory-Schlüsselwort verwenden",
+            "value": "!service-types-keyword-anchor"
+        },
+        {
+            "label": "MD_Identifier-Code für operatesOn verwenden (GDI-DE-Konvention)",
+            "value": "operates-on-use-mdidentifier"
+        },
+        {
+            "label": "[Deaktivieren] MD_Identifier-Code für operatesOn verwenden (GDI-DE-Konvention)",
+            "value": "!operates-on-use-mdidentifier"
+        },
+        {
+            "label": "Konventionen der GDI-DE (beinhaltet mehrere andere Profil-Konfigurationen)",
+            "value": "gdi-de"
+        }
+    ],
+    "schema": null,
+    "defaultValue": null,
+    "autofillRule": null,
+    "visibility": true,
+    "editable": true,
+    "targets": {
+        "bsp": "md-service.profiles"
+    }
+}
 ```
