@@ -2993,6 +2993,33 @@ JSON values can be added to string fields in the metadata editor. The JSON value
                        "value": "{\"id\":\"geoNutz/20130319\",\"name\":\"Nutzungsbestimmungen für die Bereitstellung von Geo-daten des Bundes\",\"url\":\"https://sg.geodatenzent-rum.de/web_public/gdz/lizenz/geonutzv.pdf\",\"quelle\":\"Quelle: © GeoBasis-DE / BKG (Jahr des letzten Datenbezugs)\"}"
                    }
 
+### Adding thesaurus keywords
+
+Adding thesaurus keywords to the metadata can be done by defining an `autofillRule` or `defaultValue` in the theme's metadata configuration. The autofill rule can be added as a JSON string with special characters escaped. After running the autofill workflow for a related dataset, it might be necessary to refresh the web page to see the string displayed in the respective fields in the UI. The same approach can be used for `defaultValue`.
+
+```json
+{
+      "name": "md-dataset.identification.keyword_thesaurus",
+      "required": false,
+      "minOccurs": 0,
+      "maxOccurs": -1,
+      "comment": "keyword_thesaurus",
+      "label": "Suchbegriffe Thesaurus",
+      "description": "Begriffe, unter denen der Datensatz gefunden werden soll.",
+      "type": "string",
+      "schema": null,
+      "defaultValue": null,
+      "autofillRule": "{ \"date\": \"2023-09-27\", \"datetype\": \"publication\", \"keywords\": [{\"keyword\": \"Erdbeobachtung und Umwelt\", \"keywordLink\": \"http://data.europa.eu/bna/c_dd313021\"}], \"title\": \"High-value dataset categories\", \"url\": \"http://data.europa.eu/bna/asd487ae75\"}",
+      "visibility": true,
+      "editable": true,
+      "targets": {
+         "bsp": "md-dataset.identification.keyword_thesaurus"
+      }
+}
+```
+
+In case that multiple keywords need to be defined, the notation requires square brackets around the JSON strings (see [Adding multiple autofill rules for one metadata field](#adding-multiple-autofill-rules-for-one-metadata-field)).
+
 ### Metadata configured to use one or more profiles
 
 hale»connect metadata profiles provide options for adding and removing additional metadata elements in the hale»connect auto-generated metadata. Metadata profiles are available in the dataset and service metadata configurations, as some options affect both dataset and service metadata. Metadata profiles are not mandatory and more than one metadata profile can be applied. The metadata elements that can be added to metadata are described below:

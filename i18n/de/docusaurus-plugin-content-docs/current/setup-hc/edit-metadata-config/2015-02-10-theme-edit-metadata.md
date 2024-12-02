@@ -2993,6 +2993,33 @@ JSON-Werte können im Metadaten-Editor zu String-Feldern hinzugefügt werden. Di
                          "value": "{\"id\":\"geoNutz/20130319\",\"name\":\"Nutzungsbestimmungen für die Bereitstellung von Geo-daten des Bundes\",\"url\":\"https://sg.geodatenzent-rum.de/web_public/gdz/lizenz/geonutzv.pdf\",\"quelle\":\"Quelle: © GeoBasis-DE / BKG (Jahr des letzten Datenbezugs)\"}"
                      }
 
+### Hinzufügen von Schlüsselwörtern mit Thesaurusangabe
+
+Schlüsselwörter mit Angabe eines Thesaurus können den Metadaten zugefügt werden, indem eine entsprechende Autofill-Regel (`autofillRule`) oder ein Default-Wert (`defaultValue`) in der Metadaten-Konfiguration des Themas definiert wird. Die Regel kann in Form eines JSON-Strings hinzugefügt werden, wobei Sonderzeichen mit einen Backslash (`\`) maskiert werden müssen. Nach Ausführen des Autofill-Workflows für einen zugehörigen Datensatz muss eventuell die Seite im Browser neu geladen werden, damit die Änderungen in der Oberfläche sichtbar sind. Das Vorgehen kann analog auch für `defaultValue` angewendet werden.
+
+```json
+{
+      "name": "md-dataset.identification.keyword_thesaurus",
+      "required": false,
+      "minOccurs": 0,
+      "maxOccurs": -1,
+      "comment": "keyword_thesaurus",
+      "label": "Suchbegriffe Thesaurus",
+      "description": "Begriffe, unter denen der Datensatz gefunden werden soll.",
+      "type": "string",
+      "schema": null,
+      "defaultValue": null,
+      "autofillRule": "{ \"date\": \"2023-09-27\", \"datetype\": \"publication\", \"keywords\": [{\"keyword\": \"Erdbeobachtung und Umwelt\", \"keywordLink\": \"http://data.europa.eu/bna/c_dd313021\"}], \"title\": \"High-value dataset categories\", \"url\": \"http://data.europa.eu/bna/asd487ae75\"}",
+      "visibility": true,
+      "editable": true,
+      "targets": {
+         "bsp": "md-dataset.identification.keyword_thesaurus"
+      }
+}
+```
+
+Für den Fall, dass mehrere Schlüsselwörter definiert werden sollen, müssen eckige Klammern um die JSON-Strings gesetzt werden (siehe [Hinzufügen mehrerer Autofill-Regeln für ein Metadatenfeld](#hinzuf%C3%BCgen-mehrerer-autofill-regeln-f%C3%BCr-ein-metadatenfeld)).
+
 ### Metadaten, die für die Verwendung eines oder mehrerer Profile konfiguriert sind
 
 hale»connect-Metadatenprofile bieten Optionen für das Hinzufügen und Entfernen zusätzlicher Metadatenelemente in den von hale»connect automatisch generierten Metadaten. Metadatenprofile sind in den Konfigurationen für Datensatz- und Dienst-Metadaten verfügbar, da einige Optionen sowohl Datensatz- als auch Dienst-Metadaten betreffen. Metadatenprofile sind nicht obligatorisch, und es kann mehr als ein Metadatenprofil angewendet werden. Die Metadatenelemente, die zu Metadaten hinzugefügt werden können, werden im Folgenden beschrieben:
