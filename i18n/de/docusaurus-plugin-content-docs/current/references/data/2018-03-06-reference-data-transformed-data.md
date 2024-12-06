@@ -9,14 +9,14 @@ sidebar_position: 8
 
 ---
 
-Im &laquo;Abgeleitete Daten&raquo;-Bereich werden die Transformations-Projekte angezeigt, die mit dem ausgewählten Datensatz verbunden sind. Klicken sie auf den Namen des Transformations-Projektes oder das Pfeilsymbol um grundlegende Eigenschaften und den aktuellen Status der Transformation angezeigt zu bekommen.
+Der Bereich Transformierte Daten zeigt die Transformationsprojekte an, die mit diesem Datensatz verbunden sind. Klicken Sie auf den Projektnamen, um allgemeine Eigenschaften und den aktuellen Status der Transformation anzuzeigen.
 
-Klicken sie unter &laquo;Projekt&raquo; auf den Namen des Transformations-Projektes, um die Eigenschaften des Projektes zu bearbeiten.
+<img src={require("/images/help/de/dataset_transformed_data.png").default} alt="" title="The Transformed data section " className="img-responsive img-inline-help"/>
 
-Klicken sie auf den Namen des Datensatzes unter &laquo;Ziel-Datensatz&raquo; um die Eigenschaten des Datensatzes zu bearbeiten.Klicken sie auf das Pfeilsymbol um die transformierten Daten herunterzuladen.
+Die Seite enthält Links zum Transformationsprojekt und zum transformierten Datensatz ("Ziel-Datensatz"). Das Ergebnis des letzten Transformationslaufs wird im unteren Bereich angezeigt, zusammen mit einem Link zur Anzeige der Protokollausgabe des Transformationslaufs. Die Tabelle "Transformierte Typen" listet die Anzahl der Vorkommen jedes Typs in den Quelldaten und die Anzahl der Vorkommen jedes Typs in den Zieldaten auf.
 
-Unter &laquo;Letztes Transformations-Ergebnis&raquo; können sie den Status, den Startzeitpunkt, den Abschlusszeitpunkt und die Dauer der Transformation einsehen.
+Falls das Transformationsprojekt Projektvariablen enthält, können im Abschnitt "Projektvariablen" die zu verwendenden Werte gesetzt werden, so dass nachfolgende Transformationsläufe (die über die Schaltfläche "Transformation starten" ausgelöst werden können) diese Werte verwenden.
 
-Klicken sie &laquo;Protokoll&raquo; um eine Zusammenfassung der durchgeführten Schritte im Transformations-Prozess anzeigen zu lassen.
+Durch Anklicken der Schaltfläche neben den Eingabefeldern kann ein Autofill-Assistent geöffnet werden. Mit diesem Assistenten können spezielle Platzhalter in die Eingabefelder für Projektvariablen eingefügt werden, die vor der Übergabe an die Transformation durch ihren tatsächlichen Wert ersetzt werden. Beispielsweise kann der Platzhalter `{{dataset.name}}` verwendet werden, um den Namen des Datensatzes an die Transformation zu übergeben.
 
-Die Tabelle &laquo;Transformierte Typen&raquo; enthält die Anzahl der Instanzen aller im Quell-Datensatz und im Ziel-Datensatz vorkommenden Objektarten.
+Ein weiteres praktisches Beispiel für diese Funktion ist die Übergabe des Platzhalters für die Datensatz-ID `{{dataset.id}}` an die Projektvariable `DATASET_ID` einer XPlanung-nach-INSPIRE-Transformation, die zur Erzeugung eindeutiger Bezeichner für `OfficialDocumentation`-Elemente verwendet wird, wenn die Projektvariable `FORCE_UNIQUE_OFFICIALDOCUMENTATION_ID` auf `true` gesetzt ist.
