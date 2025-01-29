@@ -152,7 +152,7 @@ If you’ve selected «Later», proceed to set up when exactly the transformatio
 
 **Step 5: Configure a target theme**
 
-In this step, we will configure the provision of INSPIRE-compliant view and download services. The target theme defines how your transformed, INSPIRE GML is published. Themes enable you to choose the types of webservices which are offered (WFS, Predefined dataset, WMS), the spatial reference systems of services and much more. Let's take a look at some of the options now.
+In this step, we will configure the provision of INSPIRE-compliant view and download services. The target theme defines how your transformed, INSPIRE GML is published. Themes enable you to choose the types of webservices which are offered (WFS, Predefined dataset, WMS, OGC-API), the spatial reference systems of services and much more. Let's take a look at some of the options now.
 
 First, navigate to the theme you created during schema creation in Step 3.
 
@@ -172,6 +172,7 @@ Now let's take a look at the Download service settings.
 * Click the section named Download services <img src={require("/images/help/en/Tutorial_download_services.png").default} alt="" title="Configuring download services" className="img-responsive img-inline-help"/>
 * Click the “+” button under Predefined Dataset to add an additional service type
     * Select WFS from the dropdown menu. Now the download services will be available as both an ATOM feed (Predefined dataset) and as WFS.
+    * Select OGC-API from the dropdown menu. Now the download services will be available as both an ATOM feed (Predefined dataset) and as OGC-API.
 * Click the “+” button under Shapefile 1.0 to add an additional data format
     * Select GML from the dropdown menu. Now the Predefined dataset will offer both shapefile and GML download options. The downloads will be available in each of the spatial reference systems you configure in the Download service settings.
 
