@@ -11,7 +11,7 @@ sidebar_position: 4
 
 The Download services section displays several configuration options for your published download services.
 
-Select the service type of your download services. Currently, the supported download service types are Predefined Dataset, WFS, and OGC-API. Click the “+” button to add an additional service type. To remove a service type, click the red “-” sign next to the service. Please note that WFS published via hale»connect return a maximum of 1000 objects per GetFeature request.
+Select the service type of your download services. Currently, the supported download service types are Predefined Dataset, WFS, and OGC API - Features. Click the “+” button to add an additional service type. To remove a service type, click the red “-” sign next to the service. Please note that WFS published via hale»connect return a maximum of 1000 objects per GetFeature request.
 
 Select the file formats that your download services support. Currently, Shapefile and GML are supported. Click the “+” button to add an additional, supported file format. To remove a file format, click the red “-” sign next to the format.
 
