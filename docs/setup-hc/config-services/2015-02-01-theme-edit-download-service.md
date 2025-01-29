@@ -8,7 +8,7 @@ language: en
 
 ---
 
-As for View Services, all data sets linked to a theme share a common configuration for the creation of download services, such as OGC Web Feature Services or INSPIRE Predefined Dataset Download Services. In the Download Service configuration, you can adjust aspects such as the type of service and the supported file formats and coordinate reference systems.
+As for View Services, all data sets linked to a theme share a common configuration for the creation of download services, such as OGC Web Feature Services, INSPIRE Predefined Dataset Download Services, or OGC-API Download Services. In the Download Service configuration, you can adjust aspects such as the type of service and the supported file formats and coordinate reference systems.
 
 To edit this configuration, follow these steps as a logged in theme manager or organisation superuser:
 

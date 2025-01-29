@@ -171,6 +171,7 @@ Als nächstes erfolgt die Konfiguration der Download-Dienst-Einstellungen.
 * Klicken sie auf den Bereich namens &laquo;Download-Dienste&raquo;. <img src={require("/images/help/de/Tutorial_download_services.png").default} alt="" title="Download-Dienste konfigurieren" className="img-responsive img-inline-help"/>
 * Klicken sie auf den “+”-Knopf unter &laquo;Predefined Dataset&raquo; um einen zusätzlichen Dienste-Typ hinzuzufügen.
     * Wählen sie &laquo;WFS&raquo; aus dem Aufklappmenü aus. Die Download-Dienste werden dann sowohl als ATOM feed (Predefined Dataset) als auch in Form eines WFS bereitstehen.
+    * Wählen Sie &laquo;OGC-API&raquo; aus dem Aufklappmenü aus. Die Download-Dienste werden dann sowohl als ATOM feed (Predefined Dataset) als auch in Form eienr OGC-API bereitstehen.
 * Klicken sie auf den “+”-Knopf unter &laquo;Shapefile 1.0&raquo; um ein zusätzliches Datenformat hinzuzufügen.
     * Wählen sie &laquo;GML&raquo; aus dem Aufklappmenü aus. Das Predefined Dataset kann nun als Shape-Datei oder als GML-Datei heruntergeladen werden. Die Downloads werden in allen Koordinatenreferenzsystemen zur Verfügung stehen, die sie in den Download-Service-Einstellungen angeben.
 
