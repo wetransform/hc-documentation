@@ -172,7 +172,7 @@ Now let's take a look at the Download service settings.
 * Click the section named Download services <img src={require("/images/help/en/Tutorial_download_services.png").default} alt="" title="Configuring download services" className="img-responsive img-inline-help"/>
 * Click the “+” button under Predefined Dataset to add an additional service type
     * Select WFS from the dropdown menu. Now the download services will be available as both an ATOM feed (Predefined dataset) and as WFS.
-    * Select OGC API - Features from the dropdown menu. Now the download services will be available as both an ATOM feed (Predefined dataset) and as OGC API - Features.
+    * Select OGC API Features from the dropdown menu. Now the download services will be available as both an ATOM feed (Predefined dataset) and as OGC API - Features.
 * Click the “+” button under Shapefile 1.0 to add an additional data format
     * Select GML from the dropdown menu. Now the Predefined dataset will offer both shapefile and GML download options. The downloads will be available in each of the spatial reference systems you configure in the Download service settings.
 
