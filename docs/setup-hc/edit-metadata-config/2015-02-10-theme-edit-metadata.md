@@ -116,7 +116,7 @@ The available paths for the `name` and `target` fields and the mappings to their
 | `northBoundLatitude` | `/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:northBoundLatitude/gco:Decimal` |
 | `southBoundLatitude` | `/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox/gmd:southBoundLatitude/gco:Decimal` |
 
-| md&#8209;dataset.identification.<br/>contactForResource.* | XPath to metadata element |
+| md&#8209;dataset.identification.<br/>contactForResource.\* <br/>md&#8209;dataset.identification.<br/>contactForResource2.\* | XPath to metadata element |
 |-------------|---------------------------|
 | `individualName` | `/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:individualName/gco:CharacterString` |
 | `authorityUrl` | `/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource/gmd:CI_OnlineResource/gmd:linkage/gmd:URL` |
@@ -143,7 +143,7 @@ The available paths for the `name` and `target` fields and the mappings to their
 | `beginPosition` | `/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition` |
 | `endPosition` | `/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition` |
 
-| md&#8209;dataset.contactForMetadata.* | XPath to metadata element |
+| md&#8209;dataset.contactForMetadata.\* <br/>md&#8209;dataset.contactForMetadata2.\* | XPath to metadata element |
 |-------------|---------------------------|
 | `administrativeArea` | `/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:administrativeArea/gco:CharacterString` |
 | `authorityUrl`  | `/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:onlineResource/gmd:CI_OnlineResource/gmd:linkage/gmd:URL` |
@@ -158,6 +158,7 @@ The available paths for the `name` and `target` fields and the mappings to their
 | `postalCode` | `/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:postalCode/gco:CharacterString` |
 | `roleCode` | `/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode` |
 | `voicePhone` | `/gmd:MD_Metadata/gmd:contact/gmd:CI_ResponsibleParty/gmd:contactInfo/gmd:CI_Contact/gmd:phone/gmd:CI_Telephone/gmd:voice/gco:CharacterString` |
+
 
 </details>
 
@@ -3130,3 +3131,1209 @@ Metadata profiles can also be viewed and selected in the JSON metadata editor in
       }
    }
 ```
+
+
+
+### Adding a second contact to the metadata
+You can add second contacts for the dataset and the services.
+For datasets, you can add a second contact for the dataset metadata and the dataset.
+For services, you can add a second contact for the service metadata and the service.
+To add a second contact to the metadata, extend the metadata configuration by inserting the respective JSON entries for the desired kinds of second contact.
+
+:::caution 
+
+When adding a second contact, the fields `Namespace (Authority URL)`, `Organisation Name`, and `Email` are not displayed as required anymore. However, they must still be filled in to avoid publication errors.
+
+:::
+
+:::caution 
+
+You can only add *exactly one additional* contact per contact kind. Inserting the JSON contents for the same contact kind multiple times will not work.
+
+:::
+
+For adding a second contact for the dataset metadata, paste the following into the metadata editor of the dataset metadata under the contents with `categoryName` `dataset_contactForMetadata`.
+
+<details>
+<summary>Adding a second contact for the metadata</summary>
+
+```json
+{
+        "categoryName": "dataset_contactForMetadata2",
+        "title": "Data set - Second contact for metadata",
+        "name": "dataset_contactForMetadata2",
+        "expand": false,
+        "fields": [
+            {
+                "name": "md-dataset.contactForMetadata2.individualName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - individualName",
+                "label": "Name",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.individualName"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.authorityUrl",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "authorityUrl für INSPIRE-Extended-Capabilities",
+                "label": "Namespace (Authority URL)",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.authorityUrl"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.organisationName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - organisationName",
+                "label": "Organisation Name",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.organisationName"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.positionName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "positionName",
+                "label": "Position",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.positionName"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.roleCode",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "roleCode",
+                "label": "Role",
+                "description": null,
+                "type": "enum",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "enumValues": [
+                    {
+                        "label": "author",
+                        "value": "author"
+                    },
+                    {
+                        "label": "custodian",
+                        "value": "custodian"
+                    },
+                    {
+                        "label": "distributor",
+                        "value": "distributor"
+                    },
+                    {
+                        "label": "originator",
+                        "value": "originator"
+                    },
+                    {
+                        "label": "owner",
+                        "value": "owner"
+                    },
+                    {
+                        "label": "pointOfContact",
+                        "value": "pointOfContact"
+                    },
+                    {
+                        "label": "principalInvestigator",
+                        "value": "principalInvestigator"
+                    },
+                    {
+                        "label": "processor",
+                        "value": "processor"
+                    },
+                    {
+                        "label": "publisher",
+                        "value": "publisher"
+                    },
+                    {
+                        "label": "resourceProvider",
+                        "value": "resourceProvider"
+                    },
+                    {
+                        "label": "user",
+                        "value": "user"
+                    }
+                ],
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.roleCode"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.email",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "email",
+                "label": "Email",
+                "description": null,
+                "type": "string",
+                "schema": "email",
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.email"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.deliveryPoint",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 deliveryPoint",
+                "label": "Street",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.deliveryPoint"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.postalCode",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - postalcode",
+                "label": "Post code",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.postalCode"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.city",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2##382 city",
+                "label": "City",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.city"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.administrativeArea",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2##383 administrativeArea",
+                "label": "Administrative Area",
+                "description": "",
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.administrativeArea"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.country",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "country",
+                "label": "Country",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.country"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.voicePhone",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.3 - voicePhone",
+                "label": "Phone",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.voicePhone"
+                }
+            },
+            {
+                "name": "md-dataset.contactForMetadata2.facsimile",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 facsimile",
+                "label": "Facsimile",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.contactForMetadata2.facsimile"
+                }
+            }
+        ]
+    },
+```
+</details>
+
+For adding a second contact for the dataset, paste the following into the metadata editor of the dataset metadata under the contents with `categoryName` `dataset_contactForResource`.
+<details>
+<summary>Adding a second contact for the dataset</summary>
+
+```json
+{
+        "categoryName": "dataset_contactForResource2",
+        "title": "Data set - Second contact for Data set",
+        "name": "dataset_contactForResource2",
+        "expand": false,
+        "fields": [
+            {
+                "name": "md-dataset.identification.contactForResource2.individualName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - individualName",
+                "label": "Name",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.individualName"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.authorityUrl",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "authorityUrl für INSPIRE-Extended-Capabilities",
+                "label": "Namespace (Authority URL)",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.authorityUrl"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.organisationName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - organisationName",
+                "label": "Organisation name",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.organisationName"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.positionName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "positionName",
+                "label": "Position",
+                "description": "Position or function of the responsible person",
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.positionName"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.roleCode",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "roleCode",
+                "label": "Role",
+                "description": null,
+                "type": "enum",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "enumValues": [
+                    {
+                        "label": "author",
+                        "value": "author"
+                    },
+                    {
+                        "label": "custodian",
+                        "value": "custodian"
+                    },
+                    {
+                        "label": "distributor",
+                        "value": "distributor"
+                    },
+                    {
+                        "label": "originator",
+                        "value": "originator"
+                    },
+                    {
+                        "label": "owner",
+                        "value": "owner"
+                    },
+                    {
+                        "label": "pointOfContact",
+                        "value": "pointOfContact"
+                    },
+                    {
+                        "label": "principalInvestigator",
+                        "value": "principalInvestigator"
+                    },
+                    {
+                        "label": "processor",
+                        "value": "processor"
+                    },
+                    {
+                        "label": "publisher",
+                        "value": "publisher"
+                    },
+                    {
+                        "label": "resourceProvider",
+                        "value": "resourceProvider"
+                    },
+                    {
+                        "label": "user",
+                        "value": "user"
+                    }
+                ],
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.roleCode"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.email",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "email",
+                "label": "Email",
+                "description": null,
+                "type": "string",
+                "schema": "email",
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.email"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.deliveryPoint",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 deliveryPoint",
+                "label": "Street",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.deliveryPoint"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.postalCode",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - postalcode",
+                "label": "Postal code",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.postalCode"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.city",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2##382 city",
+                "label": "City",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.city"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.administrativeArea",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2##383 administrativeArea",
+                "label": "Administrative Area",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.administrativeArea"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.country",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "country",
+                "label": "Country",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.country"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.voicePhone",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.3 - voicePhone",
+                "label": "Phone",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.voicePhone"
+                }
+            },
+            {
+                "name": "md-dataset.identification.contactForResource2.facsimile",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 facsimile",
+                "label": "Facsimile",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-dataset.identification.contactForResource2.facsimile"
+                }
+            }
+        ]
+    },
+```
+</details>
+
+For adding a second contact for the service metadata, paste the following into the metadata editor of the service metadata under the contents with `categoryName` `service_contactForMetadata`.
+<details>
+<summary>Adding a second contact for the service metadata</summary>
+
+```json
+{
+        "categoryName": "service_contactForMetadata2",
+        "title": "Services - Second contact for metadata",
+        "name": "service_contactForMetadata2",
+        "expand": false,
+        "fields": [
+            {
+                "name": "md-service.contactForMetadata2.individualName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - individualName",
+                "label": "Name",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.individualName"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.authorityUrl",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "authorityUrl für INSPIRE-Extended-Capabilities",
+                "label": "Namespace (Authority URL)",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.authorityUrl"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.organisationName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - organisationName",
+                "label": "Organisation Name",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.organisationName"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.positionName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "positionName",
+                "label": "Position",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.positionName"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.roleCode",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "roleCode",
+                "label": "Role",
+                "description": null,
+                "type": "enum",
+                "schema": null,
+                "defaultValue": "pointOfContact",
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "enumValues": [
+                    {
+                        "label": "author",
+                        "value": "author"
+                    },
+                    {
+                        "label": "custodian",
+                        "value": "custodian"
+                    },
+                    {
+                        "label": "distributor",
+                        "value": "distributor"
+                    },
+                    {
+                        "label": "originator",
+                        "value": "originator"
+                    },
+                    {
+                        "label": "owner",
+                        "value": "owner"
+                    },
+                    {
+                        "label": "pointOfContact",
+                        "value": "pointOfContact"
+                    },
+                    {
+                        "label": "principalInvestigator",
+                        "value": "principalInvestigator"
+                    },
+                    {
+                        "label": "processor",
+                        "value": "processor"
+                    },
+                    {
+                        "label": "publisher",
+                        "value": "publisher"
+                    },
+                    {
+                        "label": "resourceProvider",
+                        "value": "resourceProvider"
+                    },
+                    {
+                        "label": "user",
+                        "value": "user"
+                    }
+                ],
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.roleCode"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.email",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "email",
+                "label": "Email",
+                "description": null,
+                "type": "string",
+                "schema": "email",
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.email"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.deliveryPoint",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 deliveryPoint",
+                "label": "Street",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.deliveryPoint"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.postalCode",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - postalcode",
+                "label": "Postal Code",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.postalCode"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.city",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2##382 city",
+                "label": "City",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.city"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.administrativeArea",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2##383 administrativeArea",
+                "label": "Administrative Area",
+                "description": "",
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.administrativeArea"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.country",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "country",
+                "label": "Country",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.country"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.voicePhone",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.3 - voicePhone",
+                "label": "Phone",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.voicePhone"
+                }
+            },
+            {
+                "name": "md-service.contactForMetadata2.facsimile",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 facsimile",
+                "label": "Facsimile",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.contactForMetadata2.facsimile"
+                }
+            }
+        ]
+    },
+```
+</details>
+
+For adding a second contact for the service, paste the following into the metadata editor of the service metadata under the contents with `categoryName` `service_contactForResource`.
+<details>
+<summary>Adding a second contact for the service</summary>
+
+```json
+{
+        "categoryName": "service_contactForResource2",
+        "title": "Services - Second contact for service",
+        "name": "service_contactForResource2",
+        "expand": false,
+        "fields": [
+            {
+                "name": "md-service.identification.contactForResource2.individualName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - individualName",
+                "label": "Name",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.individualName"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.authorityUrl",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "authorityUrl für INSPIRE-Extended-Capabilities",
+                "label": "Namespace (Authority URL)",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.authorityUrl"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.organisationName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - organisationName",
+                "label": "Organisation Name",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.organisationName"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.positionName",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "positionName",
+                "label": "Position",
+                "description": "Position or function of the responsible person",
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.positionName"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.roleCode",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "roleCode",
+                "label": "Role",
+                "description": null,
+                "type": "enum",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "enumValues": [
+                    {
+                        "label": "author",
+                        "value": "author"
+                    },
+                    {
+                        "label": "custodian",
+                        "value": "custodian"
+                    },
+                    {
+                        "label": "distributor",
+                        "value": "distributor"
+                    },
+                    {
+                        "label": "originator",
+                        "value": "originator"
+                    },
+                    {
+                        "label": "owner",
+                        "value": "owner"
+                    },
+                    {
+                        "label": "pointOfContact",
+                        "value": "pointOfContact"
+                    },
+                    {
+                        "label": "principalInvestigator",
+                        "value": "principalInvestigator"
+                    },
+                    {
+                        "label": "processor",
+                        "value": "processor"
+                    },
+                    {
+                        "label": "publisher",
+                        "value": "publisher"
+                    },
+                    {
+                        "label": "resourceProvider",
+                        "value": "resourceProvider"
+                    },
+                    {
+                        "label": "user",
+                        "value": "user"
+                    }
+                ],
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.roleCode"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.email",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "email",
+                "label": "Email",
+                "description": null,
+                "type": "string",
+                "schema": "email",
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.email"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.deliveryPoint",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 deliveryPoint",
+                "label": "Street",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.deliveryPoint"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.postalCode",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 - postalcode",
+                "label": "Postal Code",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.postalCode"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.city",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2##382 city",
+                "label": "City",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.city"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.administrativeArea",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2##383 administrativeArea",
+                "label": "Administrative Area",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.administrativeArea"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.country",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "country",
+                "label": "Country",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.country"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.voicePhone",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.3 - voicePhone",
+                "label": "Phone",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.voicePhone"
+                }
+            },
+            {
+                "name": "md-service.identification.contactForResource2.facsimile",
+                "required": false,
+                "minOccurs": 0,
+                "maxOccurs": 1,
+                "comment": "ISO B.3.2.2 facsimile",
+                "label": "Facsimile",
+                "description": null,
+                "type": "string",
+                "schema": null,
+                "defaultValue": null,
+                "autofillRule": null,
+                "visibility": true,
+                "editable": true,
+                "targets": {
+                    "bsp": "md-service.identification.contactForResource2.facsimile"
+                }
+            }
+        ]
+    },
+```
+</details>
+
