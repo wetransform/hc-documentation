@@ -1,4 +1,4 @@
-name: Build
+name: Build and deploy to staging environment
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
 
 jobs:
 
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -21,3 +21,21 @@ jobs:
         run: |
           npm ci
           npm run build
+
+      - name: Prepare SSH key and known hosts
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy 🚀
+        run: |
+          rsync -rSlh --stats --delete build/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_WEBPATH }}/${{ github.event.number }}
+
+      - name: Add comment to PR
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          message: |
+            The output of the build is available at http://staging.docs.wetransform.eu/pr/${{ github.event.number }}
+          comment-tag: staging-url
