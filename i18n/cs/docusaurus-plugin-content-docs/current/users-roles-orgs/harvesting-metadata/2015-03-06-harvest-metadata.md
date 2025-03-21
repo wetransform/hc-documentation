@@ -10,14 +10,17 @@ language: cs
 
 Zajišťujeme koncový bod shromažďování pro katalogové služby, které chtějí shromažďovat metadata z platformy haleconnect. URL adresu shromažďování lze vytvořit pomocí následujícího vzoru:
 
+```
     https://haleconnect.com/services/bsp/metadata/org/<your org num>
+```
 
 Katalogové služby získávají soubor zip obsahující veškerá metadata pro organizaci z URL adresy pro shromažďování.
 
 Jako správce systému máte přístup na stránku s náhledem zobrazujícím metadata, která jsou dostupná z koncového bodu shromažďování. Webovou adresu stránky s ukázkou shromažďování lze vytvořit pomocí následujícího vzoru:
 
+```
     https://haleconnect.com/services/bsp/metadata/org/<your org num>?preview=true
-
+```
 
 :::caution
 
@@ -29,7 +32,9 @@ Stránka Harvest-Preview zobrazuje URL adresu shromažďování, URL adresu str�
 
 Chcete-li například filtrovat klíčové slovo „infoFeatureAccessService“, vytvořte následující URL adresu:
 
+```
     https://haleconnect.com/services/bsp/metadata/org/1?preview=true&keywords=infoFeatureAccessService
+```
 
 Stránka Harvest-Preview uvádí zdroje metadat v tabulkovém formátu ve spodní části stránky. Zdroje metadat jsou uvedeny v řádcích s následujícími sloupci:
 

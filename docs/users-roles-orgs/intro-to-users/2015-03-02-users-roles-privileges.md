@@ -45,6 +45,7 @@ When a user requests access to a resource or functionality of the system, at lea
 
 ### Example roles.json
 
+```json
     {
       "anonymous": {
         "resource": {
@@ -218,3 +219,4 @@ When a user requests access to a resource or functionality of the system, at lea
         }
       }
     }
+```

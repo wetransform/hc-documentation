@@ -99,23 +99,26 @@ The Metadata section contains configuration settings and an editable JSON text e
 
 Let's take a look at the list of fields in a category object, because that is what you have to configure.
 
-        {
-            "name": "md-dataset.citation.title",
-            "required": true,
-            "minOccurs": 1,
-            "maxOccurs": 1,
-            "comment": "ISO 3.2.1 #360",
-            "label": "Title",
-            "description": "name by which the cited resource is known",
-            "type": "string",
-            "schema": null,
-            "defaultValue": null,
-            "autofillRule": "{{dataset.name}}",
-            "visibility": true,
-            "editable": true,
-            "targets": {
-                "bsp": "md-dataset.citation.title"
-        }
+```json
+{
+  "name": "md-dataset.citation.title",
+  "required": true,
+  "minOccurs": 1,
+  "maxOccurs": 1,
+  "comment": "ISO 3.2.1 #360",
+  "label": "Title",
+  "description": "name by which the cited resource is known",
+  "type": "string",
+  "schema": null,
+  "defaultValue": null,
+  "autofillRule": "{{dataset.name}}",
+  "visibility": true,
+  "editable": true,
+  "targets": {
+    "bsp": "md-dataset.citation.title"
+  }
+}
+```
 
 It is important to understand that the internal mapping is based on the ```name``` field of each category object. Values entered in the ```name``` field are limited to the following values:
 

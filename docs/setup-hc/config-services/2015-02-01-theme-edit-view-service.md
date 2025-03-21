@@ -21,25 +21,28 @@ To edit this configuration, follow these steps as a logged in theme manager or o
 1.	Upload a Styled Layer Descriptor to define the cartographic configuration for the view service.
 The SLD must be a fully valid Styled Layer Descriptor file. The following is an example of how layers are defined in the WMS (name, description, style):
 
-    <StyledLayerDescriptor version="1.1.0" xmlns:usgovserv="http://inspire.ec.europa.eu/schemas/us-govserv/4.0" … >
-      <NamedLayer>
-        <se:Name>areas</se:Name>
-        <se:Description>
-          <se:Title>Bezirke</se:Title>
-          <se:Abstract></se:Abstract>
-        </se:Description>
-        <UserStyle>
-          <se:Name>US.GovernmentalService_1</se:Name>
-          <se:FeatureTypeStyle>
-            <se:FeatureTypeName>…:GovernmentalService</se:FeatureTypeName>
-            <se:Rule>
-              <se:PolygonSymbolizer>
-                <se:Name>symbolizer_Schulstandorte</se:Name>
-                <se:Geometry>
-                  <ogc:PropertyName>…:areaOfResponsibilityByPolygon
-                  </ogc:PropertyName>
-                </se:Geometry>
-                …
+```xml
+<StyledLayerDescriptor version="1.1.0" xmlns:usgovserv="http://inspire.ec.europa.eu/schemas/us-govserv/4.0" … >
+  <NamedLayer>
+    <se:Name>areas</se:Name>
+    <se:Description>
+      <se:Title>Bezirke</se:Title>
+      <se:Abstract></se:Abstract>
+    </se:Description>
+    <UserStyle>
+      <se:Name>US.GovernmentalService_1</se:Name>
+      <se:FeatureTypeStyle>
+        <se:FeatureTypeName>…:GovernmentalService</se:FeatureTypeName>
+        <se:Rule>
+          <se:PolygonSymbolizer>
+            <se:Name>symbolizer_Schulstandorte</se:Name>
+            <se:Geometry>
+              <ogc:PropertyName>…:areaOfResponsibilityByPolygon
+              </ogc:PropertyName>
+            </se:Geometry>
+            …
+```
+
 For more information about SLDs on hale»connect, visit the [SLD tutorial](../../tutorials/2018-05-03-sld-tutorial.md).
 
 1. Activate or deactivate additional raster layers from raster sources. The toggle enables users to upload and publish PNG or GeoTIFF raster data, in addition to vector data, during dataset creation. The raster data will be published in a separate raster layer.

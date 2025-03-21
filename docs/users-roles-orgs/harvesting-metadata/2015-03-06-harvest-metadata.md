@@ -10,13 +10,17 @@ language: en
 
 We provide a harvesting endpoint for catalogue services that want to harvest metadata from the haleconnect platform. The harvesting URL can be built using the following pattern:
 
+```
     https://haleconnect.com/services/bsp/metadata/org/<your org num>
+```
 
 Catalogue services retrieve a zip file containing all of the metadata for an organization from the harvesting URL.
 
 As a system administrator, you can access a preview page which displays the metadata that is accessible from the harvesting endpoint. The harvesting preview page URL can be built using the following pattern:
 
+```
     https://haleconnect.com/services/bsp/metadata/org/<your org num>?preview=true
+```
 
 :::caution
 
@@ -28,7 +32,9 @@ The Harvest-Preview page displays the harvesting URL, the preview page URL and t
 
 For example, to filter on the keyword 'infoFeatureAccessService', construct the following URL:
 
+```
     https://haleconnect.com/services/bsp/metadata/org/1?preview=true&keywords=infoFeatureAccessService
+```
 
 The Harvest-Preview page lists the metadata resources in tabular format at the bottom of the page. Metadata resources are listed in rows with the following columns:
 

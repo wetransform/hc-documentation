@@ -10,13 +10,17 @@ language: de
 
 Haleconnect stellt einen Knoten für Katalog-Dienste bereit, die Metadaten-Harvesting von der Plattform betreiben möchten. Die Harvesting-URL kann nach dem folgenden Muster gebildet werden:
 
+```
     https://haleconnect.com/services/bsp/metadata/org/<ihre org num>
+```
 
 Katalog-Dienste erhalten eine zip-Datei, die alle Metadaten für die Organisation aus der Harvesting-URL enthält.
 
 Als System-Administrator haben sie Zugang zu einer Vorschau-Seite, auf welcher die Metadaten dargestellt werden, die für den Harvesting-Knoten zugänglich sind. Die URL dieser Harvesting-Vorschau-Seite kann nach dem folgenden  Muster gebildet werden: 
 
+```
     https://haleconnect.com/services/bsp/metadata/org/<ihre org num>?preview=true
+```
 
 :::caution
 
@@ -28,7 +32,9 @@ Auf der Harvesting-Vorschau-Seite werden die Harvesting-URL, die URL der Harvest
 
 Um beispielsweise nach dem Schlüsselwort &laquo;infoFeatureAccessService&raquo; zu filtern, setzen sie die URL wie folgt zusammen:
 
+```
     https://haleconnect.com/services/bsp/metadata/org/1?preview=true&keywords=infoFeatureAccessService
+```
 
 Die Harvesting-Vorschau-Seite listet die Metadaten-Ressourcen am Ende der Seite in tabellarischer Form auf. Jede Metadaten-Ressource wird in einer Reihe mit den folgenden Spalten aufgeführt:
 

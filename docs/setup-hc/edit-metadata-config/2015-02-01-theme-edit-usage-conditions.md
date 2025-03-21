@@ -14,6 +14,7 @@ Such complex licenses can be used in the path „md-dataset.identification.const
 
 The license definition needs to be built using the following grammar:
 
+```
     ('constraint' '['
       ('useLimitation='<TEXT>)?
        (
@@ -29,6 +30,7 @@ The license definition needs to be built using the following grammar:
            ']'
        )*
     ']')*
+```
 
 Explanation of the syntax:
 

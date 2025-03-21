@@ -41,13 +41,17 @@ Ein SLD für ein Shapefile muss eine Namensraum-Definition enthalten, die auf da
 hale»connect sucht im SLD nach einem ```FeatureTypeName```-Element, das dann mit den Inhalten des hochgeladenen Datensatzes abgeglichen wird.
 Das ```FeatureTypeName```-Element muss zum ```FeatureTypeStyle```-Element hinzugefügt werden. Das Element muss das Shapefile-Namensraum-Präfix und den Namen des Shapefiles beinhalten:
 
+```xml
       <se:FeatureTypeName>ns:NameDesShapefiles</se:FeatureTypeName>
+```
 
 Das Shapefile-Namensraum-Präfix muss zu jeder Shapefile-Eigenschaft hinzugefügt werden, auf die verwiesen wird. Wenn sie beispielsweise das Shapefile-Attribut &laquo;name&raquo; verwenden möchten, um ihre Polygone zu beschriften, muss es mit dem Shapefile-Namensraum-Präfix ```ns``` versehen werden:
 
+```xml
       <se:Label>
           <ogc:PropertyName>ns:name/text()</ogc:PropertyName>
       </se:Label>
+```
 
 :::caution
 
@@ -59,13 +63,16 @@ Sie müssen '/text()' hinter der referenzierten Eigenschaft in TextSymbolizer La
 
 Namen und Titel für Layer können zu SLD-Dateien hinzugefügt werden. Dabei dürfen Layernamen keine Leerzeichen oder Doppelpunkte enthalten. Der von INSPIRE vorgesehene Layername für Schutzgebiete ist beispielsweise ```PS.ProtectedSite```. Layernamen können im Element NamedLayer.Name hinzugefügt werden.
 
+```xml
 	<NamedLayer>
 	    <se:Name>PS.ProtectedSite</se:Name> ...
 	    ...
 	</NamedLayer>
+```
 
 Der von INSPIRE vorgesehene Layertitel für Schutzgebiete ist ```Protected Sites```. Layertitel können im Element NamedLayer.Description.Title hinzugefügt werden.
 
+```xml
 	<NamedLayer>
 	    <se:Name>PS.ProtectedSite</se:Name>
 	    <se:Description>
@@ -73,20 +80,24 @@ Der von INSPIRE vorgesehene Layertitel für Schutzgebiete ist ```Protected Sites
 	    </se:Description>...
 	    ...
 	</NamedLayer>
+```
 
 Über Titel für Regeln wird der Text bestimmt, der in der Legende des WMS angezeigt wird. Titel für Regeln können im Element Rule.Description.Title angegeben werden.
 
+```xml
 	<se:Rule>
 	    <se:Description>
         <se:Title>protected sites: polygon</se:Title>
 	    </se:Description>...
         ...
 	</se:Rule>
+```
 
 Werfen wir nun einen Blick auf ein Beispiel für ein valides SLD, wie es auf hale»connect veröffentlicht werden kann.
 
 ***SLD für Shapefile***
 
+```xml
       <?xml version="1.0" encoding="UTF-8"?>
       <StyledLayerDescriptor
       version="1.1.0"  
@@ -151,16 +162,20 @@ Werfen wir nun einen Blick auf ein Beispiel für ein valides SLD, wie es auf hal
         </UserStyle>
       </NamedLayer>
     </StyledLayerDescriptor>
+```
 
 Das nächste Beispiel ist das INSPRE-Schutzgebiete-SLD. In diesem Beispiel wird auf das INSPIRE-Schutzgebiete-Schema unter ```xmlns:ps="http://inspire.ec.europa.eu/schemas/ps/4.0"``` verwiesen.
 
 hale»connect sucht in der SLD-Datei nach einem ```FeatureTypeName```-Element, dessen Inhalt gegen den hochgeladenen Datensatz geprüft wird.
 Das ```FeatureTypeName```-Element muss dem ```FeatureTypeStyle```-Element hinzugefügt werden. Das Element muss das INSPIRE-Schema-Namensraum-Präfix und den Namen der Objektart enthalten:
 
+```xml
     <se:FeatureTypeName>ps:ProtectedSite</se:FeatureTypeName>
+```
 
 Das Schema-Namensraum-Präfix muss jedem Attribut zugewiesen werden, auf das verwiesen wird. Wenn sie beispielsweise das Attribut &laquo;geometry&raquo; nutzen möchten, um ihre Objekte zu filtern, muss es das Namensraum-Präfix ```ps``` haben:
 
+```xml
         <ogc:Filter>
           <ogc:PropertyIsEqualTo>
             <ogc:Function name="IsCurve">
@@ -169,6 +184,7 @@ Das Schema-Namensraum-Präfix muss jedem Attribut zugewiesen werden, auf das ver
             <ogc:Literal>true</ogc:Literal>
           </ogc:PropertyIsEqualTo>
         </ogc:Filter>
+```
 
 In dem aufgeführten Filter-Beispiel wird die deegree-Funktion ```IsCurve``` genutzt um nach der Objekt-Geometrie zu filtern, sodass die Symbologie-Regeln nur auf linienhafte Objekte angewandt werden. Mehr Informationen zu deegree-Funktionen, welche die SLD-Spezifikation erweitern, finden sie in der [deegree Dokumentation](http://download.deegree.org/documentation/3.4.5/html/renderstyles.html#deegree-specific-extensions).
 
@@ -176,6 +192,7 @@ Im Folgenden finden sie ein Beispiel für eine valide INSPIRE-SLD-Datei, die auf
 
 ***SLD für GML***
 
+```xml
       <?xml version="1.0" encoding="UTF-8"?>
       <StyledLayerDescriptor
       version="1.1.0"  
@@ -283,3 +300,4 @@ Im Folgenden finden sie ein Beispiel für eine valide INSPIRE-SLD-Datei, die auf
           </UserStyle>
         </NamedLayer>
       </StyledLayerDescriptor>
+```

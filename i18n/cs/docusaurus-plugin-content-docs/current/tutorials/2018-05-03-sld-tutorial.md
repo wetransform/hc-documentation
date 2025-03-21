@@ -41,13 +41,17 @@ SLD pro soubor shapefile musí obsahovat deklaraci jmenného prostoru odkazujíc
 hale»connect hledá v SLD atribut ```FeatureTypeName```, který používá pro porovnávání s nahranou datovou sadou.
 Atribut ```FeatureTypeName``` je třeba přidat do prvku ```FeatureTypeStyle```. Atribut musí obsahovat předponu jmenného prostoru shapefile a název souboru shapefile:
 
+```xml
       <se:FeatureTypeName>ns:nameOfShapefile</se:FeatureTypeName>
+```
 
 Předpona jmenného prostoru souboru shapefile se musí přidat do každé vlastnosti souboru shapefile, na kterou se odkazuje. Například chcete-li k označení vašich polygonů použít atribut shapefile 'name', musí mít předponu jmenného prostoru shapefile ```ns```:
 
+```xml
       <se:Label>
           <ogc:PropertyName>ns:name/text()</ogc:PropertyName>
       </se:Label>
+```
 
 :::caution
 
@@ -59,13 +63,16 @@ You must add '/text()' after the referenced property in TextSymbolizer Label tag
 
 Do SLD lze přidat názvy vrstev a názvy vrstev. Názvy vrstev nemohou obsahovat mezery. Název vrstvy INSPIRE pro typ funkce Chráněné lokality je ```PS.ProtectedSite```. Názvy vrstev lze přidat do prvku NamedLayer.Name element:
 
+```xml
 	<NamedLayer>
 	    <se:Name>PS.ProtectedSite</se:Name> ...
 	    ...
 	</NamedLayer>
+```
 
 Název vrstvy INSPIRE pro typ funkce Chráněné lokality je ```Chráněné lokality```. Názvy vrstev lze přidat do prvku NamedLayer.Description.Title element:
 
+```xml
 	<NamedLayer>
 	    <se:Name>PS.ProtectedSite</se:Name>
 	    <se:Description>
@@ -73,20 +80,24 @@ Název vrstvy INSPIRE pro typ funkce Chráněné lokality je ```Chráněné loka
 	    </se:Description>...
 	    ...
 	</NamedLayer>
+```
 
 Názvy pravidel řídí text zobrazený v legendě WMS. Názvy pravidel lze přidat do prvku Rule.Description.Title element:
 
+```xml
 	<se:Rule>
 	    <se:Description>
         <se:Title>protected sites: polygon</se:Title>
 	    </se:Description>...
         ...
 	</se:Rule>
+```
 
 Nyní se podívejme na příklad plně platného souboru SLD, který lze publikovat na hale»connect.
 
 ***SLD pro shapefile***
 
+```xml
       <?xml version="1.0" encoding="UTF-8"?>
       <StyledLayerDescriptor
       version="1.1.0"  
@@ -151,16 +162,20 @@ Nyní se podívejme na příklad plně platného souboru SLD, který lze publiko
         </UserStyle>
       </NamedLayer>
     </StyledLayerDescriptor>
+```
 
 Dalším příkladem jsou Chráněná území INSPIRE SLD. V tomto příkladu je schéma chráněných lokalit INSPIRE deklarováno jako ```xmlns:ps="http://inspire.ec.europa.eu/schemas/ps/4.0"```
 
 hale»connect hledá v SLD atribut ```FeatureTypeName```, který používá pro porovnávání s nahranou datovou sadou.
 Atribut ```FeatureTypeName``` je třeba přidat do prvku ```FeatureTypeStyle```. Atribut musí obsahovat předponu jmenného prostoru schématu INSPIRE a název typu funkce:
 
+```xml
     <se:FeatureTypeName>ps:ProtectedSite</se:FeatureTypeName>
+```
 
 Předpona jmenného prostoru schématu se musí přidat ke každému atributu, na který se odkazuje. Například chcete-li použít atribut 'geometrie' k filtrování funkcí, musí mít předponu jmenného prostoru ```ps```:
 
+```xml
         <ogc:Filter>
           <ogc:PropertyIsEqualTo>
             <ogc:Function name="IsCurve">
@@ -169,6 +184,7 @@ Předpona jmenného prostoru schématu se musí přidat ke každému atributu, n
             <ogc:Literal>true</ogc:Literal>
           </ogc:PropertyIsEqualTo>
         </ogc:Filter>
+```
 
 Ve výše uvedeném příkladu filtru se pro filtrování geometrie prvků používá funkce stupně ```IsCurve```, takže pravidlo symboliky se aplikuje pouze na prvky čar. Další informace o funkcích stupňování, které rozšiřují specifikaci SLD, naleznete na [stránkách dokumentace stupňů](http://download.deegree.org/documentation/3.4.5/html/renderstyles.html#deegree-specific-extensions).
 
@@ -176,6 +192,7 @@ Zde je příklad plně platného souboru INSPIRE SLD, který může být zveřej
 
 ***SLD pro GML***
 
+```xml
       <?xml version="1.0" encoding="UTF-8"?>
       <StyledLayerDescriptor
       version="1.1.0"  
@@ -283,3 +300,4 @@ Zde je příklad plně platného souboru INSPIRE SLD, který může být zveřej
           </UserStyle>
         </NamedLayer>
       </StyledLayerDescriptor>
+```

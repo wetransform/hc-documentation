@@ -2,7 +2,7 @@
 
 ### Documentation for [hale»connect](https://wetransform.to/haleconnect/)
 
-This documentation is built as a website using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This documentation is built as a website using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 

@@ -18,7 +18,7 @@ Chcete-li upravit metadata, postupujte takto:
 1. Přejděte na položku &laquo;Data&raquo; na hlavním panelu nástrojů.
 1. Vyberte soubor dat ze seznamu zdrojů, pro který chcete upravit metadata
 1. Přejděte na položku &laquo;Metadata&raquo;
-1. Zadejte povinná a volitelná metadata pro vaši datovou sadu nebo služby. Kliknutím na název nebo šipku otevřete jednu z kategorií metadat. <img src={require("/images/help/cs/dataset_edit_metadata.png").default} alt="" title=“Úprava metadat pro soubor prostorových dat" class="img-responsive img -inline-help">
+1. Zadejte povinná a volitelná metadata pro vaši datovou sadu nebo služby. Kliknutím na název nebo šipku otevřete jednu z kategorií metadat. <img src={require("/images/help/cs/dataset_edit_metadata.png").default} alt="" title="Úprava metadat pro soubor prostorových dat" class="img-responsive img -inline-help" />
 1. Zadejte hodnotu pro každé pole označené červeným symbolem. Můžete také upravit stávající hodnoty.
     * Po zadání požadovaných metadat se červené symboly změní na zelené a v hlavičce kategorie se aktualizuje počet chybějících požadovaných prvků metadat.
 1. Opět zavřete kategorii a pokračujte další kategorií
