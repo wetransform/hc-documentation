@@ -19,4 +19,7 @@ In the right hand corner of the page there are links leading you to the legal no
 <a className="image-news text-center col-xs-12 mt mb"><img src={require("/images/help/en/tutorial_ogc_api_features_landingpage.png").default} alt="" title="Main View of OGC API - Features Download Services" className="img-responsive center-block"/>
 </a>
 
-
+From the Feature Collection as HTML, you can further navigate to the spatial extent view of the individual features.
+The spatial extent uses a predefined background map by default.
+You can use a customized background by specifying a default base map and one or multiple default base layers in the organisation settings. 
+Further information on how to configure the customized maps can be found in the section [Edit and delete organisation profile](../users-roles-orgs/manage-orgs/2015-03-01-users-edit-organisation.md) under the point "Map Configuration".
