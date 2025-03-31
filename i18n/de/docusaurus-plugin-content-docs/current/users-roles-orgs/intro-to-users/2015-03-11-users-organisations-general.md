@@ -31,7 +31,7 @@ Alle Benutzenden haben innerhalb der Organisation, der sie angehören, genau ein
 
 Beispiel: Gehört eine Benutzerin oder ein Benutzer der Organisation &laquo;Kreis Bergstraße&raquo; in der Rolle &laquo;Superanwender&raquo; an, hat sie oder er für alle Unterorganisationen ebenfalls die Rolle &laquo;Superanwender&raquo; inne. Ist dies nicht gewünscht, können Gemeinden auch direkt als Unterorganisationen der Wurzelorganisation (GDI Südhessen) angelegt werden. Die Ebene der Organisation wird lediglich als Metadatum gespeichert. Es kann beliebig viele Ebenen an Unterorganisationen geben.
 
-:::caution
+:::warning[Caution]
 
 Legen sie in der Rolle &laquo;Administrator&raquo; eine Benutzerin oder einen Benutzer an, werden die Zuordnung zu einer Organisation sowie die Vergabe einer Rolle erzwungen.
 

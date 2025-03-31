@@ -12,7 +12,7 @@ Přihlašování funguje prostřednictvím &laquo;Přihlášení&raquo;, odkaz v
 
 Chcete-li se odhlásit, přejděte do svého uživatelského profilu (ikona osoby na hlavním panelu nástrojů) a klikněte na &laquo;Odhlásit se&raquo;. Když zavřete prohlížeč nebo kartu, na které byla aplikace spuštěna, budete automaticky odhlášeni.
 
-:::caution
+:::warning[Caution]
 
 Aplikaci můžete používat na několika kartách nebo v několika oknech, ale do každé karty nebo okna se musíte přihlásit samostatně. Výhodou je, že lze používat několik uživatelských účtů současně.
 

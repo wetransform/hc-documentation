@@ -17,13 +17,13 @@ Every user can edit their own profile. In addition, administrators and organisat
 -	**Assign an Organisation:** As organisation superuser or administrator, you can change your organisation association and role within the organisation.
 - **Add user-defined fields:** Such fields are used to save user-defined values for metadata autofill rules. You and your organisation should agree on the keys for these user-defined fields so that they can be used effectively in the autofill rules.
 
-:::caution
+:::warning[Caution]
 
 The username cannot be edited.
 
 :::
 
-:::caution
+:::warning[Caution]
 
 If you'd like to see a proper portrait picture or avatar, use <a className="alert-link" href="http://www.gravatar.com/" target="_blank">Gravatar</a> to add a picture of your choice to your e-mail address.
 

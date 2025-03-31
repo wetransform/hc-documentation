@@ -17,13 +17,13 @@ In der Rolle &laquo;Benutzer&raquo; angemeldete Nutzende können ihr eigenes Pro
 - **Benutzerdefinierte Felder hinzufügen:** Solche Felder können genutzt werden, um benutzerspezifische Werte für Metadaten zu speichern. Die Schlüssel für diese Werte werden in der Regel organisationsweit vereinbart und in der Themenkonfiguration referenziert.
 
 
-:::caution
+:::warning[Caution]
 
 Der Benutzername kann nicht nachträglich geändert werden.
 
 :::
 
-:::caution
+:::warning[Caution]
 
 Wenn sie ein Anzeigebild verwenden möchten, nutzen sie <a className="alert-link" href="http://www.gravatar.com/" target="_blank">Gravatar</a> um ihrer Email-Adresse ein Profilbild ihrer Wahl zuzuordnen.
 

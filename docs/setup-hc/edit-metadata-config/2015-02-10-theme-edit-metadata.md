@@ -39,7 +39,7 @@ To edit the metadata configuration, follow these steps as a logged in theme mana
 You define the metadata configuration via editing of a [JSON](https://en.wikipedia.org/wiki/JSON) object in an embedded, special-purpose text editor. This editor will automatically check whether the syntax and schema of your configuration file are valid, and provides an assistant for *autofill* rules.
 
 
-:::caution
+:::warning[Caution]
 
 In the JSON format, objects are defined by using curly braces {}, lists by using square brackets [], and strings are delimited by using double quotes &quot;&quot;. All these characters appear pairwise to start and end a substructure, and need to be provided in the correct order. If this is not the case, the editor will display an <em>Invalid JSON</em> error.
 
@@ -3159,13 +3159,13 @@ For datasets, you can add a second contact for the dataset metadata and the data
 For services, you can add a second contact for the service metadata and the service.
 To add a second contact to the metadata, extend the metadata configuration by inserting the respective JSON entries for the desired kinds of second contact.
 
-:::caution 
+:::warning[Caution] 
 
 When adding a second contact, the fields `Namespace (Authority URL)`, `Organisation Name`, and `Email` are not displayed as required anymore. However, they must still be filled in to avoid publication errors.
 
 :::
 
-:::caution 
+:::warning[Caution] 
 
 You can only add *exactly one additional* contact per contact kind. Inserting the JSON contents for the same contact kind multiple times will not work.
 

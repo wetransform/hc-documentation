@@ -29,13 +29,13 @@ Na stránce profilu organizace je k dispozici několik možností konfigurace.
 
 Správci a superuživatelé organizace mají také možnost vytvářet podorganizace, vytvářet uživatele, přidávat stávající uživatele a odstraňovat organizaci přímo ze stránky profilu organizace.
 
-:::caution
+:::warning[Caution]
 
 Když odeberete organizaci, uživatelské účty přiřazené k organizaci zůstanou aktivní. Tyto uživatelské účty již nemají organizaci ani roli, a proto mají velmi omezená oprávnění, dokud nejsou propojeny s novou organizací.
 
 :::
 
-:::caution
+:::warning[Caution]
 
 Název organizace nelze upravit.
 

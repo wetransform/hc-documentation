@@ -35,10 +35,6 @@
     "message": "informace",
     "description": "The default label used for the Info admonition (:::info)"
   },
-  "theme.admonition.caution": {
-    "message": "pozor",
-    "description": "The default label used for the Caution admonition (:::caution)"
-  },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "SPřejděte zpět nahoru",
     "description": "The ARIA label for the back to top button"

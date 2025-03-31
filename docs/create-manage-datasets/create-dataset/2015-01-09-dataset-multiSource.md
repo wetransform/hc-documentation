@@ -87,7 +87,7 @@ To create a new data set with multiple resource types, follow this workflow as a
 
 8. In the final step, you can review the execution rules configured for the theme. The execution rules are a list of all possible steps in the publishing process. By default, you will see up to five toggle switches to publish Download and View Services, to transform the new data set, and to publish services for the transformed data set. If you know you need to work on the data set before it is to be published, deactivate the service publishing.
 
-:::caution
+:::warning[Caution]
 
 If you close the browser or the tab, or you click a different link, you will be asked whether the work in progress data set should be saved or deleted. If you pick save, you can continue editing it later.
 

@@ -35,7 +35,7 @@ When you derive your theme from an existing one, later changes to the original t
 
 :::
 
-:::caution
+:::warning[Caution]
 
 You can only delete a theme when no data sets are associated with it anymore.
 

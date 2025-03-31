@@ -10,7 +10,7 @@ language: cs
 
 Klikněte na &laquo;Jazyk&raquo; Symbol v hlavičce pro zobrazení jazyků, které jsou nainstalovány v instanci, kterou používáte. Vyberte jazyk, se kterým chcete pracovat. 
 
-:::caution
+:::warning[Caution]
 
 Upozorňujeme, že systémové chyby se obvykle nepřekládají a mohou se zobrazit v angličtině, nezávisle na vašem nastavení jazyka.
 

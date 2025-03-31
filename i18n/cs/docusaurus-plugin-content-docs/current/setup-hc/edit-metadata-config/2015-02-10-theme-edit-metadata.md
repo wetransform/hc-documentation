@@ -38,7 +38,7 @@ Chcete-li upravit konfiguraci metadat, proveďte tyto kroky, jste-li přihláše
 
 Konfiguraci metadat definujete úpravou objektu [JSON](https://en.wikipedia.org/wiki/JSON) ve vloženém textovém editoru pro speciální účely. Tento editor automaticky zkontroluje, zda jsou syntaxe a schéma vašeho konfiguračního souboru platné, a nabízí nápovědu pro pravidla *automatického doplňování*.
 
-:::caution
+:::warning[Caution]
 
 Ve formátu JSON jsou objekty definované pomocí složených závorek {}, seznamy pomocí hranatých závorek [] a řetězce jsou odděleny pomocí dvojitých uvozovek &quot;&quot;. Všechny tyto znaky se objevují ve dvojicích na začátku a na konci substruktury a musí být zadány ve správném pořadí. Není-li tomu tak, editor zobrazí chybu <em>Invalid JSON</em> error.
 

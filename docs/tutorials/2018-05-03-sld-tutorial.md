@@ -53,7 +53,7 @@ The shapefile namespace prefix must be added to any shapefile property that is r
       </se:Label>
 ```
 
-:::caution
+:::warning[Caution]
 
 You must add '/text()' after the referenced property in TextSymbolizer Label tags to display text in view services.
 

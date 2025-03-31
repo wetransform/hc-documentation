@@ -53,7 +53,7 @@ Předpona jmenného prostoru souboru shapefile se musí přidat do každé vlast
       </se:Label>
 ```
 
-:::caution
+:::warning[Caution]
 
 You must add '/text()' after the referenced property in TextSymbolizer Label tags to display text in view services.
 

@@ -12,7 +12,7 @@ Logging in works via the &laquo;Login&raquo; link visible on the top right of th
 
 To log out, go to your user profile (person icon in the main toolbar) and click on &laquo;Logout&raquo;. When you close the browser or the tab, in which the application was running, you are automatically logged out.
 
-:::caution
+:::warning[Caution]
 
 You can use the application in multiple tabs or windows, but need to login separately to each tab or window. This has the advantage that it is possible to use multiple user accounts at the same time.
 
