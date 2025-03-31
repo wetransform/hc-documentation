@@ -16,7 +16,7 @@ Um eine Benutzerin oder einen Benutzer zu löschen, melden sie sich in der Rolle
 4.	Gehen sie auf &laquo;Löschen&raquo;.
 5.	Bestätigen sie das Löschen.
 
-:::caution
+:::warning[Caution]
 
 Wenn sie Benutzende löschen, werden diese permanent deaktiviert. In der Datenbank sind diese noch vorhanden, was bedeutet, dass keine neue Benutzerin und kein neuer Benutzer mit demselben Benutzernamen angelegt werden kann. Außerdem bleiben Ressourcen, die die Benutzenden erstellt haben, vorhanden und verfügbar für andere Mitglieder der Organisation. Zukünftig wird es auch eine &laquo;Löschen&raquo;-Option geben, sowie die Möglichkeit, Ressourcen von einer Benutzerin oder einem Benutzer auf eine oder einen anderen zu übertragen.
 

@@ -16,13 +16,13 @@ Každý uživatel si může svůj vlastní profil upravit. Správci a superuživ
 - **Přiřazení organizace:** Jako superuživatel nebo správce organizace můžete změnit přiřazení a roli organizace v rámci organizace.
 - **Přidat pole definovaná uživatelem:** Taková pole se používají pro uložení uživatelem definovaných hodnot pro pravidla automatického doplňování metadat. Vy a vaše organizace byste se měli dohodnout na klíčích pro tato uživatelem definovaná pole, aby se dala efektivně použít v pravidlech automatického doplňování.
 
-:::caution
+:::warning[Caution]
 
 Uživatelské jméno nelze upravit.
 
 :::
 
-:::caution
+:::warning[Caution]
 
 Chcete-li se podívat na správný portrét nebo avatar, použijte <a class="alert-link" href="http://www.gravatar.com/" target="_blank">Gravatar</a> pro přidání obrázku podle vlastního výběru na svou e-mailovou adresu.
 

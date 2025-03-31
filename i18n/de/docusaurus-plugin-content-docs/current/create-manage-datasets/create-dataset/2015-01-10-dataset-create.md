@@ -102,7 +102,7 @@ Um einen Datensatz anzulegen, melden Sie sich in der Rolle &laquo;Datenmanager&r
        <br/>
 7. Der Schritt «Projektvariablen eingeben» wird angezeigt, wenn Ihr Thema eine Transformationskonfiguration hat und Sie Ihrem Transformationsprojekt in hale»studio Projektvariablen hinzugefügt haben. hale»connect bietet Benutzenden die Möglichkeit, die Projektvariablen des Transformationsprojekts in diesem optionalen Schritt zu bearbeiten.	Speichern Sie die Metadaten und bestätigen Sie die Anlage des Datensatzes, indem Sie auf &laquo;Anlegen&raquo; klicken. Falls im Thema konfiguriert, können Sie nun mit Hilfe der Ausführungsregeln außerdem die Publikation von Diensten für die verwendeten Daten, die transformierten Daten sowie die Ausführung des Transformationsprojekts auslösen. Wenn der Datensatz noch nicht für die Veröffentlichung bereit ist, sollte die Publikation der Dienste deaktiviert werden.
 
-:::caution
+:::warning[Caution]
 
 Falls sie während des Anlegens eines Datensatzes den Browser schließen oder auf einen anderen Link klicken, haben Sie die Möglichkeit, den Datensatz zu speichern oder zu verwerfen. Wenn Sie ihn speichern, können Sie ihn später jederzeit weiterbearbeiten.
 

@@ -29,14 +29,14 @@ On the organisation profile page, there are several configuration options availa
 
 Administrator and organisation superusers also have the option to create suborganisations, create users, add existing users and delete the organisation, directly from the organisation profile page.
 
-:::caution
+:::warning[Caution]
 
 When you delete an organisation, user accounts associated with the organisation remain active. These user accounts no longer have an organisation or role and as a consequence have very limited privileges until they are linked to a new organisation.
 
 :::
 
 
-:::caution
+:::warning[Caution]
 
 The organisation name cannot be edited.
 

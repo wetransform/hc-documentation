@@ -36,7 +36,7 @@ In der Rolle &laquo;Themenmanager&raquo; oder &laquo;Superanwender&raquo; könne
 
 Die Konfiguration der Metadateneingabe für ein Thema erfolgt über einen Texteditor, der in die Anwendung eingebettet ist. Mit diesem Editor wird direkt die in JSON (JavaScript Object Notation) formatierte Konfigurationsdatei bearbeitet. Der Editor prüft Syntax sowie Schema und stellt einen Assistenten für die Autofill-Regeln bereit.
 
-:::caution
+:::warning[Caution]
 
 Hinweis: Im JSON-Format werden Objekte durch geschweifte Klammern {}, Listen durch eckige Klammern [], sowie Zeichenketten durch Anführungszeichen ““ markiert. All diese Zeichen müssen stets paarweise und in der richtigen Reihenfolge angegeben werden, ansonsten wird ein Fehler <em>Ungültiges JSON</em> angezeigt.
 
@@ -3151,13 +3151,13 @@ Metadatenprofile können auch im JSON-Metadaten-Editor in den Abschnitten für D
 Sie können sowohl die Ansprechpersonen für die Datensätze, als auch die Dienste erweitern. Bei den Datensätzen können sie eine zweite Ansprechperson für die Datensatz Metadaten, sowie für den Datensatz anlegen. Bei den Diensten können sie eine zweite Ansprechperson für die Dienst-Metadaten, sowie für die Dienste anlegen. 
 Sie können eine zweite Ansprechperson zu den Metadaten hinzufügen, indem sie die Metadaten-Konfiguration mit den folgenden Einträgen für die jeweils gewünschten zweiten Ansprechpersonen erweitern.
 
-:::caution
+:::warning[Caution]
 
 Beim Hinzufügen einer zweiten Ansprechperson werden die Felder `Webadresse der Organisation (Namensraum)`, `Name der Organisation` und `Email` nicht als erforderlich angezeigt. Sie müssen jedoch ausgefüllt werden, um Fehler beim Publizieren zu vermeiden.
 
 :::
 
-:::caution 
+:::warning[Caution] 
 
 Sie können nur *genau eine weitere* Ansprechperson pro Kontaktart erstellen. Mehrmaliges Einfügen der JSON-Inhalte für die Ansprechpersonen wird nicht funktionieren.
 

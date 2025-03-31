@@ -31,7 +31,7 @@ Usually, a user has exactly one role inside an organisation. The user gets acces
 
 **Example:** You belong to &laquo;County A1&raquo; with role &laquo;Superuser&raquo;. As a &laquo;Superuser&raquo;, you can see the data sets belonging to your organisation &laquo;County A1&raquo;, and the data sets belonging to any suborganisations associated with your root organisation. You can create new user accounts and suborganisations for your organisation, or for any of its suborganisations. You can create as many levels of suborganisations as you need.
 
-:::caution
+:::warning[Caution]
 
 When you create a new user as an administrator, the system enforces association of the user with an organisation and a role.
 

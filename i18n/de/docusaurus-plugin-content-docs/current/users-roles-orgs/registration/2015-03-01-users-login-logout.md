@@ -12,7 +12,7 @@ Das Einloggen funktioniert über den Link &laquo;Anmelden&raquo;. Melden sie sic
 
 Zum Abmelden gehen sie auf ihr Profil und klicken auf &laquo;Abmelden&raquo;. Wenn sie den Browser oder das Tab schließen, in dem die Anwendung lief, werden sie automatisch abgemeldet.
 
-:::caution
+:::warning[Caution]
 
 Sie können die Anwendung in mehreren Tabs oder Browserfenstern nutzen, müssen sich aber in jedem Tab separat anmelden und abmelden. Dies hat den Vorteil, dass es auch möglich ist, mit verschiedenen Benutzerkonten gleichzeitig zu arbeiten.
 

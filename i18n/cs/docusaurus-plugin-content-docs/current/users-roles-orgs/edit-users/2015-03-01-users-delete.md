@@ -16,7 +16,7 @@ Přihlásíte-li se jako Správce nebo superuživatel organizace, za účelem od
 4.  Klikněte na &laquo;Odstranit&raquo;
 5.  Potvrďte vymazání
 
-:::caution
+:::warning[Caution]
 
 Odeberete-li uživatele, uživatelský účet se <em>trvale deaktivuje</em>. Uživatelský účet je stále uložen v databázi, což znamená, že nelze vytvořit uživatele se stejným uživatelským jménem. Kromě toho se veškeré zdroje, které uživatel vytvořil, uchovávají v systému a zůstávají přístupné ostatním členům organizace.
 

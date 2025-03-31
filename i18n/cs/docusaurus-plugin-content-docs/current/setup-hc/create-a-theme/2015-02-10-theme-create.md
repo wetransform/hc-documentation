@@ -29,7 +29,7 @@ Kliknutím na tlačítko » vyberte schéma, které obsahuje typy funkcí, kter�
 K tématu můžete přiřadit libovolný počet funkcí. Jeden typ funkce může být spojen s mnoha tématy. Chcete-li odstranit přiřazení jednoho typu prvku, klikněte na červenou ikonu «odstranit» v pravém horním rohu typu prvku. Chcete-li odstranit všechny typy funkcí jednoho schématu aktuálně přiřazeného k tématu, klikněte na červenou ikonu «odstranit» v pravém horním rohu schématu. Po dokončení přidávání typů funkcí klikněte na &laquo;Pokračovat&raquo;
 6. Potvrďte vytvoření. Ve čtvrtém kroku svůj motiv zkontrolujte a klikněte na &laquo;Vytvořit&raquo;, uložit téma.
 
-:::caution
+:::warning[Caution]
 
 Odvodíte-li své téma z existujícího tématu, pozdější změny původního tématu odvozené téma neovlivní.
 

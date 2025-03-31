@@ -17,7 +17,7 @@ When logged in as an Administrator or organisation superuser, follow these steps
 4.	Click on the &laquo;Delete&raquo; button
 5.	Confirm deletion
 
-:::caution
+:::warning[Caution]
 
 When you delete a user, the user account is <em>permanently deactivated</em>. The user account is still stored in the data base, which means that no user with the same username can be created. Furthermore, all resources that the user created are kept in the system and remain accessible to other members of the organisation.
 

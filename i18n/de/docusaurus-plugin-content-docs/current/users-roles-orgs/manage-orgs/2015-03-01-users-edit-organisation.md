@@ -28,13 +28,13 @@ Auf der Profil-Seite der Organisation sind diverse Konfigurierungs-Optionen verf
 
 Nutzende in den Rollen &laquo;Administrator&raquo; oder &laquo;Superanwender&raquo; haben auf der Profil-Seite der Organisation auch die Möglichkeit Unterorganisationen anzulegen, Nutzende anzulegen, existierende Nutzerprofile zur Organisation hinzuzufügen oder die Organisation zu löschen.
 
-:::caution
+:::warning[Caution]
 
 Wird eine Organisation gelöscht, bleiben die zur Organisation gehörenden Benutzerkonten erhalten. Diese Benutzerkonten sind dann keiner Organisation oder Rolle mehr zugeordnet, haben also nur sehr geringe Zugriffsrechte, bis sie wieder einer Organisation zugeordnet werden.
 
 :::
 
-:::caution
+:::warning[Caution]
 
 Der Name der Organisation kann im Nachhinein nicht bearbeitet werden
 

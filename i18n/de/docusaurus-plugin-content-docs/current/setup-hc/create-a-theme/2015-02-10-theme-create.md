@@ -27,7 +27,7 @@ Sie können einem Thema beliebig viele Objektarten zuordnen. Eine Objektart kann
 6.	Anlegen bestätigen: Überprüfen sie die Angaben zu dem Thema und klicken sie &laquo;Anlegen&raquo; um dieses zu speichern.
 
 
-:::caution
+:::warning[Caution]
 
 Bei einem abgeleiteten Thema werden spätere Änderungen des Eltern-Themas nicht auf die abgeleiteten Themen übertragen.
 

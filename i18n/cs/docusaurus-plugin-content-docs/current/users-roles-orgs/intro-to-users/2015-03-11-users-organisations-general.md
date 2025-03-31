@@ -31,7 +31,7 @@ Uživatel má v organizaci obvykle jen jednu roli. Uživatel získá přístup k
 
 **Příklad:** Patříte do &laquo;OkresA1&raquo; s rolí &laquo;Superuživatel&raquo;. Jako &laquo;superuživatel&raquo; můžete vidět datové sady patřící vaší organizaci &laquo;Okres A1&raquo; a datové sady patřící různým podorganizacím, jež jsou spojeny s vaší kořenovou organizací. Můžete vytvořit nové uživatelské účty a podorganizace pro vaši organizaci nebo pro kteroukoli z jejích podorganizací. Můžete vytvořit libovolný počet úrovní podorganizací.
 
-:::caution
+:::warning[Caution]
 
 Vytvoříte-li nového uživatele jako správce, systém si vynutí přiřazení uživatele k organizaci a role.
 

@@ -86,7 +86,7 @@ Um einen neuen Datensatz mit verschiedenen Daten-Formaten anzulegen, folgen sie 
 
 8.	Im letzten Schritt können sie die für das Thema konfigurierten Ausführungsregeln überprüfen. Die Ausführungsregeln sind eine Liste aller möglichen Schritte im Veröffentlichungsprozess.  Standardmäßig werden sie bis zu fünf Schalter sehen, um Darstellungs- und Download-Dienste für ihren Datensatz zu veröffentlichen, um ihren neuen Datensatz zu transformieren und um Darstellungs- und Download-Dienste für den transformierten Datensatz zu veröffentlichen. Wenn sie bereits wissen, dass sie den Datensatz vor seiner Veröffentlichung noch bearbeiten müssen, deaktivieren sie die Dienste-Veröffentlichung.
 
-:::caution
+:::warning[Caution]
 
 Wenn sie den Browser oder den Tab schließen oder einen anderen Link öffnen, werden sie gefragt, ob der derzeit bearbeitete Datensatz gespeichert oder gelöscht werden soll. Wenn sie speichern auswählen, können sie den Datensatz zu einem späteren Zeitpunkt weiter bearbeiten.
 

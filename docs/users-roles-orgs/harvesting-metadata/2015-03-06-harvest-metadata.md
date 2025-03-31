@@ -22,7 +22,7 @@ As a system administrator, you can access a preview page which displays the meta
     https://haleconnect.com/services/bsp/metadata/org/<your org num>?preview=true
 ```
 
-:::caution
+:::warning[Caution]
 
 To find your organisation number, navigate to your organisation's account page in settings (gear symbol). Your organisation number is displayed in the browser URL. For example: https://haleconnect.com/#/organisation/1 indicates that your organisation number is 1.
 

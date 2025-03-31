@@ -53,7 +53,7 @@ Das Shapefile-Namensraum-Präfix muss zu jeder Shapefile-Eigenschaft hinzugefüg
       </se:Label>
 ```
 
-:::caution
+:::warning[Caution]
 
 Sie müssen '/text()' hinter der referenzierten Eigenschaft in TextSymbolizer Label-Tags hinzufügen um den Text in Darstellungsdiensten anzuzeigen.
 

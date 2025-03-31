@@ -22,7 +22,7 @@ Jako správce systému máte přístup na stránku s náhledem zobrazujícím me
     https://haleconnect.com/services/bsp/metadata/org/<your org num>?preview=true
 ```
 
-:::caution
+:::warning[Caution]
 
 Chcete-li najít číslo své organizace, přejděte na stránku účtu své organizace v nastaveních (symbol ozubeného kolečka). Číslo vaší organizace se zobrazuje v URL adrese prohlížeče. Například: https://haleconnect.com/#/organisation/1 značí, že číslo vaší organizace je 1.
 

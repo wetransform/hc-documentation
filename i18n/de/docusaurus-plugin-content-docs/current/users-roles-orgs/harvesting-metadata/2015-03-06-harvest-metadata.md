@@ -22,7 +22,7 @@ Als System-Administrator haben sie Zugang zu einer Vorschau-Seite, auf welcher d
     https://haleconnect.com/services/bsp/metadata/org/<ihre org num>?preview=true
 ```
 
-:::caution
+:::warning[Caution]
 
 Um die Nummer ihrer Organisation zu ermitteln, navigieren sie zu der Nutzerkonto-Seite ihrer Organisation in den Einstellungen (Zahnrad-Symbol). Die Nummer ihrere Organisation wird in der im Browser angezeigten URL dargestellt. Zum Beispiel: https://haleconnect.com/#/organisation/1 gibt an, dass die Nummer ihrer Organisation 1 ist.
 
