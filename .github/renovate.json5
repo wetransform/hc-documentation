@@ -9,7 +9,7 @@
   },
   packageRules: [
     {
-      matchPackageNames: ['cheeriojs/cheerio'],
+      matchPackageNames: ['cheerio'],
       groupName: 'cheerio'
     },
   ],
