@@ -22,6 +22,6 @@ In der rechten unteren Ecke der Seite befinden sich Links die zu den rechtlichen
 
 Von der HTML-Darstellung der unterstützten Feature-Sammlungen, können sie zur Kartenansicht der einzelnen Features navigieren.
 Die Kartenansicht verwendet standardmäßig eine vordefinierte Hintergrundkarte.
-Sie können einen eigenen Hintergrund festlegen, indem sie eine Standard Hintergrundkarte und eine oder mehrere Standard-Hintergund-Ebenen in den Organisations-Einstellungen definieren.
+Sie können einen eigenen Hintergrund festlegen, indem sie eine Standard-Hintergrundkarte und eine oder mehrere Standard-Hintergund-Ebenen in den Organisations-Einstellungen definieren.
 Weitere Information zum Konfigurieren der individuell angepassten Karten, finden sie im Abschnitt [Organisations-Profile bearbeiten und löschen](../users-roles-orgs/manage-orgs/2015-03-01-users-edit-organisation.md) unter dem Punkt "Karten-Konfiguration".
 
