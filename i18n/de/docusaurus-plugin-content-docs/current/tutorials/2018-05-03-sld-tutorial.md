@@ -61,7 +61,7 @@ Sie müssen '/text()' hinter der referenzierten Eigenschaft in TextSymbolizer La
 
 ### **Hinzufügen von Namen für Layer sowie Titeln für Layer und Regeln zu einer Styled Layer Descriptor-Datei** ###
 
-Namen und Titel für Layer können zu SLD-Dateien hinzugefügt werden. Dabei dürfen Layernamen keine Leerzeichen oder Doppelpunkte enthalten. Der von INSPIRE vorgesehene Layername für Schutzgebiete ist beispielsweise ```PS.ProtectedSite```. Layernamen können im Element NamedLayer.Name hinzugefügt werden.
+Namen und Titel für Layer können zu SLD-Dateien hinzugefügt werden. Der von INSPIRE vorgesehene Layername für Schutzgebiete ist beispielsweise ```PS.ProtectedSite```. Layernamen können im Element NamedLayer.Name hinzugefügt werden.
 
 ```xml
 	<NamedLayer>
