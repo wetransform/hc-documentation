@@ -61,7 +61,7 @@ You must add '/text()' after the referenced property in TextSymbolizer Label tag
 
 ### **Přidání názvů vrstev, názvů vrstev a názvů pravidel do souboru Stylizovaný deskriptor vrstvy**
 
-Do SLD lze přidat názvy vrstev a názvy vrstev. Názvy vrstev nemohou obsahovat mezery. Název vrstvy INSPIRE pro typ funkce Chráněné lokality je ```PS.ProtectedSite```. Názvy vrstev lze přidat do prvku NamedLayer.Name element:
+Do SLD lze přidat názvy vrstev a názvy vrstev. Název vrstvy INSPIRE pro typ funkce Chráněné lokality je ```PS.ProtectedSite```. Názvy vrstev lze přidat do prvku NamedLayer.Name element:
 
 ```xml
 	<NamedLayer>

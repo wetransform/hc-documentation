@@ -61,7 +61,7 @@ You must add '/text()' after the referenced property in TextSymbolizer Label tag
 
 ### **Adding layer names, layer titles and rule titles to a Styled Layer Descriptor file**
 
-Layer names and layer titles can be added to SLDs. Layer names cannot contain white spaces or colons. The INSPIRE layer name for the Protected Sites feature type is ```PS.ProtectedSite```. Layer names can be added to the NamedLayer.Name element:
+Layer names and layer titles can be added to SLDs. The INSPIRE layer name for the Protected Sites feature type is ```PS.ProtectedSite```. Layer names can be added to the NamedLayer.Name element:
 
 ```xml
 	<NamedLayer>
