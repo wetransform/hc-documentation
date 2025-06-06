@@ -1,46 +1,94 @@
 # identify where changes are done
 help-content:
-- 'docs/**/*.md'
-- 'i18n/*/docusaurus-plugin-content-docs/**/*.md'
+- changed-files:
+  - any-glob-to-any-file:
+    - 'docs/**/*.md'
+    - 'i18n/*/docusaurus-plugin-content-docs/**/*.md'
 help-sidebar:
-- 'sidebars.js'
-- 'i18n/*/docusaurus-plugin-content-docs/current.json'
+- changed-files:
+  - any-glob-to-any-file:
+    - 'sidebars.js'
+    - 'i18n/*/docusaurus-plugin-content-docs/current.json'
 theme:
-- 'src/theme/**/*.js'
-- 'i18n/*/docusaurus-theme-classic/*.json'
+- changed-files:
+  - any-glob-to-any-file:
+    - 'src/theme/**/*.js'
+    - 'i18n/*/docusaurus-theme-classic/*.json'
 home-page:
-- 'src/pages/index.js'
-- 'src/components/HomepageFeatures/index.js'
-- 'i18n/*/code.json' # XXX is code.json also relevant for other things than the home page?
+- changed-files:
+  - any-glob-to-any-file:
+    - 'src/pages/index.js'
+    - 'src/components/HomepageFeatures/index.js'
+    - 'i18n/*/code.json' # XXX is code.json also relevant for other things than the home page?
 
 # Add 'lang-missing-cs` label if any markdown files in docs/ were changed but not for the Czech language
 lang-missing-cs:
-- any: ['docs/**/*.md']
-  all: ['!i18n/cs/docusaurus-plugin-content-docs/**/*.md']
+- any:
+  - changed-files:
+    - any-glob-to-any-file: 'docs/**/*.md'
+- all:
+  - changed-files:
+    - any-glob-to-any-file: '!i18n/cs/docusaurus-plugin-content-docs/**/*.md'
   # sidebar changes
-- any: ['sidebars.js']
-  all: ['!i18n/cs/docusaurus-plugin-content-docs/current.json']
+- any:
+  - changed-files:
+    - any-glob-to-any-file: 'sidebars.js'
+- all:
+  - changed-files:
+    - any-glob-to-any-file: '!i18n/cs/docusaurus-plugin-content-docs/current.json'
   # theme changes
-- any: ['src/theme/**/*.js']
-  all: ['!i18n/cs/docusaurus-theme-classic/*.json']
+- any:
+  - changed-files:
+    - any-glob-to-any-file: 'src/theme/**/*.js'
+- all:
+  - changed-files:
+    - any-glob-to-any-file: '!i18n/cs/docusaurus-theme-classic/*.json'
   # home page
-- any: ['src/components/HomepageFeatures/index.js']
-  all: ['!i18n/cs/code.json']
-- any: ['src/pages/index.js']
-  all: ['!i18n/cs/code.json']
+- any:
+  - changed-files:
+    - any-glob-to-any-file: 'src/components/HomepageFeatures/index.js'
+- all:
+  - changed-files:
+    - any-glob-to-any-file: '!i18n/cs/code.json'
+- any:
+  - changed-files:
+    - any-glob-to-any-file: 'src/pages/index.js'
+- all:
+  - changed-files:
+    - any-glob-to-any-file: '!i18n/cs/code.json'
 
 # Add 'lang-missing-de` label if any markdown files in docs/ were changed but not for the Czech language
 lang-missing-de:
-- any: ['docs/**/*.md']
-  all: ['!i18n/de/docusaurus-plugin-content-docs/**/*.md']
+- any:
+  - changed-files:
+    - any-glob-to-any-file: 'docs/**/*.md'
+- all:
+  - changed-files:
+    - any-glob-to-any-file: '!i18n/de/docusaurus-plugin-content-docs/**/*.md'
   # sidebar changes
-- any: ['sidebars.js']
-  all: ['!i18n/de/docusaurus-plugin-content-docs/current.json']
+- any:
+  - changed-files:
+    - any-glob-to-any-file: 'sidebars.js'
+- all:
+  - changed-files:
+    - any-glob-to-any-file: '!i18n/de/docusaurus-plugin-content-docs/current.json'
   # theme changes
-- any: ['src/theme/**/*.js']
-  all: ['!i18n/de/docusaurus-theme-classic/*.json']
+- any:
+  - changed-files:
+    - any-glob-to-any-file: 'src/theme/**/*.js'
+- all:
+  - changed-files:
+    - any-glob-to-any-file: '!i18n/de/docusaurus-theme-classic/*.json'
   # home page
-- any: ['src/components/HomepageFeatures/index.js']
-  all: ['!i18n/de/code.json']
-- any: ['src/pages/index.js']
-  all: ['!i18n/de/code.json']
+- any:
+  - changed-files:
+    - any-glob-to-any-file: 'src/components/HomepageFeatures/index.js'
+- all:
+  - changed-files:
+    - any-glob-to-any-file: '!i18n/de/code.json'
+- any:
+  - changed-files:
+    - any-glob-to-any-file: 'src/pages/index.js'
+- all:
+  - changed-files:
+    - any-glob-to-any-file: '!i18n/de/code.json'
