@@ -41,7 +41,7 @@ lang-missing-cs:
   - changed-files:
     - any-glob-to-any-file: 'src/theme/**/*.js'
 - all:
-  -changed-files:
+  - changed-files:
     - any-glob-to-any-file: '!i18n/cs/docusaurus-theme-classic/*.json'
   # home page
 - any:
@@ -77,7 +77,7 @@ lang-missing-de:
   - changed-files:
     - any-glob-to-any-file: 'src/theme/**/*.js'
 - all:
-  -changed-files:
+  - changed-files:
     - any-glob-to-any-file: '!i18n/de/docusaurus-theme-classic/*.json'
   # home page
 - any:
