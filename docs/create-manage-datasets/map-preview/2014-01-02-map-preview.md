@@ -12,6 +12,13 @@ language: en
 The map preview is a simple web map application that enables the viewing of published WMS services.
 <img src={require("/images/help/en/map_preview.png").default} alt="Layer widget legend" title="Layer widget legend" className="img-responsive img-inline-help"/>
 
+The vertical row of buttons in the upper left hand corner of the map preview allows users to:
+  * zoom in and out
+  * generate a permalink with the currently selected extent, layer configuration and zoom level which can be shared
+  * print the current map extent or generate a PDF
+
+The map can be downloaded as a PNG or printed as a PDF in portrait and landscape mode. Please note that printing can only be expected to work as intended on screens with resolutions 1920x1080 (Full HD) and 2560x1440 (QHD).
+
 ## The Layer Widget ##
 
 The layer widget contains:
@@ -39,8 +46,3 @@ The layer widget also offers the option to supply a custom basemap URL. Click on
 In addition, the layer widget supports the option to add external WMS services to the map preview so that external services can be viewed alongside hale»connect services.
 
 The map preview includes a responsive scale widget, including scale factor and cursor coordinate display in the bottom right hand corner of the application. Coordinates can be entered to update the extent of the map and zoom to a particular location.
-
-The vertical row of buttons in the upper left hand corner of the map preview enable users to:
-  * zoom in and out
-  * generate a permalink with the currently selected extent, layer configuration and zoom level which can be shared
-  * print the current map extent or generate a PDF
