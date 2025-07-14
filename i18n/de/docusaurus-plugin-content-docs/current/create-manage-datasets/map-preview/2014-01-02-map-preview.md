@@ -12,6 +12,13 @@ language: de
 Die Kartenansicht ist eine einfache Web-Anwendung, die die Anzeige von veröffentlichten WMS ermöglicht.
 <img src={require("/images/help/de/map_preview.png").default} alt="Layer-Widget mit Legende" title="Layer-Widget mit Legende" className="img-responsive img-inline-help"/>
 
+Die vertikale Schaltflächenreihe in der oberen linken Ecke der Kartenvorschau ermöglicht Nutzenden Folgendes:
+  * Vergrößern und Verkleinern
+  * Generieren eines Permalinks mit der aktuell ausgewählten Ausdehnung, Ebenenkonfiguration und Zoomstufe, der geteilt werden kann
+  * Drucken der aktuellen Kartenausdehnung oder Generieren einer PDF-Datei
+
+Die Karte kann als PNG heruntergeladen oder als PDF im Hoch- und Querformat ausgedruckt werden. Bitte beachten Sie, dass der Ausdruck nur auf Bildschirmen mit einer Auflösung von 1920x1080 (Full HD) und 2560x1440 (QHD) einwandfrei funktioniert.
+
 ## Das Layer-Widget ##
 
 Das Layer-Widget enthält
@@ -40,7 +47,3 @@ Darüber hinaus unterstützt das Layer-Widget die Option, externe WMS-Dienste zu
 
 Die Kartenansicht enthält ein sich anpassendes Maßstabs-Widget und eine Koordinatenanzeige für den Mauszeiger. Koordinaten können eingegeben werden, um die Ausdehnung der Karte zu aktualisieren und auf einen bestimmten Ort zu zoomen.
 
-Die vertikale Schaltflächenreihe in der oberen linken Ecke der Kartenvorschau ermöglicht Nutzenden Folgendes:
-  * Vergrößern und Verkleinern
-  * Generieren eines Permalinks mit der aktuell ausgewählten Ausdehnung, Ebenenkonfiguration und Zoomstufe, der geteilt werden kann
-  * Drucken der aktuellen Kartenausdehnung oder Generieren einer PDF-Datei
