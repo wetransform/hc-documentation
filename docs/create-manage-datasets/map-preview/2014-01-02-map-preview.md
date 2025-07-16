@@ -12,12 +12,12 @@ language: en
 The map preview is a simple web map application that enables the viewing of published WMS services.
 <img src={require("/images/help/en/map_preview.png").default} alt="Layer widget legend" title="Layer widget legend" className="img-responsive img-inline-help"/>
 
-The vertical row of buttons in the upper left hand corner of the map preview enable users to:
+The vertical row of buttons in the upper left hand corner of the map preview allows users to:
   * zoom in and out
   * generate a permalink with the currently selected extent, layer configuration and zoom level which can be shared
   * print the current map extent or generate a PDF
 
-The map can be downloaded as png or printed as PDF in portrait and landscape mode. Please note that printing can only be expected to work as intended on screens with resolutions 1920x1080 (Full HD) and 2560x1440 (QHD).
+The map can be downloaded as a PNG or printed a as PDF in portrait and landscape mode. Please note that printing can only be expected to work as intended on screens with resolutions 1920x1080 (Full HD) and 2560x1440 (QHD).
 
 ## The Layer Widget ##
 
