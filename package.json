@@ -15,25 +15,25 @@
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^1.2.0",
-    "@docusaurus/core": "3.7.0",
-    "@docusaurus/preset-classic": "3.7.0",
+    "@docusaurus/core": "3.8.1",
+    "@docusaurus/preset-classic": "3.8.1",
     "@mdx-js/react": "^3.1.0",
     "clsx": "^1.2.1",
     "docusaurus-plugin-sass": "^0.2.6",
     "prism-react-renderer": "^2.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sass": "^1.87.0",
+    "sass": "^1.89.2",
     "cheerio": "1.0.0-rc.12"
   },
   "overrides": {
     "@cmfcmf/docusaurus-search-local": {
-      "@docusaurus/core": "^3.7.0"
+      "@docusaurus/core": "^3.8.1"
     }
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/types": "3.7.0"
+    "@docusaurus/module-type-aliases": "3.8.1",
+    "@docusaurus/types": "3.8.1"
   },
   "browserslist": {
     "production": [
@@ -48,6 +48,6 @@
     ]
   },
   "engines": {
-    "node": ">=22.15.0"
+    "node": ">=22.17.1"
   }
 }
