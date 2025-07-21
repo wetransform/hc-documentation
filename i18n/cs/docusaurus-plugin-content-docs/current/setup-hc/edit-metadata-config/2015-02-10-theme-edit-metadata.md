@@ -2665,7 +2665,7 @@ Pole enumerace umožňují vytvářet rozbalovací nabídky v polích. Rozbalova
 Obrázek níže zobrazuje nakonfigurované pole enumerace. Rozbalovací nabídka je implementována v poli "Role" a je vyplněna hodnotami zadanými uživatelem.
 <img src={require("/images/help/cs/enumerationValues.png").default} alt="" title="Hodnoty vyčíslení" class="img-responsive img-inline-help"/>
 
-### Práce s pravidly automatického doplňování
+### Práce s pravidly automatického doplňování {#autofill}
 Pravidla automatického doplňování umožňují automatické generování metadat pomocí proměnných. hale»connect umožňuje použít data, která jste předtím uvedli, k vyplnění polí metadat. Několik příkladů těchto dat zahrnuje kontaktní data vaší organizace, název vaší datové sady nebo data atributů spojená s typy funkcí vaší datové sady. Kromě toho existují pravidla automatického doplňování pro přístup k publikovaným službám datové sady. Nerealizují se při vyplňování metadat datové sady, ale až po zveřejnění. Jsou dostupné v části „publikace“ v Asistentovi automatického doplňování. Pravidla automatického doplňování nelze použít pro schémata, která obsahují ve svém názvu speciální znaky. Chcete-li vytvořit pravidlo automatického doplňování, klikněte na hodnotu vedle klíče vlastnosti ```autofillRule```. Asistent automatického doplňování se zobrazí v pravém horním rohu editoru metadat. Kliknete-li na hodnotu v Asistentovi automatického doplňování, pravidlo automatického doplňování se vloží na pozici kurzoru.
 <img src={require("/images/help/cs/autofillAssistant1.png").default} alt="" title="Autofill assistant" class="img-responsive img-inline-help"/>
 Asistent automatického doplňování má přístup k datům z celé platformy pro použití v metadatech. Data jsou uspořádána do několika kategorií:
