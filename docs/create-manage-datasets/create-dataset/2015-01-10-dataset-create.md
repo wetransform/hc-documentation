@@ -15,6 +15,7 @@ hale»connect currently supports a range of file formats which can be used to cr
   * Supported vector data formats include \*.gml, \*gpkg and \*.shp
   * Multiple \*.shp files can be uploaded to create a data set
   * Publication of \*.shp files in which the first object does not have a geometry is currently not supported
+  * Publication of multiple \*.shp files containing the same type is currently not supported
   * One or more  \*.gml files per data set is supported
     * INSPIRE, 3A, CityGML, XPlanung and ISYBAU are fully supported
   * \*.gml files containing the element gml:GenericMetaData, an empty gml:boundedBy element or arc geometries are currently not supported
