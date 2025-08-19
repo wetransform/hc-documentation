@@ -21,6 +21,7 @@ Die Größenbeschränkung für Anhänge auf haleconnect.com liegt bei 750 MB.
   * hale»connect unterstützt \*.gml, \*gpkg und \*.shp.
   * Es können mehrere \*.shp-Dateien hochgeladen werden, um einen Datensatz anzulegen.
   * Die Publikation von \*.shp-Dateien, deren erstes Objekt keine Geometrie hat, wird derzeit nicht unterstützt.
+  * Die Publikation von mehreren \*.shp-Dateien, die den gleichen Typen enthalten, wird derzeit nicht unterstützt.
   * Es können mehrere \*.gml-Dateien hochgeladen werden, um einen Datensatz anzulegen.
     * Die Standards INSPIRE, 3A, CityGML, XPlanung und ISYBAU werden vollständig unterstützt.
   * \*.gml-Dateien, die ein gml:GenericMetaData-Element, ein leeres gml:boundedBy-Element oder Arc-Geometrien enthalten, werden derzeit nicht unterstüzt.
