@@ -37,10 +37,10 @@ Um im Profil ihrer Organisation ein neues eigenes Metadaten-Feld hinzuzufügen, 
 
 * Klicken sie auf das &laquo;Einstellungen&raquo;-Symbol (Zahnrad-Symbol) oben rechts auf dem Bildschirm.
 * Klicken sie auf den &laquo;Organisationen&raquo;-Bereich und wählen sie ihre Organisation aus der Liste aus.
-<img src={require("/images/help/de/Tutorial_organisations.png").default} alt="" title="Organisations-Profil" className="img-responsive img-inline-help"/>
-* Scrollen sie an das Ende der Organisations-Profil-Seite und klicken Sie auf &laquo;+Profilfeld hinzufügen&raquo; um ihr eigenes Schlüssel-Wert-Paar hinzuzufügen.
+<img src={require("/images/help/en/organisation/de/kontakt-informationen-leer.png").default} alt="" title="Organisations-Profil" className="img-responsive img-inline-help"/>
+* Wählen sie den Tab &laquo;Eigene Profilfelder&raquo; aus und klicken Sie auf &laquo;+Profilfeld hinzufügen&raquo; um ihr eigenes Schlüssel-Wert-Paar hinzuzufügen.
   * Das Schlüssel-Wert-Paar, das sie eingeben, wird ihnen während der Metadaten-Konfiguration im Autofill-Assistenten zur Verfügung stehen.
-<img src={require("/images/help/de/Tutorial_custom_fields.png").default} alt="" title="Ein eigenes Metadaten-Feld anlegen" className="img-responsive img-inline-help"/>
+<img src={require("/images/help/en/organisation/de/eigene-profilfelder-leer.png").default} alt="" title="Ein eigenes Metadaten-Feld anlegen" className="img-responsive img-inline-help"/>
 
 Um ihrem Nutzerprofil ein eigenes Metadaten-Feld hinzuzufügen, folgen Sie mit der Rolle &laquo;Datenmanager&raquo;, &laquo;Themenmanager&raquo; oder &laquo;Supernutzer&raquo; diesem Ablauf:
 
