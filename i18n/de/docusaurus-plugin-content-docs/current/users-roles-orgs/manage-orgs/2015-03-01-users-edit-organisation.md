@@ -14,7 +14,7 @@ Nutzende in den Rollen &laquo;Administrator&raquo; oder &laquo;Superanwender&raq
 
 Alternativ können sie in ihrem Nutzenden-Profil auf den Namen der Organisation klicken.
 
-Auf der Profil-Seite der Organisation sind diverse Konfigurierungs-Optionen verfügbar, zu denen sie über die Tabs unter der Organisationsbeschreibung navigieren können.
+Auf der Profil-Seite der Organisation sind diverse Konfigurierungs-Optionen verfügbar, zu denen sie über die Tabs unter der Organisationsbeschreibung navigieren können. Bitte beachten sie, dass je nach Rolle und Konfiguration ihrer Organisation eventuell nicht alle Tabs und Features zu Verfügung stehen.
 
 -	**Profilbild:** Klicken sie auf das Profilbild, um das Logo ihrer Organisation oder ein anderes Anzeigebild hochzuladen. Als Datenformat werden JPEG und PNG akzeptiert.
 -	**Name der juristischen Person:** Dieses optionale Feld ermöglicht es Nutzenden, den Namen der juristischen Person anzugeben.
@@ -45,16 +45,16 @@ Wenn sie auf &laquo;Geometrien hochladen&raquo; klicken, öffnet sich ein Pop-Up
 <div style={{ textAlign: "center" }}>
 <img src={require("/images/help/en/organisation/de/geometrie-upload.png").default} alt="" title="Geometrie hochladen" className="img-responsive img-inline-help"/>
 </div>  
-Des Weiteren, können sie einen Namen für ihre Geometrie angeben, welcher später über der Kartenansicht angezeigt wird. Nachdem sie auf &laquo;Bestätigen&raquo; geklickt haben, kann es einige Momente dauern bis sich das Fenster schließt, da erst geprüft wird, ob es sich bei der hochgeladenen Datei um eine korrekt konvertierbare Geometrie handelt. Das Fenster schließt sich dann von selbst, oder sie erhalten die Fehlermeldung &laquo;Konvertierung fehlgeschlagen&raquo;.
+Des Weiteren, können sie einen Namen für ihre Geometrie angeben, welcher später über der Kartenansicht angezeigt wird. Nachdem sie auf &laquo;Bestätigen&raquo; geklickt haben, kann es einige Momente dauern bis sich das Fenster schließt, da erst geprüft wird, ob es sich bei der hochgeladenen Datei um eine korrekt konvertierbare Geometrie handelt. Das Fenster schließt sich dann von selbst oder sie erhalten die Fehlermeldung &laquo;Konvertierung fehlgeschlagen&raquo;.
 Wenn die Datei eine valide Geometrie beschreibt und erfolgreich konvertiert werden konnte, wird die Geometrie in der Kartenansicht angezeigt.
-Sie können die Geometrie über den Mülleimer Knopf entfernen, über den blauen Download Knopf herunterladen, oder die Geometrie ersetzen, indem sie über &laquo;Geometrien hochladen&raquo; eine neue Datei hochladen.
+Sie können die Geometrie über die Schaltfläche mit dem Mülleimer-Symbol entfernen, über die Schaltfläche mit dem blauen Download-Symbol herunterladen, oder die Geometrie ersetzen, indem sie über &laquo;Geometrien hochladen&raquo; eine neue Datei hochladen.
 <div style={{ textAlign: "center" }}>
 <img src={require("/images/help/en/organisation/de/geometrie-karte-groß.png").default} alt="" title="Geometrie Kartenansicht" className="img-responsive img-inline-help"/>
 </div>
 
 
 
-- **Tokens Verwalten**: Unter dem Tab &laquo;Token-Verwaltung&raquo; können sie Tokens einsehen, generieren und entfernen. Um ein Token zu erstellen, klicken sie auf &laquo;Token generieren&raquo; und ein Pop-Up öffnet sich, in dem sie den Namen des Tokens definieren, sowie die Gültigkeitsdauer festlegen können. Sie können das Token kopieren und es in ihrem Browser speichern. 
+- **Tokens Verwalten**: Unter dem Tab &laquo;Token-Verwaltung&raquo; können sie Tokens einsehen, generieren und entfernen. Um einen Token zu erstellen, klicken sie auf &laquo;Token generieren&raquo; und ein Pop-Up öffnet sich, in dem sie den Namen des Tokens definieren sowie die Gültigkeitsdauer festlegen können. Sie können den Token sofort kopieren und ihn in ihrem Browser speichern, sodass sie auch zu einem späteren Zeitpunkt noch die Möglichkeit haben den Token erneut zu kopieren. 
 <div style={{ textAlign: "center" }}>
     <img src={require("/images/help/en/organisation/de/token-erstellen.png").default} alt="" title="Token Erstellen" className="img-responsive img-inline-help"/>
 </div>
@@ -63,16 +63,16 @@ Eine Tabelle mit ihren aktuellen Tokens wird standardmäßig angezeigt.
     <img src={require("/images/help/en/organisation/en/token_small.png").default} alt="" title="Basemap copyright attribution" className="img-responsive img-inline-help"/>
 </div>-->
 <div style={{ textAlign: "center" }}>
-    <img src={require("/images/help/en/organisation/de/token-tabelle.png").default} alt="" title="Token Tabellenansicht" className="img-responsive img-inline-help"/>
+    <img src={require("/images/help/en/organisation/de/token-verwaltung.png").default} alt="" title="Token Tabellenansicht" className="img-responsive img-inline-help"/>
 </div>
-In der Tabelle können sie nach Organisations-ID und Verwendungszweck des Tokens filtern und suchen. Außerdem wird der aktuelle Status des Tokens, &laquo;Gültig&raquo;, &laquo;Abgelaufen&raquo;, oder &laquo;Widerrufen&raquo; angezeigt. Links in der äußersten Spalte sehen sie einen roten Punkt sobald ihr Token abgelaufen ist, und einen grünen Punkt solange es gültig ist.
-Weiterhin können sie ein Token inspizieren, indem sie auf das Augensymbol klicken, wodurch sich ein Pop-Up mit Tokeninformationen öffnet. 
+In der Tabelle können sie nach Organisations-ID und Verwendungszweck des Tokens filtern und suchen. Außerdem wird der aktuelle Status des Tokens, &laquo;Gültig&raquo;, &laquo;Abgelaufen&raquo; oder &laquo;Widerrufen&raquo; angezeigt. Links in der äußersten Spalte sehen sie einen roten Punkt sobald ihr Token abgelaufen ist, und einen grünen Punkt solange es gültig ist.
+Weiterhin können sie einen Token inspizieren, indem sie auf das Augensymbol klicken, wodurch sich ein Pop-Up mit Tokeninformationen öffnet. 
 <div style={{ textAlign: "center" }}>
-    <img src={require("/images/help/en/organisation/de/token-info.png").default} alt="" title="Token Information Pop-up" className="img-responsive img-inline-help"/>
+    <img src={require("/images/help/en/organisation/de/token-info-valide.png").default} alt="" title="Token Information Pop-up" className="img-responsive img-inline-help"/>
 </div>
-Sie können ein Token auch neu generieren, indem sie auf die kreisförmigen Pfeile klicken, wodurch sich ein Pop-Up ähnlich dem der Token-Generierung öffnet.
+Sie können einen Token auch neu generieren, indem sie auf die kreisförmigen Pfeile klicken, wodurch sich ein Pop-Up ähnlich dem der Token-Generierung öffnet.
 <div style={{ textAlign: "center" }}>
-    <img src={require("/images/help/en/organisation/de/token-erneuern.png").default} alt="" title="Token Erneuerung" className="img-responsive img-inline-help"/>
+    <img src={require("/images/help/en/organisation/de/token-erneuern-abgelaufen.png").default} alt="" title="Token Erneuerung" className="img-responsive img-inline-help"/>
 </div>
 
 Nutzende in den Rollen &laquo;Administrator&raquo; oder &laquo;Superanwender&raquo; haben auf der Profil-Seite der Organisation auch die Möglichkeit Unterorganisationen anzulegen, Nutzende anzulegen, existierende Nutzerprofile zur Organisation hinzuzufügen oder die Organisation zu löschen.

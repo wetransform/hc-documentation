@@ -16,7 +16,7 @@ Administrator and organisation superusers can edit the organisation profile page
 
 Alternatively, you can click on the name of the organisation in your user profile.
 
-On the organisation profile page, there are several configuration options available, which can be accessed through the tab view located below the description.
+On the organisation profile page, there are several configuration options available, which can be accessed through the tab view located below the description. Note that depending on your role and the configuration of your organisation, not all tabs or features may be available.
 
 -	**Profile picture:** Click on the profile picture to upload your organisation's logo or custom avatar. Accepted file formats include JPEG and PNG.
 -	**Name of the legal entity:** This optional field enables users to provide the name of the legal entity.
@@ -53,25 +53,25 @@ Furthermore, you can enter a name for the geometry that will later be displayed 
 
 
 
-- **Managing Tokens**: Under the tab &laquo;Token Management&raquo; you can inspect, generate, and remove tokens. To generate a token, click the right button and a pop-up opens where you can set a name for the token and specify its validity period. You can copy the token and optionally also save it in your browser's storage. 
+- **Managing Tokens**: Under the tab &laquo;Token Management&raquo; you can inspect, generate, and remove tokens. To generate a token, click the right button and a pop-up opens where you can set a name for the token and specify its validity period. You can copy the token directly and optionally also save it in your browser's storage such that you can also still access and copy it later on. 
 <div style={{ textAlign: "center" }}>
-    <img src={require("/images/help/en/organisation/en/token_popup.png").default} alt="" title="Token Generation Pop-up" className="img-responsive img-inline-help"/>
+    <img src={require("/images/help/en/organisation/en/generate-token.png").default} alt="" title="Token Generation Pop-up" className="img-responsive img-inline-help"/>
 </div>
 A table containing your current tokens will be displayed.
 <!--<div style={{ textAlign: "center" }}>
     <img src={require("/images/help/en/organisation/en/token_small.png").default} alt="" title="Basemap copyright attribution" className="img-responsive img-inline-help"/>
 </div>-->
 <div style={{ textAlign: "center" }}>
-    <img src={require("/images/help/en/organisation/en/token_large.png").default} alt="" title="Token Management Table View" className="img-responsive img-inline-help"/>
+    <img src={require("/images/help/en/organisation/en/token-management.png").default} alt="" title="Token Management Table View" className="img-responsive img-inline-help"/>
 </div>
 In the table, you can filter and search by organisation ID or by purpose. You can see the current state of a token, that can either be Expired, Valid or Revoked. In the left-most column, you see a red dot for expired or revoked tokens and a green dot for valid tokens.
 In the table view, you also have the option to inspect a token by clicking the eye icon, which will open a pop-up containing token information.
 <div style={{ textAlign: "center" }}>
-    <img src={require("/images/help/en/organisation/en/token_info.png").default} alt="" title="Token Information Pop-up" className="img-responsive img-inline-help"/>
+    <img src={require("/images/help/en/organisation/en/token-info-valid.png").default} alt="" title="Token Information Pop-up" className="img-responsive img-inline-help"/>
 </div>
 You can also regenerate a token by clicking the arrow circle, which will open a similar pop-up as for token creation.
 <div style={{ textAlign: "center" }}>
-    <img src={require("/images/help/en/organisation/en/token_regenerate.png").default} alt="" title="Token Regeneration Pop-up" className="img-responsive img-inline-help"/>
+    <img src={require("/images/help/en/organisation/en/invalid-token-regenerate.png").default} alt="" title="Token Regeneration Pop-up" className="img-responsive img-inline-help"/>
 </div>
 
 
