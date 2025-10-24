@@ -38,7 +38,7 @@ To create a new custom metadata field in your organisation profile, follow this 
 * Click the Settings icon (gear symbol) at the top right of the screen
 * Click the Organisations section and select your organisation from the list
 <img src={require("/images/help/en/organisation/en/contact_information_empty.png").default} alt="" title="Organisation profile page" className="img-responsive img-inline-help"/>
-* Select the tab &laquo;Custom fields&raquo; below the description field of the organisation profile page and click &laquo;+Add field&raquo; to add your custom key-value pair
+* Select the tab &laquo;Custom fields&raquo; below the description field of the organisation profile page and click &laquo;+ Add field&raquo; to add your custom key-value pair
   * The key-value pair that you enter will be available to you in the autofill assistant during metadata configuration.
 <img src={require("/images/help/en/organisation/en/tutorial_custom_fields.png").default} alt="" title="Creating a custom metadata field" className="img-responsive img-inline-help"/>
 
