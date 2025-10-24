@@ -16,12 +16,16 @@ Administrator and organisation superusers can edit the organisation profile page
 
 Alternatively, you can click on the name of the organisation in your user profile.
 
-On the organisation profile page, there are several configuration options available, which can be accessed through the tab view located below the description. Note that depending on your role and the configuration of your organisation, not all tabs or features may be available.
+On the organisation profile page, there are several configuration options available, which can be accessed through the tab view located below the description. 
+
+:::note 
+Depending on your role and the configuration of your organisation, not all tabs or features may be available.
+:::
 
 -	**Profile picture:** Click on the profile picture to upload your organisation's logo or custom avatar. Accepted file formats include JPEG and PNG.
 -	**Name of the legal entity:** This optional field enables users to provide the name of the legal entity.
 -	**Description:** This optional field enables users to provide a description of their organisation.
--	**Add Contact Information:** These standard contact info fields help other users reach out to you and can be used for the metadata autofill rules. They can be found under the tab &laquo;Contact information&raquo; which is shown as the selected tab by default when loading the page.
+-	**Add contact information:** These standard contact info fields help other users reach out to you and can be used for the metadata autofill rules. They can be found under the tab &laquo;Contact information&raquo; which is shown as the selected tab by default when loading the page.
 -	**Map configuration:** This tab enables users to provide a URL to a WMS base map, a default base layer, and optionally provide a copyright attribution displayed on the map view (see the image below).  
 <img src={require("/images/help/en/organisation/en/mapConfig_large.png").default} alt="" title="Map Configuration" className="img-responsive img-inline-help"/>  
 The copyright attribution field supports HTML links, e.g. `&copy; GeoBasis-DE / <a href="https://www.bkg.bund.de/">BKG</a> 2025 CC BY 4.0`. <br/>As organisation superuser or administrator, you can configure the default basemap for the map view in the view services section of your datasets. When members of your organisation view published services on the platform, the data is displayed using your configured WMS as the basemap. Users have the added ability to upload their own WMS basemap via the map view interface.<img src={require("/images/help/en/copyright_attribution.png").default} alt="" title="Basemap copyright attribution" className="img-responsive img-inline-help"/>   
@@ -35,10 +39,10 @@ For the map view in the view service, the specified base map will be used simply
 
 - **CSW INSPIRE metadata** The fields: Supported languages, Default language, Date, Gemet keywords, Service conformity, and Temporal extent enable administrators of organisations with an activated CSW organisation endpoint to configure the CSW GetCapabilities document. Default values are entered automatically in the CSW GetCapabilities document if no values are entered in the fields. Entered values will appear after the nightly CSW update. It can be found under the tab &laquo;CSW Settings&raquo;.
 - **Add custom fields:** Such fields are used to save user-defined values for metadata autofill rules. You and your organisation should agree on the keys for these user-defined fields so that they can be used effectively in the autofill rules. They can be found under the tab &laquo;Custom fields&raquo;.
-- **Sharing Organisation Access** If you have the necessary permissions, you can share access to your organisation and suborganisations with other organisations. To do so, navigate to the tab &laquo;Organisation Sharing&raquo;. There, you can see a list of all organisations you are currently sharing your organisation info with, as well as the option to remove these organisations' access by clicking on the red minus icon next to the organisation name. To add another organisation to the list, click on your organisation name in the upper right and select the organisation you want to share with from the drop-down. It will then appear in the list.
+- **Sharing organisation access** If you have the necessary permissions, you can share access to your organisation and suborganisations with other organisations. To do so, navigate to the tab &laquo;Organisation Sharing&raquo;. There, you can see a list of all organisations you are currently sharing your organisation info with, as well as the option to remove these organisations' access by clicking on the red minus icon next to the organisation name. To add another organisation to the list, click on your organisation name in the upper right and select the organisation you want to share with from the drop-down. It will then appear in the list.
 <img src={require("/images/help/en/organisation/en/orgshare_larger.png").default} alt="" title="Organisation Sharing" className="img-responsive img-inline-help"/>
 
-- **Uploading a Geometry**: Under the tab &laquo;Geometry&raquo; you can upload a geometry for your organisation. Initially, there are no geometries for your organisation, as can be seen in the picture.  
+- **Uploading a geometry**: Under the tab &laquo;Geometry&raquo; you can upload a geometry for your organisation. Initially, there are no geometries for your organisation, as can be seen in the picture.  
 <div style={{ textAlign: "center" }}>
 <img src={require("/images/help/en/organisation/en/no_geometry_large.png").default} alt="" title="Geometry" className="img-responsive img-inline-help"/>
 </div>  
@@ -53,14 +57,11 @@ Furthermore, you can enter a name for the geometry that will later be displayed 
 
 
 
-- **Managing Tokens**: Under the tab &laquo;Token Management&raquo; you can inspect, generate, and remove tokens. To generate a token, click the right button and a pop-up opens where you can set a name for the token and specify its validity period. You can copy the token directly and optionally also save it in your browser's storage such that you can also still access and copy it later on. 
+- **Managing tokens**: Under the tab &laquo;Token Management&raquo; you can inspect, generate, and remove tokens. To generate a token, click the right button and a pop-up opens where you can set a name for the token and specify its validity period. You can copy the token directly and optionally also save it in your browser's storage such that you can also still access and copy it later on. 
 <div style={{ textAlign: "center" }}>
     <img src={require("/images/help/en/organisation/en/generate-token.png").default} alt="" title="Token Generation Pop-up" className="img-responsive img-inline-help"/>
 </div>
-A table containing your current tokens will be displayed.
-<!--<div style={{ textAlign: "center" }}>
-    <img src={require("/images/help/en/organisation/en/token_small.png").default} alt="" title="Basemap copyright attribution" className="img-responsive img-inline-help"/>
-</div>-->
+A table containing your current tokens will appear.
 <div style={{ textAlign: "center" }}>
     <img src={require("/images/help/en/organisation/en/token-management.png").default} alt="" title="Token Management Table View" className="img-responsive img-inline-help"/>
 </div>
