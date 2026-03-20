@@ -3020,6 +3020,35 @@ Diese Option erfüllt die TG-Empfehlung 2.1.1: metadata/2.0/rec/isdss/crs-id des
 </gmd:referenceSystemInfo>
 ```
 
+**Ressourcen-Lokatoren für die Verknüpfung von INSPIRE-Diensten in Datensatz-Metadaten hinzufügen**
+
+Durch das Hinzufügen dieses Profils wird für jeden Netzwerkdienst, der für einen Datensatz verfügbar ist, ein Ressourcen-Lokator in die Metadaten des Datensatzes aufgenommen.
+Dieses Profil erfüllt die Empfehlungen des [INSPIRE Good Practices Guide](https://github.com/INSPIRE-MIF/gp-data-service-linking-simplification/blob/main/good-practice/data-service-linking-simplification-spec.md#main-principles) und ist gültig gemäß der [Konformitätsklasse](https://github.com/inspire-eu-validation/metadata/tree/2.0/ds-linked-service) für INSPIRE-Datensätze. Das folgende Beispiel zeigt die Metadatenelemente, die den Datensatz-Metadaten hinzugefügt werden, wenn diese Option aktiviert ist:
+
+```xml
+<gmd:MD_DigitalTransferOptions>
+  <gmd:onLine>
+    <gmd:CI_OnlineResource>
+      <gmd:linkage>
+        <gmd:URL>https://test.haleconnect.de/ows/services/org.325.6c2367f7-87b7-4b7b-82e5-64f36faad111_wfs?SERVICE=WFS&Request=GetCapabilities</gmd:URL>
+      </gmd:linkage>
+      <gmd:protocol>
+        <gmx:Anchor xlink:href="https://www.opengis.net/def/serviceType/ogc/wfs">OGC Web Features Service</gmx:Anchor>
+      </gmd:protocol>
+      <gmd:applicationProfile>
+        <gmx:Anchor xlink:href="https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download">Download Service</gmx:Anchor>
+      </gmd:applicationProfile>
+      <gmd:name>
+        <gco:CharacterString>INSPIRE Download Service (WFS)</gco:CharacterString>
+      </gmd:name>
+      <gmd:function>
+        <gmd:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</gmd:CI_OnLineFunctionCode>
+      </gmd:function>
+    </gmd:CI_OnlineResource>
+  </gmd:onLine>
+</gmd:MD_DigitalTransferOptions>
+```
+
 **Wert "information" als OnlineFunctionCode für WFS verwenden (GDI-DE-Konvention)**
 
 Diese Option ermöglicht die Verwendung des Wertes `information` im Element `transferOptions` im WFS-Capabilities-Dokument. Der Wert "information" ist Teil der Codeliste `CI_OnLineFunctionCode`. Im Abschnitt 4.3.1 der ["Konventionen zu Metadaten" der GDI-DE](https://www.gdi-de.org/download/AK_Metadaten_Konventionen_zu_Metadaten.pdf) (v2.2.1) wird die Verwendung des Wertes `information` empfohlen, und Benutzer, die die Einhaltung der GDI-DE-Metadatenkonventionen mit Hilfe der GDI-DE-Testsuite prüfen, erhalten eine Warnung, falls ein anderer Wert verwendet wird. Im Technischen Leitfaden für die Implementierung von Metadaten für INSPIRE-Datensätze und -Dienste auf der Grundlage von ISO/TS 19139:2007, Version 2.2.0, TG Recommendation 3.5: metadata/2.0/rec/sds/resource-type-url-target wird ein Beispiel angeführt, in dem der WFS GetCapabilities den Wert download verwendet. Der Standardwert von hale "connect ist download, der Standardwert kann jedoch durch die Verwendung dieses Profils überschrieben werden.

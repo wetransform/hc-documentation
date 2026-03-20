@@ -3022,6 +3022,35 @@ This profile satisfies TG Recommendation 2.1.1: metadata/2.0/rec/isdss/crs-id of
 </gmd:referenceSystemInfo>
 ```
 
+**Add resource locators for INSPIRE service linking in dataset metadata**
+
+Adding this profile means that a resource locator for each network service that is available for a dataset will be added to the dataset metadata.
+This profile satisfies the recommendations as defined by the [INSPIRE Good Practices Guide](https://github.com/INSPIRE-MIF/gp-data-service-linking-simplification/blob/main/good-practice/data-service-linking-simplification-spec.md#main-principles) and is valid against the [conformance class](https://github.com/inspire-eu-validation/metadata/tree/2.0/ds-linked-service) for INSPIRE data sets. The following example displays the metadata elements added to dataset metadata when the option is enabled:
+
+```xml
+<gmd:MD_DigitalTransferOptions>
+  <gmd:onLine>
+    <gmd:CI_OnlineResource>
+      <gmd:linkage>
+        <gmd:URL>https://test.haleconnect.de/ows/services/org.325.6c2367f7-87b7-4b7b-82e5-64f36faad111_wfs?SERVICE=WFS&Request=GetCapabilities</gmd:URL>
+      </gmd:linkage>
+      <gmd:protocol>
+        <gmx:Anchor xlink:href="https://www.opengis.net/def/serviceType/ogc/wfs">OGC Web Features Service</gmx:Anchor>
+      </gmd:protocol>
+      <gmd:applicationProfile>
+        <gmx:Anchor xlink:href="https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download">Download Service</gmx:Anchor>
+      </gmd:applicationProfile>
+      <gmd:name>
+        <gco:CharacterString>INSPIRE Download Service (WFS)</gco:CharacterString>
+      </gmd:name>
+      <gmd:function>
+        <gmd:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download">download</gmd:CI_OnLineFunctionCode>
+      </gmd:function>
+    </gmd:CI_OnlineResource>
+  </gmd:onLine>
+</gmd:MD_DigitalTransferOptions>
+```
+
 **Use "information" as online function code for WFS (GDI-DE convention)**
 
 This profile enables use of the term `information` in the `transferOptions` element in the WFS Capabilities document.  The term `information` is found in the code list `CI_OnLineFunctionCode`. Section 4.3.1 of the [GDI-DE Metadata conventions](https://www.gdi-de.org/download/AK_Metadaten_Konventionen_zu_Metadaten.pdf) (v2.2.1) recommends use of the value `information` and users seeking to comply with GDI-DE metadata conventions receive a warning from the GDI-DE Testsuite if other values are used.
