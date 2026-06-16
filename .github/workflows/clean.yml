@@ -1,0 +1,32 @@
+name: Clean up staging environment
+
+on:
+  pull_request:
+    branches: [ master ]
+    types:
+      - closed
+
+jobs:
+  clean-staging:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Prepare SSH key and known hosts
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Remove PR deployment
+        run: |
+          mkdir -p /tmp/empty
+          rsync -a --delete /tmp/empty/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_WEBPATH }}/${{ github.event.number }}
+
+      - name: Remove comment from PR
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          comment-tag: staging-url
+          mode: delete
