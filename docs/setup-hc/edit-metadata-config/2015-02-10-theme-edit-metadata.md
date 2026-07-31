@@ -3053,8 +3053,8 @@ This profile satisfies the recommendations as defined by the [INSPIRE Good Pract
 
 **Use "information" as online function code for WFS (GDI-DE convention)**
 
-This profile enables use of the term `information` in the `transferOptions` element in the WFS Capabilities document.  The term `information` is found in the code list `CI_OnLineFunctionCode`. Section 4.3.1 of the [GDI-DE Metadata conventions](https://www.gdi-de.org/download/AK_Metadaten_Konventionen_zu_Metadaten.pdf) (v2.2.1) recommends use of the value `information` and users seeking to comply with GDI-DE metadata conventions receive a warning from the GDI-DE Testsuite if other values are used.
-In the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0, TG Recommendation 3.5: metadata/2.0/rec/sds/resource-type-url-target, an example is given in which the WFS Capabilities document uses the value `download`. The hale»connect default value is `download`, however the default value can be overridden through use of this profile.
+This profile enables use of the term `information` in the `transferOptions` element in the metadata and its reference to the WFS Capabilities.  The term `information` is found in the code list `CI_OnLineFunctionCode`. Section 4.3.1 of the [GDI-DE Metadata conventions](https://www.gdi-de.org/download/AK_Metadaten_Konventionen_zu_Metadaten.pdf) (v2.2.1) recommends use of the value `information` and users seeking to comply with GDI-DE metadata conventions receive a warning from the GDI-DE Testsuite if other values are used.
+In the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, Version 2.2.0, TG Recommendation 3.5: metadata/2.0/rec/sds/resource-type-url-target, an example is given in which the metadata and its reference to the WFS Capabilities uses the value `download`. Therefore, hale»connect default value is `download`, however the default value can be overridden through use of this profile.
 
 This profile is included in the metadata profile entitled: "Conventions of GDI-DE (implicitly includes specific other profiles)".
 
